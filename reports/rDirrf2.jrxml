@@ -1,0 +1,2758 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="rDirrf2" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="9b6af52e-289f-4037-9f80-d25d2f38b9ec">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="anobase" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[SELECT autonum, rgprp, rgimv, contrato, cpfcnpjlocador, nomelocador, cpfcnpjlocatario,
+nomelocatario, numerocontrato, datacontrato,
+CAST(CONCAT(CAST(Mid(valorjan, 1, 12) AS UNSIGNED Int), '.',RIGHT(valorjan,2)) AS DECIMAL(13,2)) AS valorjan,
+CAST(CONCAT(CAST(Mid(comissaojan, 1, 12) AS UNSIGNED Int), '.',RIGHT(comissaojan,2)) AS DECIMAL(13,2)) AS comissaojan,
+CAST(CONCAT(CAST(Mid(impostojan, 1, 12) AS UNSIGNED Int), '.',RIGHT(impostojan,2)) AS DECIMAL(13,2)) AS impostojan,
+
+CAST(CONCAT(CAST(Mid(mujan, 1, 12) AS UNSIGNED Int), '.',RIGHT(mujan,2)) AS DECIMAL(13,2)) AS mujan,
+CAST(CONCAT(CAST(Mid(jujan, 1, 12) AS UNSIGNED Int), '.',RIGHT(jujan,2)) AS DECIMAL(13,2)) AS jujan,
+CAST(CONCAT(CAST(Mid(cojan, 1, 12) AS UNSIGNED Int), '.',RIGHT(cojan,2)) AS DECIMAL(13,2)) AS cojan,
+CAST(CONCAT(CAST(Mid(tejan, 1, 12) AS UNSIGNED Int), '.',RIGHT(tejan,2)) AS DECIMAL(13,2)) AS tejan,
+CAST(CONCAT(CAST(Mid(dfjan, 1, 12) AS UNSIGNED Int), '.',RIGHT(dfjan,2)) AS DECIMAL(13,2)) AS dfjan,
+CAST(CONCAT(CAST(Mid(dcjan, 1, 12) AS UNSIGNED Int), '.',RIGHT(dcjan,2)) AS DECIMAL(13,2)) AS dcjan,
+
+CAST(CONCAT(CAST(Mid(valorfev, 1, 12) AS UNSIGNED Int), '.',RIGHT(valorfev,2)) AS DECIMAL(13,2)) AS valorfev,
+CAST(CONCAT(CAST(Mid(comissaofev, 1, 12) AS UNSIGNED Int), '.',RIGHT(comissaofev,2)) AS DECIMAL(13,2)) AS comissaofev,
+CAST(CONCAT(CAST(Mid(impostofev, 1, 12) AS UNSIGNED Int), '.',RIGHT(impostofev,2)) AS DECIMAL(13,2)) AS impostofev,
+CAST(CONCAT(CAST(Mid(mufev, 1, 12) AS UNSIGNED Int), '.',RIGHT(mufev,2)) AS DECIMAL(13,2)) AS mufev,
+CAST(CONCAT(CAST(Mid(jufev, 1, 12) AS UNSIGNED Int), '.',RIGHT(jufev,2)) AS DECIMAL(13,2)) AS jufev,
+CAST(CONCAT(CAST(Mid(cofev, 1, 12) AS UNSIGNED Int), '.',RIGHT(cofev,2)) AS DECIMAL(13,2)) AS cofev,
+CAST(CONCAT(CAST(Mid(tefev, 1, 12) AS UNSIGNED Int), '.',RIGHT(tefev,2)) AS DECIMAL(13,2)) AS tefev,
+CAST(CONCAT(CAST(Mid(dffev, 1, 12) AS UNSIGNED Int), '.',RIGHT(dffev,2)) AS DECIMAL(13,2)) AS dffev,
+CAST(CONCAT(CAST(Mid(dcfev, 1, 12) AS UNSIGNED Int), '.',RIGHT(dcfev,2)) AS DECIMAL(13,2)) AS dcfev,
+
+CAST(CONCAT(CAST(Mid(valormar, 1, 12) AS UNSIGNED Int), '.',RIGHT(valormar,2)) AS DECIMAL(13,2)) AS valormar,
+CAST(CONCAT(CAST(Mid(comissaomar, 1, 12) AS UNSIGNED Int), '.',RIGHT(comissaomar,2)) AS DECIMAL(13,2)) AS comissaomar,
+CAST(CONCAT(CAST(Mid(impostomar, 1, 12) AS UNSIGNED Int), '.',RIGHT(impostomar,2)) AS DECIMAL(13,2)) AS impostomar,
+CAST(CONCAT(CAST(Mid(mumar, 1, 12) AS UNSIGNED Int), '.',RIGHT(mumar,2)) AS DECIMAL(13,2)) AS mumar,
+CAST(CONCAT(CAST(Mid(jumar, 1, 12) AS UNSIGNED Int), '.',RIGHT(jumar,2)) AS DECIMAL(13,2)) AS jumar,
+CAST(CONCAT(CAST(Mid(comar, 1, 12) AS UNSIGNED Int), '.',RIGHT(comar,2)) AS DECIMAL(13,2)) AS comar,
+CAST(CONCAT(CAST(Mid(temar, 1, 12) AS UNSIGNED Int), '.',RIGHT(temar,2)) AS DECIMAL(13,2)) AS temar,
+CAST(CONCAT(CAST(Mid(dfmar, 1, 12) AS UNSIGNED Int), '.',RIGHT(dfmar,2)) AS DECIMAL(13,2)) AS dfmar,
+CAST(CONCAT(CAST(Mid(dcmar, 1, 12) AS UNSIGNED Int), '.',RIGHT(dcmar,2)) AS DECIMAL(13,2)) AS dcmar,
+
+
+CAST(CONCAT(CAST(Mid(valorabr, 1, 12) AS UNSIGNED Int), '.',RIGHT(valorabr,2)) AS DECIMAL(13,2)) AS valorabr,
+CAST(CONCAT(CAST(Mid(comissaoabr, 1, 12) AS UNSIGNED Int), '.',RIGHT(comissaoabr,2)) AS DECIMAL(13,2)) AS comissaoabr,
+CAST(CONCAT(CAST(Mid(impostoabr, 1, 12) AS UNSIGNED Int), '.',RIGHT(impostoabr,2)) AS DECIMAL(13,2)) AS impostoabr,
+CAST(CONCAT(CAST(Mid(muabr, 1, 12) AS UNSIGNED Int), '.',RIGHT(muabr,2)) AS DECIMAL(13,2)) AS muabr,
+CAST(CONCAT(CAST(Mid(juabr, 1, 12) AS UNSIGNED Int), '.',RIGHT(juabr,2)) AS DECIMAL(13,2)) AS juabr,
+CAST(CONCAT(CAST(Mid(coabr, 1, 12) AS UNSIGNED Int), '.',RIGHT(coabr,2)) AS DECIMAL(13,2)) AS coabr,
+CAST(CONCAT(CAST(Mid(teabr, 1, 12) AS UNSIGNED Int), '.',RIGHT(teabr,2)) AS DECIMAL(13,2)) AS teabr,
+CAST(CONCAT(CAST(Mid(dfabr, 1, 12) AS UNSIGNED Int), '.',RIGHT(dfabr,2)) AS DECIMAL(13,2)) AS dfabr,
+CAST(CONCAT(CAST(Mid(dcabr, 1, 12) AS UNSIGNED Int), '.',RIGHT(dcabr,2)) AS DECIMAL(13,2)) AS dcabr,
+
+CAST(CONCAT(CAST(Mid(valormai, 1, 12) AS UNSIGNED Int), '.',RIGHT(valormai,2)) AS DECIMAL(13,2)) AS valormai,
+CAST(CONCAT(CAST(Mid(comissaomai, 1, 12) AS UNSIGNED Int), '.',RIGHT(comissaomai,2)) AS DECIMAL(13,2)) AS comissaomai,
+CAST(CONCAT(CAST(Mid(impostomai, 1, 12) AS UNSIGNED Int), '.',RIGHT(impostomai,2)) AS DECIMAL(13,2)) AS impostomai,
+CAST(CONCAT(CAST(Mid(mumai, 1, 12) AS UNSIGNED Int), '.',RIGHT(mumai,2)) AS DECIMAL(13,2)) AS mumai,
+CAST(CONCAT(CAST(Mid(jumai, 1, 12) AS UNSIGNED Int), '.',RIGHT(jumai,2)) AS DECIMAL(13,2)) AS jumai,
+CAST(CONCAT(CAST(Mid(comai, 1, 12) AS UNSIGNED Int), '.',RIGHT(comai,2)) AS DECIMAL(13,2)) AS comai,
+CAST(CONCAT(CAST(Mid(temai, 1, 12) AS UNSIGNED Int), '.',RIGHT(temai,2)) AS DECIMAL(13,2)) AS temai,
+CAST(CONCAT(CAST(Mid(dfmai, 1, 12) AS UNSIGNED Int), '.',RIGHT(dfmai,2)) AS DECIMAL(13,2)) AS dfmai,
+CAST(CONCAT(CAST(Mid(dcmai, 1, 12) AS UNSIGNED Int), '.',RIGHT(dcmai,2)) AS DECIMAL(13,2)) AS dcmai,
+
+CAST(CONCAT(CAST(Mid(valorjun, 1, 12) AS UNSIGNED Int), '.',RIGHT(valorjun,2)) AS DECIMAL(13,2)) AS valorjun,
+CAST(CONCAT(CAST(Mid(comissaojun, 1, 12) AS UNSIGNED Int), '.',RIGHT(comissaojun,2)) AS DECIMAL(13,2)) AS comissaojun,
+CAST(CONCAT(CAST(Mid(impostojun, 1, 12) AS UNSIGNED Int), '.',RIGHT(impostojun,2)) AS DECIMAL(13,2)) AS impostojun,
+CAST(CONCAT(CAST(Mid(mujun, 1, 12) AS UNSIGNED Int), '.',RIGHT(mujun,2)) AS DECIMAL(13,2)) AS mujun,
+CAST(CONCAT(CAST(Mid(jujun, 1, 12) AS UNSIGNED Int), '.',RIGHT(jujun,2)) AS DECIMAL(13,2)) AS jujun,
+CAST(CONCAT(CAST(Mid(cojun, 1, 12) AS UNSIGNED Int), '.',RIGHT(cojun,2)) AS DECIMAL(13,2)) AS cojun,
+CAST(CONCAT(CAST(Mid(tejun, 1, 12) AS UNSIGNED Int), '.',RIGHT(tejun,2)) AS DECIMAL(13,2)) AS tejun,
+CAST(CONCAT(CAST(Mid(dfjun, 1, 12) AS UNSIGNED Int), '.',RIGHT(dfjun,2)) AS DECIMAL(13,2)) AS dfjun,
+CAST(CONCAT(CAST(Mid(dcjun, 1, 12) AS UNSIGNED Int), '.',RIGHT(dcjun,2)) AS DECIMAL(13,2)) AS dcjun,
+
+CAST(CONCAT(CAST(Mid(valorjul, 1, 12) AS UNSIGNED Int), '.',RIGHT(valorjul,2)) AS DECIMAL(13,2)) AS valorjul,
+CAST(CONCAT(CAST(Mid(comissaojul, 1, 12) AS UNSIGNED Int), '.',RIGHT(comissaojul,2)) AS DECIMAL(13,2)) AS comissaojul,
+CAST(CONCAT(CAST(Mid(impostojul, 1, 12) AS UNSIGNED Int), '.',RIGHT(impostojul,2)) AS DECIMAL(13,2)) AS impostojul,
+CAST(CONCAT(CAST(Mid(mujul, 1, 12) AS UNSIGNED Int), '.',RIGHT(mujul,2)) AS DECIMAL(13,2)) AS mujul,
+CAST(CONCAT(CAST(Mid(jujul, 1, 12) AS UNSIGNED Int), '.',RIGHT(jujul,2)) AS DECIMAL(13,2)) AS jujul,
+CAST(CONCAT(CAST(Mid(cojul, 1, 12) AS UNSIGNED Int), '.',RIGHT(cojul,2)) AS DECIMAL(13,2)) AS cojul,
+CAST(CONCAT(CAST(Mid(tejul, 1, 12) AS UNSIGNED Int), '.',RIGHT(tejul,2)) AS DECIMAL(13,2)) AS tejul,
+CAST(CONCAT(CAST(Mid(dfjul, 1, 12) AS UNSIGNED Int), '.',RIGHT(dfjul,2)) AS DECIMAL(13,2)) AS dfjul,
+CAST(CONCAT(CAST(Mid(dcjul, 1, 12) AS UNSIGNED Int), '.',RIGHT(dcjul,2)) AS DECIMAL(13,2)) AS dcjul,
+
+CAST(CONCAT(CAST(Mid(valorago, 1, 12) AS UNSIGNED Int), '.',RIGHT(valorago,2)) AS DECIMAL(13,2)) AS valorago,
+CAST(CONCAT(CAST(Mid(comissaoago, 1, 12) AS UNSIGNED Int), '.',RIGHT(comissaoago,2)) AS DECIMAL(13,2)) AS comissaoago,
+CAST(CONCAT(CAST(Mid(impostoago, 1, 12) AS UNSIGNED Int), '.',RIGHT(impostoago,2)) AS DECIMAL(13,2)) AS impostoago,
+CAST(CONCAT(CAST(Mid(muago, 1, 12) AS UNSIGNED Int), '.',RIGHT(muago,2)) AS DECIMAL(13,2)) AS muago,
+CAST(CONCAT(CAST(Mid(juago, 1, 12) AS UNSIGNED Int), '.',RIGHT(juago,2)) AS DECIMAL(13,2)) AS juago,
+CAST(CONCAT(CAST(Mid(coago, 1, 12) AS UNSIGNED Int), '.',RIGHT(coago,2)) AS DECIMAL(13,2)) AS coago,
+CAST(CONCAT(CAST(Mid(teago, 1, 12) AS UNSIGNED Int), '.',RIGHT(teago,2)) AS DECIMAL(13,2)) AS teago,
+CAST(CONCAT(CAST(Mid(dfago, 1, 12) AS UNSIGNED Int), '.',RIGHT(dfago,2)) AS DECIMAL(13,2)) AS dfago,
+CAST(CONCAT(CAST(Mid(dcago, 1, 12) AS UNSIGNED Int), '.',RIGHT(dcago,2)) AS DECIMAL(13,2)) AS dcago,
+
+CAST(CONCAT(CAST(Mid(valorset, 1, 12) AS UNSIGNED Int), '.',RIGHT(valorset,2)) AS DECIMAL(13,2)) AS valorset,
+CAST(CONCAT(CAST(Mid(comissaoset, 1, 12) AS UNSIGNED Int), '.',RIGHT(comissaoset,2)) AS DECIMAL(13,2)) AS comissaoset,
+CAST(CONCAT(CAST(Mid(impostoset, 1, 12) AS UNSIGNED Int), '.',RIGHT(impostoset,2)) AS DECIMAL(13,2)) AS impostoset,
+CAST(CONCAT(CAST(Mid(muset, 1, 12) AS UNSIGNED Int), '.',RIGHT(muset,2)) AS DECIMAL(13,2)) AS muset,
+CAST(CONCAT(CAST(Mid(juset, 1, 12) AS UNSIGNED Int), '.',RIGHT(juset,2)) AS DECIMAL(13,2)) AS juset,
+CAST(CONCAT(CAST(Mid(coset, 1, 12) AS UNSIGNED Int), '.',RIGHT(coset,2)) AS DECIMAL(13,2)) AS coset,
+CAST(CONCAT(CAST(Mid(teset, 1, 12) AS UNSIGNED Int), '.',RIGHT(teset,2)) AS DECIMAL(13,2)) AS teset,
+CAST(CONCAT(CAST(Mid(dfset, 1, 12) AS UNSIGNED Int), '.',RIGHT(dfset,2)) AS DECIMAL(13,2)) AS dfset,
+CAST(CONCAT(CAST(Mid(dcset, 1, 12) AS UNSIGNED Int), '.',RIGHT(dcset,2)) AS DECIMAL(13,2)) AS dcset,
+
+CAST(CONCAT(CAST(Mid(valorout, 1, 12) AS UNSIGNED Int), '.',RIGHT(valorout,2)) AS DECIMAL(13,2)) AS valorout,
+CAST(CONCAT(CAST(Mid(comissaoout, 1, 12) AS UNSIGNED Int), '.',RIGHT(comissaoout,2)) AS DECIMAL(13,2)) AS comissaoout,
+CAST(CONCAT(CAST(Mid(impostoout, 1, 12) AS UNSIGNED Int), '.',RIGHT(impostoout,2)) AS DECIMAL(13,2)) AS impostoout,
+CAST(CONCAT(CAST(Mid(muout, 1, 12) AS UNSIGNED Int), '.',RIGHT(muout,2)) AS DECIMAL(13,2)) AS muout,
+CAST(CONCAT(CAST(Mid(juout, 1, 12) AS UNSIGNED Int), '.',RIGHT(juout,2)) AS DECIMAL(13,2)) AS juout,
+CAST(CONCAT(CAST(Mid(coout, 1, 12) AS UNSIGNED Int), '.',RIGHT(coout,2)) AS DECIMAL(13,2)) AS coout,
+CAST(CONCAT(CAST(Mid(teout, 1, 12) AS UNSIGNED Int), '.',RIGHT(teout,2)) AS DECIMAL(13,2)) AS teout,
+CAST(CONCAT(CAST(Mid(dfout, 1, 12) AS UNSIGNED Int), '.',RIGHT(dfout,2)) AS DECIMAL(13,2)) AS dfout,
+CAST(CONCAT(CAST(Mid(dcout, 1, 12) AS UNSIGNED Int), '.',RIGHT(dcout,2)) AS DECIMAL(13,2)) AS dcout,
+
+CAST(CONCAT(CAST(Mid(valornov, 1, 12) AS UNSIGNED Int), '.',RIGHT(valornov,2)) AS DECIMAL(13,2)) AS valornov,
+CAST(CONCAT(CAST(Mid(comissaonov, 1, 12) AS UNSIGNED Int), '.',RIGHT(comissaonov,2)) AS DECIMAL(13,2)) AS comissaonov,
+CAST(CONCAT(CAST(Mid(impostonov, 1, 12) AS UNSIGNED Int), '.',RIGHT(impostonov,2)) AS DECIMAL(13,2)) AS impostonov,
+CAST(CONCAT(CAST(Mid(munov, 1, 12) AS UNSIGNED Int), '.',RIGHT(munov,2)) AS DECIMAL(13,2)) AS munov,
+CAST(CONCAT(CAST(Mid(junov, 1, 12) AS UNSIGNED Int), '.',RIGHT(junov,2)) AS DECIMAL(13,2)) AS junov,
+CAST(CONCAT(CAST(Mid(conov, 1, 12) AS UNSIGNED Int), '.',RIGHT(conov,2)) AS DECIMAL(13,2)) AS conov,
+CAST(CONCAT(CAST(Mid(tenov, 1, 12) AS UNSIGNED Int), '.',RIGHT(tenov,2)) AS DECIMAL(13,2)) AS tenov,
+CAST(CONCAT(CAST(Mid(dfnov, 1, 12) AS UNSIGNED Int), '.',RIGHT(dfnov,2)) AS DECIMAL(13,2)) AS dfnov,
+CAST(CONCAT(CAST(Mid(dcnov, 1, 12) AS UNSIGNED Int), '.',RIGHT(dcnov,2)) AS DECIMAL(13,2)) AS dcnov,
+
+CAST(CONCAT(CAST(Mid(valordez, 1, 12) AS UNSIGNED Int), '.',RIGHT(valordez,2)) AS DECIMAL(13,2)) AS valordez,
+CAST(CONCAT(CAST(Mid(comissaodez, 1, 12) AS UNSIGNED Int), '.',RIGHT(comissaodez,2)) AS DECIMAL(13,2)) AS comissaodez,
+CAST(CONCAT(CAST(Mid(impostodez, 1, 12) AS UNSIGNED Int), '.',RIGHT(impostodez,2)) AS DECIMAL(13,2)) AS impostodez,
+CAST(CONCAT(CAST(Mid(mudez, 1, 12) AS UNSIGNED Int), '.',RIGHT(mudez,2)) AS DECIMAL(13,2)) AS mudez,
+CAST(CONCAT(CAST(Mid(judez, 1, 12) AS UNSIGNED Int), '.',RIGHT(judez,2)) AS DECIMAL(13,2)) AS judez,
+CAST(CONCAT(CAST(Mid(codez, 1, 12) AS UNSIGNED Int), '.',RIGHT(codez,2)) AS DECIMAL(13,2)) AS codez,
+CAST(CONCAT(CAST(Mid(tedez, 1, 12) AS UNSIGNED Int), '.',RIGHT(tedez,2)) AS DECIMAL(13,2)) AS tedez,
+CAST(CONCAT(CAST(Mid(dfdez, 1, 12) AS UNSIGNED Int), '.',RIGHT(dfdez,2)) AS DECIMAL(13,2)) AS dfdez,
+CAST(CONCAT(CAST(Mid(dcdez, 1, 12) AS UNSIGNED Int), '.',RIGHT(dcdez,2)) AS DECIMAL(13,2)) AS dcdez,
+
+tipoimovel,
+endimovel,
+cepimovel,
+codmunimovel,
+ufimovel
+FROM dimob
+ORDER BY Upper(nomelocador);]]>
+	</queryString>
+	<field name="autonum" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="rgprp" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="rgimv" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="contrato" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpfcnpjlocador" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nomelocador" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpfcnpjlocatario" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nomelocatario" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="numerocontrato" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="datacontrato" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="valorjan" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="comissaojan" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="impostojan" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="mujan" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jujan" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cojan" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tejan" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="dfjan" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="dcjan" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="valorfev" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="comissaofev" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="impostofev" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="mufev" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jufev" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cofev" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tefev" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="dffev" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="dcfev" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="valormar" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="comissaomar" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="impostomar" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="mumar" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jumar" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="comar" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="temar" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="dfmar" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="dcmar" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="valorabr" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="comissaoabr" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="impostoabr" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="muabr" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="juabr" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="coabr" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="teabr" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="dfabr" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="dcabr" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="valormai" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="comissaomai" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="impostomai" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="mumai" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jumai" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="comai" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="temai" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="dfmai" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="dcmai" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="valorjun" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="comissaojun" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="impostojun" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="mujun" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jujun" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cojun" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tejun" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="dfjun" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="dcjun" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="valorjul" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="comissaojul" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="impostojul" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="mujul" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jujul" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cojul" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tejul" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="dfjul" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="dcjul" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="valorago" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="comissaoago" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="impostoago" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="muago" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="juago" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="coago" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="teago" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="dfago" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="dcago" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="valorset" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="comissaoset" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="impostoset" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="muset" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="juset" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="coset" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="teset" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="dfset" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="dcset" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="valorout" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="comissaoout" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="impostoout" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="muout" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="juout" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="coout" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="teout" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="dfout" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="dcout" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="valornov" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="comissaonov" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="impostonov" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="munov" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="junov" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="conov" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tenov" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="dfnov" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="dcnov" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="valordez" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="comissaodez" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="impostodez" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="mudez" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="judez" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="codez" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tedez" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="dfdez" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="dcdez" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tipoimovel" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="endimovel" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cepimovel" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="codmunimovel" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ufimovel" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<pageHeader>
+		<band height="40" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="06a83fcd-3424-4ae5-9eba-605619e6c1cb" x="103" y="0" width="358" height="20"/>
+				<textElement>
+					<font size="14" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[RELATÓRIO DE RENDIMENTO DE ALUGUÉIS]]></text>
+			</staticText>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement uuid="ef1ef2c1-99e2-4ff2-b23e-cc903baaa800" x="0" y="20" width="218" height="15"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement uuid="a1923505-91f3-4f5c-8b53-83afb554e999" x="0" y="37" width="555" height="1"/>
+			</line>
+			<textField>
+				<reportElement uuid="88610df1-b630-4005-b149-3d5c1fff432d" x="435" y="20" width="120" height="15"/>
+				<textElement textAlignment="Right">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{anobase}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="277" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="5b46103c-673c-4cdb-a7e3-92a36b58443b" x="115" y="3" width="52" height="12"/>
+				<textElement>
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CPF/CNPJ:]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="dfb22776-7efc-4ffc-a145-23847ed0b8ce" x="170" y="3" width="104" height="12" forecolor="#FF0000"/>
+				<textElement>
+					<font fontName="DejaVu Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cpfcnpjlocador}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="ed9c9c6a-efe3-42f8-8803-92bfb61f8c22" x="0" y="3" width="115" height="12"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[DADOS LOCADOR:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="d3afff1d-253b-4b00-9886-16e838d5ae30" x="279" y="3" width="50" height="12"/>
+				<textElement>
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Locador:]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="8593c383-15cf-4b54-a5c0-417e4937c010" x="329" y="3" width="226" height="12" forecolor="#FF0000"/>
+				<textElement>
+					<font fontName="DejaVu Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nomelocador}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="ed9c9c6a-efe3-42f8-8803-92bfb61f8c22" x="0" y="17" width="103" height="12"/>
+				<textElement>
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DADOS LOCATARIO:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="70e6968d-3339-4824-9a44-8f47779f4950" x="106" y="17" width="61" height="12"/>
+				<textElement>
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CPF/CNPJ:]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="e2907644-798a-4d87-86c7-4526b9211fb7" x="163" y="17" width="102" height="12"/>
+				<textElement>
+					<font fontName="DejaVu Serif" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cpfcnpjlocatario}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="102452d5-08bd-4ea0-becb-f48a872f257e" x="279" y="17" width="57" height="12"/>
+				<textElement>
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Locatário:]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="aee5053f-b25d-417f-8fb0-d85011d594b8" x="336" y="17" width="219" height="12"/>
+				<textElement>
+					<font fontName="DejaVu Serif" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nomelocatario}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="18925e6c-9dd6-4cb5-80b9-4b75004ff584" x="18" y="29" width="61" height="12"/>
+				<textElement>
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Contrato:]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="d250d021-ac37-4778-9efd-2b3a290ba7f7" x="79" y="29" width="70" height="12" forecolor="#5AA45B"/>
+				<textElement>
+					<font fontName="DejaVu Serif" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{numerocontrato}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="29025012-7e3b-496c-b296-a7b71b96e6f1" x="170" y="32" width="107" height="12"/>
+				<textElement>
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Data do Contrato:]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="5b156983-46db-4295-94a9-37ac1e907696" x="277" y="32" width="100" height="12"/>
+				<textElement>
+					<font fontName="DejaVu Serif" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{datacontrato}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="ed9c9c6a-efe3-42f8-8803-92bfb61f8c22" x="3" y="44" width="146" height="12"/>
+				<textElement>
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DADOS DO IMÓVEL:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="97469bd6-6007-45cd-92e3-50cd8117a3ae" x="101" y="56" width="83" height="12"/>
+				<textElement>
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tipo do Imóvel:]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="08ea4076-1c5b-44e2-a383-b13451061154" x="184" y="56" width="15" height="12"/>
+				<textElement>
+					<font fontName="DejaVu Serif" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tipoimovel}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="61528e67-c8d3-4380-9e6b-6c6fe1fe0a6e" x="217" y="56" width="61" height="12"/>
+				<textElement>
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Endereço:]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="eb2c41a2-e4fd-4b77-a468-fc647cb558c4" x="279" y="56" width="276" height="12"/>
+				<textElement>
+					<font fontName="DejaVu Serif" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{endimovel}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="f124d9a0-e8ce-43ab-b06e-c056dc7dd2cb" x="15" y="68" width="39" height="12"/>
+				<textElement>
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Cep:]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="5b96d998-cb61-4565-98b6-787b606a899a" x="54" y="68" width="100" height="12"/>
+				<textElement>
+					<font fontName="DejaVu Serif" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cepimovel}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="5802af49-bb5e-4eef-8d8b-5e8e1d21522c" x="206" y="68" width="106" height="12"/>
+				<textElement>
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Código Município:]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="d6366db1-4535-4905-b817-adf971424f01" x="312" y="68" width="100" height="12"/>
+				<textElement>
+					<font fontName="DejaVu Serif" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{codmunimovel}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="8ba5f474-7493-4ba9-97e2-5a8f1a0f86eb" x="513" y="68" width="22" height="12"/>
+				<textElement>
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[UF:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="0b317fd3-e479-4f26-89ff-784ad068a6e7" x="535" y="68" width="20" height="12"/>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Serif" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ufimovel}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="ed9c9c6a-efe3-42f8-8803-92bfb61f8c22" x="0" y="84" width="146" height="12"/>
+				<textElement>
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DADOS DA LOCAÇÃO:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="5af68ecd-0fec-42a2-94d1-ca5ae57af018" mode="Opaque" x="3" y="113" width="60" height="12" isRemoveLineWhenBlank="true" backcolor="#FFFFFF">
+					<printWhenExpression><![CDATA[$F{valorjan} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[Janeiro:]]></text>
+			</staticText>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="c6d7e7de-1036-4ae9-9946-41c780a934bc" mode="Opaque" x="57" y="113" width="62" height="12" isRemoveLineWhenBlank="true" backcolor="#FFFFFF">
+					<printWhenExpression><![CDATA[$F{valorjan} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{valorjan}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="3e21c894-4521-4364-ae69-5f4f8ae5d3ff" mode="Opaque" x="423" y="113" width="66" height="12" isRemoveLineWhenBlank="true" backcolor="#FFFFFF">
+					<printWhenExpression><![CDATA[$F{valorjan} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{comissaojan}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="e9efb56d-ae2b-46f7-893c-cdace3158ca1" mode="Opaque" x="493" y="113" width="57" height="12" isRemoveLineWhenBlank="true" backcolor="#FFFFFF">
+					<printWhenExpression><![CDATA[$F{valorjan} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{impostojan}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="5af68ecd-0fec-42a2-94d1-ca5ae57af018" mode="Opaque" x="3" y="97" width="51" height="12" forecolor="#FEFEFE" backcolor="#010101"/>
+				<textElement>
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[MESES]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="5af68ecd-0fec-42a2-94d1-ca5ae57af018" mode="Opaque" x="57" y="97" width="62" height="12" forecolor="#FEFEFE" backcolor="#0032FF"/>
+				<textElement>
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ALUGUEL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="5af68ecd-0fec-42a2-94d1-ca5ae57af018" mode="Opaque" x="426" y="97" width="66" height="12" forecolor="#FEFEFE" backcolor="#139710"/>
+				<textElement>
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[COMISSÃO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="5af68ecd-0fec-42a2-94d1-ca5ae57af018" mode="Opaque" x="495" y="97" width="58" height="12" forecolor="#FEFEFE" backcolor="#139710"/>
+				<textElement>
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[IRRF R$]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="5af68ecd-0fec-42a2-94d1-ca5ae57af018" mode="Opaque" x="3" y="125" width="60" height="12" isRemoveLineWhenBlank="true" backcolor="#FFFFFF">
+					<printWhenExpression><![CDATA[$F{valorfev} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[Fevereiro:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="5af68ecd-0fec-42a2-94d1-ca5ae57af018" mode="Opaque" x="3" y="137" width="60" height="12" isRemoveLineWhenBlank="true" backcolor="#FFFFFF">
+					<printWhenExpression><![CDATA[$F{valormar} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[Março:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="5af68ecd-0fec-42a2-94d1-ca5ae57af018" mode="Opaque" x="3" y="149" width="60" height="12" isRemoveLineWhenBlank="true" backcolor="#FFFFFF">
+					<printWhenExpression><![CDATA[$F{valorabr} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[Abril:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="5af68ecd-0fec-42a2-94d1-ca5ae57af018" mode="Opaque" x="3" y="161" width="60" height="12" isRemoveLineWhenBlank="true" backcolor="#FFFFFF">
+					<printWhenExpression><![CDATA[$F{valormai} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[Maio:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="5af68ecd-0fec-42a2-94d1-ca5ae57af018" mode="Opaque" x="3" y="173" width="60" height="12" isRemoveLineWhenBlank="true" backcolor="#FFFFFF">
+					<printWhenExpression><![CDATA[$F{valorjun} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[Junho:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="5af68ecd-0fec-42a2-94d1-ca5ae57af018" mode="Opaque" x="3" y="185" width="60" height="12" isRemoveLineWhenBlank="true" backcolor="#FFFFFF">
+					<printWhenExpression><![CDATA[$F{valorjul} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[Julho:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="5af68ecd-0fec-42a2-94d1-ca5ae57af018" mode="Opaque" x="3" y="221" width="60" height="12" isRemoveLineWhenBlank="true" backcolor="#FFFFFF">
+					<printWhenExpression><![CDATA[$F{valorout} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[Outubro:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="5af68ecd-0fec-42a2-94d1-ca5ae57af018" mode="Opaque" x="3" y="209" width="60" height="12" isRemoveLineWhenBlank="true" backcolor="#FFFFFF">
+					<printWhenExpression><![CDATA[$F{valorset} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[Setembro:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="5af68ecd-0fec-42a2-94d1-ca5ae57af018" mode="Opaque" x="3" y="233" width="60" height="12" isRemoveLineWhenBlank="true" backcolor="#FFFFFF">
+					<printWhenExpression><![CDATA[$F{valornov} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[Novembro:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="5af68ecd-0fec-42a2-94d1-ca5ae57af018" mode="Opaque" x="3" y="197" width="60" height="12" isRemoveLineWhenBlank="true" backcolor="#FFFFFF">
+					<printWhenExpression><![CDATA[$F{valorago} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[Agosto:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="5af68ecd-0fec-42a2-94d1-ca5ae57af018" mode="Opaque" x="3" y="245" width="60" height="12" isRemoveLineWhenBlank="true" backcolor="#FFFFFF">
+					<printWhenExpression><![CDATA[$F{valordez} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[Dezembro:]]></text>
+			</staticText>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="2e51a906-4f57-4e07-8d5f-335cb6b1ac64" mode="Opaque" x="57" y="125" width="62" height="12" isRemoveLineWhenBlank="true" backcolor="#FFFFFF">
+					<printWhenExpression><![CDATA[$F{valorfev} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{valorfev}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="1111f3d5-4b51-4898-ba89-9bdb7035f13e" mode="Opaque" x="423" y="125" width="66" height="12" isRemoveLineWhenBlank="true" backcolor="#FFFFFF">
+					<printWhenExpression><![CDATA[$F{valorfev} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{comissaofev}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="6c05ee87-8111-44ec-bb8b-65101ec79eb4" mode="Opaque" x="493" y="125" width="57" height="12" isRemoveLineWhenBlank="true" backcolor="#FFFFFF">
+					<printWhenExpression><![CDATA[$F{valorfev} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{impostofev}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="8f84636b-fe8f-4e92-9144-c31c21b27d32" mode="Opaque" x="57" y="137" width="62" height="12" isRemoveLineWhenBlank="true" backcolor="#FFFFFF">
+					<printWhenExpression><![CDATA[$F{valormar} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{valormar}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="eb98ceed-d7ca-44e7-9cba-66730396d8d8" mode="Opaque" x="423" y="137" width="66" height="12" isRemoveLineWhenBlank="true" backcolor="#FFFFFF">
+					<printWhenExpression><![CDATA[$F{valormar} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{comissaomar}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="798ee9ac-405e-49b7-b587-9483df9cdfd4" mode="Opaque" x="492" y="137" width="58" height="12" isRemoveLineWhenBlank="true" backcolor="#FFFFFF">
+					<printWhenExpression><![CDATA[$F{valormar} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{impostomar}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="872d1796-938b-4667-b41f-b94766ceeee6" mode="Opaque" x="57" y="149" width="62" height="12" isRemoveLineWhenBlank="true" backcolor="#FFFFFF">
+					<printWhenExpression><![CDATA[$F{valorabr} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{valorabr}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="c99c886d-fece-4694-acc5-f3283f8f97c6" mode="Opaque" x="423" y="149" width="66" height="12" isRemoveLineWhenBlank="true" backcolor="#FFFFFF">
+					<printWhenExpression><![CDATA[$F{valorabr} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{comissaoabr}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="bd3a7dba-16b6-4531-8868-a0dc2b072379" mode="Opaque" x="492" y="149" width="58" height="12" isRemoveLineWhenBlank="true" backcolor="#FFFFFF">
+					<printWhenExpression><![CDATA[$F{valorabr} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{impostoabr}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="2f5301be-3be9-408e-b71f-83bff176b7d3" mode="Opaque" x="57" y="161" width="62" height="12" isRemoveLineWhenBlank="true" backcolor="#FFFFFF">
+					<printWhenExpression><![CDATA[$F{valormai} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{valormai}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="c86cc52d-805c-4025-bf3e-5101cf1a33d8" mode="Opaque" x="423" y="161" width="66" height="12" isRemoveLineWhenBlank="true" backcolor="#FFFFFF">
+					<printWhenExpression><![CDATA[$F{valormai} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{comissaomai}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="a0ade3c0-f7bf-46c1-ad0c-ff49266b1a0e" mode="Opaque" x="492" y="161" width="58" height="12" isRemoveLineWhenBlank="true" backcolor="#FFFFFF">
+					<printWhenExpression><![CDATA[$F{valormai} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{impostomai}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="5ea35c99-6a97-4409-8b47-b7831fdc6cc3" mode="Opaque" x="57" y="173" width="62" height="12" isRemoveLineWhenBlank="true" backcolor="#FFFFFF">
+					<printWhenExpression><![CDATA[$F{valorjun} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{valorjun}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="02a6b39b-4072-4047-862f-c42451b82552" mode="Opaque" x="423" y="173" width="66" height="12" isRemoveLineWhenBlank="true" backcolor="#FFFFFF">
+					<printWhenExpression><![CDATA[$F{valorjun} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{comissaojun}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="8cfe9a3d-daa3-4498-8f85-68690e0ee1b5" mode="Opaque" x="493" y="173" width="57" height="12" isRemoveLineWhenBlank="true" backcolor="#FFFFFF">
+					<printWhenExpression><![CDATA[$F{valorjun} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{impostojun}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="359bc115-82ac-4f54-bc7f-cc589e0fc8aa" mode="Opaque" x="57" y="185" width="62" height="12" isRemoveLineWhenBlank="true" backcolor="#FFFFFF">
+					<printWhenExpression><![CDATA[$F{valorjul} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{valorjul}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="22ff12a9-2f98-49ac-9d8f-a9b1207e2b8c" mode="Opaque" x="423" y="185" width="66" height="12" isRemoveLineWhenBlank="true" backcolor="#FFFFFF">
+					<printWhenExpression><![CDATA[$F{valorjul} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{comissaojul}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="0d6f1f90-0b60-4509-bf04-adb4e5a208ee" mode="Opaque" x="492" y="185" width="58" height="12" isRemoveLineWhenBlank="true" backcolor="#FFFFFF">
+					<printWhenExpression><![CDATA[$F{valorjul} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{impostojul}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="029d19bc-981d-49b2-b1eb-eee1b911c31d" mode="Opaque" x="57" y="197" width="62" height="12" isRemoveLineWhenBlank="true" backcolor="#FFFFFF">
+					<printWhenExpression><![CDATA[$F{valorago} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{valorago}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="91210c4b-932e-429c-8abd-d08950de3456" mode="Opaque" x="423" y="197" width="66" height="12" isRemoveLineWhenBlank="true" backcolor="#FFFFFF">
+					<printWhenExpression><![CDATA[$F{valorago} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{comissaoago}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="58982682-1836-439e-9498-bf1be3d8cc3d" mode="Opaque" x="492" y="197" width="58" height="12" isRemoveLineWhenBlank="true" backcolor="#FFFFFF">
+					<printWhenExpression><![CDATA[$F{valorago} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{impostoago}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="504827ae-4120-4377-a8d8-be0f29d10bff" mode="Opaque" x="57" y="209" width="62" height="12" isRemoveLineWhenBlank="true" backcolor="#FFFFFF">
+					<printWhenExpression><![CDATA[$F{valorset} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{valorset}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="5ed1abb0-d64b-4ab5-8725-f4d5c39bd184" mode="Opaque" x="423" y="209" width="66" height="12" isRemoveLineWhenBlank="true" backcolor="#FFFFFF">
+					<printWhenExpression><![CDATA[$F{valorset} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{comissaoset}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="0ad91f3e-5655-48ef-a8e9-6c6134d591a3" mode="Opaque" x="492" y="209" width="58" height="12" isRemoveLineWhenBlank="true" backcolor="#FFFFFF">
+					<printWhenExpression><![CDATA[$F{valorset} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{impostoset}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="cf3f3dba-c9a0-42bd-acaa-4562fba60018" mode="Opaque" x="57" y="221" width="62" height="12" isRemoveLineWhenBlank="true" backcolor="#FFFFFF">
+					<printWhenExpression><![CDATA[$F{valorout} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{valorout}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="4c546391-9a27-49bd-a659-8d46eff02033" mode="Opaque" x="423" y="221" width="66" height="12" isRemoveLineWhenBlank="true" backcolor="#FFFFFF">
+					<printWhenExpression><![CDATA[$F{valorout} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{comissaoout}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="e02367c4-34a6-4019-953d-46ccd3b0d19f" mode="Opaque" x="492" y="221" width="58" height="12" isRemoveLineWhenBlank="true" backcolor="#FFFFFF">
+					<printWhenExpression><![CDATA[$F{valorout} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{impostoout}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="20a14b44-ea7b-4faf-8cde-7863f52c0cfa" mode="Opaque" x="57" y="233" width="62" height="12" isRemoveLineWhenBlank="true" backcolor="#FFFFFF">
+					<printWhenExpression><![CDATA[$F{valornov} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{valornov}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="960f0bf0-f95c-4959-9be9-88f80e477b25" mode="Opaque" x="423" y="233" width="66" height="12" isRemoveLineWhenBlank="true" backcolor="#FFFFFF">
+					<printWhenExpression><![CDATA[$F{valornov} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{comissaonov}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="47182edc-6d6d-40b3-bb05-a1176f45ef94" mode="Opaque" x="492" y="233" width="58" height="12" isRemoveLineWhenBlank="true" backcolor="#FFFFFF">
+					<printWhenExpression><![CDATA[$F{valornov} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{impostonov}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="21a57420-585f-4f0a-895f-a040c6b88992" mode="Opaque" x="57" y="245" width="62" height="12" isRemoveLineWhenBlank="true" backcolor="#FFFFFF">
+					<printWhenExpression><![CDATA[$F{valordez} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{valordez}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="a764f52e-baa9-4c92-be7f-dd421373fa15" mode="Opaque" x="423" y="245" width="66" height="12" isRemoveLineWhenBlank="true" backcolor="#FFFFFF">
+					<printWhenExpression><![CDATA[$F{valordez} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{comissaodez}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="4e25e917-4127-431f-a451-cd6c2133cd91" mode="Opaque" x="492" y="245" width="58" height="12" isRemoveLineWhenBlank="true" backcolor="#FFFFFF">
+					<printWhenExpression><![CDATA[$F{valordez} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{impostodez}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement uuid="fab1b8c4-9bad-4e8e-ab96-f6b5a9396ef2" x="0" y="273" width="555" height="1"/>
+				<graphicElement>
+					<pen lineWidth="1.5" lineStyle="Dashed"/>
+				</graphicElement>
+			</line>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="a764f52e-baa9-4c92-be7f-dd421373fa15" mode="Opaque" x="426" y="257" width="63" height="12" backcolor="#FFFFFF"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{comissaojan} + $F{comissaofev} + $F{comissaomar} + $F{comissaoabr} + $F{comissaomai} + $F{comissaojun} + $F{comissaojul} + $F{comissaoago} + $F{comissaoset} + $F{comissaoout} + $F{comissaonov} + $F{comissaodez}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="5af68ecd-0fec-42a2-94d1-ca5ae57af018" mode="Opaque" x="3" y="257" width="60" height="12" backcolor="#FFFFFF"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement>
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TOTAL =>]]></text>
+			</staticText>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="21a57420-585f-4f0a-895f-a040c6b88992" mode="Opaque" x="57" y="257" width="62" height="12" backcolor="#FFFFFF"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{valorjan} + $F{valorfev} + $F{valormar} + $F{valorabr} + $F{valormai} + $F{valorjun} + $F{valorjul} + $F{valorago} + $F{valorset} + $F{valorout} + $F{valornov} + $F{valordez}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="4e25e917-4127-431f-a451-cd6c2133cd91" mode="Opaque" x="495" y="257" width="55" height="12" backcolor="#FFFFFF"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{impostojan} + $F{impostofev} + $F{impostomar} + $F{impostoabr} + $F{impostomai} + $F{impostojun} + $F{impostojul} + $F{impostoago} + $F{impostoset} + $F{impostoout} + $F{impostonov} + $F{impostodez}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="2c34890c-d60c-49e4-8ce3-41ad1feec6f5" mode="Opaque" x="214" y="97" width="51" height="12" forecolor="#FEFEFE" backcolor="#0032FF"/>
+				<textElement>
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[MULTA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="1433ac13-423c-48e1-bd83-97b9c85945c5" mode="Opaque" x="268" y="97" width="51" height="12" forecolor="#FEFEFE" backcolor="#0032FF"/>
+				<textElement>
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[JUROS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="36cc822c-71d3-40b7-9520-256d8d7437c4" mode="Opaque" x="322" y="97" width="51" height="12" forecolor="#FEFEFE" backcolor="#0032FF"/>
+				<textElement>
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CORR]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="7cbef8f0-2c5f-4dfd-bc05-500445c6098c" mode="Opaque" x="377" y="97" width="46" height="12" forecolor="#FEFEFE" backcolor="#0032FF"/>
+				<textElement>
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[EP]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="43d95acd-7f39-43ed-9524-dc381c27d552" mode="Opaque" x="121" y="97" width="42" height="12" forecolor="#FEFEFE" backcolor="#0032FF"/>
+				<textElement>
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DIF]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="7c3efa47-6dbb-4328-a99d-734734cf8870" mode="Opaque" x="167" y="97" width="42" height="12" forecolor="#FEFEFE" backcolor="#FF0006"/>
+				<textElement>
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DESC]]></text>
+			</staticText>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="dd814534-5124-4ba3-a917-0b0e0db3b316" x="121" y="113" width="42" height="12" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{valorjan} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dfjan}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="c7926be6-f552-461a-8cc4-459e62393a90" x="167" y="113" width="42" height="12" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{valorjan} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dcjan}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="55d7674d-8371-443b-8a73-47006c3aeed2" x="214" y="113" width="51" height="12" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{valorjan} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{mujan}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="06efbea9-2833-4deb-a9d2-bd0bc433093e" x="268" y="113" width="51" height="12" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{valorjan} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{jujan}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="d86b22f5-691b-4e4d-be00-d07b244a292d" x="322" y="113" width="47" height="12" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{valorjan} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cojan}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="e0139766-cb81-4c21-bd43-b765bbc92066" x="377" y="113" width="42" height="12" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{valorjan} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tejan}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="565687fc-7d31-482b-9a36-83be3f6f3e6a" x="121" y="125" width="42" height="12" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{valorfev} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dffev}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="10ce1ba3-844e-41e3-9feb-fb6f5c75ae06" x="167" y="125" width="42" height="12" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{valorfev} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dcfev}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="43d25ce7-dbcf-415d-a15b-632e31ab0d4e" x="214" y="125" width="51" height="12" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{valorfev} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{mufev}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="d7ecc9db-cf75-4abc-a59e-9a7417accde5" x="268" y="125" width="51" height="12" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{valorfev} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{jufev}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="cbab03bb-4a0f-49fd-80b6-cd0881eca447" x="322" y="125" width="47" height="12" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{valorfev} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cofev}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="fdb73366-6bf3-48b8-9bf3-d932cddaf41b" x="377" y="125" width="42" height="12" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{valorfev} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tefev}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="7c57d25b-14db-4243-8f2e-0aa913fe7d46" x="121" y="137" width="42" height="12" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{valormar} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dfmar}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="115af0cd-48cf-49ed-8d73-4b01695d5e59" x="167" y="137" width="42" height="12" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{valormar} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dcmar}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="921cbb7d-78a2-40ec-8ada-de70ffcbbb6a" x="214" y="137" width="51" height="12" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{valormar} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{mumar}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="002ab12c-25c4-4135-9628-f2f546624976" x="268" y="137" width="51" height="12" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{valormar} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{jumar}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="8c3ef432-189e-4df5-94b3-0cb38219aa14" x="322" y="137" width="47" height="12" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{valormar} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{comar}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="44348d21-cff9-420b-b698-33243e8310c3" x="377" y="137" width="42" height="12" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{valormar} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{temar}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="b8a37abd-0a99-4cd7-a1e2-6ab9243dc156" x="121" y="149" width="42" height="12" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{valorabr} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dfabr}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="d03c16c5-823e-48c7-942c-f4805683f13e" x="167" y="149" width="42" height="12" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{valorabr} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dcabr}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="cc77c447-b364-4629-a8a1-58ae7bc6c93e" x="214" y="149" width="51" height="12" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{valorabr} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{muabr}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="4fd20af2-58f7-409f-8c74-cfaea32beaa6" x="268" y="149" width="51" height="12" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{valorabr} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{juabr}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="9e91071b-2e00-47c7-a30e-c400882eb2bd" x="322" y="149" width="47" height="12" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{valorabr} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{coabr}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="c949d7cb-811d-44e5-8460-50b4be6899d2" x="377" y="149" width="42" height="12" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{valorabr} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{teabr}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="9ca7099e-b348-4fca-9c4b-94670c725af0" x="121" y="161" width="42" height="12" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{valormai} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dfmai}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="05721907-9b99-4954-b123-3e0be48a6b3f" x="167" y="161" width="42" height="12" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{valormai} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dcmai}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="4079a148-7181-43fa-90d3-d41f0d423ce5" x="214" y="161" width="51" height="12" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{valormai} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{mumai}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="a9871d4a-b860-48c0-9741-67660d25e449" x="268" y="161" width="51" height="12" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{valormai} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{jumai}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="1a7c256a-c9ed-4821-a4c1-4b1425adc063" x="322" y="161" width="47" height="12" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{valormai} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{comai}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="e2bbcadc-bd41-4c41-b280-0c54b08006c6" x="377" y="161" width="42" height="12" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{valormai} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{temai}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="a5217bde-044c-45f0-a287-af1c7f7d1c04" x="121" y="173" width="42" height="12" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{valorjun} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dfjun}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="fea993c7-b2a0-48e0-88fa-9df3bc10fb24" x="167" y="173" width="42" height="12" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{valorjun} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dcjun}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="4c5f6d3a-1656-4bd7-b83f-b337b919cef7" x="214" y="173" width="51" height="12" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{valorjun} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{mujun}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="0bbe1113-e021-43cc-819b-18ffeeb27f9c" x="268" y="173" width="51" height="12" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{valorjun} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{jujun}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="b4a791fa-1515-4e52-b966-a30a8a98ca2a" x="322" y="173" width="47" height="12" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{valorjun} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cojun}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="3ac5ef58-e5b5-4fc8-8547-89c9061ffe40" x="377" y="173" width="42" height="12" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{valorjun} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tejun}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="e6393c95-f6c9-4e12-a7f7-aea3ba84b1dd" x="121" y="185" width="42" height="12" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{valorjul} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dfjul}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="f80d40ae-0b27-4bfd-a848-bb102a58b2d8" x="167" y="185" width="42" height="12" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{valorjul} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dcjul}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="dcadded7-efb6-49c7-99e0-9b1b961b046e" x="214" y="185" width="51" height="12" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{valorjul} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{mujul}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="c3b75ca3-3262-4a62-90d2-397abf3c6308" x="267" y="185" width="52" height="12" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{valorjul} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{jujul}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="6599fe4b-afc6-40e3-9942-b50086ba81b2" x="322" y="185" width="47" height="12" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{valorjul} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cojul}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="895d7bac-88e7-4496-8305-efc900e86997" x="377" y="185" width="42" height="12" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{valorjul} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tejul}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="7319690d-df3f-4be6-aab2-70b5dcb152d4" x="121" y="197" width="42" height="12" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{valorago} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dfago}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="da25b601-4347-435d-baca-a55b8ebff932" x="167" y="197" width="42" height="12" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{valorago} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dcago}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="7188603e-71a4-46e4-a9d1-f8580b334eff" x="214" y="197" width="51" height="12" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{valorago} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{muago}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="99bcf586-ba41-4a22-9369-727e3f1e55e8" x="267" y="197" width="52" height="12" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{valorago} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{juago}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="b7c4e46c-e2dc-48cb-9f92-03932fdae0a1" x="322" y="197" width="47" height="12" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{valorago} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{coago}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="fc5679f9-aad3-462b-901d-ca2398d873da" x="377" y="197" width="42" height="12" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{valorago} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{teago}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="df8ac696-0c6a-4bab-85d0-5b0eef838d90" x="121" y="209" width="42" height="12" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{valorset} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dfset}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="6593f388-6c00-4abc-952a-03622667e982" x="167" y="209" width="42" height="12" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{valorset} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dcset}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="ae755878-a2a8-4949-a84c-b0fbbae498ef" x="214" y="209" width="51" height="12" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{valorset} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{muset}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="b8ef5839-2308-4c8b-afd4-58a52c9633bf" x="267" y="209" width="52" height="12" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{valorset} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{juset}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="eb5f33c5-40e4-4a3f-bd80-4b5f0b8dd098" x="322" y="209" width="47" height="12" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{valorset} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{coset}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="0b28f740-dab9-4297-9778-499c2fc93a9e" x="377" y="209" width="42" height="12" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{valorset} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{teset}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="3a90b5ee-1ad8-41f9-8845-350ab400f0a7" x="121" y="221" width="42" height="12" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{valorout} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dfout}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="19e81c0c-4954-440b-956f-e324c29686f4" x="167" y="221" width="42" height="12" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{valorout} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dcout}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="c8326105-3ba4-4cec-b506-10b77383e6f5" x="214" y="221" width="51" height="12" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{valorout} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{muout}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="096d5639-c281-43b3-bdf6-dc7480bce3de" x="267" y="221" width="52" height="12" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{valorout} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{juout}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="5fa3894f-ada3-4a88-b85d-59e8274ba84a" x="322" y="221" width="47" height="12" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{valorout} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{coout}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="010391ee-43ae-4ce5-b213-969283160717" x="377" y="221" width="42" height="12" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{valorout} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{teout}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="29d36799-480d-422e-8e70-4e7fce63efc5" x="121" y="233" width="42" height="12" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{valornov} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dfnov}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="d68a2d43-e56b-4f7b-adf0-a4c92cd677f2" x="167" y="233" width="42" height="12" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{valornov} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dcnov}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="d4722442-26d5-4b40-99c2-290123679290" x="214" y="233" width="51" height="12" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{valornov} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{munov}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="413986b2-1d0e-45a5-a6b3-c5ecbc6da445" x="267" y="233" width="52" height="12" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{valornov} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{junov}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="43794182-696c-40a8-8fec-a7d10bccccc2" x="322" y="233" width="47" height="12" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{valornov} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{conov}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="afd9ea8a-23ba-47b3-9e2e-191af63c5f88" x="377" y="233" width="42" height="12" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{valornov} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tenov}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="d1c6ac71-18f4-490a-a8d4-c664b0ef8b6e" x="121" y="245" width="42" height="12" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{valordez} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dfdez}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="8c0d1aea-d5b7-4303-ba62-c058a6a11691" x="167" y="245" width="42" height="12" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{valordez} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dcdez}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="a85a7795-2a38-4e28-8bd1-e3825eaf07ec" x="214" y="245" width="51" height="12" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{valordez} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{mudez}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="7473b184-7bad-4a51-bcca-88cf2603bbf2" x="267" y="245" width="52" height="12" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{valordez} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{judez}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="1715a07d-335f-4f4d-ad2a-fa63b2a82572" x="322" y="245" width="47" height="12" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{valordez} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{codez}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="71d17c00-034c-46ff-84ed-3c6f8bf5a9a1" x="377" y="245" width="42" height="12" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{valordez} > 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tedez}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="731910d6-863e-40f2-8995-d97b20d10d08" mode="Opaque" x="121" y="257" width="42" height="12" backcolor="#FFFFFF"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dfjan} + $F{dffev} + $F{dfmar} + $F{dfabr} + $F{dfmai} + $F{dfjun} + $F{dfjul} + $F{dfago} + $F{dfset} + $F{dfout} + $F{dfnov} + $F{dfdez}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="2a7d1be2-8504-4807-8285-02d306189a0e" mode="Opaque" x="167" y="257" width="42" height="12" backcolor="#FFFFFF"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dcjan} + $F{dcfev} + $F{dcmar} + $F{dcabr} + $F{dcmai} + $F{dcjun} + $F{dcjul} + $F{dcago} + $F{dcset} + $F{dcout} + $F{dcnov} + $F{dcdez}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="9e3fbdb1-b1af-41fd-aa19-69f9d8362a3a" mode="Opaque" x="214" y="257" width="51" height="12" backcolor="#FFFFFF"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{mujan} + $F{mufev} + $F{mumar} + $F{muabr} + $F{mumai} + $F{mujun} + $F{mujul} + $F{muago} + $F{muset} + $F{muout} + $F{munov} + $F{mudez}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="ac47880b-7f9d-4376-acf6-ba2d4c61759f" mode="Opaque" x="267" y="257" width="52" height="12" backcolor="#FFFFFF"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{jujan} + $F{jufev} + $F{jumar} + $F{juabr} + $F{jumai} + $F{jujun} + $F{jujul} + $F{juago} + $F{juset} + $F{juout} + $F{junov} + $F{judez}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="d0ed81f8-b4e9-41dd-8674-a674e7e06224" mode="Opaque" x="322" y="257" width="47" height="12" backcolor="#FFFFFF"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cojan} + $F{cofev} + $F{comar} + $F{coabr} + $F{comai} + $F{cojun} + $F{cojul} + $F{coago} + $F{coset} + $F{coout} + $F{conov} + $F{codez}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="02863ce3-d2f2-467b-af19-707be0187bcb" mode="Opaque" x="377" y="257" width="42" height="12" backcolor="#FFFFFF"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tejan} + $F{tefev} + $F{temar} + $F{teabr} + $F{temai} + $F{tejun} + $F{tejul} + $F{teago} + $F{teset} + $F{teout} + $F{tenov} + $F{tedez}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="c10b4a36-de9e-4240-8a20-3c2fca99e1a6" x="54" y="56" width="47" height="12"/>
+				<textElement>
+					<font fontName="DejaVu Serif" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{rgimv}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="61702511-7312-452d-8dc9-04c629c18836" x="15" y="56" width="39" height="12"/>
+				<textElement>
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Rgimv:]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="25" splitType="Stretch">
+			<textField>
+				<reportElement uuid="6fb701c9-e412-4160-874a-88e57fa8e76d" x="435" y="5" width="80" height="20"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Página "+$V{PAGE_NUMBER}+" de"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement uuid="ba3717a2-b28d-425c-a683-5275de884a11" x="515" y="5" width="40" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement uuid="02b86a8e-6054-493b-82c4-f552d3ec2588" x="0" y="2" width="555" height="1"/>
+			</line>
+		</band>
+	</pageFooter>
+</jasperReport>

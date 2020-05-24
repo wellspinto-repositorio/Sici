@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Visitas" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a3a3406f-7ac2-470d-a753-3640656d3283">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="prgimv" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT * FROM visitas ORDER BY rgimv;]]>
+	</queryString>
+	<field name="ord" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="rgimv" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="end" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="dv_nome" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="dv_docto" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="dv_telefone" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="dv_dthrETD" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="dv_dthrETA" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="dv_historico" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="22" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="25367b5d-2b54-4e35-b91b-bc4800d30bbb" x="140" y="0" width="265" height="14"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[RELATORIO DE VISITAS AO IMÓVEL]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="970c0314-14bd-4c4c-9137-406c96bc329a" x="435" y="0" width="80" height="20"/>
+				<textElement textAlignment="Right">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Página: "+$V{PAGE_NUMBER}+" de"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement uuid="b66618d3-c57d-4750-887d-a70de5fd24e3" x="515" y="0" width="40" height="20"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy HH.mm.ss">
+				<reportElement uuid="6b64f311-99f4-4019-8dca-f6ba3ae8aa1e" x="2" y="0" width="100" height="20"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement uuid="c99d6d8c-ccb2-4677-a144-6868ef0e57e5" x="0" y="20" width="555" height="1"/>
+			</line>
+		</band>
+	</title>
+	<detail>
+		<band height="56" splitType="Stretch">
+			<rectangle>
+				<reportElement uuid="2231dc37-fbce-4488-8d5f-129e512f2680" mode="Opaque" x="0" y="0" width="555" height="56" forecolor="#FFFFFF" backcolor="#E4E4EC">
+					<printWhenExpression><![CDATA[new Boolean(($V{COLUMN_COUNT}.intValue() % 2) == 0)]]></printWhenExpression>
+				</reportElement>
+				<graphicElement>
+					<pen lineWidth="0.0"/>
+				</graphicElement>
+			</rectangle>
+			<textField>
+				<reportElement uuid="5f6a43a4-1b69-416d-a582-9c8350272235" x="0" y="0" width="49" height="14"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{rgimv}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="8a683842-1478-4ede-99a6-a963f0b0502d" x="49" y="0" width="506" height="14"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{end}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="6dd91915-f8c0-489b-86ca-08da94d3c066" x="1" y="14" width="302" height="14"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{dv_nome}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="8ee7b000-9f29-4c6a-a674-606c3aa006f6" x="336" y="14" width="219" height="14"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{dv_docto}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="c3d677e1-528e-415b-a992-f2c35fb047a0" x="2" y="28" width="205" height="14"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{dv_telefone}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="53bf6016-0bff-49be-a1e6-61fb4d2f1bbe" x="233" y="28" width="146" height="14"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{dv_dthrETD}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="1030681c-88a2-4964-9a3e-e8fab1d57529" x="414" y="28" width="141" height="14"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{dv_dthrETA}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="b92c4cfc-84eb-42b9-81d0-d6ba6e1cc122" x="2" y="42" width="555" height="14"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{dv_historico}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

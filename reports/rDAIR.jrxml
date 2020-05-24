@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="rDAIR" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[SELECT rgprp, nomeprop, docprop, rgimv, contrato, nomeloca, docloca, tipoimv, endimv, baiimv, cidimv, estimv, SUM(aluguel) AS taluguel, SUM(desconto) AS tdesconto, SUM(diferenca) AS tdiferenca, SUM(imposto) AS timposto FROM irf GROUP BY rgprp, rgimv, contrato]]>
+	</queryString>
+	<field name="rgprp" class="java.lang.String"/>
+	<field name="nomeprop" class="java.lang.String"/>
+	<field name="docprop" class="java.lang.String"/>
+	<field name="rgimv" class="java.lang.String"/>
+	<field name="contrato" class="java.lang.String"/>
+	<field name="nomeloca" class="java.lang.String"/>
+	<field name="docloca" class="java.lang.String"/>
+	<field name="tipoimv" class="java.lang.String"/>
+	<field name="endimv" class="java.lang.String"/>
+	<field name="baiimv" class="java.lang.String"/>
+	<field name="cidimv" class="java.lang.String"/>
+	<field name="estimv" class="java.lang.String"/>
+	<field name="taluguel" class="java.lang.Double"/>
+	<field name="tdesconto" class="java.lang.Double"/>
+	<field name="tdiferenca" class="java.lang.Double"/>
+	<field name="timposto" class="java.lang.Double"/>
+	<variable name="taluguel_1" class="java.lang.Double" resetType="Group" resetGroup="prop" calculation="Sum">
+		<variableExpression><![CDATA[$F{taluguel}]]></variableExpression>
+	</variable>
+	<variable name="tdesconto_1" class="java.lang.Double" resetType="Group" resetGroup="prop" calculation="Sum">
+		<variableExpression><![CDATA[$F{tdesconto}]]></variableExpression>
+	</variable>
+	<variable name="tdiferenca_1" class="java.lang.Double" resetType="Group" resetGroup="prop" calculation="Sum">
+		<variableExpression><![CDATA[$F{tdiferenca}]]></variableExpression>
+	</variable>
+	<group name="prop" isStartNewPage="true">
+		<groupExpression><![CDATA[$F{rgprp}]]></groupExpression>
+		<groupHeader>
+			<band height="20">
+				<textField>
+					<reportElement x="72" y="0" width="273" height="14"/>
+					<textElement/>
+					<textFieldExpression class="java.lang.String"><![CDATA[$F{nomeprop}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="0" y="0" width="72" height="14"/>
+					<textElement>
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[Proprietário:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="356" y="0" width="64" height="14"/>
+					<textElement>
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[CPF/CNPJ:]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="420" y="0" width="135" height="14"/>
+					<textElement/>
+					<textFieldExpression class="java.lang.String"><![CDATA[$F{docprop}]]></textFieldExpression>
+				</textField>
+				<line>
+					<reportElement x="0" y="16" width="555" height="2"/>
+					<graphicElement>
+						<pen lineWidth="2.0"/>
+					</graphicElement>
+				</line>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band height="27">
+				<staticText>
+					<reportElement x="183" y="6" width="271" height="20"/>
+					<textElement>
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[Total Referente aos Alugueis (-) os Descontos:]]></text>
+				</staticText>
+				<textField pattern="¤ #,##0.00">
+					<reportElement x="454" y="6" width="100" height="20"/>
+					<textElement textAlignment="Right">
+						<font isBold="true"/>
+					</textElement>
+					<textFieldExpression class="java.lang.Float"><![CDATA[$V{taluguel_1} + $V{tdiferenca_1} - $V{tdesconto_1}]]></textFieldExpression>
+				</textField>
+				<line>
+					<reportElement x="0" y="2" width="554" height="1"/>
+				</line>
+			</band>
+		</groupFooter>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<pageHeader>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="555" height="61"/>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PASSELI PREDIAL E ADMINISTRADORA SÃO SEBASTIÃO LTDA
+
+Rua Moreira César, 17 - Zé Garoto
+São Gonçalo / RJ - Cep: 24440-400
+Telefone:(21)2712-1717 - CNPJ: 31.728.918/0001-85]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="65" width="555" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10" isBold="true" isItalic="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Declaração de Rendimentos Referente Ano Base 2011]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="65" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="5" width="47" height="12"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Imóvel:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="47" y="5" width="60" height="12"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{rgimv}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="112" y="5" width="58" height="12"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Locatário:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="170" y="5" width="186" height="12"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{nomeloca}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="361" y="5" width="59" height="12"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[CPF/CNPJ:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="420" y="5" width="135" height="12"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{docloca}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="17" width="59" height="12"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Endereço:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="59" y="17" width="297" height="12"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{endimv}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="361" y="17" width="73" height="12"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tipo Imóvel:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="434" y="17" width="121" height="12"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{tipoimv}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="29" width="47" height="12"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Bairro:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="47" y="29" width="191" height="12"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{baiimv}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="250" y="29" width="50" height="12"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Cidade:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="300" y="29" width="152" height="12"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{cidimv}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="476" y="29" width="46" height="12"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Estado:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="522" y="29" width="33" height="12"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{estimv}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="44" width="59" height="12"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[dezembro]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="59" y="44" width="61" height="12"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Aluguel:]]></text>
+			</staticText>
+			<textField pattern="¤ #,##0.00">
+				<reportElement x="120" y="44" width="60" height="12"/>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$F{taluguel} + $F{tdiferenca}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="181" y="44" width="87" height="12"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Desc. Aluguel:]]></text>
+			</staticText>
+			<textField pattern="¤ #,##0.00">
+				<reportElement x="268" y="44" width="60" height="12"/>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$F{tdesconto}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="330" y="44" width="69" height="12"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Desc. IRRF:]]></text>
+			</staticText>
+			<textField pattern="¤ #,##0.00">
+				<reportElement x="399" y="44" width="60" height="12"/>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$F{timposto}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="459" y="44" width="35" height="12"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total:]]></text>
+			</staticText>
+			<textField pattern="¤ #,##0.00">
+				<reportElement x="494" y="44" width="60" height="12"/>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Float"><![CDATA[$F{taluguel} + $F{tdiferenca} - $F{tdesconto}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="60" width="554" height="1"/>
+				<graphicElement>
+					<pen lineStyle="Dashed"/>
+				</graphicElement>
+			</line>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="25" splitType="Stretch">
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="0" y="4" width="200" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.util.Date"><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="434" y="4" width="80" height="20"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression class="java.lang.String"><![CDATA["Page "+$V{PAGE_NUMBER}+" de"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="514" y="4" width="40" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="4" width="554" height="1"/>
+			</line>
+		</band>
+	</pageFooter>
+</jasperReport>

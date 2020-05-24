@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="rAdianta" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="ea48d4b0-dcec-4c92-a4dc-697a679f7bcc">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="parameter1" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="parameter2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT * FROM tADIANTA WHERE dtrecbto >= $P{parameter1} AND dtrecbto <= $P{parameter2} OR IsNull(dtrecbto);]]>
+	</queryString>
+	<field name="rgprp" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="prop" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="rgimv" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="contrato" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="loca" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="dtvecto" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="dtrecbto" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="dtadianta" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vradianta" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<detail>
+		<band height="46" splitType="Stretch">
+			<rectangle>
+				<reportElement uuid="503cd69a-161c-4bd9-97a2-3c5706de5c8d" mode="Opaque" x="3" y="4" width="555" height="40" forecolor="#FFFFFF" backcolor="#E4E4EC">
+					<printWhenExpression><![CDATA[new Boolean(($V{COLUMN_COUNT}.intValue() % 2) == 0)]]></printWhenExpression>
+				</reportElement>
+				<graphicElement>
+					<pen lineWidth="0.0"/>
+				</graphicElement>
+			</rectangle>
+			<textField>
+				<reportElement uuid="c8ae5a10-1700-4233-a6b3-cdcc44341e16" x="3" y="4" width="60" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{rgprp}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="267229fc-71b4-47d4-b527-2ebea3c8e720" x="63" y="4" width="138" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{prop}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="fdb875bc-9497-4d6f-be90-021342b5f867" x="201" y="4" width="48" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{rgimv}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="caae95e3-fc68-4a26-8db1-02163db24220" x="249" y="4" width="63" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{contrato}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="74c626d6-1d64-471e-8a5a-95dadee94202" x="312" y="4" width="129" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{loca}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="df369a54-4cc6-4ab5-a638-ffbd5616eaef" x="3" y="24" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{dtvecto}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="7efa5bab-54c6-4d3c-aadd-f2e1a574516d" x="103" y="24" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{dtrecbto}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="ee046792-4c6c-4a80-a2ef-f083475463c2" x="203" y="24" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{dtadianta}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="ad814560-c059-443d-ad11-8922623820df" x="303" y="24" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{vradianta}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

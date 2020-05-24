@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="rSaldoLoca" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="1290fc76-703e-4db9-949c-b179d35d3199">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[SELECT a.contrato, l.nomerazao, Sum(plusVal(mid(a.campo,7,10),IF(instr(a.campo,'CRE'),'CRE','DEB'))) AS saldo FROM auxiliar a, locatarios l where (a.contrato = l.contrato) and a.conta = 'AVI' and mid(a.campo,4,2) = '04' group by a.contrato]]>
+	</queryString>
+	<field name="contrato" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nomerazao" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="saldo" class="java.math.BigDecimal"/>
+	<variable name="total" class="java.lang.Float" calculation="Sum">
+		<variableExpression><![CDATA[($F{saldo} > 0 ? $F{saldo} : 0)]]></variableExpression>
+	</variable>
+	<variable name="negativos" class="java.lang.Float" calculation="Sum">
+		<variableExpression><![CDATA[($F{saldo} < 0 ? $F{saldo} * -1 : 0)]]></variableExpression>
+	</variable>
+	<filterExpression><![CDATA[$F{saldo} != 0]]></filterExpression>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<pageHeader>
+		<band height="23" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="8767b8e2-f6d0-4a47-8d4d-aa7883de5676" x="110" y="0" width="313" height="14"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[RELATORIO DE SALDOS DE LOCATÁRIOS]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="f2c39c62-9b3f-4594-9e76-3405d4a887a1" x="433" y="0" width="80" height="20"/>
+				<textElement textAlignment="Right">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Página: "+$V{PAGE_NUMBER}+" de"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement uuid="8d29ac98-9c69-4a93-a477-599521b29bb8" x="513" y="0" width="40" height="20"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy HH.mm.ss">
+				<reportElement uuid="67c22cd9-954f-46b8-bf72-a1915f6cfb80" x="0" y="0" width="100" height="20"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="14" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="c4995ec4-daf2-4c22-8af4-d25838fc2d68" mode="Opaque" x="0" y="0" width="71" height="14" forecolor="#FEFEFE" backcolor="#010101"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Contrato]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="cc2499f5-41af-458c-b3fe-138b9150c20b" mode="Opaque" x="71" y="0" width="382" height="14" forecolor="#FEFEFE" backcolor="#010101"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nome do Locatário]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="54ad7855-86da-430d-bbf0-b3262c288914" mode="Opaque" x="453" y="0" width="100" height="14" forecolor="#FEFEFE" backcolor="#010101"/>
+				<textElement textAlignment="Right">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Saldo]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="12" splitType="Stretch">
+			<rectangle>
+				<reportElement uuid="3357e701-aa99-422b-a74b-a7ebdbc32e20" mode="Opaque" x="0" y="0" width="555" height="12" forecolor="#FFFFFF" backcolor="#E4E4EC">
+					<printWhenExpression><![CDATA[new Boolean(($V{COLUMN_COUNT}.intValue() % 2) == 0)]]></printWhenExpression>
+				</reportElement>
+				<graphicElement>
+					<pen lineWidth="0.0"/>
+				</graphicElement>
+			</rectangle>
+			<textField>
+				<reportElement uuid="46d459a6-4dd0-4e12-89ec-c6432fc28e90" x="0" y="0" width="71" height="12"/>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{contrato}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="23f122a1-662e-4e8a-980e-94e22e96223d" x="71" y="0" width="382" height="12"/>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nomerazao}]]></textFieldExpression>
+			</textField>
+			<textField pattern="¤ #,##0.00" isBlankWhenNull="true">
+				<reportElement uuid="37d23218-38f2-414f-8236-fec0d9e8640b" x="453" y="0" width="100" height="12">
+					<printWhenExpression><![CDATA[$F{saldo} != 0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{saldo}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<summary>
+		<band height="26">
+			<textField pattern="¤ #,##0.00">
+				<reportElement uuid="75c22d4e-a6b4-4cf7-83d2-ceea39636bc1" x="453" y="0" width="100" height="13"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{total}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="f835b431-3422-4f50-a02f-e5c1a5a5b161" x="352" y="0" width="101" height="13"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total Pos =>]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="dcff39ce-4378-4792-a41e-959a2f34d9ee" x="352" y="13" width="101" height="13"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total Neg =>]]></text>
+			</staticText>
+			<textField pattern="¤ #,##0.00">
+				<reportElement uuid="dc1fc69b-1e73-46f7-a457-a13b6560c0be" x="455" y="13" width="98" height="13"/>
+				<textElement textAlignment="Right">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{negativos}]]></textFieldExpression>
+			</textField>
+		</band>
+	</summary>
+</jasperReport>

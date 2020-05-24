@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="rFimCtro" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="e833c748-19eb-4e96-b1c5-0798be93aa47">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="parameter1" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[SELECT
+	c.contrato,
+	c.rgimv,
+	l.nomerazao AS nome,
+	c.dtinicio,
+	c.dttermino,
+	c.dtvencimento,
+	c.dtadito,
+	((Month(StrDate(c.dttermino)) = Mid($P{parameter1},4,5) AND
+	Year(StrDate(c.dttermino)) = Mid($P{parameter1},7,10))) AS pinta
+FROM
+	jgeral.CARTEIRA c,
+	jgeral.locatarios l
+WHERE
+	(c.contrato = l.contrato) AND
+	(((Month(StrDate(c.dttermino)) = Mid($P{parameter1},4,5) AND
+	Year(StrDate(c.dttermino)) = Mid($P{parameter1},7,10))))
+ORDER BY
+	Upper(l.nomerazao);]]>
+	</queryString>
+	<field name="contrato" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="rgimv" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nome" class="java.lang.String"/>
+	<field name="dtinicio" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="dttermino" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="dtvencimento" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="dtadito" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pinta" class="java.lang.Integer"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<pageHeader>
+		<band height="30" splitType="Stretch">
+			<line>
+				<reportElement uuid="d30ea8f1-b364-49c0-bb1d-e81a842ca908" x="0" y="29" width="555" height="1"/>
+			</line>
+			<textField>
+				<reportElement uuid="9afa358a-3661-4d13-8345-2628ac74a58d" x="168" y="14" width="194" height="15"/>
+				<textElement textAlignment="Center" markup="none">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Mês de " + $P{parameter1}.substring(3,10)]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement uuid="92a37229-1340-47a2-9a09-779da1874bf2" x="513" y="0" width="40" height="20"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="5ef5e42a-7f53-4961-8ee4-40bb4a27a1d4" x="433" y="0" width="80" height="20"/>
+				<textElement textAlignment="Right">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Página: "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="d3e82052-ef46-494e-8c3e-5c8c2b6cb6f1" x="138" y="0" width="265" height="14"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[RELATORIO DE FIM DE CONTRATO]]></text>
+			</staticText>
+			<textField pattern="dd/MM/yyyy HH.mm.ss">
+				<reportElement uuid="3a2642c3-8411-43e5-a94a-01e697d0b46f" x="0" y="0" width="100" height="20"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="22" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="35789e83-90a2-4e28-876c-c6777ed55433" x="53" y="2" width="79" height="20"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[contrato]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="5a6e74ab-f9f1-4c24-9c69-a75f894dd89a" x="132" y="2" width="203" height="20"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[nome]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="75964b5f-5250-4c5f-900a-17846cddb6dd" x="335" y="2" width="68" height="20"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[dtinicio]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c2170e5b-4085-482a-8064-059c8cc7af45" x="403" y="2" width="74" height="20"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[dttermino]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="952477a5-d6d4-4853-92f7-1203dfc09fd8" x="477" y="2" width="78" height="20"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[dtadito]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="9a7ca31d-1c38-47cc-a547-efe00cf448f6" x="0" y="2" width="53" height="20"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[rgimv]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="14" splitType="Stretch">
+			<rectangle>
+				<reportElement uuid="6ac121ff-b1ea-488f-8056-d1f8d624bbcc" mode="Opaque" x="0" y="0" width="555" height="14" forecolor="#FFFFFF" backcolor="#E4E4EC">
+					<printWhenExpression><![CDATA[new Boolean(($V{COLUMN_COUNT}.intValue() % 2) == 0)]]></printWhenExpression>
+				</reportElement>
+				<graphicElement>
+					<pen lineWidth="0.0"/>
+				</graphicElement>
+			</rectangle>
+			<textField>
+				<reportElement uuid="064dc851-580c-48c4-bdc9-5b31023c988d" x="53" y="0" width="79" height="14"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{contrato}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="1ed52a5a-c5a8-4bfe-b424-65ab9d216328" x="132" y="0" width="203" height="14"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{nome}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="009424cc-0910-4248-a1e3-db77dbc58357" x="335" y="0" width="68" height="14"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{dtinicio}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="122c87ef-1ad5-4d52-b9db-5ef17bb96c7c" x="403" y="0" width="74" height="14"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{dttermino}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="61edda1d-bfd1-43d4-8e3f-c7de0195bfc0" x="477" y="0" width="76" height="14"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{dtadito}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="4168662c-ec4c-42d6-8f4b-b1a6041bb38a" x="0" y="0" width="53" height="14"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{rgimv}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

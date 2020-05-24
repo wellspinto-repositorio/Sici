@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="RelTarifaBancaria" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="9d01decd-44bc-44f5-9671-b02bcc06b43f">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="dtinic" class="java.util.Date">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="dtfim" class="java.util.Date">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT r.contrato, l.nomerazao, r.dtvencimento, e.dtrecebimento, StrVal(Mid(r.campo,InStr(r.campo,'08:5:') + 5,10)) AS tarifa FROM extrato e, recibo r, locatarios l where (r.AUTENTICACAO = e.rc_aut and r.contrato = l.contrato) and instr(r.campo,'08:5:') and not isnull(e.dtrecebimento) and r.nnumero != '' and (e.dtrecebimento >= $P{dtinic} and e.dtrecebimento <= $P{dtfim});]]>
+	</queryString>
+	<field name="contrato" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nomerazao" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="dtvencimento" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="dtrecebimento" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tarifa" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<variable name="tarifa_1" class="java.math.BigDecimal" resetType="Column" calculation="Sum">
+		<variableExpression><![CDATA[$F{tarifa}]]></variableExpression>
+	</variable>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<textField>
+				<reportElement uuid="54126784-7898-411e-9cea-54926abc1de1" x="0" y="0" width="555" height="20"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["RELATÓRIO DE TAXAS BANCÁRIAS"]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement uuid="2cdf19f0-3acf-441d-8dce-e5e898482bf5" x="231" y="20" width="67" height="15"/>
+				<textElement textAlignment="Center">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{dtinic}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement uuid="93c2a19f-a33e-4176-99f9-6af24aff9b59" x="325" y="20" width="64" height="15"/>
+				<textElement>
+					<font size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{dtfim}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="55f21639-4e74-4308-a9ab-bec630aa8772" x="161" y="20" width="70" height="15"/>
+				<textElement textAlignment="Right">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Período de ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="70e57413-1110-4f6f-813e-282cec791177" x="298" y="20" width="27" height="15"/>
+				<textElement textAlignment="Center">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Até]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="18" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="8cff9caf-d130-4d35-81e6-3c68f7c57b9f" x="0" y="0" width="50" height="16"/>
+				<textElement>
+					<font size="9" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Contrato]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8a47df0a-78f1-4d75-b04e-952382dd691a" x="50" y="0" width="150" height="16"/>
+				<textElement>
+					<font size="9" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Nome]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="81474d9d-1e9f-4732-896b-b2a00bb088b7" x="329" y="0" width="71" height="16"/>
+				<textElement>
+					<font size="9" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Vencimento]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="4a3c6c38-1495-4e75-9118-dd17e20d532d" x="400" y="0" width="71" height="16"/>
+				<textElement>
+					<font size="9" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Recebimento]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="0916c473-68ff-4b0d-9311-5e9ea5f1d806" x="476" y="0" width="79" height="16"/>
+				<textElement textAlignment="Right">
+					<font size="9" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Taxa Bancária]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="53243906-f7c0-488e-b62d-211efb5a5421" x="0" y="14" width="555" height="1"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="12" splitType="Stretch">
+			<rectangle>
+				<reportElement uuid="5ba318d4-16d4-45b4-8699-770cbcadd270" mode="Opaque" x="0" y="0" width="555" height="12" forecolor="#FFFFFF" backcolor="#E4E4EC">
+					<printWhenExpression><![CDATA[new Boolean(($V{COLUMN_COUNT}.intValue() % 2) == 0)]]></printWhenExpression>
+				</reportElement>
+				<graphicElement>
+					<pen lineWidth="0.0"/>
+				</graphicElement>
+			</rectangle>
+			<textField>
+				<reportElement uuid="73b913bc-f026-4535-9603-b9e85e976cb3" x="0" y="0" width="50" height="12"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{contrato}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="3b3c38cd-6afb-4f63-a042-78e7b70f70e0" x="50" y="0" width="268" height="12"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nomerazao}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement uuid="ce6ce5a7-fa1b-439a-8dae-8e8adf00dcae" x="329" y="0" width="71" height="12"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dtvencimento}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement uuid="c6b6e5b2-14c4-4d30-ac9b-3d130803075e" x="400" y="0" width="71" height="12"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dtrecebimento}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00">
+				<reportElement uuid="5522cd30-b228-444d-8aa9-a81194dbe5d5" x="476" y="0" width="79" height="12"/>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tarifa}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="15" splitType="Stretch">
+			<line>
+				<reportElement uuid="68b3d9c5-d871-434f-801b-f8f39c9427cd" x="0" y="2" width="555" height="1"/>
+			</line>
+			<textField>
+				<reportElement uuid="ce6f4ab3-f912-400d-82b9-4a0adf8312b9" x="434" y="3" width="80" height="12"/>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Pagina "+$V{PAGE_NUMBER}+" de"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement uuid="4f25bd83-d433-409d-87f9-563d940c4706" x="514" y="3" width="40" height="12"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy h.mm a">
+				<reportElement uuid="d415addb-c99c-4cc4-b4b6-a62f15180754" x="0" y="3" width="100" height="12"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="12">
+			<textField pattern="#,##0.00">
+				<reportElement uuid="26c414c8-a91c-4df5-89e3-8a076a8852b1" x="476" y="0" width="79" height="12"/>
+				<textElement textAlignment="Right">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{tarifa_1}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="6e59670a-de26-4509-82e4-8628dd9fbc00" x="382" y="0" width="94" height="12"/>
+				<textElement textAlignment="Right">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total =>]]></text>
+			</staticText>
+		</band>
+	</summary>
+</jasperReport>

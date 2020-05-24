@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="RelBoletasImp" language="groovy" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="f7c65e67-f5c2-4da8-8a10-6e694bf63eaf">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="logo" class="java.lang.String"/>
+	<parameter name="dtinic" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="dtfinal" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[SELECT
+	rgprp,
+	rgimv,
+	contrato,
+	nome,
+	vencimento,
+	CAST(CONCAT(CAST(REPLACE(Mid(valor, 1, 8),'.','') AS UNSIGNED Int), '.',RIGHT(valor,2)) AS DECIMAL(10,2)) AS valor,
+	nnumero
+FROM
+	bloquetos
+WHERE
+	vencimento >= $P{dtinic} AND
+	vencimento <= $P{dtfinal}
+ORDER BY
+	vencimento,
+	Upper(nome);]]>
+	</queryString>
+	<field name="rgprp" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="rgimv" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="contrato" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nome" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vencimento" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="valor" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nnumero" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<variable name="valor_1" class="java.math.BigDecimal" calculation="Sum">
+		<variableExpression><![CDATA[$F{valor}]]></variableExpression>
+	</variable>
+	<variable name="valor_2" class="java.lang.Integer" calculation="Count">
+		<variableExpression><![CDATA[$F{valor}]]></variableExpression>
+	</variable>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<pageHeader>
+		<band height="67" splitType="Stretch">
+			<image scaleImage="FillFrame" hAlign="Center">
+				<reportElement uuid="ff814f00-8f93-4931-80ed-6764df31fe88" x="0" y="0" width="177" height="60"/>
+				<imageExpression><![CDATA[$P{logo}]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement uuid="532d6c38-7839-446d-a093-3a99054db962" x="205" y="0" width="350" height="24"/>
+				<textElement textAlignment="Center">
+					<font size="18" isBold="true" isItalic="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[RELATÓRIO DE BOLETAS GERADAS]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="7b2aa923-71a0-41d8-9b9e-84c97bffbd50" x="0" y="64" width="555" height="1"/>
+			</line>
+			<textField>
+				<reportElement uuid="f34bf97f-0e98-4584-a1bd-488f69ebbb33" x="205" y="40" width="350" height="20"/>
+				<textElement textAlignment="Right">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Período de " + $P{dtinic}.substring( 8, 10 ) + "-" +
+$P{dtinic}.substring( 5, 7 ) + "-" + $P{dtinic}.substring( 0, 4 ) +
+" até " + $P{dtfinal}.substring( 8, 10 ) + "-" +
+$P{dtfinal}.substring( 5, 7 ) + "-" + $P{dtfinal}.substring( 0, 4 )]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="15" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="949dd8d9-8290-459e-b1d8-9a8faf4a8454" x="0" y="0" width="37" height="14"/>
+				<textElement>
+					<font isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[rgimv]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="fadc0c68-af15-4257-bec9-13b0c445b905" x="40" y="0" width="49" height="14"/>
+				<textElement>
+					<font isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[contrato]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8e888a3f-65f1-4de9-8233-fe65de7e45c1" x="92" y="0" width="213" height="14"/>
+				<textElement>
+					<font isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[nome]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="380b9135-032c-4942-b078-8a2c12767be4" x="308" y="0" width="71" height="14"/>
+				<textElement>
+					<font isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[vencimento]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="61e574bd-1099-4737-b675-52fc5e445434" x="382" y="0" width="69" height="14"/>
+				<textElement textAlignment="Right">
+					<font isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[valor]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="11335eb3-00bd-4da0-bcab-837036f3bc9a" x="461" y="0" width="94" height="14"/>
+				<textElement>
+					<font isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[nnumero]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="14" splitType="Stretch">
+			<rectangle>
+				<reportElement uuid="49cd4e6f-d294-4499-8b2e-f2e3d79b827d" mode="Opaque" x="0" y="0" width="555" height="14" forecolor="#FFFFFF" backcolor="#E4E4EC">
+					<printWhenExpression><![CDATA[new Boolean(($V{COLUMN_COUNT}.intValue() % 2) == 0)]]></printWhenExpression>
+				</reportElement>
+				<graphicElement>
+					<pen lineWidth="0.0"/>
+				</graphicElement>
+			</rectangle>
+			<textField>
+				<reportElement uuid="69406573-79fa-4343-8e58-aa4ecba7161a" x="0" y="0" width="37" height="14"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{rgimv}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="2f6deb73-1c8c-45ed-8160-86b459fd07aa" x="40" y="0" width="49" height="14"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{contrato}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="224e710e-4493-4c46-987d-8ada8d48c0ed" x="92" y="0" width="213" height="14"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{nome}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd-MM-yyyy">
+				<reportElement uuid="cc151dd7-42b8-4a9c-bde7-b90c919bfebb" x="308" y="0" width="71" height="14"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{vencimento}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="6dc69d9e-25a2-41d6-aeb9-176e53f94512" x="461" y="0" width="94" height="14"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{nnumero}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="b9006e0e-9b8b-4fe5-8ecd-c78d48eaee41" x="382" y="0" width="69" height="14"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$F{valor}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="21">
+			<textField pattern="dd/MM/yyyy HH.mm.ss">
+				<reportElement uuid="50970438-89b1-4c56-abc6-d44425f61119" x="0" y="1" width="192" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement uuid="76cd331a-d1c5-407e-bfdb-ae46e5f59854" x="0" y="0" width="555" height="1"/>
+			</line>
+			<textField>
+				<reportElement uuid="6535a608-d6ce-4741-b696-15addb43728e" x="435" y="1" width="80" height="20"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Página "+$V{PAGE_NUMBER}+" de"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement uuid="9d0adebb-b4a6-4ea4-932d-e27d2251e9a4" x="515" y="1" width="40" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="15">
+			<staticText>
+				<reportElement uuid="1f98623d-56fe-4abb-b5e4-2296c33ad4ae" x="308" y="1" width="71" height="14"/>
+				<textElement textAlignment="Right">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total =>]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="da4b3d23-1e67-4dfe-b2ec-4e1dd675ba3c" x="0" y="0" width="555" height="1"/>
+				<graphicElement>
+					<pen lineStyle="Dashed"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement uuid="2bbe69c5-6049-4f2d-8aad-37419718faa1" x="0" y="0" width="147" height="15"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total de Boletas Geradas:]]></text>
+			</staticText>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="1797b79a-f391-4791-b9c9-7870c278f387" x="382" y="0" width="69" height="15"/>
+				<textElement textAlignment="Right">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{valor_1}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0;-#,##0">
+				<reportElement uuid="96ed8668-2cf1-4a0d-9245-3d9846c8c6d3" x="147" y="0" width="39" height="15"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{valor_2}]]></textFieldExpression>
+			</textField>
+		</band>
+	</summary>
+</jasperReport>

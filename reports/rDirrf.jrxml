@@ -1,0 +1,1165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="rDirrf" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="9b6af52e-289f-4037-9f80-d25d2f38b9ec">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="anobase" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[SELECT autonum, cpfcnpjlocador, nomelocador, cpfcnpjlocatario,
+nomelocatario, numerocontrato, datacontrato,
+CAST(CONCAT(CAST(Mid(valorjan, 1, 12) AS UNSIGNED Int), '.',RIGHT(valorjan,2)) AS DECIMAL(13,2)) AS valorjan,
+CAST(CONCAT(CAST(Mid(comissaojan, 1, 12) AS UNSIGNED Int), '.',RIGHT(comissaojan,2)) AS DECIMAL(13,2)) AS comissaojan,
+CAST(CONCAT(CAST(Mid(impostojan, 1, 12) AS UNSIGNED Int), '.',RIGHT(impostojan,2)) AS DECIMAL(13,2)) AS impostojan,
+CAST(CONCAT(CAST(Mid(valorfev, 1, 12) AS UNSIGNED Int), '.',RIGHT(valorfev,2)) AS DECIMAL(13,2)) AS valorfev,
+CAST(CONCAT(CAST(Mid(comissaofev, 1, 12) AS UNSIGNED Int), '.',RIGHT(comissaofev,2)) AS DECIMAL(13,2)) AS comissaofev,
+CAST(CONCAT(CAST(Mid(impostofev, 1, 12) AS UNSIGNED Int), '.',RIGHT(impostofev,2)) AS DECIMAL(13,2)) AS impostofev,
+CAST(CONCAT(CAST(Mid(valormar, 1, 12) AS UNSIGNED Int), '.',RIGHT(valormar,2)) AS DECIMAL(13,2)) AS valormar,
+CAST(CONCAT(CAST(Mid(comissaomar, 1, 12) AS UNSIGNED Int), '.',RIGHT(comissaomar,2)) AS DECIMAL(13,2)) AS comissaomar,
+CAST(CONCAT(CAST(Mid(impostomar, 1, 12) AS UNSIGNED Int), '.',RIGHT(impostomar,2)) AS DECIMAL(13,2)) AS impostomar,
+CAST(CONCAT(CAST(Mid(valorabr, 1, 12) AS UNSIGNED Int), '.',RIGHT(valorabr,2)) AS DECIMAL(13,2)) AS valorabr,
+CAST(CONCAT(CAST(Mid(comissaoabr, 1, 12) AS UNSIGNED Int), '.',RIGHT(comissaoabr,2)) AS DECIMAL(13,2)) AS comissaoabr,
+CAST(CONCAT(CAST(Mid(impostoabr, 1, 12) AS UNSIGNED Int), '.',RIGHT(impostoabr,2)) AS DECIMAL(13,2)) AS impostoabr,
+CAST(CONCAT(CAST(Mid(valormai, 1, 12) AS UNSIGNED Int), '.',RIGHT(valormai,2)) AS DECIMAL(13,2)) AS valormai,
+CAST(CONCAT(CAST(Mid(comissaomai, 1, 12) AS UNSIGNED Int), '.',RIGHT(comissaomai,2)) AS DECIMAL(13,2)) AS comissaomai,
+CAST(CONCAT(CAST(Mid(impostomai, 1, 12) AS UNSIGNED Int), '.',RIGHT(impostomai,2)) AS DECIMAL(13,2)) AS impostomai,
+CAST(CONCAT(CAST(Mid(valorjun, 1, 12) AS UNSIGNED Int), '.',RIGHT(valorjun,2)) AS DECIMAL(13,2)) AS valorjun,
+CAST(CONCAT(CAST(Mid(comissaojun, 1, 12) AS UNSIGNED Int), '.',RIGHT(comissaojun,2)) AS DECIMAL(13,2)) AS comissaojun,
+CAST(CONCAT(CAST(Mid(impostojun, 1, 12) AS UNSIGNED Int), '.',RIGHT(impostojun,2)) AS DECIMAL(13,2)) AS impostojun,
+CAST(CONCAT(CAST(Mid(valorjul, 1, 12) AS UNSIGNED Int), '.',RIGHT(valorjul,2)) AS DECIMAL(13,2)) AS valorjul,
+CAST(CONCAT(CAST(Mid(comissaojul, 1, 12) AS UNSIGNED Int), '.',RIGHT(comissaojul,2)) AS DECIMAL(13,2)) AS comissaojul,
+CAST(CONCAT(CAST(Mid(impostojul, 1, 12) AS UNSIGNED Int), '.',RIGHT(impostojul,2)) AS DECIMAL(13,2)) AS impostojul,
+CAST(CONCAT(CAST(Mid(valorago, 1, 12) AS UNSIGNED Int), '.',RIGHT(valorago,2)) AS DECIMAL(13,2)) AS valorago,
+CAST(CONCAT(CAST(Mid(comissaoago, 1, 12) AS UNSIGNED Int), '.',RIGHT(comissaoago,2)) AS DECIMAL(13,2)) AS comissaoago,
+CAST(CONCAT(CAST(Mid(impostoago, 1, 12) AS UNSIGNED Int), '.',RIGHT(impostoago,2)) AS DECIMAL(13,2)) AS impostoago,
+CAST(CONCAT(CAST(Mid(valorset, 1, 12) AS UNSIGNED Int), '.',RIGHT(valorset,2)) AS DECIMAL(13,2)) AS valorset,
+CAST(CONCAT(CAST(Mid(comissaoset, 1, 12) AS UNSIGNED Int), '.',RIGHT(comissaoset,2)) AS DECIMAL(13,2)) AS comissaoset,
+CAST(CONCAT(CAST(Mid(impostoset, 1, 12) AS UNSIGNED Int), '.',RIGHT(impostoset,2)) AS DECIMAL(13,2)) AS impostoset,
+CAST(CONCAT(CAST(Mid(valorout, 1, 12) AS UNSIGNED Int), '.',RIGHT(valorout,2)) AS DECIMAL(13,2)) AS valorout,
+CAST(CONCAT(CAST(Mid(comissaoout, 1, 12) AS UNSIGNED Int), '.',RIGHT(comissaoout,2)) AS DECIMAL(13,2)) AS comissaoout,
+CAST(CONCAT(CAST(Mid(impostoout, 1, 12) AS UNSIGNED Int), '.',RIGHT(impostoout,2)) AS DECIMAL(13,2)) AS impostoout,
+CAST(CONCAT(CAST(Mid(valornov, 1, 12) AS UNSIGNED Int), '.',RIGHT(valornov,2)) AS DECIMAL(13,2)) AS valornov,
+CAST(CONCAT(CAST(Mid(comissaonov, 1, 12) AS UNSIGNED Int), '.',RIGHT(comissaonov,2)) AS DECIMAL(13,2)) AS comissaonov,
+CAST(CONCAT(CAST(Mid(impostonov, 1, 12) AS UNSIGNED Int), '.',RIGHT(impostonov,2)) AS DECIMAL(13,2)) AS impostonov,
+CAST(CONCAT(CAST(Mid(valordez, 1, 12) AS UNSIGNED Int), '.',RIGHT(valordez,2)) AS DECIMAL(13,2)) AS valordez,
+CAST(CONCAT(CAST(Mid(comissaodez, 1, 12) AS UNSIGNED Int), '.',RIGHT(comissaodez,2)) AS DECIMAL(13,2)) AS comissaodez,
+CAST(CONCAT(CAST(Mid(impostodez, 1, 12) AS UNSIGNED Int), '.',RIGHT(impostodez,2)) AS DECIMAL(13,2)) AS impostodez,
+tipoimovel,
+endimovel,
+cepimovel,
+codmunimovel,
+ufimovel
+FROM dimob
+ORDER BY Upper(nomelocador);]]>
+	</queryString>
+	<field name="autonum" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpfcnpjlocador" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nomelocador" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpfcnpjlocatario" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nomelocatario" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="numerocontrato" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="datacontrato" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="valorjan" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="comissaojan" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="impostojan" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="valorfev" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="comissaofev" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="impostofev" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="valormar" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="comissaomar" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="impostomar" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="valorabr" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="comissaoabr" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="impostoabr" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="valormai" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="comissaomai" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="impostomai" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="valorjun" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="comissaojun" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="impostojun" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="valorjul" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="comissaojul" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="impostojul" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="valorago" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="comissaoago" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="impostoago" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="valorset" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="comissaoset" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="impostoset" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="valorout" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="comissaoout" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="impostoout" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="valornov" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="comissaonov" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="impostonov" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="valordez" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="comissaodez" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="impostodez" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tipoimovel" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="endimovel" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cepimovel" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="codmunimovel" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ufimovel" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<pageHeader>
+		<band height="40" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="06a83fcd-3424-4ae5-9eba-605619e6c1cb" x="103" y="0" width="358" height="20"/>
+				<textElement>
+					<font size="14" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[RELATÓRIO DE RENDIMENTO DE ALUGUÉIS]]></text>
+			</staticText>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement uuid="ef1ef2c1-99e2-4ff2-b23e-cc903baaa800" x="0" y="20" width="218" height="15"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement uuid="a1923505-91f3-4f5c-8b53-83afb554e999" x="0" y="37" width="555" height="1"/>
+			</line>
+			<textField>
+				<reportElement uuid="88610df1-b630-4005-b149-3d5c1fff432d" x="435" y="20" width="120" height="15"/>
+				<textElement textAlignment="Right">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{anobase}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="241" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="5b46103c-673c-4cdb-a7e3-92a36b58443b" x="15" y="15" width="61" height="12"/>
+				<textElement>
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CPF/CNPJ:]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="dfb22776-7efc-4ffc-a145-23847ed0b8ce" x="76" y="15" width="142" height="12"/>
+				<textElement>
+					<font fontName="DejaVu Serif" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cpfcnpjlocador}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="ed9c9c6a-efe3-42f8-8803-92bfb61f8c22" x="3" y="3" width="143" height="12"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[DADOS LOCADOR:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="d3afff1d-253b-4b00-9886-16e838d5ae30" x="234" y="15" width="62" height="12"/>
+				<textElement>
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Locador:]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="8593c383-15cf-4b54-a5c0-417e4937c010" x="296" y="15" width="259" height="12"/>
+				<textElement>
+					<font fontName="DejaVu Serif" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nomelocador}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="ed9c9c6a-efe3-42f8-8803-92bfb61f8c22" x="0" y="30" width="146" height="12"/>
+				<textElement>
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DADOS LOCATARIO:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="70e6968d-3339-4824-9a44-8f47779f4950" x="15" y="42" width="61" height="12"/>
+				<textElement>
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CPF/CNPJ:]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="e2907644-798a-4d87-86c7-4526b9211fb7" x="76" y="42" width="142" height="12"/>
+				<textElement>
+					<font fontName="DejaVu Serif" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cpfcnpjlocatario}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="102452d5-08bd-4ea0-becb-f48a872f257e" x="234" y="42" width="62" height="12"/>
+				<textElement>
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Locatário:]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="aee5053f-b25d-417f-8fb0-d85011d594b8" x="296" y="42" width="259" height="12"/>
+				<textElement>
+					<font fontName="DejaVu Serif" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nomelocatario}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="18925e6c-9dd6-4cb5-80b9-4b75004ff584" x="15" y="54" width="61" height="12"/>
+				<textElement>
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Contrato:]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="d250d021-ac37-4778-9efd-2b3a290ba7f7" x="76" y="54" width="70" height="12"/>
+				<textElement>
+					<font fontName="DejaVu Serif" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{numerocontrato}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="29025012-7e3b-496c-b296-a7b71b96e6f1" x="167" y="57" width="107" height="12"/>
+				<textElement>
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Data do Contrato:]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="5b156983-46db-4295-94a9-37ac1e907696" x="274" y="57" width="100" height="12"/>
+				<textElement>
+					<font fontName="DejaVu Serif" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{datacontrato}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="ed9c9c6a-efe3-42f8-8803-92bfb61f8c22" x="3" y="71" width="146" height="12"/>
+				<textElement>
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DADOS DO IMÓVEL:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="97469bd6-6007-45cd-92e3-50cd8117a3ae" x="15" y="83" width="100" height="12"/>
+				<textElement>
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tipo do Imóvel:]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="08ea4076-1c5b-44e2-a383-b13451061154" x="115" y="83" width="34" height="12"/>
+				<textElement>
+					<font fontName="DejaVu Serif" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tipoimovel}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="61528e67-c8d3-4380-9e6b-6c6fe1fe0a6e" x="206" y="83" width="61" height="12"/>
+				<textElement>
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Endereço:]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="eb2c41a2-e4fd-4b77-a468-fc647cb558c4" x="267" y="83" width="288" height="12"/>
+				<textElement>
+					<font fontName="DejaVu Serif" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{endimovel}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="f124d9a0-e8ce-43ab-b06e-c056dc7dd2cb" x="15" y="95" width="39" height="12"/>
+				<textElement>
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Cep:]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="5b96d998-cb61-4565-98b6-787b606a899a" x="54" y="95" width="100" height="12"/>
+				<textElement>
+					<font fontName="DejaVu Serif" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cepimovel}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="5802af49-bb5e-4eef-8d8b-5e8e1d21522c" x="206" y="95" width="106" height="12"/>
+				<textElement>
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Código Município:]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="d6366db1-4535-4905-b817-adf971424f01" x="312" y="95" width="100" height="12"/>
+				<textElement>
+					<font fontName="DejaVu Serif" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{codmunimovel}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="8ba5f474-7493-4ba9-97e2-5a8f1a0f86eb" x="513" y="95" width="22" height="12"/>
+				<textElement>
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[UF:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="0b317fd3-e479-4f26-89ff-784ad068a6e7" x="535" y="95" width="20" height="12"/>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Serif" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ufimovel}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="ed9c9c6a-efe3-42f8-8803-92bfb61f8c22" x="0" y="111" width="146" height="12"/>
+				<textElement>
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DADOS DA LOCAÇÃO:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="5af68ecd-0fec-42a2-94d1-ca5ae57af018" mode="Opaque" x="21" y="142" width="51" height="12"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[Janeiro:]]></text>
+			</staticText>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="c6d7e7de-1036-4ae9-9946-41c780a934bc" mode="Opaque" x="75" y="142" width="62" height="12"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{valorjan}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="3e21c894-4521-4364-ae69-5f4f8ae5d3ff" mode="Opaque" x="140" y="142" width="66" height="12"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{comissaojan}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="e9efb56d-ae2b-46f7-893c-cdace3158ca1" mode="Opaque" x="210" y="142" width="57" height="12"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{impostojan}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="5af68ecd-0fec-42a2-94d1-ca5ae57af018" mode="Opaque" x="21" y="126" width="51" height="12" forecolor="#FEFEFE" backcolor="#010101"/>
+				<textElement>
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[MESES]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="5af68ecd-0fec-42a2-94d1-ca5ae57af018" mode="Opaque" x="75" y="126" width="62" height="12" forecolor="#FEFEFE" backcolor="#010101"/>
+				<textElement>
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ALUGUEL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="5af68ecd-0fec-42a2-94d1-ca5ae57af018" mode="Opaque" x="140" y="126" width="66" height="12" forecolor="#FEFEFE" backcolor="#010101"/>
+				<textElement>
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[COMISSÃO R$]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="5af68ecd-0fec-42a2-94d1-ca5ae57af018" mode="Opaque" x="209" y="126" width="58" height="12" forecolor="#FEFEFE" backcolor="#010101"/>
+				<textElement>
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[IRRF R$]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="5af68ecd-0fec-42a2-94d1-ca5ae57af018" mode="Opaque" x="21" y="154" width="51" height="12" backcolor="#EEEEEE"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[Fevereiro:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="5af68ecd-0fec-42a2-94d1-ca5ae57af018" mode="Opaque" x="21" y="166" width="51" height="12"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[Março:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="5af68ecd-0fec-42a2-94d1-ca5ae57af018" mode="Opaque" x="21" y="178" width="51" height="12" backcolor="#EEEEEE"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[Abril:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="5af68ecd-0fec-42a2-94d1-ca5ae57af018" mode="Opaque" x="21" y="190" width="51" height="12"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[Maio:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="5af68ecd-0fec-42a2-94d1-ca5ae57af018" mode="Opaque" x="21" y="202" width="51" height="12" backcolor="#EEEEEE"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[Junho:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="5af68ecd-0fec-42a2-94d1-ca5ae57af018" mode="Opaque" x="477" y="126" width="58" height="12" forecolor="#FEFEFE" backcolor="#010101"/>
+				<textElement>
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[IRRF R$]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="5af68ecd-0fec-42a2-94d1-ca5ae57af018" mode="Opaque" x="408" y="126" width="66" height="12" forecolor="#FEFEFE" backcolor="#010101"/>
+				<textElement>
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[COMISSÃO R$]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="5af68ecd-0fec-42a2-94d1-ca5ae57af018" mode="Opaque" x="279" y="126" width="60" height="12" forecolor="#FEFEFE" backcolor="#010101"/>
+				<textElement>
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[MESES]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="5af68ecd-0fec-42a2-94d1-ca5ae57af018" mode="Opaque" x="343" y="126" width="62" height="12" forecolor="#FEFEFE" backcolor="#010101"/>
+				<textElement>
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ALUGUEL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="5af68ecd-0fec-42a2-94d1-ca5ae57af018" mode="Opaque" x="279" y="142" width="60" height="12"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[Julho:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="5af68ecd-0fec-42a2-94d1-ca5ae57af018" mode="Opaque" x="279" y="178" width="60" height="12" backcolor="#EEEEEE"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[Outubro:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="5af68ecd-0fec-42a2-94d1-ca5ae57af018" mode="Opaque" x="279" y="166" width="60" height="12"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[Setembro:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="5af68ecd-0fec-42a2-94d1-ca5ae57af018" mode="Opaque" x="279" y="190" width="60" height="12"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[Novembro:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="5af68ecd-0fec-42a2-94d1-ca5ae57af018" mode="Opaque" x="279" y="154" width="60" height="12" backcolor="#EEEEEE"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[Agosto:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="5af68ecd-0fec-42a2-94d1-ca5ae57af018" mode="Opaque" x="279" y="202" width="60" height="12" backcolor="#EEEEEE"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[Dezembro:]]></text>
+			</staticText>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="2e51a906-4f57-4e07-8d5f-335cb6b1ac64" mode="Opaque" x="75" y="154" width="62" height="12" backcolor="#EEEEEE"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{valorfev}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="1111f3d5-4b51-4898-ba89-9bdb7035f13e" mode="Opaque" x="140" y="154" width="66" height="12" backcolor="#EEEEEE"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{comissaofev}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="6c05ee87-8111-44ec-bb8b-65101ec79eb4" mode="Opaque" x="210" y="154" width="57" height="12" backcolor="#EEEEEE"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{impostofev}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="8f84636b-fe8f-4e92-9144-c31c21b27d32" mode="Opaque" x="75" y="166" width="62" height="12"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{valormar}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="eb98ceed-d7ca-44e7-9cba-66730396d8d8" mode="Opaque" x="140" y="166" width="66" height="12"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{comissaomar}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="798ee9ac-405e-49b7-b587-9483df9cdfd4" mode="Opaque" x="209" y="166" width="58" height="12"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{impostomar}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="872d1796-938b-4667-b41f-b94766ceeee6" mode="Opaque" x="75" y="178" width="62" height="12" backcolor="#EEEEEE"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{valorabr}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="c99c886d-fece-4694-acc5-f3283f8f97c6" mode="Opaque" x="140" y="178" width="66" height="12" backcolor="#EEEEEE"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{comissaoabr}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="bd3a7dba-16b6-4531-8868-a0dc2b072379" mode="Opaque" x="209" y="178" width="58" height="12" backcolor="#EEEEEE"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{impostoabr}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="2f5301be-3be9-408e-b71f-83bff176b7d3" mode="Opaque" x="75" y="190" width="62" height="12"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{valormai}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="c86cc52d-805c-4025-bf3e-5101cf1a33d8" mode="Opaque" x="140" y="190" width="66" height="12"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{comissaomai}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="a0ade3c0-f7bf-46c1-ad0c-ff49266b1a0e" mode="Opaque" x="209" y="190" width="58" height="12"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{impostomai}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="5ea35c99-6a97-4409-8b47-b7831fdc6cc3" mode="Opaque" x="75" y="202" width="62" height="12" backcolor="#EEEEEE"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{valorjun}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="02a6b39b-4072-4047-862f-c42451b82552" mode="Opaque" x="140" y="202" width="66" height="12" backcolor="#EEEEEE"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{comissaojun}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="8cfe9a3d-daa3-4498-8f85-68690e0ee1b5" mode="Opaque" x="210" y="202" width="57" height="12" backcolor="#EEEEEE"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{impostojun}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="359bc115-82ac-4f54-bc7f-cc589e0fc8aa" mode="Opaque" x="343" y="142" width="62" height="12"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{valorjul}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="22ff12a9-2f98-49ac-9d8f-a9b1207e2b8c" mode="Opaque" x="408" y="142" width="66" height="12"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{comissaojul}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="0d6f1f90-0b60-4509-bf04-adb4e5a208ee" mode="Opaque" x="477" y="142" width="58" height="12"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{impostojul}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="029d19bc-981d-49b2-b1eb-eee1b911c31d" mode="Opaque" x="343" y="154" width="62" height="12" backcolor="#EEEEEE"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{valorago}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="91210c4b-932e-429c-8abd-d08950de3456" mode="Opaque" x="408" y="154" width="66" height="12" backcolor="#EEEEEE"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{comissaoago}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="58982682-1836-439e-9498-bf1be3d8cc3d" mode="Opaque" x="477" y="154" width="58" height="12" backcolor="#EEEEEE"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{impostoago}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="504827ae-4120-4377-a8d8-be0f29d10bff" mode="Opaque" x="343" y="166" width="62" height="12"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{valorset}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="5ed1abb0-d64b-4ab5-8725-f4d5c39bd184" mode="Opaque" x="408" y="166" width="66" height="12"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{comissaoset}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="0ad91f3e-5655-48ef-a8e9-6c6134d591a3" mode="Opaque" x="477" y="166" width="58" height="12"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{impostoset}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="cf3f3dba-c9a0-42bd-acaa-4562fba60018" mode="Opaque" x="343" y="178" width="62" height="12" backcolor="#EEEEEE"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{valorout}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="4c546391-9a27-49bd-a659-8d46eff02033" mode="Opaque" x="408" y="178" width="66" height="12" backcolor="#EEEEEE"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{comissaoout}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="e02367c4-34a6-4019-953d-46ccd3b0d19f" mode="Opaque" x="477" y="178" width="58" height="12" backcolor="#EEEEEE"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{impostoout}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="20a14b44-ea7b-4faf-8cde-7863f52c0cfa" mode="Opaque" x="343" y="190" width="62" height="12"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{valornov}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="960f0bf0-f95c-4959-9be9-88f80e477b25" mode="Opaque" x="408" y="190" width="66" height="12"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{comissaonov}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="47182edc-6d6d-40b3-bb05-a1176f45ef94" mode="Opaque" x="477" y="190" width="58" height="12"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{impostonov}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="21a57420-585f-4f0a-895f-a040c6b88992" mode="Opaque" x="343" y="202" width="62" height="12" backcolor="#EEEEEE"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{valordez}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="a764f52e-baa9-4c92-be7f-dd421373fa15" mode="Opaque" x="408" y="202" width="66" height="12" backcolor="#EEEEEE"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{comissaodez}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="4e25e917-4127-431f-a451-cd6c2133cd91" mode="Opaque" x="477" y="202" width="58" height="12" backcolor="#EEEEEE"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{impostodez}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement uuid="fab1b8c4-9bad-4e8e-ab96-f6b5a9396ef2" x="0" y="235" width="555" height="1"/>
+				<graphicElement>
+					<pen lineWidth="1.5" lineStyle="Dashed"/>
+				</graphicElement>
+			</line>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="a764f52e-baa9-4c92-be7f-dd421373fa15" mode="Opaque" x="408" y="217" width="66" height="12" backcolor="#FFFFFF"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{comissaojan} + $F{comissaofev} + $F{comissaomar} + $F{comissaoabr} + $F{comissaomai} + $F{comissaojun} + $F{comissaojul} + $F{comissaoago} + $F{comissaoset} + $F{comissaoout} + $F{comissaonov} + $F{comissaodez}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="5af68ecd-0fec-42a2-94d1-ca5ae57af018" mode="Opaque" x="279" y="217" width="60" height="12" backcolor="#FFFFFF"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement>
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TOTAL =>]]></text>
+			</staticText>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="21a57420-585f-4f0a-895f-a040c6b88992" mode="Opaque" x="343" y="217" width="62" height="12" backcolor="#FFFFFF"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{valorjan} + $F{valorfev} + $F{valormar} + $F{valorabr} + $F{valormai} + $F{valorjun} + $F{valorjul} + $F{valorago} + $F{valorset} + $F{valorout} + $F{valornov} + $F{valordez}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="4e25e917-4127-431f-a451-cd6c2133cd91" mode="Opaque" x="477" y="217" width="58" height="12" backcolor="#FFFFFF"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{impostojan} + $F{impostofev} + $F{impostomar} + $F{impostoabr} + $F{impostomai} + $F{impostojun} + $F{impostojul} + $F{impostoago} + $F{impostoset} + $F{impostoout} + $F{impostonov} + $F{impostodez}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="25" splitType="Stretch">
+			<textField>
+				<reportElement uuid="6fb701c9-e412-4160-874a-88e57fa8e76d" x="435" y="5" width="80" height="20"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Página "+$V{PAGE_NUMBER}+" de"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement uuid="ba3717a2-b28d-425c-a683-5275de884a11" x="515" y="5" width="40" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement uuid="02b86a8e-6054-493b-82c4-f552d3ec2588" x="0" y="2" width="555" height="1"/>
+			</line>
+		</band>
+	</pageFooter>
+</jasperReport>

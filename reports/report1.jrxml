@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="rNotaFiscal" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="09e1109c-712a-4224-b840-39c5d84194e2">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="parameter1" class="java.lang.String"/>
+	<parameter name="parameter2" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[SELECT e.rgprp, p.nome, Sum(StrVal(MID(e.campo,Instr(e.campo,'CM') + 2,10))) as comissao FROM extrato e, proprietarios p where (e.rgprp = p.rgprp) AND e.dtrecebimento >= $P{parameter1} AND e.dtrecebimento <= $P{parameter2} GROUP BY e.rgprp ORDER BY Upper(p.nome);]]>
+	</queryString>
+	<field name="rgprp" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nome" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="comissao" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<pageHeader>
+		<band height="58" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="b474ae25-308f-4f57-94de-8cf4680b099a" x="50" y="0" width="455" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[RELAÇÃO DE COMISSÕES PARA NOTA FISCAL]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="60a2c160-dca5-4249-96fd-4e735e4a6473" x="0" y="57" width="555" height="1"/>
+			</line>
+			<textField>
+				<reportElement uuid="fd3d7b02-f125-403e-b9d4-8ae807c45ba5" x="0" y="19" width="555" height="15"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Periodo: " + $P{parameter1} + " até " + $P{parameter2}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="67aa7b63-0e79-46aa-be5c-e3c312b1f53f" x="0" y="45" width="61" height="13"/>
+				<textElement/>
+				<text><![CDATA[CÓDIGO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="67aa7b63-0e79-46aa-be5c-e3c312b1f53f" x="61" y="45" width="353" height="13"/>
+				<textElement/>
+				<text><![CDATA[PROPRIETÁRIO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="67aa7b63-0e79-46aa-be5c-e3c312b1f53f" x="455" y="44" width="100" height="13"/>
+				<textElement/>
+				<text><![CDATA[COMISSÃO]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="14" splitType="Stretch">
+			<rectangle>
+				<reportElement uuid="1511f017-09a4-4220-a058-8e750905926d" mode="Opaque" x="0" y="0" width="555" height="14" forecolor="#FFFFFF" backcolor="#E4E4EC">
+					<printWhenExpression><![CDATA[new Boolean(($V{COLUMN_COUNT}.intValue() % 2) == 0)]]></printWhenExpression>
+				</reportElement>
+				<graphicElement>
+					<pen lineWidth="0.0"/>
+				</graphicElement>
+			</rectangle>
+			<textField>
+				<reportElement uuid="d44cb141-6c67-4f40-bd98-18ebb8b8e578" x="0" y="0" width="61" height="13"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{rgprp}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="5392fccd-a7b2-4ffd-b2c2-2cb6749d2195" x="61" y="0" width="353" height="13"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{nome}]]></textFieldExpression>
+			</textField>
+			<textField pattern="¤ #,##0.00">
+				<reportElement uuid="4881e098-71ab-4066-8129-1020e261e5ea" x="455" y="0" width="100" height="13"/>
+				<textElement textAlignment="Right">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{comissao}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="22" splitType="Stretch">
+			<textField>
+				<reportElement uuid="2e88f115-b0ad-4bd7-8054-30c48a8defd7" x="435" y="1" width="80" height="20"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Pagina "+$V{PAGE_NUMBER}+" de"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement uuid="965d95a5-11a7-46d2-b0c8-512b8b25d984" x="515" y="1" width="40" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement uuid="967198d0-1afb-4330-ad12-08952544f9b3" x="0" y="0" width="555" height="1"/>
+			</line>
+			<textField pattern="dd/MM/yyyy h.mm a">
+				<reportElement uuid="93ce4db8-8350-451f-a71e-abb9b1141a07" x="0" y="1" width="161" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+</jasperReport>

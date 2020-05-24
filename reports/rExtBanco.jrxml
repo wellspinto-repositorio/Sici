@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="rExtBanco" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="data_ini" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="data_fim" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="bco" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="logo" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[SELECT a.campo, a.conta, a.rgprp, a.rgimv, a.contrato, IF(a.conta = 'AVI',IF(instr(a.campo,'CRE'),'CRE','DEB'),CASE a.conta WHEN 'REC' THEN 'CRE' WHEN 'EXT' THEN 'DEB' WHEN 'DES' THEN 'DEB' END) AS tipo, CASE MID(a.campo,4,2) WHEN '00' THEN 'DISP' WHEN '01' THEN 'RETEN' WHEN '02' THEN 'ADM' WHEN '03' THEN 'SOCIOS' WHEN '04' THEN 'LOCATARIOS' ELSE a.conta END AS Tipo2, e.ch_data, e.ch_banco, e.ch_agencia, e.ch_ncheque, e.ch_valor, e.ch_autenticacao, e.ch_ncaixa FROM ExtBanco e, auxiliar a WHERE e.ch_autenticacao = a.rc_aut AND ((a.conta <> 'ADM') AND (a.conta <> 'PCX')) AND e.ch_etda = 'CH' AND (e.ch_data >= $P{data_ini} AND e.ch_data <= $P{data_fim}) AND (IF(Trim($P{bco}) <> '*',e.ch_banco = $P{bco}, TRUE)) GROUP BY e.ch_autenticacao ORDER BY e.ch_data, e.ch_banco, e.ch_agencia, e.ch_ncheque;]]>
+	</queryString>
+	<field name="campo" class="java.lang.String"/>
+	<field name="conta" class="java.lang.String"/>
+	<field name="rgprp" class="java.lang.String"/>
+	<field name="rgimv" class="java.lang.String"/>
+	<field name="contrato" class="java.lang.String"/>
+	<field name="tipo" class="java.lang.String"/>
+	<field name="Tipo2" class="java.lang.String"/>
+	<field name="ch_data" class="java.sql.Date"/>
+	<field name="ch_banco" class="java.lang.String"/>
+	<field name="ch_agencia" class="java.lang.String"/>
+	<field name="ch_ncheque" class="java.lang.String"/>
+	<field name="ch_valor" class="java.math.BigDecimal"/>
+	<field name="ch_autenticacao" class="java.lang.String"/>
+	<field name="ch_ncaixa" class="java.lang.String"/>
+	<variable name="ch_valor_1" class="java.math.BigDecimal" resetType="Group" resetGroup="tot_cheques" calculation="Sum">
+		<variableExpression><![CDATA[$F{ch_valor}]]></variableExpression>
+	</variable>
+	<group name="tot_cheque">
+		<groupExpression><![CDATA[$F{ch_ncheque}]]></groupExpression>
+	</group>
+	<group name="tot_cheques">
+		<groupExpression><![CDATA[$F{ch_ncheque}]]></groupExpression>
+		<groupFooter>
+			<band height="14">
+				<printWhenExpression><![CDATA[new Boolean($V{tot_cheque_COUNT}.intValue() > 1)]]></printWhenExpression>
+				<textField pattern="#,##0.00" isBlankWhenNull="true">
+					<reportElement x="346" y="0" width="65" height="14"/>
+					<textElement textAlignment="Right">
+						<font isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$V{ch_valor_1}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="157" y="0" width="228" height="14"/>
+					<textElement>
+						<font isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["(" + $V{tot_cheque_COUNT} + ") ......................................... ==>"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="0" y="0" width="167" height="14"/>
+					<textElement textAlignment="Left" markup="none">
+						<font isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Total do Cheque Nº " + $F{ch_ncheque}]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupFooter>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<pageHeader>
+		<band height="62" splitType="Stretch">
+			<image scaleImage="FillFrame" hAlign="Center">
+				<reportElement x="0" y="0" width="177" height="60"/>
+				<imageExpression><![CDATA[$P{logo}]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="208" y="12" width="331" height="21"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true" isItalic="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Relatório de Lançamentos Bancários]]></text>
+			</staticText>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="208" y="46" width="156" height="14"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="514" y="46" width="40" height="14"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="434" y="46" width="80" height="14"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Página "+$V{PAGE_NUMBER}+" de"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="313" y="33" width="72" height="13"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{data_ini}.substring(8,10) + "/" + $P{data_ini}.substring(5,7) + "/" + $P{data_ini}.substring(0,4)]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="422" y="33" width="76" height="13"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{data_fim}.substring(8,10) + "/" + $P{data_fim}.substring(5,7) + "/" + $P{data_fim}.substring(0,4)]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="247" y="33" width="66" height="13"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Período de ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="392" y="33" width="23" height="13"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[até]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="14" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="63" height="12"/>
+				<textElement>
+					<font isBold="true" isItalic="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[DATA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="208" y="0" width="29" height="12"/>
+				<textElement>
+					<font isBold="true" isItalic="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[BCO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="237" y="0" width="46" height="12"/>
+				<textElement>
+					<font isBold="true" isItalic="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[AG]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="283" y="0" width="63" height="12"/>
+				<textElement>
+					<font isBold="true" isItalic="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[NCHEQUE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="346" y="0" width="65" height="12"/>
+				<textElement>
+					<font isBold="true" isItalic="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[VALOR]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="417" y="0" width="56" height="12"/>
+				<textElement>
+					<font isBold="true" isItalic="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[AUT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="473" y="0" width="57" height="12"/>
+				<textElement>
+					<font isBold="true" isItalic="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[CAIXA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="63" y="0" width="69" height="12"/>
+				<textElement>
+					<font isBold="true" isItalic="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[TIPO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="132" y="0" width="66" height="12"/>
+				<textElement>
+					<font isBold="true" isItalic="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[REGISTRO]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="12" width="555" height="1"/>
+				<graphicElement>
+					<pen lineWidth="1.75"/>
+				</graphicElement>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="14" splitType="Stretch">
+			<rectangle>
+				<reportElement mode="Opaque" x="0" y="0" width="555" height="14" forecolor="#FFFFFF" backcolor="#E4E4EC">
+					<printWhenExpression><![CDATA[new Boolean(($V{COLUMN_COUNT}.intValue() % 2) == 0)]]></printWhenExpression>
+				</reportElement>
+				<graphicElement>
+					<pen lineWidth="0.0"/>
+				</graphicElement>
+			</rectangle>
+			<textField pattern="dd/MM/yyyy" isBlankWhenNull="true">
+				<reportElement x="0" y="0" width="63" height="14"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{ch_data}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="208" y="0" width="29" height="14"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{ch_banco}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="237" y="0" width="46" height="14"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{ch_agencia}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="283" y="0" width="63" height="14"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{ch_ncheque}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00" isBlankWhenNull="true">
+				<reportElement x="346" y="0" width="65" height="14"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$F{ch_valor}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="417" y="0" width="56" height="14"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{ch_autenticacao}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="473" y="0" width="57" height="14"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{ch_ncaixa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="63" y="0" width="27" height="14"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{tipo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="90" y="0" width="42" height="14"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{Tipo2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="132" y="0" width="66" height="14"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{contrato}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

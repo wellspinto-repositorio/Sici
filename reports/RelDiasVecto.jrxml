@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="RelDiasVecto" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="d26a0ca3-06a1-44ac-b26a-b2bc415b7222">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="dia" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="logo" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[SELECT l.contrato, l.nomerazao, c.dtvencimento, p.nome, MID(c.dtvencimento,1,2) AS DIA FROM locatarios l, CARTEIRA c, proprietarios p, imoveis i WHERE l.contrato = c.contrato AND l.rgprp = p.rgprp AND i.rgprp = l.rgprp AND i.rgimv = l.rgimv AND i.situacao = 'OCUPADO' AND IFNULL(l.fiador1uf <> 'X',true) AND MID(c.dtvencimento,1,2) = $P{dia} ORDER BY MID(c.dtvencimento,1,2), lower(p.nome), lower(l.nomerazao);]]>
+	</queryString>
+	<field name="contrato" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nomerazao" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="dtvencimento" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nome" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="DIA" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<group name="GDIA" isStartNewPage="true">
+		<groupExpression><![CDATA[$F{DIA}]]></groupExpression>
+		<groupHeader>
+			<band height="2"/>
+		</groupHeader>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<pageHeader>
+		<band height="66" splitType="Stretch">
+			<image scaleImage="FillFrame" hAlign="Center">
+				<reportElement uuid="c4196958-8b92-448c-b6f1-21f88ae731ce" x="0" y="4" width="177" height="60"/>
+				<imageExpression><![CDATA[$P{logo}]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement uuid="85369e39-04f2-4e8e-b327-5a92ef7f0ea1" x="201" y="4" width="543" height="28"/>
+				<textElement textAlignment="Center">
+					<font size="22" isBold="true" isItalic="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Relatório de Dias de Vencimentos]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="21" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="38199f2b-ae0b-4c7b-af6b-98ccb7834b24" mode="Opaque" x="0" y="0" width="78" height="20" forecolor="#FEFEFE" backcolor="#010101"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Contrato]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="725bc10c-fc97-4be1-8dc4-7530edc0fd7d" mode="Opaque" x="78" y="0" width="385" height="20" forecolor="#FEFEFE" backcolor="#010101"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Locatario]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="d0b33aee-6ddd-4ca1-bb6b-e203a297e2c2" mode="Opaque" x="463" y="0" width="251" height="20" forecolor="#FEFEFE" backcolor="#010101"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Proprietário]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="07875c08-e7b1-4f41-bae8-2c6c227f297f" mode="Opaque" x="714" y="0" width="88" height="20" forecolor="#FEFEFE" backcolor="#010101"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[DIA]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="14" splitType="Stretch">
+			<rectangle>
+				<reportElement uuid="dbd6d492-bb1b-4816-9997-40ac0d02462c" mode="Opaque" x="0" y="0" width="802" height="14" forecolor="#FFFFFF" backcolor="#E4E4EC">
+					<printWhenExpression><![CDATA[new Boolean(($V{COLUMN_COUNT}.intValue() % 2) == 0)]]></printWhenExpression>
+				</reportElement>
+				<graphicElement>
+					<pen lineWidth="0.0"/>
+				</graphicElement>
+			</rectangle>
+			<textField>
+				<reportElement uuid="24177781-6184-469a-b9fd-279e7a69220e" x="0" y="0" width="78" height="14"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{contrato}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="217ff06e-3da4-43ea-9321-a67c9c87edd9" x="78" y="0" width="385" height="14"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{nomerazao}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="d626754a-95e5-47df-a568-512c5e57da3f" x="463" y="0" width="251" height="14"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{nome}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="ca607a35-1983-40a0-b42b-969105d47540" x="714" y="0" width="88" height="14"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{DIA}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement uuid="47f796bb-565e-433e-b4c1-440e4165f474" x="458" y="0" width="1" height="12"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement uuid="f60a08f0-57a8-46c5-87f0-1c5fa27bdfef" x="73" y="0" width="1" height="12"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement uuid="1ab1f324-3aca-4224-9f46-6efcd4acb51e" x="711" y="0" width="1" height="12"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="34" splitType="Stretch">
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement uuid="c824e259-f67e-47fe-81a1-e121521ab8f2" x="0" y="14" width="246" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="faf93235-5cb8-4fba-9692-1b3ec1d6d2bd" x="682" y="14" width="80" height="20"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Página "+$V{PAGE_NUMBER}+" de"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement uuid="d275e0d3-bcaa-4239-ba45-fab3e5b35fb3" x="762" y="14" width="40" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement uuid="779cb837-5328-479f-9772-83c4881a9cdc" x="0" y="7" width="802" height="1"/>
+			</line>
+		</band>
+	</pageFooter>
+</jasperReport>

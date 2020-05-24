@@ -1,0 +1,2753 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Extrato" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="45670e64-9790-4206-a906-9639173a527f">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="246"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="parameter1" class="java.lang.Boolean"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="autentica" class="java.lang.String">
+		<fieldDescription><![CDATA[autentica]]></fieldDescription>
+	</field>
+	<field name="hist_linha19_cor" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_linha19_cor]]></fieldDescription>
+	</field>
+	<field name="hist_deb19" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_deb19]]></fieldDescription>
+	</field>
+	<field name="hist_deb07" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_deb07]]></fieldDescription>
+	</field>
+	<field name="hist_deb11" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_deb11]]></fieldDescription>
+	</field>
+	<field name="hist_linha30_cor" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_linha30_cor]]></fieldDescription>
+	</field>
+	<field name="hist_cred27" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_cred27]]></fieldDescription>
+	</field>
+	<field name="hist_deb01" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_deb01]]></fieldDescription>
+	</field>
+	<field name="hist_linha36_cor" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_linha36_cor]]></fieldDescription>
+	</field>
+	<field name="hist_cred30" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_cred30]]></fieldDescription>
+	</field>
+	<field name="hist_deb20" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_deb20]]></fieldDescription>
+	</field>
+	<field name="hist_deb24" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_deb24]]></fieldDescription>
+	</field>
+	<field name="hist_linha20_cor" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_linha20_cor]]></fieldDescription>
+	</field>
+	<field name="hist_linha22" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_linha22]]></fieldDescription>
+	</field>
+	<field name="hist_cred18" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_cred18]]></fieldDescription>
+	</field>
+	<field name="hist_linha08" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_linha08]]></fieldDescription>
+	</field>
+	<field name="hist_cred17" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_cred17]]></fieldDescription>
+	</field>
+	<field name="hist_linha40" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_linha40]]></fieldDescription>
+	</field>
+	<field name="hist_linha01" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_linha01]]></fieldDescription>
+	</field>
+	<field name="hist_linha18_cor" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_linha18_cor]]></fieldDescription>
+	</field>
+	<field name="logoLocation" class="java.lang.String">
+		<fieldDescription><![CDATA[logoLocation]]></fieldDescription>
+	</field>
+	<field name="hist_deb28" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_deb28]]></fieldDescription>
+	</field>
+	<field name="hist_linha28_cor" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_linha28_cor]]></fieldDescription>
+	</field>
+	<field name="hist_linha27_cor" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_linha27_cor]]></fieldDescription>
+	</field>
+	<field name="hist_linha39" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_linha39]]></fieldDescription>
+	</field>
+	<field name="hist_deb05" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_deb05]]></fieldDescription>
+	</field>
+	<field name="hist_linha17_cor" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_linha17_cor]]></fieldDescription>
+	</field>
+	<field name="hist_deb33" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_deb33]]></fieldDescription>
+	</field>
+	<field name="hist_deb31" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_deb31]]></fieldDescription>
+	</field>
+	<field name="hist_linha16_cor" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_linha16_cor]]></fieldDescription>
+	</field>
+	<field name="hist_deb17" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_deb17]]></fieldDescription>
+	</field>
+	<field name="hist_linha32" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_linha32]]></fieldDescription>
+	</field>
+	<field name="nomeProp" class="java.lang.String">
+		<fieldDescription><![CDATA[nomeProp]]></fieldDescription>
+	</field>
+	<field name="hist_linha24_cor" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_linha24_cor]]></fieldDescription>
+	</field>
+	<field name="hist_linha24" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_linha24]]></fieldDescription>
+	</field>
+	<field name="hist_cred39" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_cred39]]></fieldDescription>
+	</field>
+	<field name="hist_deb35" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_deb35]]></fieldDescription>
+	</field>
+	<field name="hist_linha14" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_linha14]]></fieldDescription>
+	</field>
+	<field name="hist_linha17" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_linha17]]></fieldDescription>
+	</field>
+	<field name="hist_cred26" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_cred26]]></fieldDescription>
+	</field>
+	<field name="hist_deb29" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_deb29]]></fieldDescription>
+	</field>
+	<field name="hist_deb30" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_deb30]]></fieldDescription>
+	</field>
+	<field name="hist_cred13" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_cred13]]></fieldDescription>
+	</field>
+	<field name="hist_linha03_cor" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_linha03_cor]]></fieldDescription>
+	</field>
+	<field name="hist_cred29" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_cred29]]></fieldDescription>
+	</field>
+	<field name="hist_linha04_cor" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_linha04_cor]]></fieldDescription>
+	</field>
+	<field name="hist_linha19" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_linha19]]></fieldDescription>
+	</field>
+	<field name="hist_linha35_cor" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_linha35_cor]]></fieldDescription>
+	</field>
+	<field name="hist_cred08" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_cred08]]></fieldDescription>
+	</field>
+	<field name="hist_cred40" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_cred40]]></fieldDescription>
+	</field>
+	<field name="hist_linha09" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_linha09]]></fieldDescription>
+	</field>
+	<field name="hist_linha34_cor" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_linha34_cor]]></fieldDescription>
+	</field>
+	<field name="hist_deb13" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_deb13]]></fieldDescription>
+	</field>
+	<field name="hist_cred15" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_cred15]]></fieldDescription>
+	</field>
+	<field name="hist_linha29" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_linha29]]></fieldDescription>
+	</field>
+	<field name="hist_deb02" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_deb02]]></fieldDescription>
+	</field>
+	<field name="hist_linha12" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_linha12]]></fieldDescription>
+	</field>
+	<field name="hist_linha40_cor" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_linha40_cor]]></fieldDescription>
+	</field>
+	<field name="hist_linha31" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_linha31]]></fieldDescription>
+	</field>
+	<field name="hist_linha05" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_linha05]]></fieldDescription>
+	</field>
+	<field name="hist_deb36" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_deb36]]></fieldDescription>
+	</field>
+	<field name="hist_linha30" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_linha30]]></fieldDescription>
+	</field>
+	<field name="hist_cred25" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_cred25]]></fieldDescription>
+	</field>
+	<field name="hist_linha08_cor" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_linha08_cor]]></fieldDescription>
+	</field>
+	<field name="hist_linha26" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_linha26]]></fieldDescription>
+	</field>
+	<field name="hist_linha10_cor" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_linha10_cor]]></fieldDescription>
+	</field>
+	<field name="hist_deb26" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_deb26]]></fieldDescription>
+	</field>
+	<field name="hist_cred03" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_cred03]]></fieldDescription>
+	</field>
+	<field name="hist_deb14" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_deb14]]></fieldDescription>
+	</field>
+	<field name="hist_linha15" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_linha15]]></fieldDescription>
+	</field>
+	<field name="hist_cred01" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_cred01]]></fieldDescription>
+	</field>
+	<field name="hist_linha38" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_linha38]]></fieldDescription>
+	</field>
+	<field name="hist_cred14" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_cred14]]></fieldDescription>
+	</field>
+	<field name="hist_linha15_cor" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_linha15_cor]]></fieldDescription>
+	</field>
+	<field name="hist_linha23" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_linha23]]></fieldDescription>
+	</field>
+	<field name="hist_cred24" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_cred24]]></fieldDescription>
+	</field>
+	<field name="hist_linha16" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_linha16]]></fieldDescription>
+	</field>
+	<field name="hist_deb25" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_deb25]]></fieldDescription>
+	</field>
+	<field name="hist_deb15" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_deb15]]></fieldDescription>
+	</field>
+	<field name="hist_deb22" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_deb22]]></fieldDescription>
+	</field>
+	<field name="hist_linha36" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_linha36]]></fieldDescription>
+	</field>
+	<field name="mensagem" class="java.lang.String">
+		<fieldDescription><![CDATA[mensagem]]></fieldDescription>
+	</field>
+	<field name="hist_cred10" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_cred10]]></fieldDescription>
+	</field>
+	<field name="hist_linha33_cor" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_linha33_cor]]></fieldDescription>
+	</field>
+	<field name="hist_deb18" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_deb18]]></fieldDescription>
+	</field>
+	<field name="hist_cred16" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_cred16]]></fieldDescription>
+	</field>
+	<field name="hist_deb16" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_deb16]]></fieldDescription>
+	</field>
+	<field name="hist_cred31" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_cred31]]></fieldDescription>
+	</field>
+	<field name="hist_linha07_cor" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_linha07_cor]]></fieldDescription>
+	</field>
+	<field name="hist_deb10" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_deb10]]></fieldDescription>
+	</field>
+	<field name="banco" class="java.lang.String">
+		<fieldDescription><![CDATA[banco]]></fieldDescription>
+	</field>
+	<field name="hist_linha31_cor" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_linha31_cor]]></fieldDescription>
+	</field>
+	<field name="hist_deb09" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_deb09]]></fieldDescription>
+	</field>
+	<field name="hist_linha13" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_linha13]]></fieldDescription>
+	</field>
+	<field name="hist_deb34" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_deb34]]></fieldDescription>
+	</field>
+	<field name="hist_deb38" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_deb38]]></fieldDescription>
+	</field>
+	<field name="hist_deb40" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_deb40]]></fieldDescription>
+	</field>
+	<field name="hist_linha01_cor" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_linha01_cor]]></fieldDescription>
+	</field>
+	<field name="hist_cred11" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_cred11]]></fieldDescription>
+	</field>
+	<field name="hist_linha22_cor" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_linha22_cor]]></fieldDescription>
+	</field>
+	<field name="hist_linha26_cor" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_linha26_cor]]></fieldDescription>
+	</field>
+	<field name="hist_deb08" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_deb08]]></fieldDescription>
+	</field>
+	<field name="hist_cred34" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_cred34]]></fieldDescription>
+	</field>
+	<field name="hist_deb39" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_deb39]]></fieldDescription>
+	</field>
+	<field name="hist_linha18" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_linha18]]></fieldDescription>
+	</field>
+	<field name="hist_linha25_cor" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_linha25_cor]]></fieldDescription>
+	</field>
+	<field name="hist_cred09" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_cred09]]></fieldDescription>
+	</field>
+	<field name="hist_deb21" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_deb21]]></fieldDescription>
+	</field>
+	<field name="hist_cred35" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_cred35]]></fieldDescription>
+	</field>
+	<field name="hist_linha32_cor" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_linha32_cor]]></fieldDescription>
+	</field>
+	<field name="hist_cred22" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_cred22]]></fieldDescription>
+	</field>
+	<field name="hist_cred07" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_cred07]]></fieldDescription>
+	</field>
+	<field name="hist_linha02" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_linha02]]></fieldDescription>
+	</field>
+	<field name="hist_deb37" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_deb37]]></fieldDescription>
+	</field>
+	<field name="hist_linha06_cor" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_linha06_cor]]></fieldDescription>
+	</field>
+	<field name="hist_linha14_cor" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_linha14_cor]]></fieldDescription>
+	</field>
+	<field name="hist_linha11_cor" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_linha11_cor]]></fieldDescription>
+	</field>
+	<field name="hist_linha37_cor" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_linha37_cor]]></fieldDescription>
+	</field>
+	<field name="hist_linha06" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_linha06]]></fieldDescription>
+	</field>
+	<field name="hist_linha20" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_linha20]]></fieldDescription>
+	</field>
+	<field name="hist_linha34" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_linha34]]></fieldDescription>
+	</field>
+	<field name="hist_deb23" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_deb23]]></fieldDescription>
+	</field>
+	<field name="hist_cred12" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_cred12]]></fieldDescription>
+	</field>
+	<field name="hist_linha09_cor" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_linha09_cor]]></fieldDescription>
+	</field>
+	<field name="hist_cred04" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_cred04]]></fieldDescription>
+	</field>
+	<field name="hist_linha38_cor" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_linha38_cor]]></fieldDescription>
+	</field>
+	<field name="hist_linha35" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_linha35]]></fieldDescription>
+	</field>
+	<field name="hist_linha05_cor" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_linha05_cor]]></fieldDescription>
+	</field>
+	<field name="hist_deb32" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_deb32]]></fieldDescription>
+	</field>
+	<field name="hist_cred33" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_cred33]]></fieldDescription>
+	</field>
+	<field name="hist_linha07" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_linha07]]></fieldDescription>
+	</field>
+	<field name="hist_cred21" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_cred21]]></fieldDescription>
+	</field>
+	<field name="hist_linha37" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_linha37]]></fieldDescription>
+	</field>
+	<field name="hist_linha23_cor" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_linha23_cor]]></fieldDescription>
+	</field>
+	<field name="hist_linha12_cor" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_linha12_cor]]></fieldDescription>
+	</field>
+	<field name="hist_cred38" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_cred38]]></fieldDescription>
+	</field>
+	<field name="hist_cred05" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_cred05]]></fieldDescription>
+	</field>
+	<field name="hist_cred06" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_cred06]]></fieldDescription>
+	</field>
+	<field name="hist_cred32" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_cred32]]></fieldDescription>
+	</field>
+	<field name="hist_cred36" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_cred36]]></fieldDescription>
+	</field>
+	<field name="hist_cred23" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_cred23]]></fieldDescription>
+	</field>
+	<field name="hist_linha21_cor" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_linha21_cor]]></fieldDescription>
+	</field>
+	<field name="hist_linha21" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_linha21]]></fieldDescription>
+	</field>
+	<field name="hist_linha11" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_linha11]]></fieldDescription>
+	</field>
+	<field name="hist_deb12" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_deb12]]></fieldDescription>
+	</field>
+	<field name="hist_linha28" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_linha28]]></fieldDescription>
+	</field>
+	<field name="hist_linha39_cor" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_linha39_cor]]></fieldDescription>
+	</field>
+	<field name="hist_linha13_cor" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_linha13_cor]]></fieldDescription>
+	</field>
+	<field name="hist_cred28" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_cred28]]></fieldDescription>
+	</field>
+	<field name="extratoNumero" class="java.lang.String">
+		<fieldDescription><![CDATA[extratoNumero]]></fieldDescription>
+	</field>
+	<field name="hist_deb03" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_deb03]]></fieldDescription>
+	</field>
+	<field name="hist_cred19" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_cred19]]></fieldDescription>
+	</field>
+	<field name="hist_linha33" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_linha33]]></fieldDescription>
+	</field>
+	<field name="hist_linha29_cor" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_linha29_cor]]></fieldDescription>
+	</field>
+	<field name="hist_cred20" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_cred20]]></fieldDescription>
+	</field>
+	<field name="hist_cred37" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_cred37]]></fieldDescription>
+	</field>
+	<field name="hist_deb04" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_deb04]]></fieldDescription>
+	</field>
+	<field name="hist_linha27" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_linha27]]></fieldDescription>
+	</field>
+	<field name="hist_linha10" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_linha10]]></fieldDescription>
+	</field>
+	<field name="hist_linha04" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_linha04]]></fieldDescription>
+	</field>
+	<field name="barras" class="java.lang.String">
+		<fieldDescription><![CDATA[barras]]></fieldDescription>
+	</field>
+	<field name="hist_linha03" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_linha03]]></fieldDescription>
+	</field>
+	<field name="hist_linha02_cor" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_linha02_cor]]></fieldDescription>
+	</field>
+	<field name="hist_deb06" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_deb06]]></fieldDescription>
+	</field>
+	<field name="hist_cred02" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_cred02]]></fieldDescription>
+	</field>
+	<field name="hist_deb27" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_deb27]]></fieldDescription>
+	</field>
+	<field name="hist_linha25" class="java.lang.String">
+		<fieldDescription><![CDATA[hist_linha25]]></fieldDescription>
+	</field>
+	<variable name="credito" class="java.lang.Float">
+		<variableExpression><![CDATA[LerValor.LerValor.StringToFloat($F{hist_cred01}) +
+LerValor.LerValor.StringToFloat($F{hist_cred02}) +
+LerValor.LerValor.StringToFloat($F{hist_cred03}) +
+LerValor.LerValor.StringToFloat($F{hist_cred04}) +
+LerValor.LerValor.StringToFloat($F{hist_cred05}) +
+LerValor.LerValor.StringToFloat($F{hist_cred06}) +
+LerValor.LerValor.StringToFloat($F{hist_cred07}) +
+LerValor.LerValor.StringToFloat($F{hist_cred08}) +
+LerValor.LerValor.StringToFloat($F{hist_cred09}) +
+LerValor.LerValor.StringToFloat($F{hist_cred10}) +
+LerValor.LerValor.StringToFloat($F{hist_cred11}) +
+LerValor.LerValor.StringToFloat($F{hist_cred12}) +
+LerValor.LerValor.StringToFloat($F{hist_cred13}) +
+LerValor.LerValor.StringToFloat($F{hist_cred14}) +
+LerValor.LerValor.StringToFloat($F{hist_cred15}) +
+LerValor.LerValor.StringToFloat($F{hist_cred16}) +
+LerValor.LerValor.StringToFloat($F{hist_cred17}) +
+LerValor.LerValor.StringToFloat($F{hist_cred18}) +
+LerValor.LerValor.StringToFloat($F{hist_cred19}) +
+LerValor.LerValor.StringToFloat($F{hist_cred20}) +
+LerValor.LerValor.StringToFloat($F{hist_cred21}) +
+LerValor.LerValor.StringToFloat($F{hist_cred22}) +
+LerValor.LerValor.StringToFloat($F{hist_cred23}) +
+LerValor.LerValor.StringToFloat($F{hist_cred24}) +
+LerValor.LerValor.StringToFloat($F{hist_cred25}) +
+LerValor.LerValor.StringToFloat($F{hist_cred26}) +
+LerValor.LerValor.StringToFloat($F{hist_cred27}) +
+LerValor.LerValor.StringToFloat($F{hist_cred28}) +
+LerValor.LerValor.StringToFloat($F{hist_cred29}) +
+LerValor.LerValor.StringToFloat($F{hist_cred30}) +
+LerValor.LerValor.StringToFloat($F{hist_cred31}) +
+LerValor.LerValor.StringToFloat($F{hist_cred32}) +
+LerValor.LerValor.StringToFloat($F{hist_cred33}) +
+LerValor.LerValor.StringToFloat($F{hist_cred34}) +
+LerValor.LerValor.StringToFloat($F{hist_cred35}) +
+LerValor.LerValor.StringToFloat($F{hist_cred36}) +
+LerValor.LerValor.StringToFloat($F{hist_cred37}) +
+LerValor.LerValor.StringToFloat($F{hist_cred38}) +
+LerValor.LerValor.StringToFloat($F{hist_cred39}) +
+LerValor.LerValor.StringToFloat($F{hist_cred40})]]></variableExpression>
+	</variable>
+	<variable name="debito" class="java.lang.Float">
+		<variableExpression><![CDATA[LerValor.LerValor.StringToFloat($F{hist_deb01}) +
+LerValor.LerValor.StringToFloat($F{hist_deb02}) +
+LerValor.LerValor.StringToFloat($F{hist_deb03}) +
+LerValor.LerValor.StringToFloat($F{hist_deb04}) +
+LerValor.LerValor.StringToFloat($F{hist_deb05}) +
+LerValor.LerValor.StringToFloat($F{hist_deb06}) +
+LerValor.LerValor.StringToFloat($F{hist_deb07}) +
+LerValor.LerValor.StringToFloat($F{hist_deb08}) +
+LerValor.LerValor.StringToFloat($F{hist_deb09}) +
+LerValor.LerValor.StringToFloat($F{hist_deb10}) +
+LerValor.LerValor.StringToFloat($F{hist_deb11}) +
+LerValor.LerValor.StringToFloat($F{hist_deb12}) +
+LerValor.LerValor.StringToFloat($F{hist_deb13}) +
+LerValor.LerValor.StringToFloat($F{hist_deb14}) +
+LerValor.LerValor.StringToFloat($F{hist_deb15}) +
+LerValor.LerValor.StringToFloat($F{hist_deb16}) +
+LerValor.LerValor.StringToFloat($F{hist_deb17}) +
+LerValor.LerValor.StringToFloat($F{hist_deb18}) +
+LerValor.LerValor.StringToFloat($F{hist_deb19}) +
+LerValor.LerValor.StringToFloat($F{hist_deb20}) +
+LerValor.LerValor.StringToFloat($F{hist_deb21}) +
+LerValor.LerValor.StringToFloat($F{hist_deb22}) +
+LerValor.LerValor.StringToFloat($F{hist_deb23}) +
+LerValor.LerValor.StringToFloat($F{hist_deb24}) +
+LerValor.LerValor.StringToFloat($F{hist_deb25}) +
+LerValor.LerValor.StringToFloat($F{hist_deb26}) +
+LerValor.LerValor.StringToFloat($F{hist_deb27}) +
+LerValor.LerValor.StringToFloat($F{hist_deb28}) +
+LerValor.LerValor.StringToFloat($F{hist_deb29}) +
+LerValor.LerValor.StringToFloat($F{hist_deb30}) +
+LerValor.LerValor.StringToFloat($F{hist_deb31}) +
+LerValor.LerValor.StringToFloat($F{hist_deb32}) +
+LerValor.LerValor.StringToFloat($F{hist_deb33}) +
+LerValor.LerValor.StringToFloat($F{hist_deb34}) +
+LerValor.LerValor.StringToFloat($F{hist_deb35}) +
+LerValor.LerValor.StringToFloat($F{hist_deb36}) +
+LerValor.LerValor.StringToFloat($F{hist_deb37}) +
+LerValor.LerValor.StringToFloat($F{hist_deb38}) +
+LerValor.LerValor.StringToFloat($F{hist_deb39}) +
+LerValor.LerValor.StringToFloat($F{hist_deb40})]]></variableExpression>
+	</variable>
+	<variable name="saldo" class="java.lang.Float">
+		<variableExpression><![CDATA[$V{credito} - $V{debito}]]></variableExpression>
+	</variable>
+	<detail>
+		<band height="555" splitType="Stretch">
+			<rectangle radius="5">
+				<reportElement uuid="b2ed82fb-56d8-4eb2-b9f9-e141592e1a78" x="43" y="120" width="352" height="382"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle radius="5">
+				<reportElement uuid="fed11e83-2cd4-4c4e-8212-f100376b2914" x="43" y="0" width="353" height="92"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle radius="5">
+				<reportElement uuid="05a6aa62-da6f-4632-9716-ebc4277de20c" x="424" y="120" width="352" height="382"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle radius="5">
+				<reportElement uuid="c3e0e0e8-b5c0-450a-91cd-ba951307e73f" x="424" y="92" width="353" height="28"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle radius="5">
+				<reportElement uuid="17f9e181-22fe-45a3-af98-08ca38d22389" x="424" y="0" width="353" height="92"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle radius="5">
+				<reportElement uuid="1245f8ba-dc30-4725-8342-49f5b3326f9d" x="43" y="523" width="353" height="32"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle radius="5">
+				<reportElement uuid="58c2c659-aa62-4bad-b4d7-be39ab917a53" x="43" y="92" width="353" height="28"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</rectangle>
+			<line>
+				<reportElement uuid="d930a08d-1671-4dd2-929a-7f29033dd9fd" x="405" y="2" width="2" height="553"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineStyle="Dashed"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement uuid="8346c50a-5594-4ed2-81a8-23ff015a79a9" x="414" y="167" width="10" height="267"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" rotation="Left">
+					<font fontName="DejaVu Sans" size="6" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[GMLDias Sistemas & Análises Microcomputadores - Tel.:(21)2701-0261 / 8418-1999]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="52c6705f-9465-4a11-a9c4-b41b78a30218" x="238" y="527" width="69" height="12"/>
+				<textElement>
+					<font size="6" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Assinatura]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="1b2ed274-60cb-4a6a-9280-c5017725c8fc" x="720" y="120" width="1" height="382"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement uuid="532d2504-7dd9-4fc2-a3e2-394dbb4660e3" x="51" y="527" width="69" height="12"/>
+				<textElement>
+					<font size="6" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Autenticação]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="cdfb1e66-0419-4caf-a3c4-7d3763f0a4ac" x="663" y="120" width="1" height="382"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</line>
+			<rectangle radius="5">
+				<reportElement uuid="a2dbfe10-3318-4de5-98c1-507bf4c0c86f" x="43" y="502" width="353" height="21"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</rectangle>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="f1f95770-4b49-4e7a-aa33-d1b8d0e45219" x="50" y="539" width="333" height="12"/>
+				<textElement textAlignment="Center" markup="none">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{autentica}]]></textFieldExpression>
+			</textField>
+			<componentElement>
+				<reportElement uuid="b0081e2c-4f61-4c7a-acf6-3d54d83bc3ab" x="744" y="7" width="30" height="85"/>
+				<jr:Codabar xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" orientation="90" textPosition="none">
+					<jr:codeExpression><![CDATA[$F{barras}]]></jr:codeExpression>
+				</jr:Codabar>
+			</componentElement>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="209b168e-c027-4e6b-bfe8-b171526baed9" x="477" y="95" width="294" height="12"/>
+				<textElement markup="none">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nomeProp}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement uuid="b78807e8-dcc7-4376-b911-7ad390ca3c8d" x="429" y="7" width="185" height="57"/>
+				<imageExpression><![CDATA[$F{logoLocation}]]></imageExpression>
+			</image>
+			<textField pattern="###0" isBlankWhenNull="true">
+				<reportElement uuid="de6dbf2d-676d-4b91-a08d-2f66e2a1f569" x="695" y="22" width="44" height="13"/>
+				<textElement markup="none">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{extratoNumero}.isEmpty() ? "Preview" : $F{extratoNumero})]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="e0c9c103-138a-4832-b379-c4a6ae418de8" positionType="Float" stretchType="RelativeToBandHeight" x="622" y="7" width="29" height="13"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="8" isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Data:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="1ea38d3e-cf11-4401-8822-78202d41b59e" x="645" y="22" width="50" height="13"/>
+				<textElement textAlignment="Right">
+					<font size="8" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Extrato:]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="3c64410b-c9ac-4698-96c9-4eb3689a7e39" x="619" y="35" width="80" height="13"/>
+				<textElement textAlignment="Right">
+					<font size="8" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Página "+$V{PAGE_NUMBER}+" de"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement uuid="7bb7770c-6b50-4d20-a046-93741ca7d14c" x="699" y="35" width="40" height="13"/>
+				<textElement>
+					<font size="8" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="f1b21da7-df3e-4589-a9ba-272e8d3df98b" x="429" y="69" width="308" height="20" forecolor="#FF0000"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="10" isBold="true" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{mensagem}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="f028de35-cf03-492e-8a24-eb507d2121f6" x="430" y="95" width="47" height="12"/>
+				<textElement>
+					<font size="8" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Registro:]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true" pattern="dd/MM/yyyy - HH:mm" isBlankWhenNull="true">
+				<reportElement uuid="56b8c01f-59e6-4774-b49c-70fbbf2db60f" positionType="Float" stretchType="RelativeToBandHeight" x="653" y="7" width="86" height="13" isPrintInFirstWholeBand="true"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="8" isBold="true" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="8304d5d6-7186-467c-a2df-6d137975ebd6" x="429" y="105" width="170" height="13" forecolor="#3333FF"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{banco}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="a1ec5a43-2674-4827-a380-a6ed96a87234" mode="Opaque" x="425" y="209" width="237" height="10"/>
+				<textElement textAlignment="Justified" markup="html">
+					<font fontName="DejaVu Sans" size="8"/>
+					<paragraph tabStopWidth="50"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{hist_linha09_cor}.equals("") ? "" : ($F{hist_linha09_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha09_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha09_cor}.split(";")[2] + ">")) + $F{hist_linha09} + ($F{hist_linha09_cor}.equals("") ? "" : ($F{hist_linha09_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha09_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
+			</textField>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement uuid="086765d2-456c-4267-843a-1d65aeeafe5f" mode="Opaque" x="425" y="137" width="237" height="10"/>
+				<textElement textAlignment="Justified" markup="html">
+					<font fontName="DejaVu Sans" size="8" isStrikeThrough="false"/>
+					<paragraph tabStopWidth="50"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{hist_linha01_cor}.equals("") ? "" : ($F{hist_linha01_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha01_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha01_cor}.split(";")[2] + ">")) + $F{hist_linha01} + ($F{hist_linha01_cor}.equals("") ? "" : ($F{hist_linha01_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha01_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="15057fc9-a790-44dd-9514-cc94c134e9ad" mode="Opaque" x="721" y="182" width="54" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_deb06}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="a54cbd56-0541-45cb-8873-9288f78467ca" mode="Opaque" x="665" y="164" width="54" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_cred04}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="1480d209-ffae-42b6-ba08-d983118d3fc2" mode="Opaque" x="665" y="146" width="54" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_cred02}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="b73a2eb3-70ed-48a6-a090-c522e999a66f" mode="Opaque" x="665" y="137" width="54" height="10"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_cred01}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="92f5d3ee-806f-4eea-ad98-74f061b754c4" mode="Opaque" x="425" y="200" width="237" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Justified" markup="html">
+					<font fontName="DejaVu Sans" size="8"/>
+					<paragraph tabStopWidth="50"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{hist_linha08_cor}.equals("") ? "" : ($F{hist_linha08_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha08_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha08_cor}.split(";")[2] + ">")) + $F{hist_linha08} + ($F{hist_linha08_cor}.equals("") ? "" : ($F{hist_linha08_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha08_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="f644af4e-c901-402c-b1e9-1a4dbacdcd68" mode="Opaque" x="665" y="182" width="54" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_cred06}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="154a99be-5155-4a5e-beed-423ba3e0c955" mode="Opaque" x="721" y="155" width="54" height="10"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_deb03}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="e16e7dc0-cb87-474d-8d94-84b7266dfb95" mode="Opaque" x="425" y="182" width="237" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Justified" markup="html">
+					<font fontName="DejaVu Sans" size="8"/>
+					<paragraph tabStopWidth="50"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{hist_linha06_cor}.equals("") ? "" : ($F{hist_linha06_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha06_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha06_cor}.split(";")[2] + ">")) + $F{hist_linha06} + ($F{hist_linha06_cor}.equals("") ? "" : ($F{hist_linha06_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha06_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="69578d97-0089-40e1-8e93-c8dafb2b34ee" mode="Opaque" x="721" y="137" width="54" height="10"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_deb01}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="3ef0d746-1af5-448f-97b1-78681a1c34b1" mode="Opaque" x="721" y="209" width="54" height="10"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_deb09}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="b56a4d22-98c2-4af9-b119-3bc935e6410c" mode="Opaque" x="425" y="164" width="237" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Justified" markup="html">
+					<font fontName="DejaVu Sans" size="8"/>
+					<paragraph tabStopWidth="50"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{hist_linha04_cor}.equals("") ? "" : ($F{hist_linha04_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha04_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha04_cor}.split(";")[2] + ">")) + $F{hist_linha04} + ($F{hist_linha04_cor}.equals("") ? "" : ($F{hist_linha04_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha04_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="f07c9441-885d-46a1-9ab8-ae2a9b1598e9" mode="Opaque" x="665" y="173" width="54" height="10"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_cred05}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="9c6cac11-cc1f-454d-82ac-9223c0d79d45" mode="Opaque" x="665" y="155" width="54" height="10"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_cred03}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="a627dc59-af4f-4d5d-aa7e-e64676ef70d5" mode="Opaque" x="721" y="200" width="54" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_deb08}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="fc00db6c-05f2-44be-8d61-99713e57c524" mode="Opaque" x="425" y="173" width="237" height="10"/>
+				<textElement textAlignment="Justified" markup="html">
+					<font fontName="DejaVu Sans" size="8"/>
+					<paragraph tabStopWidth="50"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{hist_linha05_cor}.equals("") ? "" : ($F{hist_linha05_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha05_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha05_cor}.split(";")[2] + ">")) + $F{hist_linha05} + ($F{hist_linha05_cor}.equals("") ? "" : ($F{hist_linha05_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha05_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="13916b12-3b3a-40b3-b05f-41825190ad78" mode="Opaque" x="665" y="191" width="54" height="10"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_cred07}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="6ea76419-34d8-48e4-b245-daf111a94c7b" mode="Opaque" x="665" y="200" width="54" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_cred08}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="08b4de3d-7e06-4e3e-9adc-193c303b42d8" mode="Opaque" x="665" y="209" width="54" height="10"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_cred09}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="ded11a49-b8f2-49df-ba6f-4d489081da3f" mode="Opaque" x="425" y="191" width="237" height="10"/>
+				<textElement textAlignment="Justified" markup="html">
+					<font fontName="DejaVu Sans" size="8"/>
+					<paragraph tabStopWidth="50"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{hist_linha07_cor}.equals("") ? "" : ($F{hist_linha07_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha07_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha07_cor}.split(";")[2] + ">")) + $F{hist_linha07} + ($F{hist_linha07_cor}.equals("") ? "" : ($F{hist_linha07_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha07_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="9ad9d95c-099c-4900-a72e-29f61932bd96" mode="Opaque" x="721" y="146" width="54" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_deb02}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="237c7e86-c011-47f8-89b4-8a8c9d934c3f" mode="Opaque" x="721" y="173" width="54" height="10"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_deb05}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="b94d2956-c845-43b6-82b5-e42a2a7f5ab0" mode="Opaque" x="425" y="146" width="237" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Justified" markup="html">
+					<font fontName="DejaVu Sans" size="8"/>
+					<paragraph tabStopWidth="50"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{hist_linha02_cor}.equals("") ? "" : ($F{hist_linha02_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha02_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha02_cor}.split(";")[2] + ">")) + $F{hist_linha02} + ($F{hist_linha02_cor}.equals("") ? "" : ($F{hist_linha02_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha02_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="d614f301-7d33-4f83-a32e-7697514b6099" mode="Opaque" x="721" y="191" width="54" height="10"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_deb07}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="ec2f9db9-14f1-41a0-96d9-33ecec1fda88" mode="Opaque" x="721" y="124" width="54" height="13" backcolor="#E6E3E3"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="7" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[DÉBITO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="1ffff5ba-64eb-494f-86b1-ae716e6d232f" mode="Opaque" x="425" y="124" width="237" height="13" backcolor="#E6E3E3"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="7" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[HISTÓRICO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="12cbc6f8-22a9-455c-88c0-48f42ee6c76f" mode="Opaque" x="665" y="124" width="54" height="13" backcolor="#E6E3E3"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="7" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[CRÉDITO]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="46bcde5c-b766-4e45-9bac-54c320c791f7" mode="Opaque" x="721" y="164" width="54" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_deb04}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="d3181920-4216-432c-9cde-beb1f6acfb2e" mode="Opaque" x="425" y="155" width="237" height="10"/>
+				<textElement textAlignment="Justified" markup="html">
+					<font fontName="DejaVu Sans" size="8"/>
+					<paragraph tabStopWidth="50"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{hist_linha03_cor}.equals("") ? "" : ($F{hist_linha03_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha03_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha03_cor}.split(";")[2] + ">")) + $F{hist_linha03} + ($F{hist_linha03_cor}.equals("") ? "" : ($F{hist_linha03_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha03_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="b5138eb7-6242-4417-a273-a65c3db7eeee" mode="Opaque" x="721" y="290" width="54" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_deb18}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="0e098cc3-8203-4c56-bc82-9b876ba3af7f" mode="Opaque" x="721" y="245" width="54" height="10"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_deb13}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="e9f590ee-9d16-4d74-9a06-a7f7c2b135eb" mode="Opaque" x="665" y="263" width="54" height="10"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_cred15}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="055cc8d1-0925-4a5c-aee8-7878d595eac3" mode="Opaque" x="665" y="245" width="54" height="10"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_cred13}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="fa1d5718-fd39-467d-8a3d-eeca94690ceb" mode="Opaque" x="665" y="236" width="54" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_cred12}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="9222219a-9bfe-4ff1-b501-b6328b8271b9" mode="Opaque" x="721" y="263" width="54" height="10"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_deb15}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="832146f4-43ce-4201-b142-a37eb927fb81" mode="Opaque" x="425" y="254" width="237" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Justified" markup="html">
+					<font fontName="DejaVu Sans" size="8"/>
+					<paragraph tabStopWidth="50"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{hist_linha14_cor}.equals("") ? "" : ($F{hist_linha14_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha14_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha14_cor}.split(";")[2] + ">")) + $F{hist_linha14} + ($F{hist_linha14_cor}.equals("") ? "" : ($F{hist_linha14_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha14_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="a995538e-108b-41b6-9881-2dc77f91a652" mode="Opaque" x="721" y="236" width="54" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_deb12}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="768b2211-5859-4ed6-9189-760a105256ee" mode="Opaque" x="721" y="281" width="54" height="10"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_deb17}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="6b995c96-1953-4888-8405-939887dc4031" mode="Opaque" x="665" y="281" width="54" height="10"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_cred17}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="852435b4-d2f3-48ef-a49d-a0cdea834950" mode="Opaque" x="665" y="272" width="54" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_cred16}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="d0cd6ff6-2e11-481e-a846-78fae9096254" mode="Opaque" x="721" y="254" width="54" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_deb14}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="6e2123e2-51be-4913-a18f-26c6ae7a6bcb" mode="Opaque" x="721" y="227" width="54" height="10"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_deb11}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="c1356192-5dc5-4b8e-8fc3-0822e07a2aeb" mode="Opaque" x="721" y="218" width="54" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_deb10}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="772e0c3b-b4c4-47b7-8168-55b6377997f5" mode="Opaque" x="665" y="227" width="54" height="10"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_cred11}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="4cc1efbc-9d6a-4922-877b-e68467956fa1" mode="Opaque" x="721" y="272" width="54" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_deb16}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="706e1bf5-97c4-4e18-b856-41cc352a0dae" mode="Opaque" x="665" y="290" width="54" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_cred18}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="b7ce3f34-d391-4470-9db0-7c9e7409a901" mode="Opaque" x="425" y="227" width="237" height="10"/>
+				<textElement textAlignment="Justified" markup="html">
+					<font fontName="DejaVu Sans" size="8"/>
+					<paragraph tabStopWidth="50"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{hist_linha11_cor}.equals("") ? "" : ($F{hist_linha11_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha11_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha11_cor}.split(";")[2] + ">")) + $F{hist_linha11} + ($F{hist_linha11_cor}.equals("") ? "" : ($F{hist_linha11_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha11_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="63b2e4b8-6aed-4c31-aaf8-d21b820ebb38" mode="Opaque" x="425" y="317" width="237" height="10"/>
+				<textElement textAlignment="Justified" markup="html">
+					<font fontName="DejaVu Sans" size="8"/>
+					<paragraph tabStopWidth="50"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{hist_linha21_cor}.equals("") ? "" : ($F{hist_linha21_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha21_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha21_cor}.split(";")[2] + ">")) + $F{hist_linha21} + ($F{hist_linha21_cor}.equals("") ? "" : ($F{hist_linha21_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha21_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="f55a690b-7eec-4b4b-98de-1eb4509c3f75" mode="Opaque" x="665" y="218" width="54" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_cred10}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="118e0ca3-918b-4dd3-afee-7d57ec53098b" mode="Opaque" x="721" y="308" width="54" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_deb20}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="539adec5-712b-4452-9c38-dc9849c92288" mode="Opaque" x="425" y="245" width="237" height="10"/>
+				<textElement textAlignment="Justified" markup="html">
+					<font fontName="DejaVu Sans" size="8"/>
+					<paragraph tabStopWidth="50"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{hist_linha13_cor}.equals("") ? "" : ($F{hist_linha13_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha13_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha13_cor}.split(";")[2] + ">")) + $F{hist_linha13} + ($F{hist_linha13_cor}.equals("") ? "" : ($F{hist_linha13_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha13_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="0a47b2c5-cf25-4fe1-addb-146e0be3a93a" mode="Opaque" x="665" y="317" width="54" height="10"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_cred21}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="28949002-ab0c-4d46-a6fd-8e9a15073be7" mode="Opaque" x="721" y="317" width="54" height="10"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_deb21}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="0def0e3e-69e2-4dfe-bc6e-d6970aa2b816" mode="Opaque" x="425" y="281" width="237" height="10"/>
+				<textElement textAlignment="Justified" markup="html">
+					<font fontName="DejaVu Sans" size="8"/>
+					<paragraph tabStopWidth="50"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{hist_linha17_cor}.equals("") ? "" : ($F{hist_linha17_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha17_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha17_cor}.split(";")[2] + ">")) + $F{hist_linha17} + ($F{hist_linha17_cor}.equals("") ? "" : ($F{hist_linha17_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha17_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="31f6e393-cfcc-4699-ac14-7367c31703c9" mode="Opaque" x="425" y="290" width="237" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Justified" markup="html">
+					<font fontName="DejaVu Sans" size="8"/>
+					<paragraph tabStopWidth="50"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{hist_linha18_cor}.equals("") ? "" : ($F{hist_linha18_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha18_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha18_cor}.split(";")[2] + ">")) + $F{hist_linha18} + ($F{hist_linha18_cor}.equals("") ? "" : ($F{hist_linha18_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha18_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="2c9ac70d-6db6-469b-a6a5-94e3632b12f9" mode="Opaque" x="425" y="236" width="237" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Justified" markup="html">
+					<font fontName="DejaVu Sans" size="8"/>
+					<paragraph tabStopWidth="50"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{hist_linha12_cor}.equals("") ? "" : ($F{hist_linha12_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha12_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha12_cor}.split(";")[2] + ">")) + $F{hist_linha12} + ($F{hist_linha12_cor}.equals("") ? "" : ($F{hist_linha12_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha12_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="b28ebc50-bc03-45fa-b666-bee80613192d" mode="Opaque" x="721" y="299" width="54" height="10"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_deb19}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="12bcfabc-868d-4b69-8608-98af4d22fb2d" mode="Opaque" x="665" y="254" width="54" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_cred14}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="fb1ae960-960a-4c88-b95c-484917252682" mode="Opaque" x="425" y="263" width="237" height="10"/>
+				<textElement textAlignment="Justified" markup="html">
+					<font fontName="DejaVu Sans" size="8"/>
+					<paragraph tabStopWidth="50"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{hist_linha15_cor}.equals("") ? "" : ($F{hist_linha15_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha15_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha15_cor}.split(";")[2] + ">")) + $F{hist_linha15} + ($F{hist_linha15_cor}.equals("") ? "" : ($F{hist_linha15_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha15_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="65e19304-28dc-4703-a953-1a91df1a75c2" mode="Opaque" x="425" y="299" width="237" height="10"/>
+				<textElement textAlignment="Justified" markup="html">
+					<font fontName="DejaVu Sans" size="8"/>
+					<paragraph tabStopWidth="50"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{hist_linha19_cor}.equals("") ? "" : ($F{hist_linha19_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha19_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha19_cor}.split(";")[2] + ">")) + $F{hist_linha19} + ($F{hist_linha19_cor}.equals("") ? "" : ($F{hist_linha19_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha19_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="68b49008-ab21-4261-ad12-cb9c950a642e" mode="Opaque" x="425" y="218" width="237" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Justified" markup="html">
+					<font fontName="DejaVu Sans" size="8"/>
+					<paragraph tabStopWidth="50"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{hist_linha10_cor}.equals("") ? "" : ($F{hist_linha10_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha10_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha10_cor}.split(";")[2] + ">")) + $F{hist_linha10} + ($F{hist_linha10_cor}.equals("") ? "" : ($F{hist_linha10_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha10_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="7dd14b2b-3288-4f97-b9bb-6df992625640" mode="Opaque" x="665" y="308" width="54" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_cred20}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="148e2814-ccea-433f-92fa-c3c2205a464a" mode="Opaque" x="425" y="272" width="237" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Justified" markup="html">
+					<font fontName="DejaVu Sans" size="8"/>
+					<paragraph tabStopWidth="50"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{hist_linha16_cor}.equals("") ? "" : ($F{hist_linha16_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha16_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha16_cor}.split(";")[2] + ">")) + $F{hist_linha16} + ($F{hist_linha16_cor}.equals("") ? "" : ($F{hist_linha16_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha16_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="c4db5d6f-1d61-46a0-9bae-01ca93ceecce" mode="Opaque" x="425" y="308" width="237" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Justified" markup="html">
+					<font fontName="DejaVu Sans" size="8"/>
+					<paragraph tabStopWidth="50"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{hist_linha20_cor}.equals("") ? "" : ($F{hist_linha20_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha20_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha20_cor}.split(";")[2] + ">")) + $F{hist_linha20} + ($F{hist_linha20_cor}.equals("") ? "" : ($F{hist_linha20_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha20_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="04571507-31e8-4848-ba0b-cef8d86f575b" mode="Opaque" x="665" y="299" width="54" height="10"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_cred19}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="d9b43f6a-624b-49e0-a655-2c2002ab3111" mode="Opaque" x="425" y="398" width="237" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Justified" markup="html">
+					<font fontName="DejaVu Sans" size="8"/>
+					<paragraph tabStopWidth="50"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{hist_linha30_cor}.equals("") ? "" : ($F{hist_linha30_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha30_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha30_cor}.split(";")[2] + ">")) + $F{hist_linha30} + ($F{hist_linha30_cor}.equals("") ? "" : ($F{hist_linha30_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha30_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="9ef7b70e-48bb-4107-84bb-3b72c2574408" mode="Opaque" x="721" y="479" width="54" height="10"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_deb39}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="3b43968c-3b8d-402a-9152-b25fce6d9b46" mode="Opaque" x="721" y="335" width="54" height="10"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_deb23}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="67df7eae-44e9-43ad-9da6-1b0adfb5bce0" mode="Opaque" x="721" y="425" width="54" height="10"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_deb33}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="305abb90-b404-49c1-bee8-acd63612389a" mode="Opaque" x="425" y="461" width="237" height="10"/>
+				<textElement textAlignment="Justified" markup="html">
+					<font fontName="DejaVu Sans" size="8"/>
+					<paragraph tabStopWidth="50"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{hist_linha37_cor}.equals("") ? "" : ($F{hist_linha37_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha37_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha37_cor}.split(";")[2] + ">")) + $F{hist_linha37} + ($F{hist_linha37_cor}.equals("") ? "" : ($F{hist_linha37_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha37_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="778fec0b-b8e6-4614-9203-3870ef0bac41" mode="Opaque" x="665" y="470" width="54" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_cred38}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="1ac181da-09ee-4b8d-b9dc-48a3d047f559" mode="Opaque" x="721" y="362" width="54" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_deb26}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="0cf4df5d-f370-4fdf-b188-02d262307a8d" mode="Opaque" x="665" y="398" width="54" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_cred30}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="08d1177e-d5b6-4a48-bd88-ec719aa12784" mode="Opaque" x="721" y="434" width="54" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_deb34}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="efa86b14-5067-4be2-92e4-2ae8168513d5" mode="Opaque" x="425" y="452" width="237" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Justified" markup="html">
+					<font fontName="DejaVu Sans" size="8"/>
+					<paragraph tabStopWidth="50"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{hist_linha36_cor}.equals("") ? "" : ($F{hist_linha36_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha36_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha36_cor}.split(";")[2] + ">")) + $F{hist_linha36} + ($F{hist_linha36_cor}.equals("") ? "" : ($F{hist_linha36_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha36_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="d7650a5a-e65c-4124-984b-671c56ed8fb5" mode="Opaque" x="425" y="380" width="237" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Justified" markup="html">
+					<font fontName="DejaVu Sans" size="8"/>
+					<paragraph tabStopWidth="50"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{hist_linha28_cor}.equals("") ? "" : ($F{hist_linha28_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha28_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha28_cor}.split(";")[2] + ">")) + $F{hist_linha28} + ($F{hist_linha28_cor}.equals("") ? "" : ($F{hist_linha28_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha28_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="80f2c148-c9a6-4353-8e08-0b815d72e970" mode="Opaque" x="425" y="371" width="237" height="10"/>
+				<textElement textAlignment="Justified" markup="html">
+					<font fontName="DejaVu Sans" size="8"/>
+					<paragraph tabStopWidth="50"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{hist_linha27_cor}.equals("") ? "" : ($F{hist_linha27_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha27_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha27_cor}.split(";")[2] + ">")) + $F{hist_linha27} + ($F{hist_linha27_cor}.equals("") ? "" : ($F{hist_linha27_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha27_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="9efd46d5-54b5-4e7b-acda-a6fc3704fae8" mode="Opaque" x="425" y="407" width="237" height="10"/>
+				<textElement textAlignment="Justified" markup="html">
+					<font fontName="DejaVu Sans" size="8"/>
+					<paragraph tabStopWidth="50"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{hist_linha31_cor}.equals("") ? "" : ($F{hist_linha31_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha31_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha31_cor}.split(";")[2] + ">")) + $F{hist_linha31} + ($F{hist_linha31_cor}.equals("") ? "" : ($F{hist_linha31_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha31_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="797aaf27-58f7-4360-b03b-2035ff6f47af" mode="Opaque" x="721" y="488" width="54" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_deb40}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="c72c19a9-b841-48b3-903d-9315cc62a320" mode="Opaque" x="665" y="479" width="54" height="10"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_cred39}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="370898fe-1d8b-48f3-ad26-b1dca97a9a83" mode="Opaque" x="721" y="461" width="54" height="10"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_deb37}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="acfbc1fd-aa11-487d-9944-5ff2d720cea6" mode="Opaque" x="425" y="326" width="237" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Justified" markup="html">
+					<font fontName="DejaVu Sans" size="8"/>
+					<paragraph tabStopWidth="50"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{hist_linha22_cor}.equals("") ? "" : ($F{hist_linha22_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha22_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha22_cor}.split(";")[2] + ">")) + $F{hist_linha22} + ($F{hist_linha22_cor}.equals("") ? "" : ($F{hist_linha22_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha22_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="9e5f156e-c77a-4565-9c0c-7a646e553ebf" mode="Opaque" x="665" y="371" width="54" height="10"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_cred27}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="716b7490-ab05-4a22-a7fd-6121f80241f9" mode="Opaque" x="665" y="335" width="54" height="10"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_cred23}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="e17001ee-9378-4034-b018-d71115782cec" mode="Opaque" x="425" y="479" width="237" height="10"/>
+				<textElement textAlignment="Justified" markup="html">
+					<font fontName="DejaVu Sans" size="8"/>
+					<paragraph tabStopWidth="50"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{hist_linha39_cor}.equals("") ? "" : ($F{hist_linha39_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha39_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha39_cor}.split(";")[2] + ">")) + $F{hist_linha39} + ($F{hist_linha39_cor}.equals("") ? "" : ($F{hist_linha39_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha39_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="b449d2aa-baee-4269-b06f-26f73f458758" mode="Opaque" x="665" y="353" width="54" height="10"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_cred25}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="ee40f079-c930-4025-b841-3723c717f99c" mode="Opaque" x="721" y="326" width="54" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_deb22}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="547b3b16-82f4-4782-a05f-d44e172077ac" mode="Opaque" x="721" y="380" width="54" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_deb28}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="31d38f20-7fc3-44fe-af29-dcd409b74bae" mode="Opaque" x="721" y="416" width="54" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_deb32}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="238ffc28-e240-4d4a-8ef0-e2b7c7325252" mode="Opaque" x="425" y="443" width="237" height="10"/>
+				<textElement textAlignment="Justified" markup="html">
+					<font fontName="DejaVu Sans" size="8"/>
+					<paragraph tabStopWidth="50"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{hist_linha35_cor}.equals("") ? "" : ($F{hist_linha35_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha35_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha35_cor}.split(";")[2] + ">")) + $F{hist_linha35} + ($F{hist_linha35_cor}.equals("") ? "" : ($F{hist_linha35_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha35_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="994bd313-ef0b-428b-a400-b4955fd21586" mode="Opaque" x="721" y="371" width="54" height="10"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_deb27}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="5b775878-8023-4748-80c2-d5ff19a51130" mode="Opaque" x="665" y="416" width="54" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_cred32}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="be57af34-f485-4338-872e-05f8a84d4361" mode="Opaque" x="665" y="461" width="54" height="10"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_cred37}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="81c91da7-e753-49f8-a8be-6b0d6c81bd32" mode="Opaque" x="425" y="416" width="237" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Justified" markup="html">
+					<font fontName="DejaVu Sans" size="8"/>
+					<paragraph tabStopWidth="50"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{hist_linha32_cor}.equals("") ? "" : ($F{hist_linha32_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha32_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha32_cor}.split(";")[2] + ">")) + $F{hist_linha32} + ($F{hist_linha32_cor}.equals("") ? "" : ($F{hist_linha32_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha32_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="a4522e30-c6ac-447e-b465-fa1071240b02" mode="Opaque" x="721" y="407" width="54" height="10"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_deb31}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="f242590d-6fa6-418e-af0e-4dad4ccdfe96" mode="Opaque" x="665" y="380" width="54" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_cred28}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="a5b00a86-61dd-4043-b909-13ec09a6ca77" mode="Opaque" x="721" y="344" width="54" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_deb24}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="e7956ff3-a550-4828-b668-7330baffdf17" mode="Opaque" x="721" y="389" width="54" height="10"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_deb29}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="986b2e93-4388-4728-a4a7-0a47c3526d52" mode="Opaque" x="425" y="353" width="237" height="10"/>
+				<textElement textAlignment="Justified" markup="html">
+					<font fontName="DejaVu Sans" size="8"/>
+					<paragraph tabStopWidth="50"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{hist_linha25_cor}.equals("") ? "" : ($F{hist_linha25_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha25_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha25_cor}.split(";")[2] + ">")) + $F{hist_linha25} + ($F{hist_linha25_cor}.equals("") ? "" : ($F{hist_linha25_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha25_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="10447dbb-40dc-41a8-b0fd-b402a09f4dcb" mode="Opaque" x="721" y="470" width="54" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_deb38}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="7f4ede36-cba8-4fb2-ba38-ada8cac92977" mode="Opaque" x="425" y="425" width="237" height="10"/>
+				<textElement textAlignment="Justified" markup="html">
+					<font fontName="DejaVu Sans" size="8"/>
+					<paragraph tabStopWidth="50"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{hist_linha33_cor}.equals("") ? "" : ($F{hist_linha33_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha33_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha33_cor}.split(";")[2] + ">")) + $F{hist_linha33} + ($F{hist_linha33_cor}.equals("") ? "" : ($F{hist_linha33_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha33_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="ccc76ecd-0fee-4f1a-9d7d-a0a3d2bfa6c0" mode="Opaque" x="665" y="434" width="54" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_cred34}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="346d9e5b-3311-4e2d-9529-4cf27dcf1e31" mode="Opaque" x="425" y="362" width="237" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Justified" markup="html">
+					<font fontName="DejaVu Sans" size="8"/>
+					<paragraph tabStopWidth="50"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{hist_linha26_cor}.equals("") ? "" : ($F{hist_linha26_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha26_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha26_cor}.split(";")[2] + ">")) + $F{hist_linha26} + ($F{hist_linha26_cor}.equals("") ? "" : ($F{hist_linha26_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha26_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="7a3f9653-cb18-42c0-ac32-663e7cc0290c" mode="Opaque" x="425" y="470" width="237" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Justified" markup="html">
+					<font fontName="DejaVu Sans" size="8"/>
+					<paragraph tabStopWidth="50"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{hist_linha38_cor}.equals("") ? "" : ($F{hist_linha38_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha38_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha38_cor}.split(";")[2] + ">")) + $F{hist_linha38} + ($F{hist_linha38_cor}.equals("") ? "" : ($F{hist_linha38_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha38_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="44fa483d-070d-4ab3-a790-e66099068914" mode="Opaque" x="665" y="389" width="54" height="10"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_cred29}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="4802409c-aaab-44b3-9e65-3a4a15712e7d" mode="Opaque" x="721" y="452" width="54" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_deb36}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="63bde67c-0634-4fcf-a519-0f7e7b6e07ac" mode="Opaque" x="665" y="488" width="54" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_cred40}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="45524224-9ce0-474b-9054-30a479f6eba5" mode="Opaque" x="665" y="407" width="54" height="10"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_cred31}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="deae330b-14cd-474b-8fde-59d500fd4faa" mode="Opaque" x="425" y="344" width="237" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Justified" markup="html">
+					<font fontName="DejaVu Sans" size="8"/>
+					<paragraph tabStopWidth="50"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{hist_linha24_cor}.equals("") ? "" : ($F{hist_linha24_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha24_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha24_cor}.split(";")[2] + ">")) + $F{hist_linha24} + ($F{hist_linha24_cor}.equals("") ? "" : ($F{hist_linha24_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha24_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="c3bcb13a-2ff9-40d9-b65e-84a3a024b337" mode="Opaque" x="721" y="398" width="54" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_deb30}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="3c4d2ef1-bf88-4011-9a5d-43cca9728d20" mode="Opaque" x="665" y="326" width="54" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_cred22}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="72ee8aba-dc14-4010-a55a-806631281481" mode="Opaque" x="665" y="425" width="54" height="10"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_cred33}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="755a3c74-6bf3-4ee6-8242-533753c9f613" mode="Opaque" x="665" y="344" width="54" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_cred24}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="e5d2c256-1319-4603-8e5d-5c4f53ecbbb1" mode="Opaque" x="425" y="335" width="237" height="10"/>
+				<textElement textAlignment="Justified" markup="html">
+					<font fontName="DejaVu Sans" size="8"/>
+					<paragraph tabStopWidth="50"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{hist_linha23_cor}.equals("") ? "" : ($F{hist_linha23_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha23_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha23_cor}.split(";")[2] + ">")) + $F{hist_linha23} + ($F{hist_linha23_cor}.equals("") ? "" : ($F{hist_linha23_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha23_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="08854b74-b69c-4a04-884a-95200e015563" mode="Opaque" x="425" y="488" width="237" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Justified" markup="html">
+					<font fontName="DejaVu Sans" size="8"/>
+					<paragraph tabStopWidth="50"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{hist_linha40_cor}.equals("") ? "" : ($F{hist_linha40_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha40_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha40_cor}.split(";")[2] + ">")) + $F{hist_linha40} + ($F{hist_linha40_cor}.equals("") ? "" : ($F{hist_linha40_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha40_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="4d22e567-0bf2-4d80-a523-73eceae9e6bf" mode="Opaque" x="425" y="434" width="237" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Justified" markup="html">
+					<font fontName="DejaVu Sans" size="8"/>
+					<paragraph tabStopWidth="50"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{hist_linha34_cor}.equals("") ? "" : ($F{hist_linha34_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha34_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha34_cor}.split(";")[2] + ">")) + $F{hist_linha34} + ($F{hist_linha34_cor}.equals("") ? "" : ($F{hist_linha34_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha34_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="acc8d0d6-22f5-4a1f-9dc4-aec6bbd4382a" mode="Opaque" x="665" y="452" width="54" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_cred36}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="2566414d-4694-4a77-99f5-14ba03717fe7" mode="Opaque" x="665" y="443" width="54" height="10"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_cred35}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="7c5c6266-7027-4cff-92e0-738a370c0ae0" mode="Opaque" x="721" y="443" width="54" height="10"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_deb35}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="b3a91708-a354-41bb-a686-e5300d2e54ed" mode="Opaque" x="721" y="353" width="54" height="10"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_deb25}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="1fd640a3-754f-4171-86b2-2b69f162427a" mode="Opaque" x="425" y="389" width="237" height="10"/>
+				<textElement textAlignment="Justified" markup="html">
+					<font fontName="DejaVu Sans" size="8"/>
+					<paragraph tabStopWidth="50"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{hist_linha29_cor}.equals("") ? "" : ($F{hist_linha29_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha29_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha29_cor}.split(";")[2] + ">")) + $F{hist_linha29} + ($F{hist_linha29_cor}.equals("") ? "" : ($F{hist_linha29_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha29_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="74f66fe1-b204-4776-b7f1-c57b8ffc1ad8" mode="Opaque" x="665" y="362" width="54" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_cred26}]]></textFieldExpression>
+			</textField>
+			<rectangle radius="5">
+				<reportElement uuid="954b8ba2-e242-4955-b0a7-b4b3a6d5cb92" x="425" y="523" width="353" height="32"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</rectangle>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="d6c0862d-c8b8-47aa-be08-675b5a209f8e" x="432" y="539" width="339" height="12"/>
+				<textElement textAlignment="Center" markup="none">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{autentica}]]></textFieldExpression>
+			</textField>
+			<rectangle radius="5">
+				<reportElement uuid="58066414-1ac6-4e44-9e88-2dce7da2a075" x="425" y="502" width="353" height="21"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement uuid="9030f9a5-dce4-4218-8a81-3e4e15e70025" x="433" y="527" width="69" height="12"/>
+				<textElement>
+					<font size="6" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Autenticação]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="0cc54b95-477e-4ebc-96a6-261efa417547" x="433" y="505" width="332" height="18"/>
+				<textElement markup="none">
+					<font size="7" isBold="true" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["RECEBI A PRESENTE PRESTAÇÃO DE CONTAS CONFORME VALOR ABAIXO AUTENTICADO, PELA QUAL DOU QUITAÇÃO."]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="434b47ad-a34f-4dfc-bad1-25ccc87fbf71" x="620" y="527" width="69" height="12"/>
+				<textElement>
+					<font size="6" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Assinatura]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="23c73ae3-0566-4fb0-84d6-4c406322f632" x="264" y="22" width="50" height="13"/>
+				<textElement textAlignment="Right">
+					<font size="8" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Extrato:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="e4ec42ae-3a32-409a-887a-db3327f81f91" positionType="Float" stretchType="RelativeToBandHeight" x="241" y="7" width="29" height="13"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="8" isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Data:]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="46429bf2-9091-43c7-9a59-24c145553f24" x="238" y="35" width="80" height="13"/>
+				<textElement textAlignment="Right">
+					<font size="8" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Página "+$V{PAGE_NUMBER}+" de"]]></textFieldExpression>
+			</textField>
+			<componentElement>
+				<reportElement uuid="0677a083-74e3-41da-99b6-e82216deb112" x="363" y="7" width="30" height="85"/>
+				<jr:Codabar xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" orientation="90" textPosition="none">
+					<jr:codeExpression><![CDATA[$F{barras}]]></jr:codeExpression>
+				</jr:Codabar>
+			</componentElement>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="1202f89c-892d-4e8b-91af-ebd69ce57ffe" x="48" y="69" width="308" height="20" forecolor="#FF0000"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="10" isBold="true" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{mensagem}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="dd/MM/yyyy - HH:mm" isBlankWhenNull="true">
+				<reportElement uuid="f27f32d4-5798-4b54-8141-0b9976244658" positionType="Float" stretchType="RelativeToBandHeight" x="272" y="7" width="86" height="13" isPrintInFirstWholeBand="true"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="8" isBold="true" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement uuid="e8a910c5-617c-4159-9812-3df9248c9d30" x="318" y="35" width="40" height="13"/>
+				<textElement>
+					<font size="8" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement uuid="9c6442a5-3d1d-4eeb-9956-bd823e95ab01" x="48" y="7" width="185" height="57"/>
+				<imageExpression><![CDATA[$F{logoLocation}]]></imageExpression>
+			</image>
+			<textField pattern="###0" isBlankWhenNull="true">
+				<reportElement uuid="88a2608f-87d0-4a36-afa2-23a3815c927a" x="314" y="22" width="44" height="13"/>
+				<textElement markup="none">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{extratoNumero}.isEmpty() ? "Preview" : $F{extratoNumero})]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="88b950ae-7545-4b92-b51e-a7d30011e97c" x="96" y="95" width="294" height="12"/>
+				<textElement markup="none">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nomeProp}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="14a23070-3a2a-4ff2-962e-47238ef228f2" x="48" y="105" width="170" height="13" forecolor="#3333FF"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{banco}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="2699673e-73ac-4542-bcc6-accf83d855c0" x="49" y="95" width="47" height="12"/>
+				<textElement>
+					<font size="8" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Registro:]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="220193fe-e549-4ac9-a571-68ee3e27d4f8" x="51" y="505" width="332" height="18"/>
+				<textElement markup="none">
+					<font size="7" isBold="true" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["RECEBI A PRESENTE PRESTAÇÃO DE CONTAS CONFORME VALOR ABAIXO AUTENTICADO, PELA QUAL DOU QUITAÇÃO."]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="63eadadd-7ce8-4122-b80e-91657977402d" mode="Opaque" x="284" y="380" width="54" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_cred28}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="4ca0df15-b7ec-4be3-b50f-f0c47ad48824" mode="Opaque" x="44" y="407" width="237" height="10"/>
+				<textElement textAlignment="Justified" markup="html">
+					<font fontName="DejaVu Sans" size="8"/>
+					<paragraph tabStopWidth="50"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{hist_linha31_cor}.equals("") ? "" : ($F{hist_linha31_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha31_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha31_cor}.split(";")[2] + ">")) + $F{hist_linha31} + ($F{hist_linha31_cor}.equals("") ? "" : ($F{hist_linha31_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha31_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="05a73359-be97-4969-b68e-ab3a910682cb" mode="Opaque" x="340" y="290" width="54" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_deb18}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="cb163778-20aa-4507-995f-45cb15fa02ee" mode="Opaque" x="284" y="155" width="54" height="10"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_cred03}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="735e7f73-91cb-4b2a-845a-4aa6f820eb6c" mode="Opaque" x="284" y="245" width="54" height="10"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_cred13}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="229f549c-5b54-4a1e-99d9-0d669d324a37" mode="Opaque" x="340" y="317" width="54" height="10"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_deb21}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="a04e06df-a993-4e8f-bd16-4d78a0197cda" mode="Opaque" x="44" y="308" width="237" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Justified" markup="html">
+					<font fontName="DejaVu Sans" size="8"/>
+					<paragraph tabStopWidth="50"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{hist_linha20_cor}.equals("") ? "" : ($F{hist_linha20_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha20_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha20_cor}.split(";")[2] + ">")) + $F{hist_linha20} + ($F{hist_linha20_cor}.equals("") ? "" : ($F{hist_linha20_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha20_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="d24769ea-7731-4c50-839c-a17882e56aac" mode="Opaque" x="44" y="470" width="237" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Justified" markup="html">
+					<font fontName="DejaVu Sans" size="8"/>
+					<paragraph tabStopWidth="50"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{hist_linha38_cor}.equals("") ? "" : ($F{hist_linha38_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha38_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha38_cor}.split(";")[2] + ">")) + $F{hist_linha38} + ($F{hist_linha38_cor}.equals("") ? "" : ($F{hist_linha38_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha38_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="fb26e8cb-3ebb-4420-b085-4dfa4491dad7" mode="Opaque" x="44" y="124" width="237" height="13" backcolor="#E6E3E3"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="7" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[HISTÓRICO]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="67545f22-eab1-4206-ad4a-93a2ed67cc02" mode="Opaque" x="44" y="362" width="237" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Justified" markup="html">
+					<font fontName="DejaVu Sans" size="8"/>
+					<paragraph tabStopWidth="50"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{hist_linha26_cor}.equals("") ? "" : ($F{hist_linha26_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha26_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha26_cor}.split(";")[2] + ">")) + $F{hist_linha26} + ($F{hist_linha26_cor}.equals("") ? "" : ($F{hist_linha26_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha26_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="5bfae264-ac10-4418-9e81-20524d5c6790" mode="Opaque" x="44" y="443" width="237" height="10"/>
+				<textElement textAlignment="Justified" markup="html">
+					<font fontName="DejaVu Sans" size="8"/>
+					<paragraph tabStopWidth="50"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{hist_linha35_cor}.equals("") ? "" : ($F{hist_linha35_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha35_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha35_cor}.split(";")[2] + ">")) + $F{hist_linha35} + ($F{hist_linha35_cor}.equals("") ? "" : ($F{hist_linha35_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha35_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="c17797e6-8f56-4702-9aa7-cd5a851684d6" mode="Opaque" x="340" y="470" width="54" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_deb38}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="c4bf59a1-cf15-4897-acd9-3a42c219fc83" mode="Opaque" x="340" y="398" width="54" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_deb30}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="643922fc-7398-484b-b088-24049401b36d" mode="Opaque" x="44" y="191" width="237" height="10"/>
+				<textElement textAlignment="Justified" markup="html">
+					<font fontName="DejaVu Sans" size="8"/>
+					<paragraph tabStopWidth="50"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{hist_linha07_cor}.equals("") ? "" : ($F{hist_linha07_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha07_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha07_cor}.split(";")[2] + ">")) + $F{hist_linha07} + ($F{hist_linha07_cor}.equals("") ? "" : ($F{hist_linha07_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha07_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="a6cf60a7-e5bb-4a00-a58a-2e4d6fa8b3cd" mode="Opaque" x="44" y="317" width="237" height="10"/>
+				<textElement textAlignment="Justified" markup="html">
+					<font fontName="DejaVu Sans" size="8"/>
+					<paragraph tabStopWidth="50"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{hist_linha21_cor}.equals("") ? "" : ($F{hist_linha21_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha21_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha21_cor}.split(";")[2] + ">")) + $F{hist_linha21} + ($F{hist_linha21_cor}.equals("") ? "" : ($F{hist_linha21_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha21_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="e486cc14-f1d5-4c9c-b39e-fd9d6b6efea8" mode="Opaque" x="284" y="344" width="54" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_cred24}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="4b4b3b31-1012-42eb-898f-c16bf1c038c1" mode="Opaque" x="44" y="344" width="237" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Justified" markup="html">
+					<font fontName="DejaVu Sans" size="8"/>
+					<paragraph tabStopWidth="50"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{hist_linha24_cor}.equals("") ? "" : ($F{hist_linha24_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha24_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha24_cor}.split(";")[2] + ">")) + $F{hist_linha24} + ($F{hist_linha24_cor}.equals("") ? "" : ($F{hist_linha24_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha24_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="92738663-a3ee-4db5-a6c1-a56231c9cdbb" mode="Opaque" x="284" y="335" width="54" height="10"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_cred23}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="9840084c-347a-4bb2-9cd0-4242c6372bd3" mode="Opaque" x="44" y="416" width="237" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Justified" markup="html">
+					<font fontName="DejaVu Sans" size="8"/>
+					<paragraph tabStopWidth="50"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{hist_linha32_cor}.equals("") ? "" : ($F{hist_linha32_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha32_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha32_cor}.split(";")[2] + ">")) + $F{hist_linha32} + ($F{hist_linha32_cor}.equals("") ? "" : ($F{hist_linha32_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha32_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="9f1a0712-0ab6-422b-b608-e3f37d1f29a8" mode="Opaque" x="284" y="308" width="54" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_cred20}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="a52f22f6-6ae3-4487-9dc7-015965777fba" mode="Opaque" x="284" y="209" width="54" height="10"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_cred09}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="edceb552-e223-4e51-b798-5c12c9b19e19" mode="Opaque" x="44" y="209" width="237" height="10"/>
+				<textElement textAlignment="Justified" markup="html">
+					<font fontName="DejaVu Sans" size="8"/>
+					<paragraph tabStopWidth="50"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{hist_linha09_cor}.equals("") ? "" : ($F{hist_linha09_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha09_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha09_cor}.split(";")[2] + ">")) + $F{hist_linha09} + ($F{hist_linha09_cor}.equals("") ? "" : ($F{hist_linha09_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha09_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
+			</textField>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement uuid="f22cd65f-561f-4417-926f-63707a548102" mode="Opaque" x="44" y="137" width="237" height="10"/>
+				<textElement textAlignment="Justified" markup="html">
+					<font fontName="DejaVu Sans" size="8" isStrikeThrough="false"/>
+					<paragraph tabStopWidth="50"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{hist_linha01_cor}.equals("") ? "" : ($F{hist_linha01_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha01_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha01_cor}.split(";")[2] + ">")) + $F{hist_linha01} + ($F{hist_linha01_cor}.equals("") ? "" : ($F{hist_linha01_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha01_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="e740bcd5-eaf6-4a97-94f1-85da4a024666" mode="Opaque" x="340" y="371" width="54" height="10"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_deb27}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="2e2a6067-9bd7-45a4-a25b-cb8216cf2652" mode="Opaque" x="340" y="182" width="54" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_deb06}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="80f722ae-515e-4446-bf76-18eafd1d146a" mode="Opaque" x="340" y="236" width="54" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_deb12}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="0cf5077b-4f22-4b19-831b-2e858f06e20c" mode="Opaque" x="44" y="173" width="237" height="10"/>
+				<textElement textAlignment="Justified" markup="html">
+					<font fontName="DejaVu Sans" size="8"/>
+					<paragraph tabStopWidth="50"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{hist_linha05_cor}.equals("") ? "" : ($F{hist_linha05_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha05_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha05_cor}.split(";")[2] + ">")) + $F{hist_linha05} + ($F{hist_linha05_cor}.equals("") ? "" : ($F{hist_linha05_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha05_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="950302e7-a56c-449e-b922-fbe4bdd21d2f" mode="Opaque" x="284" y="254" width="54" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_cred14}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="8d3040ff-73c8-431a-a169-a426123c68e5" mode="Opaque" x="284" y="137" width="54" height="10"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_cred01}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="10619357-9b64-4d60-b591-549e914a32db" mode="Opaque" x="340" y="254" width="54" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_deb14}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="6ea96105-ddf1-4883-8083-60e8bc117af8" mode="Opaque" x="340" y="155" width="54" height="10"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_deb03}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="9c75158e-2585-40bf-81b7-7861f74a177d" mode="Opaque" x="284" y="173" width="54" height="10"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_cred05}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="92cd3d48-fbc8-4f7f-abc9-843def924123" mode="Opaque" x="44" y="281" width="237" height="10"/>
+				<textElement textAlignment="Justified" markup="html">
+					<font fontName="DejaVu Sans" size="8"/>
+					<paragraph tabStopWidth="50"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{hist_linha17_cor}.equals("") ? "" : ($F{hist_linha17_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha17_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha17_cor}.split(";")[2] + ">")) + $F{hist_linha17} + ($F{hist_linha17_cor}.equals("") ? "" : ($F{hist_linha17_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha17_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="353b316c-9b69-4215-bc04-01b8dd3d27bc" mode="Opaque" x="284" y="443" width="54" height="10"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_cred35}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="114d39b3-08ae-448b-bc14-82a687c9fbb4" mode="Opaque" x="284" y="479" width="54" height="10"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_cred39}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="51e1e4fd-b470-4974-a490-df2296155a8b" mode="Opaque" x="44" y="155" width="237" height="10"/>
+				<textElement textAlignment="Justified" markup="html">
+					<font fontName="DejaVu Sans" size="8"/>
+					<paragraph tabStopWidth="50"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{hist_linha03_cor}.equals("") ? "" : ($F{hist_linha03_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha03_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha03_cor}.split(";")[2] + ">")) + $F{hist_linha03} + ($F{hist_linha03_cor}.equals("") ? "" : ($F{hist_linha03_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha03_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="8f301048-dcb0-4da0-aa5c-6a209d5d55d8" mode="Opaque" x="284" y="326" width="54" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_cred22}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="3327832d-ae96-42d1-9a1b-daea3725a153" mode="Opaque" x="284" y="353" width="54" height="10"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_cred25}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="87876bb8-0512-4fd0-b73f-a8f55b78e74d" mode="Opaque" x="284" y="389" width="54" height="10"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_cred29}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="55629e7d-e772-44bc-ad27-9a4792f30281" mode="Opaque" x="284" y="317" width="54" height="10"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_cred21}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement uuid="1e9d7172-0291-4e56-a665-987ab07be65d" x="339" y="120" width="1" height="382"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</line>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="89102440-6c48-4067-9940-a2251408d7c1" mode="Opaque" x="340" y="335" width="54" height="10"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_deb23}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="c0c7fb65-37da-46cd-98e4-1bbedbe23e5c" mode="Opaque" x="44" y="425" width="237" height="10"/>
+				<textElement textAlignment="Justified" markup="html">
+					<font fontName="DejaVu Sans" size="8"/>
+					<paragraph tabStopWidth="50"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{hist_linha33_cor}.equals("") ? "" : ($F{hist_linha33_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha33_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha33_cor}.split(";")[2] + ">")) + $F{hist_linha33} + ($F{hist_linha33_cor}.equals("") ? "" : ($F{hist_linha33_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha33_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="66db6dbe-831b-46ba-b87d-df318148979b" mode="Opaque" x="340" y="146" width="54" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_deb02}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="69a659c5-defd-4ec9-b1bb-f6d07430b46c" mode="Opaque" x="340" y="380" width="54" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_deb28}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="cda0a2ad-6731-4422-bbdf-54adc512f584" mode="Opaque" x="284" y="371" width="54" height="10"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_cred27}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="ecb35444-291e-423d-8b1d-5a2bc0921699" mode="Opaque" x="284" y="200" width="54" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_cred08}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="fd1f29fe-9695-4715-b59f-e06ddc36846b" mode="Opaque" x="340" y="443" width="54" height="10"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_deb35}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="752b8806-5887-4292-b103-ad6bf4468776" mode="Opaque" x="44" y="380" width="237" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Justified" markup="html">
+					<font fontName="DejaVu Sans" size="8"/>
+					<paragraph tabStopWidth="50"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{hist_linha28_cor}.equals("") ? "" : ($F{hist_linha28_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha28_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha28_cor}.split(";")[2] + ">")) + $F{hist_linha28} + ($F{hist_linha28_cor}.equals("") ? "" : ($F{hist_linha28_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha28_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="9855ef25-3fe1-41cd-b808-3e458c69463f" mode="Opaque" x="284" y="434" width="54" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_cred34}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="b291834f-2d17-4bc0-bde8-ea69a5b7b11e" mode="Opaque" x="44" y="452" width="237" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Justified" markup="html">
+					<font fontName="DejaVu Sans" size="8"/>
+					<paragraph tabStopWidth="50"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{hist_linha36_cor}.equals("") ? "" : ($F{hist_linha36_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha36_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha36_cor}.split(";")[2] + ">")) + $F{hist_linha36} + ($F{hist_linha36_cor}.equals("") ? "" : ($F{hist_linha36_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha36_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement uuid="134d7641-97a2-4d9a-b2d3-d03802de337c" x="282" y="120" width="1" height="382"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</line>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="0bda2273-1a32-429f-9137-8b7757c8ed45" mode="Opaque" x="340" y="479" width="54" height="10"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_deb39}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="246da25b-a7d2-4b71-adee-a8b70f85bae2" mode="Opaque" x="284" y="218" width="54" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_cred10}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="dac55b95-1ec0-4ca3-a2cd-9c2587c39d04" mode="Opaque" x="340" y="461" width="54" height="10"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_deb37}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="a717b060-a2a3-4e76-bb99-5c94fb94a090" mode="Opaque" x="284" y="263" width="54" height="10"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_cred15}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="e4b30ba7-bf0e-4d3e-8dd6-70022bcddc07" mode="Opaque" x="340" y="407" width="54" height="10"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_deb31}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="58da129b-a3b1-49e2-9602-6dddbfc4cafb" mode="Opaque" x="44" y="245" width="237" height="10"/>
+				<textElement textAlignment="Justified" markup="html">
+					<font fontName="DejaVu Sans" size="8"/>
+					<paragraph tabStopWidth="50"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{hist_linha13_cor}.equals("") ? "" : ($F{hist_linha13_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha13_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha13_cor}.split(";")[2] + ">")) + $F{hist_linha13} + ($F{hist_linha13_cor}.equals("") ? "" : ($F{hist_linha13_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha13_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="915418ab-096f-4e82-be9d-5030e47c3625" mode="Opaque" x="284" y="398" width="54" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_cred30}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="70598698-ab44-4665-a7db-2b2bda50f0c6" mode="Opaque" x="44" y="479" width="237" height="10"/>
+				<textElement textAlignment="Justified" markup="html">
+					<font fontName="DejaVu Sans" size="8"/>
+					<paragraph tabStopWidth="50"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{hist_linha39_cor}.equals("") ? "" : ($F{hist_linha39_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha39_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha39_cor}.split(";")[2] + ">")) + $F{hist_linha39} + ($F{hist_linha39_cor}.equals("") ? "" : ($F{hist_linha39_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha39_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="8570680d-dcc2-4b98-b699-e2db9e6999e5" mode="Opaque" x="44" y="299" width="237" height="10"/>
+				<textElement textAlignment="Justified" markup="html">
+					<font fontName="DejaVu Sans" size="8"/>
+					<paragraph tabStopWidth="50"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{hist_linha19_cor}.equals("") ? "" : ($F{hist_linha19_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha19_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha19_cor}.split(";")[2] + ">")) + $F{hist_linha19} + ($F{hist_linha19_cor}.equals("") ? "" : ($F{hist_linha19_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha19_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="1fb91414-1d73-4918-a955-4d16e7a054ae" mode="Opaque" x="44" y="272" width="237" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Justified" markup="html">
+					<font fontName="DejaVu Sans" size="8"/>
+					<paragraph tabStopWidth="50"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{hist_linha16_cor}.equals("") ? "" : ($F{hist_linha16_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha16_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha16_cor}.split(";")[2] + ">")) + $F{hist_linha16} + ($F{hist_linha16_cor}.equals("") ? "" : ($F{hist_linha16_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha16_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="7b84e6f7-302b-4d11-86e7-a1bc9984f5f6" mode="Opaque" x="44" y="227" width="237" height="10"/>
+				<textElement textAlignment="Justified" markup="html">
+					<font fontName="DejaVu Sans" size="8"/>
+					<paragraph tabStopWidth="50"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{hist_linha11_cor}.equals("") ? "" : ($F{hist_linha11_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha11_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha11_cor}.split(";")[2] + ">")) + $F{hist_linha11} + ($F{hist_linha11_cor}.equals("") ? "" : ($F{hist_linha11_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha11_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="f906975f-95a0-476a-be7f-fadc046d99e4" mode="Opaque" x="284" y="182" width="54" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_cred06}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="b6909578-6116-421e-af7a-0dcd6c9b1991" mode="Opaque" x="284" y="299" width="54" height="10"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_cred19}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="db707b5d-1bae-4fd9-b3e9-62ad38b52353" mode="Opaque" x="340" y="137" width="54" height="10"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_deb01}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="fd40fd6e-65b6-48c2-9aa9-1f13392accd8" mode="Opaque" x="340" y="362" width="54" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_deb26}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="46ba591e-f1d6-4380-9ccf-27214d071b1c" mode="Opaque" x="340" y="245" width="54" height="10"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_deb13}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="e88f1117-06bf-4977-8af8-9d0f99a078f3" mode="Opaque" x="340" y="173" width="54" height="10"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_deb05}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="499480f3-700b-40c4-90ba-8f0416a22691" mode="Opaque" x="44" y="254" width="237" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Justified" markup="html">
+					<font fontName="DejaVu Sans" size="8"/>
+					<paragraph tabStopWidth="50"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{hist_linha14_cor}.equals("") ? "" : ($F{hist_linha14_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha14_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha14_cor}.split(";")[2] + ">")) + $F{hist_linha14} + ($F{hist_linha14_cor}.equals("") ? "" : ($F{hist_linha14_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha14_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="3ee63aa0-2dfc-4cfc-a982-c6c0a6a55a84" mode="Opaque" x="44" y="146" width="237" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Justified" markup="html">
+					<font fontName="DejaVu Sans" size="8"/>
+					<paragraph tabStopWidth="50"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{hist_linha02_cor}.equals("") ? "" : ($F{hist_linha02_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha02_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha02_cor}.split(";")[2] + ">")) + $F{hist_linha02} + ($F{hist_linha02_cor}.equals("") ? "" : ($F{hist_linha02_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha02_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="3466f5bc-a518-481c-b9d1-a44d8667b4f8" mode="Opaque" x="340" y="124" width="54" height="13" backcolor="#E6E3E3"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="7" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[DÉBITO]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="ac248fa8-1f1c-472d-b5ee-c80f193fd0bb" mode="Opaque" x="284" y="227" width="54" height="10"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_cred11}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="b3244a98-0597-433d-9463-3ddd1efbf126" mode="Opaque" x="284" y="488" width="54" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_cred40}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="3d21344d-f0da-4c18-a1f5-6a49873d050f" mode="Opaque" x="340" y="191" width="54" height="10"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_deb07}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="340b5dcf-1196-49bb-92d0-2e7c98baaf28" mode="Opaque" x="284" y="290" width="54" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_cred18}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="e457a16f-379b-47de-80a2-d89cb43a47c5" mode="Opaque" x="284" y="124" width="54" height="13" backcolor="#E6E3E3"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="7" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[CRÉDITO]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="a80467b8-9e8b-4b1a-9803-a38d709fbd39" mode="Opaque" x="340" y="344" width="54" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_deb24}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="10bf57c0-06f4-48e6-ab74-fea4d94cdeb4" mode="Opaque" x="340" y="227" width="54" height="10"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_deb11}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="3e21c1d9-eb69-417e-b647-599d828cb443" mode="Opaque" x="44" y="488" width="237" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Justified" markup="html">
+					<font fontName="DejaVu Sans" size="8"/>
+					<paragraph tabStopWidth="50"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{hist_linha40_cor}.equals("") ? "" : ($F{hist_linha40_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha40_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha40_cor}.split(";")[2] + ">")) + $F{hist_linha40} + ($F{hist_linha40_cor}.equals("") ? "" : ($F{hist_linha40_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha40_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="81930b0f-d753-4305-b3e4-cd86edae3e94" mode="Opaque" x="340" y="272" width="54" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_deb16}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="22d474b4-9074-46a0-9c9d-66ea00e23c47" mode="Opaque" x="340" y="218" width="54" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_deb10}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="a9af66bf-c30a-41e8-a5f6-03a519554e19" mode="Opaque" x="284" y="407" width="54" height="10"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_cred31}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="8d544ed4-dd97-420e-b8f9-f030fd871968" mode="Opaque" x="340" y="425" width="54" height="10"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_deb33}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="7c327340-300c-4b08-92f9-eb3c389dd393" mode="Opaque" x="44" y="461" width="237" height="10"/>
+				<textElement textAlignment="Justified" markup="html">
+					<font fontName="DejaVu Sans" size="8"/>
+					<paragraph tabStopWidth="50"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{hist_linha37_cor}.equals("") ? "" : ($F{hist_linha37_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha37_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha37_cor}.split(";")[2] + ">")) + $F{hist_linha37} + ($F{hist_linha37_cor}.equals("") ? "" : ($F{hist_linha37_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha37_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="182c8209-70e9-4286-a3c6-5a8c8e3f4814" mode="Opaque" x="340" y="200" width="54" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_deb08}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="7f83c468-db41-4735-94f5-b2ed41ca28db" mode="Opaque" x="284" y="236" width="54" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_cred12}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="d99c5252-0145-4bd5-8245-b35b59a63935" mode="Opaque" x="284" y="362" width="54" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_cred26}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="02858bd5-6494-4bbe-a412-3a81d4e4a28a" mode="Opaque" x="44" y="218" width="237" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Justified" markup="html">
+					<font fontName="DejaVu Sans" size="8"/>
+					<paragraph tabStopWidth="50"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{hist_linha10_cor}.equals("") ? "" : ($F{hist_linha10_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha10_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha10_cor}.split(";")[2] + ">")) + $F{hist_linha10} + ($F{hist_linha10_cor}.equals("") ? "" : ($F{hist_linha10_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha10_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="ab9bdb4f-8704-4c7a-8521-369c365619f6" mode="Opaque" x="340" y="488" width="54" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_deb40}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="b9ebaff7-58ca-4022-ba03-0ada052059f3" mode="Opaque" x="340" y="209" width="54" height="10"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_deb09}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="3e389e3d-02f1-48f6-94da-cebf92cbb8f2" mode="Opaque" x="340" y="164" width="54" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_deb04}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="0bd208c2-e906-4a77-a1ea-c7d184cddd1e" mode="Opaque" x="340" y="434" width="54" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_deb34}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="185f8591-2653-4acc-b734-30f876ca7951" mode="Opaque" x="340" y="416" width="54" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_deb32}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="8fe6473b-1485-42f7-b2ee-3b877907b94d" mode="Opaque" x="284" y="416" width="54" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_cred32}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="405c6188-ad93-4baf-8fdb-37a00c7d88e1" mode="Opaque" x="44" y="290" width="237" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Justified" markup="html">
+					<font fontName="DejaVu Sans" size="8"/>
+					<paragraph tabStopWidth="50"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{hist_linha18_cor}.equals("") ? "" : ($F{hist_linha18_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha18_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha18_cor}.split(";")[2] + ">")) + $F{hist_linha18} + ($F{hist_linha18_cor}.equals("") ? "" : ($F{hist_linha18_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha18_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="1e2fe45f-f0ff-4fb0-bc9e-5f3c22be01f7" mode="Opaque" x="44" y="164" width="237" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Justified" markup="html">
+					<font fontName="DejaVu Sans" size="8"/>
+					<paragraph tabStopWidth="50"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{hist_linha04_cor}.equals("") ? "" : ($F{hist_linha04_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha04_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha04_cor}.split(";")[2] + ">")) + $F{hist_linha04} + ($F{hist_linha04_cor}.equals("") ? "" : ($F{hist_linha04_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha04_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="2d7f1d8d-f33a-4d07-8b49-992954eb6682" mode="Opaque" x="284" y="146" width="54" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_cred02}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="347638be-5de7-4240-a95f-ac6901517f2a" mode="Opaque" x="284" y="425" width="54" height="10"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_cred33}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="5075e029-b54c-4d6a-8eb1-664a64023bf8" mode="Opaque" x="284" y="164" width="54" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_cred04}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="87dbd9b1-c45b-4986-b9c7-0f281eb36eed" mode="Opaque" x="340" y="353" width="54" height="10"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_deb25}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="81eb41cd-0784-4830-b92a-31d7d6474daf" mode="Opaque" x="284" y="281" width="54" height="10"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_cred17}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="42b6740f-c7ea-4970-a20c-d69406f3f7b6" mode="Opaque" x="340" y="389" width="54" height="10"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_deb29}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="5891b218-8722-4875-9aa6-2e36fb1de790" mode="Opaque" x="284" y="461" width="54" height="10"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_cred37}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="800bd115-ad45-4a6e-b674-ea80c92992a7" mode="Opaque" x="44" y="326" width="237" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Justified" markup="html">
+					<font fontName="DejaVu Sans" size="8"/>
+					<paragraph tabStopWidth="50"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{hist_linha22_cor}.equals("") ? "" : ($F{hist_linha22_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha22_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha22_cor}.split(";")[2] + ">")) + $F{hist_linha22} + ($F{hist_linha22_cor}.equals("") ? "" : ($F{hist_linha22_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha22_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="09df1216-dbec-4ce8-aee8-6c5eba96a9a4" mode="Opaque" x="340" y="326" width="54" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_deb22}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="5f5d3006-a169-4ad1-a633-963a72ff998b" mode="Opaque" x="284" y="470" width="54" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_cred38}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="8b68f99d-294f-4720-9753-0b60668fdf89" mode="Opaque" x="44" y="182" width="237" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Justified" markup="html">
+					<font fontName="DejaVu Sans" size="8"/>
+					<paragraph tabStopWidth="50"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{hist_linha06_cor}.equals("") ? "" : ($F{hist_linha06_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha06_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha06_cor}.split(";")[2] + ">")) + $F{hist_linha06} + ($F{hist_linha06_cor}.equals("") ? "" : ($F{hist_linha06_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha06_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="e1af77ef-a609-4403-b023-e62dd237c18f" mode="Opaque" x="340" y="281" width="54" height="10"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_deb17}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="54821714-e6d6-4c1e-8139-b78f15f7cc99" mode="Opaque" x="44" y="353" width="237" height="10"/>
+				<textElement textAlignment="Justified" markup="html">
+					<font fontName="DejaVu Sans" size="8"/>
+					<paragraph tabStopWidth="50"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{hist_linha25_cor}.equals("") ? "" : ($F{hist_linha25_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha25_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha25_cor}.split(";")[2] + ">")) + $F{hist_linha25} + ($F{hist_linha25_cor}.equals("") ? "" : ($F{hist_linha25_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha25_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="176e9d82-fc52-4954-8eaf-cb0ff20c5e87" mode="Opaque" x="340" y="308" width="54" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_deb20}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="94549195-dc29-497f-88a6-a3aea3078fa6" mode="Opaque" x="340" y="452" width="54" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_deb36}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="32e8c221-0d43-4a3b-839a-6c05acb44ea3" mode="Opaque" x="44" y="389" width="237" height="10"/>
+				<textElement textAlignment="Justified" markup="html">
+					<font fontName="DejaVu Sans" size="8"/>
+					<paragraph tabStopWidth="50"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{hist_linha29_cor}.equals("") ? "" : ($F{hist_linha29_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha29_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha29_cor}.split(";")[2] + ">")) + $F{hist_linha29} + ($F{hist_linha29_cor}.equals("") ? "" : ($F{hist_linha29_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha29_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="180fb710-5185-4b31-a05e-e6de3a48c281" mode="Opaque" x="44" y="434" width="237" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Justified" markup="html">
+					<font fontName="DejaVu Sans" size="8"/>
+					<paragraph tabStopWidth="50"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{hist_linha34_cor}.equals("") ? "" : ($F{hist_linha34_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha34_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha34_cor}.split(";")[2] + ">")) + $F{hist_linha34} + ($F{hist_linha34_cor}.equals("") ? "" : ($F{hist_linha34_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha34_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="384f1bd0-cd79-486e-8c9e-2d78a6c02947" mode="Opaque" x="44" y="200" width="237" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Justified" markup="html">
+					<font fontName="DejaVu Sans" size="8"/>
+					<paragraph tabStopWidth="50"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{hist_linha08_cor}.equals("") ? "" : ($F{hist_linha08_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha08_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha08_cor}.split(";")[2] + ">")) + $F{hist_linha08} + ($F{hist_linha08_cor}.equals("") ? "" : ($F{hist_linha08_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha08_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="49a124c0-80c5-4b49-a35f-6683cdc994b6" mode="Opaque" x="284" y="191" width="54" height="10"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_cred07}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="29e85500-568f-4d2a-8d52-daa182063b00" mode="Opaque" x="340" y="299" width="54" height="10"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_deb19}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="f52887ef-30cd-40b8-8110-9aac7511909a" mode="Opaque" x="284" y="272" width="54" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_cred16}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="03c4fbb6-35ed-4714-b72d-f4d9a6bdcf0a" mode="Opaque" x="44" y="263" width="237" height="10"/>
+				<textElement textAlignment="Justified" markup="html">
+					<font fontName="DejaVu Sans" size="8"/>
+					<paragraph tabStopWidth="50"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{hist_linha15_cor}.equals("") ? "" : ($F{hist_linha15_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha15_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha15_cor}.split(";")[2] + ">")) + $F{hist_linha15} + ($F{hist_linha15_cor}.equals("") ? "" : ($F{hist_linha15_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha15_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="20c4372e-fad6-4b68-bcc8-5ca3a9621096" mode="Opaque" x="44" y="398" width="237" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Justified" markup="html">
+					<font fontName="DejaVu Sans" size="8"/>
+					<paragraph tabStopWidth="50"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{hist_linha30_cor}.equals("") ? "" : ($F{hist_linha30_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha30_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha30_cor}.split(";")[2] + ">")) + $F{hist_linha30} + ($F{hist_linha30_cor}.equals("") ? "" : ($F{hist_linha30_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha30_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="88fbe348-f4a5-48ff-a912-98663f0e6b8e" mode="Opaque" x="44" y="371" width="237" height="10"/>
+				<textElement textAlignment="Justified" markup="html">
+					<font fontName="DejaVu Sans" size="8"/>
+					<paragraph tabStopWidth="50"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{hist_linha27_cor}.equals("") ? "" : ($F{hist_linha27_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha27_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha27_cor}.split(";")[2] + ">")) + $F{hist_linha27} + ($F{hist_linha27_cor}.equals("") ? "" : ($F{hist_linha27_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha27_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="7edda359-0647-479f-b8bc-a02d9b7ce76b" mode="Opaque" x="44" y="335" width="237" height="10"/>
+				<textElement textAlignment="Justified" markup="html">
+					<font fontName="DejaVu Sans" size="8"/>
+					<paragraph tabStopWidth="50"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{hist_linha23_cor}.equals("") ? "" : ($F{hist_linha23_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha23_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha23_cor}.split(";")[2] + ">")) + $F{hist_linha23} + ($F{hist_linha23_cor}.equals("") ? "" : ($F{hist_linha23_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha23_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="21c96c64-58e2-41e5-930d-7efab534f465" mode="Opaque" x="44" y="236" width="237" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Justified" markup="html">
+					<font fontName="DejaVu Sans" size="8"/>
+					<paragraph tabStopWidth="50"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{hist_linha12_cor}.equals("") ? "" : ($F{hist_linha12_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha12_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha12_cor}.split(";")[2] + ">")) + $F{hist_linha12} + ($F{hist_linha12_cor}.equals("") ? "" : ($F{hist_linha12_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha12_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="151f1cbf-1e6e-4bb1-b921-6934a6694d4a" mode="Opaque" x="284" y="452" width="54" height="10" backcolor="#BFBABA"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_cred36}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="400c58b4-58a0-4438-bd7d-34ca8f081c17" mode="Opaque" x="340" y="263" width="54" height="10"/>
+				<textElement textAlignment="Right" markup="none">
+					<font fontName="DejaVu Sans" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hist_deb15}]]></textFieldExpression>
+			</textField>
+			<textField pattern="¤ #,##0.00">
+				<reportElement uuid="69279331-b357-460f-b301-fc965cd490b3" x="315" y="105" width="75" height="13">
+					<printWhenExpression><![CDATA[$P{parameter1}.equals(true)]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{saldo}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="fe85fed9-78a6-4389-89b9-d4c346096e27" x="218" y="105" width="97" height="13">
+					<printWhenExpression><![CDATA[$P{parameter1}.equals(true)]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total da página:]]></text>
+			</staticText>
+			<textField pattern="¤ #,##0.00">
+				<reportElement uuid="95761a61-281b-48c4-a3c5-f62b3482f152" x="695" y="105" width="75" height="13">
+					<printWhenExpression><![CDATA[$P{parameter1}.equals(true)]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{saldo}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="17f6179d-f04d-4f5a-aedc-95c2d84c9588" x="598" y="105" width="97" height="13">
+					<printWhenExpression><![CDATA[$P{parameter1}.equals(true)]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total da página:]]></text>
+			</staticText>
+		</band>
+	</detail>
+</jasperReport>

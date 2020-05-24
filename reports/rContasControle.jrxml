@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="rContasControle" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="056e2a83-4113-4a38-b725-72fc72c6bacb">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="registro" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT
+    a.registro,
+    (SELECT b.buffer FROM COMBOBUFFER b WHERE b.autoid = a.registro) AS conta,
+    (Mid(a.campo,50,3)) AS tipo,
+    Cast(ConCat(Mid(a.campo,45,4),'-',Mid(a.campo,43,2),'-',Mid(a.campo,41,2)) AS Date) AS data,
+    Cast(Concat(Mid(a.campo,6,8),'.',Mid(a.campo,14,2)) AS DECIMAL(19,2)) AS valor,
+    Mid(a.campo,57,InStr(Mid(a.campo,57),':') - 1) AS descricao,
+    Mid(Mid(a.campo,57), InStr(Mid(a.campo,57),':') + 1) AS user,
+    a.autenticacao
+FROM
+    avisos a
+WHERE
+    a.rid = '5' AND (a.tag <> 'X' OR ISNULL(a.tag)) AND a.registro = $P{registro}
+ORDER BY
+    a.registro, a.autenticacao;]]>
+	</queryString>
+	<field name="registro" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="conta" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tipo" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="data" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="valor" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="descricao" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="user" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="autenticacao" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<variable name="credito" class="java.lang.Double">
+		<variableExpression><![CDATA[$F{tipo}.equals( "CRE" ) ? $F{valor} : new Double(0)]]></variableExpression>
+		<initialValueExpression><![CDATA[new Double(0)]]></initialValueExpression>
+	</variable>
+	<variable name="debito" class="java.lang.Double">
+		<variableExpression><![CDATA[$F{tipo}.equals( "DEB" ) ? $F{valor} : new Double(0)]]></variableExpression>
+		<initialValueExpression><![CDATA[new Double(0)]]></initialValueExpression>
+	</variable>
+	<variable name="tcredito" class="java.lang.Double" resetType="Group" resetGroup="Conta" calculation="Sum">
+		<variableExpression><![CDATA[$V{credito}]]></variableExpression>
+		<initialValueExpression><![CDATA[]]></initialValueExpression>
+	</variable>
+	<variable name="tdebito" class="java.lang.Double" resetType="Group" resetGroup="Conta" calculation="Sum">
+		<variableExpression><![CDATA[$V{debito}]]></variableExpression>
+	</variable>
+	<variable name="saldo" class="java.lang.Double">
+		<variableExpression><![CDATA[$V{tcredito} - $V{tdebito}]]></variableExpression>
+		<initialValueExpression><![CDATA[new Double(0)]]></initialValueExpression>
+	</variable>
+	<group name="Conta">
+		<groupExpression><![CDATA[$F{conta}]]></groupExpression>
+		<groupHeader>
+			<band height="15">
+				<textField>
+					<reportElement uuid="b7d8188d-42bf-4b8c-9eb5-bbed7cce37c6" x="35" y="0" width="32" height="14" forecolor="#0A02A3"/>
+					<textElement>
+						<font isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{registro}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="d42a25be-aa66-4b02-8f8b-a7f7a3ac53b9" x="67" y="0" width="464" height="14" forecolor="#0A02A3"/>
+					<textElement>
+						<font isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{conta}]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band height="38">
+				<textField pattern="¤ #,##0.00">
+					<reportElement uuid="88dcb182-a22a-4b0f-906f-dec8d48ba2a9" x="373" y="0" width="64" height="14" forecolor="#287301"/>
+					<textElement textAlignment="Right">
+						<font isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$V{tcredito}]]></textFieldExpression>
+				</textField>
+				<textField pattern="¤ #,##0.00">
+					<reportElement uuid="12384b46-390e-4afc-8a78-e228204c1adc" x="441" y="0" width="72" height="14" forecolor="#CF0B0B"/>
+					<textElement textAlignment="Right">
+						<font isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$V{tdebito}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="8b1de9db-ae31-462b-876f-f0cd3eab5c0d" x="252" y="0" width="115" height="14"/>
+					<textElement textAlignment="Right">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[Totais =>]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="fe161ed5-1cdf-4d75-b6eb-72dc738247af" x="252" y="14" width="115" height="14"/>
+					<textElement textAlignment="Right">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[Saldo =>]]></text>
+				</staticText>
+				<textField pattern="¤ #,##0.00">
+					<reportElement uuid="bf690469-3d0c-4958-8a1d-8a1869b53e99" x="441" y="14" width="72" height="14" forecolor="#10A4A2"/>
+					<textElement textAlignment="Right">
+						<font isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$V{saldo}]]></textFieldExpression>
+				</textField>
+				<line>
+					<reportElement uuid="02cd7ac3-f53a-4ed7-acfb-a92ea73398c5" x="0" y="32" width="555" height="1"/>
+					<graphicElement>
+						<pen lineStyle="Dashed"/>
+					</graphicElement>
+				</line>
+			</band>
+		</groupFooter>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="18" splitType="Stretch">
+			<line>
+				<reportElement uuid="bea1adae-eed7-489c-a41b-2cf8fc5f08d0" x="0" y="15" width="555" height="1"/>
+			</line>
+			<textField>
+				<reportElement uuid="c297852b-9c1c-47fe-9d4b-5f071c35e71e" x="433" y="0" width="80" height="14"/>
+				<textElement textAlignment="Right">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Página: "+$V{PAGE_NUMBER}+" de"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="96672808-74fd-45ec-9c04-ff3a66f5877c" x="140" y="0" width="265" height="14"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[RELATORIO DE CONTAS CONTROLE]]></text>
+			</staticText>
+			<textField pattern="dd/MM/yyyy HH.mm.ss">
+				<reportElement uuid="cafb0eff-63ed-40d9-9fce-2d50e45ce868" x="2" y="0" width="100" height="14"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement uuid="c6786c10-acab-4071-8456-232af437f62d" x="515" y="0" width="40" height="14"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<detail>
+		<band height="14" splitType="Stretch">
+			<rectangle>
+				<reportElement uuid="74d2589c-a7eb-42dc-a4f7-0274e4bf2c13" mode="Opaque" x="0" y="0" width="555" height="14" forecolor="#FFFFFF" backcolor="#E4E4EC">
+					<printWhenExpression><![CDATA[new Boolean(($V{COLUMN_COUNT}.intValue() % 2) == 0)]]></printWhenExpression>
+				</reportElement>
+				<graphicElement>
+					<pen lineWidth="0.0"/>
+				</graphicElement>
+			</rectangle>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement uuid="29cca622-35d7-4788-a716-3e46cd7c403f" x="0" y="0" width="67" height="14"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{data}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement uuid="f942c99e-737b-4a57-afe7-0c6f65fc27ef" stretchType="RelativeToTallestObject" x="67" y="0" width="300" height="14" isPrintInFirstWholeBand="true"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[DecriptaNome.DecriptaNome.Decriptar($F{descricao})]]></textFieldExpression>
+			</textField>
+			<textField pattern="¤ #,##0.00">
+				<reportElement uuid="67335fba-6cc2-40d6-b9e4-9c43afb0dc8c" x="373" y="0" width="64" height="14"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$V{credito}]]></textFieldExpression>
+			</textField>
+			<textField pattern="¤ #,##0.00">
+				<reportElement uuid="dd1cc103-f961-4702-84ea-30eced0c2f92" x="441" y="0" width="72" height="14"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$V{debito}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

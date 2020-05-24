@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Caixa_Date" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="792cfd87-6b0d-44a7-8b84-b8c87ce18c89">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="dtinic" class="java.lang.String">
+		<parameterDescription><![CDATA[Data Inicial]]></parameterDescription>
+	</parameter>
+	<parameter name="dtfinal" class="java.lang.String">
+		<parameterDescription><![CDATA[Data Final]]></parameterDescription>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT
+	*
+FROM
+	jgeral.caixabck
+WHERE
+	year(cx_data)>=2015
+	AND NOT cx_doc Like '%X'
+	AND (cx_data >= $P{dtinic} AND cx_data <= $P{dtfinal})
+ORDER BY
+	cx_data,
+	cx_oper,
+	cx_doc,
+	cx_tipopg;]]>
+	</queryString>
+	<field name="CX_AUT" class="java.lang.Double">
+		<fieldDescription><![CDATA[Numero da Autenticação]]></fieldDescription>
+	</field>
+	<field name="CX_DATA" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[Data Autenticação]]></fieldDescription>
+	</field>
+	<field name="CX_HORA" class="java.lang.String">
+		<fieldDescription><![CDATA[Hora Autenticação]]></fieldDescription>
+	</field>
+	<field name="CX_LOGADO" class="java.lang.String">
+		<fieldDescription><![CDATA[Caixa Logado]]></fieldDescription>
+	</field>
+	<field name="CX_CONTRATO" class="java.lang.String">
+		<fieldDescription><![CDATA[Numero do Contrato]]></fieldDescription>
+	</field>
+	<field name="CX_RGPRP" class="java.lang.String">
+		<fieldDescription><![CDATA[Numero do Proprietário]]></fieldDescription>
+	</field>
+	<field name="CX_RGIMV" class="java.lang.String">
+		<fieldDescription><![CDATA[Numero do Imóvel]]></fieldDescription>
+	</field>
+	<field name="CX_OPER" class="java.lang.String">
+		<fieldDescription><![CDATA[Tipo Operação (CRE ou DEB)]]></fieldDescription>
+	</field>
+	<field name="CX_VRDN" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[Valor em Dinheiro]]></fieldDescription>
+	</field>
+	<field name="CX_VRCH" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[Valor em Cheque]]></fieldDescription>
+	</field>
+	<field name="CX_CHREL" class="java.lang.String">
+		<fieldDescription><![CDATA[Relação dos cheques]]></fieldDescription>
+	</field>
+	<field name="CX_TIPOPG" class="java.lang.String">
+		<fieldDescription><![CDATA[Tipo pag/rec (DN,CH,CP,CT,CD,DP)]]></fieldDescription>
+	</field>
+	<field name="CX_DOC" class="java.lang.String">
+		<fieldDescription><![CDATA[Documento Emitido]]></fieldDescription>
+	</field>
+	<field name="CX_NDOCS" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<variable name="CX_VRDN_1" class="java.math.BigDecimal" resetType="Group" resetGroup="CX_DATA" calculation="Sum">
+		<variableExpression><![CDATA[($F{CX_TIPOPG}.equals("DN") && $F{CX_OPER}.equals( "CRE" ) && !$F{CX_DOC}.equals( "DS" ) ? $F{CX_VRDN} : 0)]]></variableExpression>
+	</variable>
+	<variable name="CX_VRDN_2" class="java.math.BigDecimal" resetType="Group" resetGroup="CX_DATA" calculation="Sum">
+		<variableExpression><![CDATA[($F{CX_TIPOPG}.equals( "CT" ) && $F{CX_OPER}.equals( "CRE" ) && !$F{CX_DOC}.equals( "DS" ) ? $F{CX_VRDN} : 0)]]></variableExpression>
+	</variable>
+	<variable name="CX_VRCH_1" class="java.math.BigDecimal" resetType="Group" resetGroup="CX_DATA" calculation="Sum">
+		<variableExpression><![CDATA[($F{CX_TIPOPG}.equals( "CH" ) && $F{CX_OPER}.equals( "CRE" ) && !$F{CX_DOC}.equals( "DS" ) ? $F{CX_VRCH} : 0)]]></variableExpression>
+	</variable>
+	<variable name="CX_VRCH_2" class="java.math.BigDecimal" resetType="Group" resetGroup="CX_DATA" calculation="Sum">
+		<variableExpression><![CDATA[($F{CX_TIPOPG}.equals( "CP" ) && $F{CX_OPER}.equals( "CRE" ) && !$F{CX_DOC}.equals( "DS" ) ? $F{CX_VRCH} : 0)]]></variableExpression>
+	</variable>
+	<variable name="CX_VRDN_3" class="java.math.BigDecimal" resetType="Group" resetGroup="CX_DATA" calculation="Sum">
+		<variableExpression><![CDATA[($F{CX_TIPOPG}.equals("DN") && $F{CX_OPER}.equals( "DEB" ) && !$F{CX_DOC}.equals( "DS" ) ? $F{CX_VRDN} : 0)]]></variableExpression>
+	</variable>
+	<variable name="CX_VRDN_4" class="java.math.BigDecimal" resetType="Group" resetGroup="CX_DATA" calculation="Sum">
+		<variableExpression><![CDATA[($F{CX_TIPOPG}.equals( "CT" ) && $F{CX_OPER}.equals( "DEB" ) && !$F{CX_DOC}.equals( "DS" ) ? $F{CX_VRDN} : 0)]]></variableExpression>
+	</variable>
+	<variable name="CX_VRCH_3" class="java.math.BigDecimal" resetType="Group" resetGroup="CX_DATA" calculation="Sum">
+		<variableExpression><![CDATA[($F{CX_TIPOPG}.equals( "CH" ) && $F{CX_OPER}.equals( "DEB" ) && !$F{CX_DOC}.equals( "DS" ) ? $F{CX_VRCH} : 0)]]></variableExpression>
+	</variable>
+	<variable name="CX_VRCH_4" class="java.math.BigDecimal" resetType="Group" resetGroup="CX_DATA" calculation="Sum">
+		<variableExpression><![CDATA[($F{CX_TIPOPG}.equals( "CP" ) && $F{CX_OPER}.equals( "DEB" ) && !$F{CX_DOC}.equals( "DS" ) ? $F{CX_VRCH} : 0)]]></variableExpression>
+	</variable>
+	<variable name="CX_VRDN_5" class="java.math.BigDecimal" resetType="Group" resetGroup="CX_DATA" calculation="Sum">
+		<variableExpression><![CDATA[($F{CX_OPER}.equals( "DEB" ) && $F{CX_TIPOPG}.equals( "DN" ) && $F{CX_DOC}.equals( "DS" ) ? $F{CX_VRDN} : 0)]]></variableExpression>
+	</variable>
+	<variable name="CX_VRCH_5" class="java.math.BigDecimal" resetType="Group" resetGroup="CX_DATA" calculation="Sum">
+		<variableExpression><![CDATA[($F{CX_OPER}.equals( "DEB" ) && $F{CX_TIPOPG}.equals( "CH" ) && $F{CX_DOC}.equals( "DS" ) ? $F{CX_VRCH} : 0)]]></variableExpression>
+	</variable>
+	<variable name="CX_VRCH_6" class="java.math.BigDecimal" resetType="Group" resetGroup="CX_DATA" calculation="Sum">
+		<variableExpression><![CDATA[($F{CX_OPER}.equals( "DEB" ) && $F{CX_TIPOPG}.equals( "CP" ) && $F{CX_DOC}.equals( "DS" ) ? $F{CX_VRCH} : 0)]]></variableExpression>
+	</variable>
+	<group name="CX_DATA" isStartNewPage="true" keepTogether="true">
+		<groupExpression><![CDATA[$F{CX_DATA}]]></groupExpression>
+		<groupHeader>
+			<band height="26">
+				<textField pattern="dd/MM/yyyy">
+					<reportElement uuid="691f675b-8dcf-464c-8d57-47cc0623e348" x="35" y="0" width="100" height="20"/>
+					<textElement>
+						<font size="12" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{CX_DATA}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="44a80a2c-2735-47f4-b760-1121f5ed60c1" x="0" y="0" width="35" height="20"/>
+					<textElement>
+						<font size="12" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Data:]]></text>
+				</staticText>
+				<line>
+					<reportElement uuid="6020719f-9a3e-496d-b336-186b08481d71" x="0" y="23" width="555" height="1"/>
+				</line>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band height="204">
+				<textField pattern="#,##0.00;-#,##0.00">
+					<reportElement uuid="2e8c2dd3-58b9-42e3-ae37-50d8dd9b5393" x="84" y="31" width="81" height="20"/>
+					<textElement textAlignment="Right"/>
+					<textFieldExpression><![CDATA[$V{CX_VRDN_1}]]></textFieldExpression>
+				</textField>
+				<textField pattern="#,##0.00;-#,##0.00">
+					<reportElement uuid="81da6c3e-ae8c-4707-861c-4e3321f28c23" x="459" y="31" width="81" height="20"/>
+					<textElement textAlignment="Right"/>
+					<textFieldExpression><![CDATA[$V{CX_VRDN_2}]]></textFieldExpression>
+				</textField>
+				<textField pattern="#,##0.00;-#,##0.00">
+					<reportElement uuid="a9718c4b-0236-477d-bcee-4fc9dd59bc87" x="84" y="51" width="81" height="20"/>
+					<textElement textAlignment="Right"/>
+					<textFieldExpression><![CDATA[$V{CX_VRCH_1}]]></textFieldExpression>
+				</textField>
+				<textField pattern="#,##0.00;-#,##0.00">
+					<reportElement uuid="6cc74c05-30b9-43ac-8e54-8438cca3e5d2" x="84" y="71" width="81" height="20"/>
+					<textElement textAlignment="Right"/>
+					<textFieldExpression><![CDATA[$V{CX_VRCH_2}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="023ac7d9-3a1e-433b-ab38-28ed47bf82e6" x="10" y="31" width="74" height="20"/>
+					<textElement/>
+					<text><![CDATA[Total Dinheiro:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="f51ba968-7419-432a-bead-ececb00cd46f" x="385" y="31" width="74" height="20"/>
+					<textElement/>
+					<text><![CDATA[Créditos:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="dbb15a19-7c6c-4667-8acd-932fcb353e10" x="10" y="51" width="74" height="20"/>
+					<textElement/>
+					<text><![CDATA[Total Cheque:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="da95a66d-a0f8-47b5-a47d-919a5c4aace2" x="10" y="71" width="74" height="20"/>
+					<textElement/>
+					<text><![CDATA[Total Pré:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="35013a00-d6a4-4719-b3a3-23f1ceece9c6" mode="Opaque" x="10" y="11" width="155" height="20" forecolor="#FFFFFF" backcolor="#000000"/>
+					<textElement textAlignment="Center">
+						<font size="12" isBold="true"/>
+					</textElement>
+					<text><![CDATA[CREDITOS]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="2f15097d-dc35-4394-9486-7e27dec3a3b1" x="194" y="31" width="74" height="20"/>
+					<textElement/>
+					<text><![CDATA[Total Dinheiro:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="9bf421a1-3aa4-4fa5-be99-e855354fd3f1" mode="Opaque" x="194" y="11" width="155" height="20" forecolor="#FFFFFF" backcolor="#000000"/>
+					<textElement textAlignment="Center">
+						<font size="12" isBold="true"/>
+					</textElement>
+					<text><![CDATA[DEBITOS]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="623fcb99-396a-4540-9c87-8ec383d2a168" x="194" y="51" width="74" height="20"/>
+					<textElement/>
+					<text><![CDATA[Total Cheque:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="b1eef7f7-a698-4185-bb92-753abfd38416" x="194" y="71" width="74" height="20"/>
+					<textElement/>
+					<text><![CDATA[Total Pré:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="482949d2-949f-44a0-a791-7909cafebcfb" x="385" y="51" width="74" height="20"/>
+					<textElement/>
+					<text><![CDATA[Débitos:]]></text>
+				</staticText>
+				<textField pattern="#,##0.00;-#,##0.00">
+					<reportElement uuid="fcdfd11b-d1ce-4b5d-836d-f73b5112cc11" x="268" y="31" width="81" height="20"/>
+					<textElement textAlignment="Right"/>
+					<textFieldExpression><![CDATA[$V{CX_VRDN_3}]]></textFieldExpression>
+				</textField>
+				<textField pattern="#,##0.00;-#,##0.00">
+					<reportElement uuid="384ee07c-6c95-46f3-b581-c8b80712dfc8" x="459" y="51" width="81" height="20"/>
+					<textElement textAlignment="Right"/>
+					<textFieldExpression><![CDATA[$V{CX_VRDN_4}]]></textFieldExpression>
+				</textField>
+				<textField pattern="#,##0.00;-#,##0.00">
+					<reportElement uuid="b646ee32-0c07-4959-9810-b06fa3a048f0" x="268" y="51" width="81" height="20"/>
+					<textElement textAlignment="Right"/>
+					<textFieldExpression><![CDATA[$V{CX_VRCH_3}]]></textFieldExpression>
+				</textField>
+				<textField pattern="#,##0.00;-#,##0.00">
+					<reportElement uuid="ae99975d-1432-4c5f-af0c-72c1af5b117a" x="268" y="71" width="81" height="20"/>
+					<textElement textAlignment="Right"/>
+					<textFieldExpression><![CDATA[$V{CX_VRCH_4}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="35e0cb81-1d0c-4b24-b576-a9b0fbfb8a9b" x="10" y="150" width="74" height="20"/>
+					<textElement/>
+					<text><![CDATA[Cheques:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="b89109b2-a83c-4ed1-8cd5-ce08893cdf17" x="10" y="171" width="74" height="20"/>
+					<textElement/>
+					<text><![CDATA[Chque Pré:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="13e3d842-866b-4240-b110-4d166afe05e1" x="10" y="130" width="74" height="20"/>
+					<textElement/>
+					<text><![CDATA[Dinheiro:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="a33a4bcb-e673-4440-b0e4-b7903cabe915" mode="Opaque" x="10" y="110" width="159" height="20" forecolor="#FFFFFF" backcolor="#000000"/>
+					<textElement textAlignment="Center">
+						<font size="12" isBold="true"/>
+					</textElement>
+					<text><![CDATA[DEPÓSITOS]]></text>
+				</staticText>
+				<textField pattern="#,##0.00;-#,##0.00">
+					<reportElement uuid="f22d889a-4933-408e-8507-7c3be11ff185" x="88" y="130" width="81" height="20"/>
+					<textElement textAlignment="Right"/>
+					<textFieldExpression><![CDATA[$V{CX_VRDN_5}]]></textFieldExpression>
+				</textField>
+				<textField pattern="#,##0.00;-#,##0.00">
+					<reportElement uuid="8a76cffd-1754-446c-a785-f001c587c91e" x="88" y="150" width="81" height="20"/>
+					<textElement textAlignment="Right"/>
+					<textFieldExpression><![CDATA[$V{CX_VRCH_5}]]></textFieldExpression>
+				</textField>
+				<textField pattern="#,##0.00;-#,##0.00">
+					<reportElement uuid="0cc71907-0808-46ab-b6cd-9aebb49a6207" x="88" y="171" width="81" height="20"/>
+					<textElement textAlignment="Right"/>
+					<textFieldExpression><![CDATA[$V{CX_VRCH_6}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="2aa1f62e-2ddf-4ae8-8e06-02b7ae18f1b4" mode="Opaque" x="385" y="11" width="155" height="20" forecolor="#FFFFFF" backcolor="#000000"/>
+					<textElement textAlignment="Center">
+						<font size="12" isBold="true"/>
+					</textElement>
+					<text><![CDATA[BANCO]]></text>
+				</staticText>
+				<line>
+					<reportElement uuid="111fbfb4-fcbe-4981-a3da-1a32d6b4fcfa" x="0" y="199" width="555" height="1"/>
+					<graphicElement>
+						<pen lineWidth="1.5" lineStyle="Dashed" lineColor="#3333FF"/>
+					</graphicElement>
+				</line>
+			</band>
+		</groupFooter>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<pageHeader>
+		<band height="45">
+			<staticText>
+				<reportElement uuid="55252f95-511f-49bc-b07b-063c079ad68d" x="24" y="0" width="516" height="38"/>
+				<textElement textAlignment="Center">
+					<font size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Relatório de Movimentação do CAIXA]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="dc280055-b775-4fdf-836d-1644d0c0aeaa" x="0" y="41" width="555" height="1"/>
+			</line>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="14" splitType="Stretch">
+			<rectangle>
+				<reportElement uuid="d949310b-4669-4074-9fab-5269e07cd605" mode="Opaque" x="0" y="0" width="555" height="14" forecolor="#FFFFFF" backcolor="#E4E4EC">
+					<printWhenExpression><![CDATA[new Boolean(($V{COLUMN_COUNT}.intValue() % 2) == 0)]]></printWhenExpression>
+				</reportElement>
+				<graphicElement>
+					<pen lineWidth="0.0"/>
+				</graphicElement>
+			</rectangle>
+			<textField>
+				<reportElement uuid="1fdba402-c0a1-4bd8-824b-444467ccaf8f" x="55" y="0" width="51" height="14"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{CX_RGPRP}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="30fa6deb-c538-4744-b244-06aa6b604bb4" x="106" y="0" width="49" height="14"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{CX_RGIMV}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="b3b78003-89a3-4fb2-8cc7-9a07b6d9fa6c" x="175" y="0" width="41" height="14"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{CX_CONTRATO}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="fd0bf653-972a-4bb4-bf2c-b4ad11274f5d" x="142" y="0" width="28" height="14"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{CX_OPER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="4c36d799-075b-4164-9cc6-05207bfda8ab" x="224" y="0" width="60" height="14"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{CX_VRDN}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement uuid="89867197-11f9-4b16-84fd-141ac68fac40" x="287" y="0" width="60" height="14"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{CX_VRCH}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="dd08b2ed-2750-4142-9ed8-298fd5781654" x="374" y="0" width="21" height="14"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{CX_TIPOPG}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="d8440434-d278-4d7f-abfe-6062a1ac0f9b" x="406" y="0" width="35" height="14"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{CX_DOC}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="980742ae-0cef-467b-9f4d-38db6e1774bb" x="441" y="0" width="81" height="14"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{CX_LOGADO}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="6cf1b454-9161-4f37-9d81-27f6963b970d" x="522" y="0" width="33" height="14" forecolor="#FF0000">
+					<printWhenExpression><![CDATA[$F{CX_DOC}.equals( "DS" )]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[<<<]]></text>
+			</staticText>
+			<textField pattern="###0;-###0">
+				<reportElement uuid="f17b7b7a-2afd-4619-9d7b-7612077d151d" x="0" y="0" width="35" height="14"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$F{CX_AUT}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="32" splitType="Stretch">
+			<textField pattern="dd/MM/yyyy hh:mm:a">
+				<reportElement uuid="69cbdaa9-ee21-420b-a46b-033cc3f04ba4" x="0" y="9" width="169" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement uuid="d2888691-168a-4017-a734-9348703b7e7f" x="0" y="5" width="555" height="1"/>
+				<graphicElement>
+					<pen lineWidth="2.5" lineStyle="Double"/>
+				</graphicElement>
+			</line>
+			<textField>
+				<reportElement uuid="c053ec3d-0f6a-4b66-9bcc-cf275163e26b" x="435" y="9" width="80" height="20"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Página "+$V{PAGE_NUMBER}+" de"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement uuid="9292e9fa-5cee-410c-a0ca-98d6b30ec64e" x="515" y="9" width="40" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

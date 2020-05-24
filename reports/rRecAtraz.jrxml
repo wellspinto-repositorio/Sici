@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="rRecAtraz" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="6c6b9f27-8641-4dd5-a8fc-fd1f83ce2c81">
+	<property name="ireport.zoom" value="2.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="dataini" class="java.lang.String">
+		<property name="parameter1" value="2011-01-01"/>
+		<property name="parameter2" value="2011-12-31"/>
+		<defaultValueExpression><![CDATA["2011-01-01"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="datafim" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[SELECT c.contrato, l.tpimovel, l.nomerazao, c.dtinicio, c.dtvencimento, c.dtultrecebimento, l.tel, ProxVecto2(c.campo,c.dtultrecebimento, c.dtvencimento) AS proxrecibo FROM CARTEIRA c, locatarios l, imoveis i, proprietarios p WHERE p.rgprp = c.rgprp AND (NOT Lower(p.nome) LIKE 'condo%') AND c.contrato = l.contrato AND l.rgimv = i.rgimv AND Lower(i.situacao) <> 'VAZIO' AND (c.dtinicio <> '' AND c.dtinicio <> '00-00-0000') AND (NOT IsNull(c.dtultrecebimento) AND c.dtultrecebimento <> '') AND (CAST(ProxVecto2(c.campo,c.dtultrecebimento, c.dtvencimento) AS DATE) >= $P{dataini} AND CAST(ProxVecto2(c.campo,c.dtultrecebimento, c.dtvencimento) AS DATE) <= $P{datafim}) ORDER BY Upper(l.nomerazao), MID(c.dtultrecebimento,1,4), MID(c.dtultrecebimento,6,2), MID(c.dtultrecebimento,9,2);]]>
+	</queryString>
+	<field name="contrato" class="java.lang.String"/>
+	<field name="tpimovel" class="java.lang.String"/>
+	<field name="nomerazao" class="java.lang.String"/>
+	<field name="dtinicio" class="java.lang.String"/>
+	<field name="dtvencimento" class="java.lang.String"/>
+	<field name="dtultrecebimento" class="java.lang.String"/>
+	<field name="tel" class="java.lang.String"/>
+	<field name="proxrecibo" class="java.lang.String"/>
+	<variable name="t_atrasados" class="java.lang.Integer" calculation="Count">
+		<variableExpression><![CDATA[$F{contrato}]]></variableExpression>
+	</variable>
+	<group name="grupo">
+		<groupExpression><![CDATA[]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<pageHeader>
+		<band height="31" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="51d92ac8-1d67-4b24-afc7-987619ed7a7f" x="138" y="0" width="265" height="14"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[RELATORIO DE RECIBOS ATRASADOS]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="18dd029e-abb2-4875-9045-360d3627d19e" x="433" y="0" width="80" height="20"/>
+				<textElement textAlignment="Right">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Página: "+$V{PAGE_NUMBER}+" de"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement uuid="ee57df73-6eba-4154-b971-71f8bc3481fb" x="513" y="0" width="40" height="20"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy HH.mm.ss">
+				<reportElement uuid="86cfe76a-51df-41d7-8e59-b773beea4ad4" x="0" y="0" width="100" height="14"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement uuid="3bfa3c62-36fa-4b2e-9142-28a577e23e1d" x="0" y="29" width="555" height="1"/>
+			</line>
+			<textField>
+				<reportElement uuid="df6d9a1a-e2cd-4434-8685-60249beda624" x="0" y="17" width="231" height="12"/>
+				<textElement>
+					<font size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Periodo: " + $P{dataini}.substring(8,10) + "-" + $P{dataini}.substring(5,7) + "-" + $P{dataini}.substring(0,4) + " Até " + $P{datafim}.substring(8,10) + "-" + $P{datafim}.substring(5,7) + "-" + $P{datafim}.substring(0,4)]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="14" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="7a14811a-db04-4cd0-b9d8-c83df42276e2" x="54" y="2" width="369" height="12"/>
+				<textElement>
+					<font size="8" isBold="true" isItalic="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[NOME]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="f5f662df-a668-47e6-bbb9-67fda270d70b" x="423" y="2" width="74" height="12"/>
+				<textElement textAlignment="Center">
+					<font size="8" isBold="true" isItalic="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[TELEFONE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="918bb001-2e5b-4ef7-add7-50401d7ad799" x="0" y="2" width="54" height="12"/>
+				<textElement>
+					<font size="8" isBold="true" isItalic="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[CONTRATO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c56d3684-eb66-49e6-b61b-e7fa441ac05d" x="497" y="2" width="58" height="12"/>
+				<textElement textAlignment="Center">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[VENCTO]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="12" splitType="Stretch">
+			<rectangle>
+				<reportElement uuid="d69fc6f7-4c76-4895-8eca-a1deb745836d" mode="Opaque" x="0" y="0" width="555" height="12" forecolor="#FFFFFF" backcolor="#E4E4EC">
+					<printWhenExpression><![CDATA[new Boolean(($V{COLUMN_COUNT}.intValue() % 2) == 0)]]></printWhenExpression>
+				</reportElement>
+				<graphicElement>
+					<pen lineWidth="0.0"/>
+				</graphicElement>
+			</rectangle>
+			<textField>
+				<reportElement uuid="5206b915-c382-47f5-82e3-ba9382a86de3" x="0" y="0" width="54" height="12"/>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{contrato}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="d9af8f7b-8859-41c6-8141-f9b627409ff8" x="54" y="0" width="369" height="12"/>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nomerazao}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="c0cae6c6-6aa5-48d6-9046-8718be3be12d" x="423" y="0" width="74" height="12"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tel}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="d1f27fae-b5cf-4774-9bf0-3772cd1a895c" x="497" y="0" width="58" height="12"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{proxrecibo}.substring( 8, 10 ) + "/" + $F{proxrecibo}.substring( 5, 7 ) + "/" + $F{proxrecibo}.substring( 0, 4 )]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="2">
+			<line>
+				<reportElement uuid="85bd1233-d15b-4994-b26b-cefda10f85b9" x="0" y="0" width="555" height="1"/>
+			</line>
+		</band>
+	</pageFooter>
+</jasperReport>

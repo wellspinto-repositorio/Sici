@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="rReajuste" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="1cdaf1e9-7756-4385-8f6f-481383e9367e">
+	<property name="ireport.zoom" value="2.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="parameter1" class="java.lang.String">
+		<property name="parameter1" value="2011-01-01"/>
+		<property name="parameter2" value="2011-12-31"/>
+		<defaultValueExpression><![CDATA["2011-01-01"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="parameter2" class="java.lang.String">
+		<defaultValueExpression><![CDATA["2011-12-31"]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT c.contrato, Upper(l.tpimovel) as tpimovel, l.nomerazao, c.dtinicio, c.dttermino, c.dtvencimento, c.dtseguro, c.dtadito FROM CARTEIRA c, locatarios l, imoveis i WHERE c.contrato = l.contrato AND l.rgimv = i.rgimv AND Lower(i.situacao) = 'OCUPADO' AND c.dtinicio <> '' AND c.dtinicio <> '00-00-0000' AND ((Mid(c.dtinicio,4,2) >= $P{parameter1} AND Mid(c.dtinicio,4,2) <= $P{parameter2} AND (IsNull(c.dtadito) OR Trim(c.dtadito) = '')) OR (Mid(c.dtadito,4,2) >= $P{parameter1} AND Mid(c.dtadito,4,2) <= $P{parameter2})) ORDER BY Lower(l.tpimovel), c.dtinicio, l.nomerazao;]]>
+	</queryString>
+	<field name="contrato" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tpimovel" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nomerazao" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="dtinicio" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="dttermino" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="dtvencimento" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="dtseguro" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="dtadito" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<group name="tpimv">
+		<groupExpression><![CDATA[$F{tpimovel}]]></groupExpression>
+		<groupHeader>
+			<band height="16">
+				<textField>
+					<reportElement uuid="74c12bb5-d9de-4e58-8985-0be42e896aea" x="0" y="3" width="100" height="13"/>
+					<textElement>
+						<font isUnderline="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{tpimovel}]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupHeader>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<pageHeader>
+		<band height="31" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="36490302-3d67-44f2-87b3-4aba70a3ad33" x="138" y="0" width="265" height="14"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[RELATORIO DE REAJUSTE DE ALUGUEL]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="53b071e9-3ca1-44e4-9434-eea7872787ee" x="433" y="0" width="80" height="20"/>
+				<textElement textAlignment="Right">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Página: "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement uuid="4523d2a6-397b-4938-960f-a36da03d5f67" x="513" y="0" width="40" height="20"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy HH.mm.ss">
+				<reportElement uuid="f2aa6ae3-ec7b-45b8-b290-b4ca0d56e5b7" x="0" y="0" width="100" height="20"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement uuid="325d3a18-491c-49d3-bf9e-ede9f7029295" x="0" y="29" width="555" height="1"/>
+			</line>
+			<textField>
+				<reportElement uuid="b76205c0-af42-4901-844a-24edc787abc1" x="168" y="14" width="194" height="15"/>
+				<textElement textAlignment="Center" markup="none">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Período de " + $P{parameter1} + " até " + $P{parameter2}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="14" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="cc6c98b2-2d75-41a7-a705-b5d78a25a070" x="54" y="2" width="259" height="12"/>
+				<textElement>
+					<font size="8" isBold="true" isItalic="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[NOME]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="6bb1df7a-9aec-4796-ad4c-97708d97253d" x="0" y="2" width="54" height="12"/>
+				<textElement>
+					<font size="8" isBold="true" isItalic="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[CONTRATO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="4cd1786e-e015-47cf-a641-195a65ec0862" x="313" y="2" width="61" height="12"/>
+				<textElement textAlignment="Center">
+					<font size="8" isBold="true" isItalic="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[INICIO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="9a3cb4f5-40c1-4448-b696-c24e2f3275a5" x="374" y="2" width="60" height="12"/>
+				<textElement textAlignment="Center">
+					<font size="8" isBold="true" isItalic="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[FINAL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="a0e865a4-28b3-495e-82b5-210aacb5066f" x="502" y="2" width="53" height="12"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Reajuste]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="d74a7dbf-2692-4e09-8787-a6d77a067944" x="434" y="2" width="48" height="12"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[ADITO]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="12" splitType="Stretch">
+			<rectangle>
+				<reportElement uuid="d19cb8bc-d311-4d20-8733-c3232884bd75" mode="Opaque" x="0" y="0" width="555" height="12" forecolor="#FFFFFF" backcolor="#E4E4EC">
+					<printWhenExpression><![CDATA[new Boolean(($V{COLUMN_COUNT}.intValue() % 2) == 0)]]></printWhenExpression>
+				</reportElement>
+				<graphicElement>
+					<pen lineWidth="0.0"/>
+				</graphicElement>
+			</rectangle>
+			<textField>
+				<reportElement uuid="be86b246-186d-4112-9248-91fbf42fd6a1" x="0" y="0" width="54" height="12"/>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{contrato}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="86c98c47-45be-4a05-bb9b-e9827eef2a26" x="54" y="0" width="259" height="12"/>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nomerazao}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="29d0e6e4-41e3-4f3f-8e7a-31dc9c6c8dd8" x="313" y="0" width="61" height="12"/>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dtinicio}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="67e3eaa9-f4d3-4bae-b957-d783043f1310" x="374" y="0" width="60" height="12"/>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dttermino}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="fdfdee2b-3eba-4be9-a88f-1008f4bab7ce" x="502" y="0" width="51" height="12"/>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dtseguro}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy" isBlankWhenNull="true">
+				<reportElement uuid="f3eac4d1-def0-4dbc-b93a-cd5874e525c3" x="434" y="0" width="48" height="12"/>
+				<textElement verticalAlignment="Middle">
+					<font size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dtadito}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

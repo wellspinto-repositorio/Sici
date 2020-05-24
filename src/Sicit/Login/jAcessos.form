@@ -1,0 +1,838 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.7" type="org.netbeans.modules.form.forminfo.JInternalFrameFormInfo">
+  <Properties>
+    <Property name="closable" type="boolean" value="true"/>
+    <Property name="title" type="java.lang.String" value=".:: Acessos do sistema"/>
+    <Property name="visible" type="boolean" value="true"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="jSeparator1" alignment="1" pref="693" max="32767" attributes="1"/>
+                  <Component id="jSeparator2" alignment="0" pref="693" max="32767" attributes="0"/>
+                  <Component id="jScrollPane1" alignment="0" pref="693" max="32767" attributes="0"/>
+                  <Group type="102" attributes="0">
+                      <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jUsuarios" min="-2" pref="235" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jSenha" min="-2" pref="110" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="jReSenha" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="jGravar" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jSair" min="-2" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jUsuarios" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jReSenha" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jSenha" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jSeparator1" min="-2" pref="10" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jScrollPane1" min="-2" pref="418" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="jSeparator2" min="-2" pref="10" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jSair" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jGravar" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace pref="21" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JLabel" name="jLabel1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Usu&#xe1;rio:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="jUsuarios">
+      <Properties>
+        <Property name="maximumRowCount" type="int" value="10"/>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="0"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="jUsuariosFocusLost"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel2">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Senha:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JCheckBox" name="jReSenha">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Mudar senha no login"/>
+        <Property name="enabled" type="boolean" value="false"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JSeparator" name="jSeparator1">
+    </Component>
+    <Component class="javax.swing.JSeparator" name="jSeparator2">
+    </Component>
+    <Component class="javax.swing.JButton" name="jGravar">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Gravar"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jGravarActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="jSair">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Sair"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jSairActionPerformed"/>
+      </Events>
+    </Component>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+      <Properties>
+        <Property name="horizontalScrollBarPolicy" type="int" value="31"/>
+      </Properties>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Container class="javax.swing.JPanel" name="jPanel1">
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="jmnuUsuarios" max="32767" attributes="1"/>
+                              <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jmnuControle" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="jmnuAcessos" alignment="0" max="32767" attributes="1"/>
+                                  <Component id="jmnuAdm" alignment="0" max="32767" attributes="1"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <Component id="jLabel7" max="32767" attributes="1"/>
+                              <EmptySpace min="-2" pref="112" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jmnuDivisao" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jmnuSuperExtorno" alignment="0" min="-2" pref="567" max="-2" attributes="0"/>
+                                  <Component id="jmnuSocios" alignment="0" min="-2" pref="294" max="-2" attributes="0"/>
+                                  <Component id="jmnuMultas" alignment="0" min="-2" max="-2" attributes="1"/>
+                                  <Component id="jmnuContas" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
+                                      <Component id="jmnuDescontos" alignment="0" min="-2" pref="200" max="-2" attributes="0"/>
+                                      <Component id="jmnuSite" alignment="0" min="-2" pref="379" max="-2" attributes="0"/>
+                                      <Component id="jmnuGeracao" alignment="0" min="-2" pref="379" max="-2" attributes="0"/>
+                                      <Component id="jmnuSeguros" alignment="0" min="-2" pref="200" max="-2" attributes="0"/>
+                                      <Component id="jmnuDiferencas" alignment="0" min="-2" pref="200" max="-2" attributes="0"/>
+                                      <Component id="jmnuFeCaixa" alignment="0" min="-2" pref="208" max="-2" attributes="0"/>
+                                      <Component id="jmnuExtornar" alignment="0" min="-2" pref="152" max="-2" attributes="0"/>
+                                      <Component id="jmnuDepositos" alignment="0" min="-2" pref="152" max="-2" attributes="0"/>
+                                      <Component id="jmnuDespesas" alignment="0" min="-2" pref="152" max="-2" attributes="0"/>
+                                      <Component id="jmnuExtrato" alignment="0" min="-2" pref="152" max="-2" attributes="0"/>
+                                      <Component id="jLabel3" alignment="0" pref="640" max="32767" attributes="1"/>
+                                      <Group type="103" alignment="0" groupAlignment="1" attributes="0">
+                                          <Group type="102" alignment="1" attributes="0">
+                                              <Component id="jmnuLocaInc" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+                                              <Component id="jmnuLocaExc" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                                              <Component id="jmnuLocaAlt" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="1" attributes="0">
+                                              <Group type="103" groupAlignment="1" attributes="0">
+                                                  <Component id="jmnuLocatarios" alignment="1" min="-2" pref="152" max="-2" attributes="0"/>
+                                                  <Component id="jmnuProprietarios" alignment="1" min="-2" pref="152" max="-2" attributes="0"/>
+                                                  <Component id="jmnuBusca" alignment="1" min="-2" pref="152" max="-2" attributes="0"/>
+                                              </Group>
+                                              <EmptySpace min="-2" pref="93" max="-2" attributes="0"/>
+                                              <Component id="jmnuPropInc" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+                                              <Component id="jmnuPropExc" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                                              <Component id="jmnuPropAlt" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                      <Component id="jmnuRecebimentos" alignment="0" min="-2" pref="152" max="-2" attributes="0"/>
+                                      <Component id="jLabel4" alignment="0" pref="640" max="32767" attributes="1"/>
+                                      <Component id="jmnuAvisos" alignment="0" min="-2" pref="152" max="-2" attributes="0"/>
+                                      <Component id="jmnuPassCaixa" alignment="0" min="-2" pref="208" max="-2" attributes="0"/>
+                                      <Component id="jLabel5" alignment="0" pref="640" max="32767" attributes="1"/>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="jmnuAltRecibos" min="-2" pref="200" max="-2" attributes="0"/>
+                                          <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
+                                          <Component id="jmnuAltRecSeg" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+                                          <Component id="jmnuAltRecDif" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                          <Component id="jmnuAltRecDesc" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Component id="jmnuBloqueio" alignment="0" min="-2" pref="379" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Component id="jmnuAltTxs" alignment="0" min="-2" pref="632" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jmnuDimob" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jmnuBloqLoca" min="-2" pref="504" max="-2" attributes="0"/>
+                                  <Component id="jmnuContasControle" alignment="0" min="-2" pref="650" max="-2" attributes="0"/>
+                                  <Component id="jmnuVisita" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jmnuBxBol" alignment="0" min="-2" pref="208" max="-2" attributes="0"/>
+                                  <Component id="jmnuAdianta" alignment="0" min="-2" pref="618" max="-2" attributes="0"/>
+                                  <Component id="jmnuRelRecAtr" alignment="0" min="-2" pref="543" max="-2" attributes="0"/>
+                                  <Component id="jmnuRelNovosLoca" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jmnuRelSaldoProp" alignment="0" min="-2" pref="294" max="-2" attributes="0"/>
+                                  <Component id="jmnuRelSeguros" alignment="0" min="-2" pref="294" max="-2" attributes="0"/>
+                                  <Component id="jmnuRelReajustes" alignment="0" min="-2" pref="294" max="-2" attributes="0"/>
+                                  <Component id="jmnuRelMensalao" alignment="0" min="-2" pref="294" max="-2" attributes="0"/>
+                                  <Component id="jmnuRelDepositos" alignment="0" min="-2" pref="294" max="-2" attributes="0"/>
+                                  <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
+                                      <Component id="jmnuRelRazao" alignment="0" min="-2" pref="294" max="-2" attributes="0"/>
+                                      <Component id="jmnuRelDesp" alignment="0" min="-2" pref="294" max="-2" attributes="0"/>
+                                      <Component id="jmnuRelConf" alignment="0" min="-2" pref="294" max="-2" attributes="0"/>
+                                      <Component id="jLabel6" alignment="0" pref="640" max="32767" attributes="1"/>
+                                      <Component id="jmnuRelBol" alignment="0" min="-2" pref="294" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Component id="jmnuRelDoctos" alignment="0" min="-2" pref="632" max="-2" attributes="0"/>
+                                  <Component id="jmnuRelDiaVecto" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jmnuRelPropLoca" alignment="0" min="-2" pref="554" max="-2" attributes="0"/>
+                                  <Component id="jmnuRelExtBanco" alignment="0" min="-2" pref="589" max="-2" attributes="0"/>
+                                  <Component id="jmnuRelSegPagos" alignment="0" min="-2" pref="589" max="-2" attributes="0"/>
+                                  <Component id="jmnuRelVazios" alignment="0" min="-2" pref="589" max="-2" attributes="0"/>
+                                  <Component id="jmnuNotaFiscal" alignment="0" min="-2" pref="589" max="-2" attributes="0"/>
+                                  <Component id="jmnuRelAdi" alignment="0" min="-2" pref="589" max="-2" attributes="0"/>
+                                  <Component id="jmnuRelRetenPg" alignment="0" min="-2" pref="632" max="-2" attributes="0"/>
+                                  <Component id="jmnuRelSegADM" alignment="0" min="-2" pref="581" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="0" pref="13" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jLabel3" min="-2" pref="25" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jmnuProprietarios" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jmnuPropInc" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jmnuPropAlt" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jmnuPropExc" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                              <Component id="jmnuLocaInc" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="jmnuLocaAlt" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="jmnuLocaExc" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Component id="jmnuLocatarios" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jmnuBusca" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
+                      <Component id="jmnuVisita" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jLabel4" min="-2" pref="25" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="jmnuRecebimentos" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jmnuExtrato" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jmnuAvisos" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jmnuDespesas" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jmnuDepositos" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jmnuExtornar" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jmnuPassCaixa" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jmnuFeCaixa" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jmnuBxBol" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="jLabel5" min="-2" pref="25" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jmnuAltRecibos" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
+                          <Component id="jmnuAltRecSeg" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jmnuAltRecDesc" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jmnuAltRecDif" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jmnuDescontos" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jmnuDiferencas" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jmnuSeguros" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jmnuBloqueio" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jmnuGeracao" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jmnuSite" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
+                      <Component id="jmnuAltTxs" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jmnuAdianta" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jLabel6" min="-2" pref="25" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jmnuRelBol" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jmnuRelConf" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jmnuRelDesp" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jmnuRelRazao" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jmnuRelDepositos" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jmnuRelMensalao" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jmnuRelReajustes" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jmnuRelSeguros" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jmnuRelSaldoProp" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jmnuRelDoctos" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jmnuRelDiaVecto" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jmnuRelNovosLoca" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jmnuRelRecAtr" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jmnuRelRetenPg" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jmnuRelPropLoca" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jmnuRelExtBanco" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jmnuRelSegPagos" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jmnuRelVazios" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jmnuNotaFiscal" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jmnuRelAdi" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jmnuRelSegADM" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="jLabel7" min="-2" pref="25" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jmnuSocios" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jmnuMultas" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jmnuAdm" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jmnuUsuarios" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jmnuAcessos" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jmnuSuperExtorno" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jmnuDivisao" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jmnuControle" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jmnuContas" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jmnuDimob" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jmnuBloqLoca" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jmnuContasControle" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="jLabel3">
+              <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="66" red="99" type="rgb"/>
+                </Property>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="SansSerif" size="14" style="1"/>
+                </Property>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value=".:: Cadastros"/>
+                <Property name="opaque" type="boolean" value="true"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="jmnuProprietarios">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Propriet&#xe1;rios"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="jmnuPropInc">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Incluir"/>
+                <Property name="enabled" type="boolean" value="false"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="jmnuPropAlt">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Alterar"/>
+                <Property name="enabled" type="boolean" value="false"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="jmnuPropExc">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Excluir"/>
+                <Property name="enabled" type="boolean" value="false"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="jmnuLocatarios">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Locat&#xe1;rios"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="jmnuLocaInc">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Incluir"/>
+                <Property name="enabled" type="boolean" value="false"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="jmnuLocaExc">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Excluir"/>
+                <Property name="enabled" type="boolean" value="false"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="jmnuLocaAlt">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Alterar"/>
+                <Property name="enabled" type="boolean" value="false"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="jmnuBusca">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Busca Global"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel4">
+              <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="66" red="99" type="rgb"/>
+                </Property>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="SansSerif" size="14" style="1"/>
+                </Property>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value=".:: Caixa"/>
+                <Property name="opaque" type="boolean" value="true"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="jmnuRecebimentos">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Recebimentos"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="jmnuExtrato">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Extratos"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="jmnuDespesas">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Despesas"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="jmnuAvisos">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Avisos"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="jmnuExtornar">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Extornar"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="jmnuDepositos">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Dep&#xf3;sitos"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="jmnuPassCaixa">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Passagem de Caixa"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="jmnuFeCaixa">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Fechamento de Caixa"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel5">
+              <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="66" red="99" type="rgb"/>
+                </Property>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="SansSerif" size="14" style="1"/>
+                </Property>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value=".:: Movimento"/>
+                <Property name="opaque" type="boolean" value="true"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="jmnuAltRecibos">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Altera&#xe7;&#xe3;o de Recibos"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="jmnuRelBol">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Impress&#xe3;o de Boletos Banc&#xe1;rios"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="jmnuAltRecSeg">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Seguro"/>
+                <Property name="enabled" type="boolean" value="false"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="jmnuAltRecDif">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Diferen&#xe7;a"/>
+                <Property name="enabled" type="boolean" value="false"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="jmnuAltRecDesc">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Desconto"/>
+                <Property name="enabled" type="boolean" value="false"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="jmnuDiferencas">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Diferen&#xe7;as"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="jmnuSeguros">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Seguros"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="jmnuBloqueio">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Bloqueio de Recebimentos no Extrato do Propriet&#xe1;rio"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="jmnuGeracao">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Gera&#xe7;&#xe3;o de Movimentos - Boletas/Recibos"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="jmnuSite">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Cadastro/Manuten&#xe7;&#xe3;o/Envios Web-Site"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel6">
+              <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="66" red="99" type="rgb"/>
+                </Property>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="SansSerif" size="14" style="1"/>
+                </Property>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value=".:: Relat&#xf3;rios"/>
+                <Property name="opaque" type="boolean" value="true"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="jmnuDescontos">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Descontos"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="jmnuRelConf">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Relat&#xf3;rio di&#xe1;rio de Conferencias"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="jmnuRelDesp">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Relat&#xf3;rio de Despesas"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="jmnuRelRazao">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Relat&#xf3;rio Raz&#xe3;o"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel7">
+              <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="33" green="33" red="ff" type="rgb"/>
+                </Property>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="SansSerif" size="14" style="1"/>
+                </Property>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value=".:: Ger&#xea;ncia"/>
+                <Property name="opaque" type="boolean" value="true"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="jmnuSocios">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Emiss&#xe3;o de Extrato de S&#xf3;cios"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="jmnuMultas">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Cadastro de Parametros de Calculos (Multa/Juros/Corre&#xe7;&#xf5;es/Taxas/Percentuais)"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="jmnuAdm">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Parametros e Dados do Sistema "/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="jmnuUsuarios">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Cadastro de Usu&#xe1;rios do Sistema"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="jmnuAcessos">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Cadastro/Altera&#xe7;&#xe3;o de Senhas e Acessos ao Sistema (Esta Tela)"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="jmnuRelDepositos">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Relat&#xf3;rio Dep&#xf3;sitos"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="jmnuRelMensalao">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Relat&#xf3;rio Mensal&#xe3;o"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="jmnuRelReajustes">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Relat&#xf3;rio Reajustes"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="jmnuRelSeguros">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Relat&#xf3;rio Seguros"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jmnuRelSegurosActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="jmnuRelSaldoProp">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Relat&#xf3;rios de Saldos"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jmnuRelSaldoPropActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="jmnuSuperExtorno">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Super EXTORNO"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="jmnuRelDoctos">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Visualizar/Imprimir documentos (2&#xaa; Via)"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="jmnuRelDiaVecto">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Relat&#xf3;rio Dias de Vencimentos"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="jmnuRelNovosLoca">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Relat&#xf3;rio de Novos Locat&#xe1;rios"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="jmnuDivisao">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Divis&#xe3;o de Conta Corrente"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="jmnuRelRetenPg">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Relat&#xf3;rio de Reten&#xe7;&#xf5;es"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="jmnuRelRecAtr">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Relat&#xf3;rio de Recibos em Atraso"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="jmnuControle">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Controle de Cheques"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="jmnuRelPropLoca">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Relat&#xf3;rio de Propriet&#xe1;rio e seus Im&#xf3;veis"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="jmnuContas">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Controle de Contas"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="jmnuAltTxs">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Atualiza&#xe7;&#xe3;o de Taxas"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="jmnuRelExtBanco">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Relat&#xf3;rio de Lan&#xe7;amentos Banc&#xe1;rios"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="jmnuDimob">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Exportar para DIMOB-RF"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="jmnuBloqLoca">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Bloqueio de Recebimentos de Locat&#xe1;rios"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="jmnuContasControle">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Contas Controle"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="jmnuVisita">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Visita ao Im&#xf3;vel"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="jmnuRelSegPagos">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Relat&#xf3;rio de Seguros Pagos"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="jmnuBxBol">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Baixa de Boletos Banc&#xe1;rios"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="jmnuAdianta">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Adiantamentos"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="jmnuRelVazios">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Relat&#xf3;rio de Im&#xf3;veis Vazios"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jmnuRelVaziosActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="jmnuNotaFiscal">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Relat&#xf3;rio de NotaFiscal"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jmnuNotaFiscalActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="jmnuRelAdi">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Relat&#xf3;rio de Adiantamentos"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jmnuRelAdiActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="jmnuRelSegADM">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Relat&#xf3;rio de Seguros ADM"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jmnuRelSegADMActionPerformed"/>
+              </Events>
+            </Component>
+          </SubComponents>
+        </Container>
+      </SubComponents>
+    </Container>
+    <Component class="javax.swing.JTextField" name="jSenha">
+      <Properties>
+        <Property name="horizontalAlignment" type="int" value="0"/>
+      </Properties>
+    </Component>
+  </SubComponents>
+</Form>

@@ -1,0 +1,746 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="rHistorico" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" isFloatColumnFooter="true">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="26"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["C:\\NetBeansProject\\jEscola\\resources\\"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="serie1" class="java.lang.String"/>
+	<parameter name="local1" class="java.lang.String"/>
+	<parameter name="resultado1" class="java.lang.String"/>
+	<parameter name="ano1" class="java.lang.String"/>
+	<parameter name="cidade1" class="java.lang.String"/>
+	<parameter name="estado1" class="java.lang.String"/>
+	<parameter name="serie2" class="java.lang.String"/>
+	<parameter name="local2" class="java.lang.String"/>
+	<parameter name="resultado2" class="java.lang.String"/>
+	<parameter name="ano2" class="java.lang.String"/>
+	<parameter name="cidade2" class="java.lang.String"/>
+	<parameter name="estado2" class="java.lang.String"/>
+	<parameter name="serie3" class="java.lang.String"/>
+	<parameter name="local3" class="java.lang.String"/>
+	<parameter name="resultado3" class="java.lang.String"/>
+	<parameter name="ano3" class="java.lang.String"/>
+	<parameter name="cidade3" class="java.lang.String"/>
+	<parameter name="estado3" class="java.lang.String"/>
+	<parameter name="serie4" class="java.lang.String"/>
+	<parameter name="local4" class="java.lang.String"/>
+	<parameter name="resultado4" class="java.lang.String"/>
+	<parameter name="ano4" class="java.lang.String"/>
+	<parameter name="cidade4" class="java.lang.String"/>
+	<parameter name="estado4" class="java.lang.String"/>
+	<parameter name="serie5" class="java.lang.String"/>
+	<parameter name="local5" class="java.lang.String"/>
+	<parameter name="resultado5" class="java.lang.String"/>
+	<parameter name="ano5" class="java.lang.String"/>
+	<parameter name="cidade5" class="java.lang.String"/>
+	<parameter name="estado5" class="java.lang.String"/>
+	<parameter name="serie6" class="java.lang.String"/>
+	<parameter name="local6" class="java.lang.String"/>
+	<parameter name="resultado6" class="java.lang.String"/>
+	<parameter name="ano6" class="java.lang.String"/>
+	<parameter name="cidade6" class="java.lang.String"/>
+	<parameter name="estado6" class="java.lang.String"/>
+	<parameter name="serie7" class="java.lang.String"/>
+	<parameter name="local7" class="java.lang.String"/>
+	<parameter name="resultado7" class="java.lang.String"/>
+	<parameter name="ano7" class="java.lang.String"/>
+	<parameter name="cidade7" class="java.lang.String"/>
+	<parameter name="estado7" class="java.lang.String"/>
+	<parameter name="serie8" class="java.lang.String"/>
+	<parameter name="local8" class="java.lang.String"/>
+	<parameter name="resultado8" class="java.lang.String"/>
+	<parameter name="ano8" class="java.lang.String"/>
+	<parameter name="cidade8" class="java.lang.String"/>
+	<parameter name="estado8" class="java.lang.String"/>
+	<parameter name="serie9" class="java.lang.String"/>
+	<parameter name="local9" class="java.lang.String"/>
+	<parameter name="resultado9" class="java.lang.String"/>
+	<parameter name="ano9" class="java.lang.String"/>
+	<parameter name="cidade9" class="java.lang.String"/>
+	<parameter name="estado9" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="1Ano" class="java.lang.String">
+		<fieldDescription><![CDATA[1Ano]]></fieldDescription>
+	</field>
+	<field name="2Ano" class="java.lang.String">
+		<fieldDescription><![CDATA[2Ano]]></fieldDescription>
+	</field>
+	<field name="3Ano" class="java.lang.String">
+		<fieldDescription><![CDATA[3Ano]]></fieldDescription>
+	</field>
+	<field name="4Ano" class="java.lang.String">
+		<fieldDescription><![CDATA[4Ano]]></fieldDescription>
+	</field>
+	<field name="5Ano" class="java.lang.String">
+		<fieldDescription><![CDATA[5Ano]]></fieldDescription>
+	</field>
+	<field name="6Ano" class="java.lang.String">
+		<fieldDescription><![CDATA[6Ano]]></fieldDescription>
+	</field>
+	<field name="6AnoCH" class="java.lang.String">
+		<fieldDescription><![CDATA[6AnoCH]]></fieldDescription>
+	</field>
+	<field name="7Ano" class="java.lang.String">
+		<fieldDescription><![CDATA[7Ano]]></fieldDescription>
+	</field>
+	<field name="7AnoCH" class="java.lang.String">
+		<fieldDescription><![CDATA[7AnoCH]]></fieldDescription>
+	</field>
+	<field name="8Ano" class="java.lang.String">
+		<fieldDescription><![CDATA[8Ano]]></fieldDescription>
+	</field>
+	<field name="8AnoCH" class="java.lang.String">
+		<fieldDescription><![CDATA[8AnoCH]]></fieldDescription>
+	</field>
+	<field name="9Ano" class="java.lang.String">
+		<fieldDescription><![CDATA[9Ano]]></fieldDescription>
+	</field>
+	<field name="9AnoCH" class="java.lang.String">
+		<fieldDescription><![CDATA[9AnoCH]]></fieldDescription>
+	</field>
+	<field name="ano1" class="java.lang.String">
+		<fieldDescription><![CDATA[ano1]]></fieldDescription>
+	</field>
+	<field name="ano2" class="java.lang.String">
+		<fieldDescription><![CDATA[ano2]]></fieldDescription>
+	</field>
+	<field name="ano3" class="java.lang.String">
+		<fieldDescription><![CDATA[ano3]]></fieldDescription>
+	</field>
+	<field name="ano4" class="java.lang.String">
+		<fieldDescription><![CDATA[ano4]]></fieldDescription>
+	</field>
+	<field name="ano5" class="java.lang.String">
+		<fieldDescription><![CDATA[ano5]]></fieldDescription>
+	</field>
+	<field name="ano6" class="java.lang.String">
+		<fieldDescription><![CDATA[ano6]]></fieldDescription>
+	</field>
+	<field name="ano7" class="java.lang.String">
+		<fieldDescription><![CDATA[ano7]]></fieldDescription>
+	</field>
+	<field name="ano8" class="java.lang.String">
+		<fieldDescription><![CDATA[ano8]]></fieldDescription>
+	</field>
+	<field name="ano9" class="java.lang.String">
+		<fieldDescription><![CDATA[ano9]]></fieldDescription>
+	</field>
+	<field name="cidade1" class="java.lang.String">
+		<fieldDescription><![CDATA[cidade1]]></fieldDescription>
+	</field>
+	<field name="cidade2" class="java.lang.String">
+		<fieldDescription><![CDATA[cidade2]]></fieldDescription>
+	</field>
+	<field name="cidade3" class="java.lang.String">
+		<fieldDescription><![CDATA[cidade3]]></fieldDescription>
+	</field>
+	<field name="cidade4" class="java.lang.String">
+		<fieldDescription><![CDATA[cidade4]]></fieldDescription>
+	</field>
+	<field name="cidade5" class="java.lang.String">
+		<fieldDescription><![CDATA[cidade5]]></fieldDescription>
+	</field>
+	<field name="cidade6" class="java.lang.String">
+		<fieldDescription><![CDATA[cidade6]]></fieldDescription>
+	</field>
+	<field name="cidade7" class="java.lang.String">
+		<fieldDescription><![CDATA[cidade7]]></fieldDescription>
+	</field>
+	<field name="cidade8" class="java.lang.String">
+		<fieldDescription><![CDATA[cidade8]]></fieldDescription>
+	</field>
+	<field name="cidade9" class="java.lang.String">
+		<fieldDescription><![CDATA[cidade9]]></fieldDescription>
+	</field>
+	<field name="class" class="java.lang.Class">
+		<fieldDescription><![CDATA[class]]></fieldDescription>
+	</field>
+	<field name="dtnac" class="java.lang.String">
+		<fieldDescription><![CDATA[dtnac]]></fieldDescription>
+	</field>
+	<field name="estado" class="java.lang.String">
+		<fieldDescription><![CDATA[estado]]></fieldDescription>
+	</field>
+	<field name="estado1" class="java.lang.String">
+		<fieldDescription><![CDATA[estado1]]></fieldDescription>
+	</field>
+	<field name="estado2" class="java.lang.String">
+		<fieldDescription><![CDATA[estado2]]></fieldDescription>
+	</field>
+	<field name="estado3" class="java.lang.String">
+		<fieldDescription><![CDATA[estado3]]></fieldDescription>
+	</field>
+	<field name="estado4" class="java.lang.String">
+		<fieldDescription><![CDATA[estado4]]></fieldDescription>
+	</field>
+	<field name="estado5" class="java.lang.String">
+		<fieldDescription><![CDATA[estado5]]></fieldDescription>
+	</field>
+	<field name="estado6" class="java.lang.String">
+		<fieldDescription><![CDATA[estado6]]></fieldDescription>
+	</field>
+	<field name="estado7" class="java.lang.String">
+		<fieldDescription><![CDATA[estado7]]></fieldDescription>
+	</field>
+	<field name="estado8" class="java.lang.String">
+		<fieldDescription><![CDATA[estado8]]></fieldDescription>
+	</field>
+	<field name="estado9" class="java.lang.String">
+		<fieldDescription><![CDATA[estado9]]></fieldDescription>
+	</field>
+	<field name="local1" class="java.lang.String">
+		<fieldDescription><![CDATA[local1]]></fieldDescription>
+	</field>
+	<field name="local2" class="java.lang.String">
+		<fieldDescription><![CDATA[local2]]></fieldDescription>
+	</field>
+	<field name="local3" class="java.lang.String">
+		<fieldDescription><![CDATA[local3]]></fieldDescription>
+	</field>
+	<field name="local4" class="java.lang.String">
+		<fieldDescription><![CDATA[local4]]></fieldDescription>
+	</field>
+	<field name="local5" class="java.lang.String">
+		<fieldDescription><![CDATA[local5]]></fieldDescription>
+	</field>
+	<field name="local6" class="java.lang.String">
+		<fieldDescription><![CDATA[local6]]></fieldDescription>
+	</field>
+	<field name="local7" class="java.lang.String">
+		<fieldDescription><![CDATA[local7]]></fieldDescription>
+	</field>
+	<field name="local8" class="java.lang.String">
+		<fieldDescription><![CDATA[local8]]></fieldDescription>
+	</field>
+	<field name="local9" class="java.lang.String">
+		<fieldDescription><![CDATA[local9]]></fieldDescription>
+	</field>
+	<field name="mae" class="java.lang.String">
+		<fieldDescription><![CDATA[mae]]></fieldDescription>
+	</field>
+	<field name="materia" class="java.lang.String">
+		<fieldDescription><![CDATA[materia]]></fieldDescription>
+	</field>
+	<field name="matricula" class="java.lang.String">
+		<fieldDescription><![CDATA[matricula]]></fieldDescription>
+	</field>
+	<field name="natural" class="java.lang.String">
+		<fieldDescription><![CDATA[natural]]></fieldDescription>
+	</field>
+	<field name="nome" class="java.lang.String">
+		<fieldDescription><![CDATA[nome]]></fieldDescription>
+	</field>
+	<field name="obs" class="java.lang.String">
+		<fieldDescription><![CDATA[obs]]></fieldDescription>
+	</field>
+	<field name="pai" class="java.lang.String">
+		<fieldDescription><![CDATA[pai]]></fieldDescription>
+	</field>
+	<field name="resultado1" class="java.lang.String">
+		<fieldDescription><![CDATA[resultado1]]></fieldDescription>
+	</field>
+	<field name="resultado2" class="java.lang.String">
+		<fieldDescription><![CDATA[resultado2]]></fieldDescription>
+	</field>
+	<field name="resultado3" class="java.lang.String">
+		<fieldDescription><![CDATA[resultado3]]></fieldDescription>
+	</field>
+	<field name="resultado4" class="java.lang.String">
+		<fieldDescription><![CDATA[resultado4]]></fieldDescription>
+	</field>
+	<field name="resultado5" class="java.lang.String">
+		<fieldDescription><![CDATA[resultado5]]></fieldDescription>
+	</field>
+	<field name="resultado6" class="java.lang.String">
+		<fieldDescription><![CDATA[resultado6]]></fieldDescription>
+	</field>
+	<field name="resultado7" class="java.lang.String">
+		<fieldDescription><![CDATA[resultado7]]></fieldDescription>
+	</field>
+	<field name="resultado8" class="java.lang.String">
+		<fieldDescription><![CDATA[resultado8]]></fieldDescription>
+	</field>
+	<field name="resultado9" class="java.lang.String">
+		<fieldDescription><![CDATA[resultado9]]></fieldDescription>
+	</field>
+	<field name="serie1" class="java.lang.String">
+		<fieldDescription><![CDATA[serie1]]></fieldDescription>
+	</field>
+	<field name="serie2" class="java.lang.String">
+		<fieldDescription><![CDATA[serie2]]></fieldDescription>
+	</field>
+	<field name="serie3" class="java.lang.String">
+		<fieldDescription><![CDATA[serie3]]></fieldDescription>
+	</field>
+	<field name="serie4" class="java.lang.String">
+		<fieldDescription><![CDATA[serie4]]></fieldDescription>
+	</field>
+	<field name="serie5" class="java.lang.String">
+		<fieldDescription><![CDATA[serie5]]></fieldDescription>
+	</field>
+	<field name="serie6" class="java.lang.String">
+		<fieldDescription><![CDATA[serie6]]></fieldDescription>
+	</field>
+	<field name="serie7" class="java.lang.String">
+		<fieldDescription><![CDATA[serie7]]></fieldDescription>
+	</field>
+	<field name="serie8" class="java.lang.String">
+		<fieldDescription><![CDATA[serie8]]></fieldDescription>
+	</field>
+	<field name="serie9" class="java.lang.String">
+		<fieldDescription><![CDATA[serie9]]></fieldDescription>
+	</field>
+	<title>
+		<band height="50" splitType="Stretch">
+			<staticText>
+				<reportElement x="168" y="0" width="216" height="16"/>
+				<textElement/>
+				<text><![CDATA[A qualidade e o carinho fazem a diferença]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="168" y="16" width="216" height="16"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[do Maternal ao 9° Ano]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="121" y="32" width="345" height="16"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Travessa Leopoldina Vieira, 175 - Mutondo - SG - Tel.: 2725-7143]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="29" splitType="Stretch">
+			<staticText>
+				<reportElement x="104" y="0" width="345" height="16"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[HISTÓRICO ESCOLAR]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="104" y="13" width="345" height="16"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Portaria - 2373/91 CDCR]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="78" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="46" height="16"/>
+				<textElement>
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nome:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="384" y="0" width="55" height="16"/>
+				<textElement>
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Matrícula:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="16" width="121" height="16"/>
+				<textElement>
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Data de Nascimento:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="257" y="16" width="47" height="16"/>
+				<textElement>
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Natural:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="439" y="16" width="27" height="16"/>
+				<textElement>
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[UF:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="32" width="46" height="16"/>
+				<textElement>
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Pai:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="45" width="46" height="16"/>
+				<textElement>
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Mãe:]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="61" width="555" height="1"/>
+			</line>
+			<line>
+				<reportElement x="0" y="77" width="555" height="1"/>
+			</line>
+			<textField>
+				<reportElement x="46" y="0" width="323" height="16"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{nome}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="439" y="0" width="116" height="16"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{matricula}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="121" y="16" width="115" height="16"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{dtnac}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="304" y="16" width="124" height="16"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{natural}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="466" y="16" width="89" height="16"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{estado}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="46" y="32" width="509" height="13"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{pai}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="46" y="48" width="509" height="13"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{mae}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="137" y="64" width="30" height="12"/>
+				<textElement textAlignment="Center">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[1oAno]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="170" y="64" width="30" height="12"/>
+				<textElement textAlignment="Center">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[2oAno]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="202" y="64" width="32" height="12"/>
+				<textElement textAlignment="Center">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[3oAno]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="234" y="64" width="32" height="12"/>
+				<textElement textAlignment="Center">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[4oAno]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="266" y="64" width="32" height="12"/>
+				<textElement textAlignment="Center">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[5oAno]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="298" y="64" width="32" height="12"/>
+				<textElement textAlignment="Center">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[6oAno]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="330" y="64" width="32" height="12"/>
+				<textElement textAlignment="Center">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CH]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="362" y="64" width="32" height="12"/>
+				<textElement textAlignment="Center">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[7oAno]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="394" y="64" width="32" height="12"/>
+				<textElement textAlignment="Center">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CH]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="426" y="64" width="32" height="12"/>
+				<textElement textAlignment="Center">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[8oAno]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="458" y="64" width="32" height="12"/>
+				<textElement textAlignment="Center">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CH]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="490" y="64" width="32" height="12"/>
+				<textElement textAlignment="Center">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[9oAno]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="522" y="64" width="32" height="12"/>
+				<textElement textAlignment="Center">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CH]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="64" width="120" height="12"/>
+				<textElement textAlignment="Center">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Matéria]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="12" splitType="Stretch">
+			<rectangle>
+				<reportElement mode="Opaque" x="0" y="0" width="554" height="12" isRemoveLineWhenBlank="true" backcolor="#CCCCCC">
+					<printWhenExpression><![CDATA[new Boolean(($V{COLUMN_COUNT}.intValue() % 2) == 0)]]></printWhenExpression>
+				</reportElement>
+				<graphicElement>
+					<pen lineWidth="0.0"/>
+				</graphicElement>
+			</rectangle>
+			<textField isBlankWhenNull="true">
+				<reportElement x="0" y="0" width="121" height="12" isRemoveLineWhenBlank="true"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{materia}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="137" y="0" width="30" height="12" isRemoveLineWhenBlank="true"/>
+				<textElement textAlignment="Center">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{1Ano}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="202" y="0" width="32" height="12" isRemoveLineWhenBlank="true"/>
+				<textElement textAlignment="Center">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{3Ano}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="234" y="0" width="32" height="12" isRemoveLineWhenBlank="true"/>
+				<textElement textAlignment="Center">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{4Ano}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="266" y="0" width="32" height="12" isRemoveLineWhenBlank="true"/>
+				<textElement textAlignment="Center">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{5Ano}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="298" y="0" width="32" height="12" isRemoveLineWhenBlank="true"/>
+				<textElement textAlignment="Center">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{6Ano}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="330" y="0" width="32" height="12" isRemoveLineWhenBlank="true"/>
+				<textElement textAlignment="Center">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{6AnoCH}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="362" y="0" width="32" height="12" isRemoveLineWhenBlank="true"/>
+				<textElement textAlignment="Center">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{7Ano}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="394" y="0" width="32" height="12" isRemoveLineWhenBlank="true"/>
+				<textElement textAlignment="Center">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{7AnoCH}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="170" y="0" width="30" height="12" isRemoveLineWhenBlank="true"/>
+				<textElement textAlignment="Center">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{2Ano}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="426" y="0" width="32" height="12" isRemoveLineWhenBlank="true"/>
+				<textElement textAlignment="Center">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{8Ano}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="458" y="0" width="32" height="12" isRemoveLineWhenBlank="true"/>
+				<textElement textAlignment="Center">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{8AnoCH}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="490" y="0" width="32" height="12" isRemoveLineWhenBlank="true"/>
+				<textElement textAlignment="Center">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{9Ano}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="522" y="0" width="32" height="12" isRemoveLineWhenBlank="true"/>
+				<textElement textAlignment="Center">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{9AnoCH}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch">
+			<line>
+				<reportElement x="0" y="2" width="555" height="1"/>
+			</line>
+			<staticText>
+				<reportElement x="0" y="3" width="65" height="12"/>
+				<textElement>
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Série]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="348" y="3" width="171" height="12"/>
+				<textElement>
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Cidade]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="239" y="3" width="61" height="12"/>
+				<textElement textAlignment="Center">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Resultado]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="65" y="3" width="174" height="12"/>
+				<textElement>
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Estabelecimento]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="300" y="3" width="48" height="12"/>
+				<textElement textAlignment="Center">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Ano]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="519" y="3" width="36" height="12"/>
+				<textElement textAlignment="Center">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Estado]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="301" y="19" width="48" height="12"/>
+				<textElement textAlignment="Center">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{ano1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="349" y="19" width="171" height="12"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{cidade1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="66" y="19" width="174" height="12"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{local1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="520" y="19" width="36" height="12"/>
+				<textElement textAlignment="Center">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{estado1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="240" y="19" width="61" height="12"/>
+				<textElement textAlignment="Center">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{resultado1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="1" y="19" width="65" height="12"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{serie1}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="25">
+			<line>
+				<reportElement x="1" y="1" width="555" height="1"/>
+			</line>
+		</band>
+	</pageFooter>
+</jasperReport>
