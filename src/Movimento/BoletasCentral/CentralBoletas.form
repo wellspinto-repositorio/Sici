@@ -702,7 +702,7 @@
                           <Component id="jPanel14" max="-2" attributes="1"/>
                       </Group>
                       <EmptySpace min="-2" max="-2" attributes="0"/>
-                      <Component id="jPanel7" pref="345" max="32767" attributes="1"/>
+                      <Component id="jPanel7" pref="349" max="32767" attributes="1"/>
                       <EmptySpace min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>

@@ -6,6 +6,7 @@
 
 package Funcoes.Autorizador;
 
+import Funcoes.VariaveisGlobais;
 import com.mysql.jdbc.CommunicationsException;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -20,7 +21,7 @@ public class Verifica {
     public Connection conn = null;
     private String hostName = "127.0.0.1";
     private String userName = "root";
-    private String password = "7kf51b"; 
+    private String password = VariaveisGlobais.passwd; 
     private String url = null;
     private String jdbcDriver = null;
     private String dataBaseName = null;

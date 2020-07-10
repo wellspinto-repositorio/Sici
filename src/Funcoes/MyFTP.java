@@ -27,7 +27,7 @@ public class MyFTP {
         String jFTP_Conta = ""; String jFTP_Port = "";
         String jFTP_Usuario = ""; String jFTP_Senha = "";
         try {
-            conn = new DbMain(VariaveisGlobais.unidade,"root",(VariaveisGlobais.dbsenha ? "7kf51b" : ""),VariaveisGlobais.dbnome);
+            conn = new DbMain(VariaveisGlobais.unidade,"root",(VariaveisGlobais.dbsenha ? VariaveisGlobais.passwd : ""),VariaveisGlobais.dbnome);
 
             jFTP_Conta = conn.LerParametros("FTPCONTA");
             jFTP_Port = conn.LerParametros("FTPPORTA");
@@ -100,7 +100,7 @@ public class MyFTP {
         String jFTP_Conta = ""; String jFTP_Port = "";
         String jFTP_Usuario = ""; String jFTP_Senha = "";
         try {
-            conn = new DbMain(VariaveisGlobais.unidade,"root",(VariaveisGlobais.dbsenha ? "7kf51b" : ""),VariaveisGlobais.dbnome);
+            conn = new DbMain(VariaveisGlobais.unidade,"root",(VariaveisGlobais.dbsenha ? VariaveisGlobais.passwd : ""),VariaveisGlobais.dbnome);
 
             jFTP_Conta = conn.LerParametros("FTPCONTA");
             jFTP_Port = conn.LerParametros("FTPPORTA");
@@ -162,7 +162,7 @@ public class MyFTP {
         String jFTP_Conta = ""; String jFTP_Port = "";
         String jFTP_Usuario = ""; String jFTP_Senha = "";
         try {
-            conn = new DbMain(VariaveisGlobais.unidade,"root",(VariaveisGlobais.dbsenha ? "7kf51b" : ""),VariaveisGlobais.dbnome);
+            conn = new DbMain(VariaveisGlobais.unidade,"root",(VariaveisGlobais.dbsenha ? VariaveisGlobais.passwd : ""),VariaveisGlobais.dbnome);
 
             jFTP_Conta = conn.LerParametros("FTPCONTA");
             jFTP_Port = conn.LerParametros("FTPPORTA");
@@ -215,7 +215,7 @@ public class MyFTP {
         String jFTP_Conta = ""; String jFTP_Port = "";
         String jFTP_Usuario = ""; String jFTP_Senha = "";
         try {
-            conn = new DbMain(VariaveisGlobais.unidade,"root",(VariaveisGlobais.dbsenha ? "7kf51b" : ""),VariaveisGlobais.dbnome);
+            conn = new DbMain(VariaveisGlobais.unidade,"root",(VariaveisGlobais.dbsenha ? VariaveisGlobais.passwd : ""),VariaveisGlobais.dbnome);
 
             jFTP_Conta = conn.LerParametros("FTPCONTA");
             jFTP_Port = conn.LerParametros("FTPPORTA");
@@ -280,7 +280,7 @@ public class MyFTP {
         String jFTP_Conta = ""; String jFTP_Port = "";
         String jFTP_Usuario = ""; String jFTP_Senha = "";
         try {
-            conn = new DbMain(VariaveisGlobais.unidade,"root",(VariaveisGlobais.dbsenha ? "7kf51b" : ""),VariaveisGlobais.dbnome);
+            conn = new DbMain(VariaveisGlobais.unidade,"root",(VariaveisGlobais.dbsenha ? VariaveisGlobais.passwd : ""),VariaveisGlobais.dbnome);
 
             jFTP_Conta = conn.LerParametros("FTPCONTA");
             jFTP_Port = conn.LerParametros("FTPPORTA");

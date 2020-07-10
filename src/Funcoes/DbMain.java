@@ -16,7 +16,7 @@ public class DbMain {
     public Connection conn = null;
     private String hostName = "127.0.0.1";
     private String userName = "root";
-    private String password = "5gf5Ks"; //"a7v600x";
+    private String password = VariaveisGlobais.passwd;
     private String url = null;
     private String jdbcDriver = null;
     private String dataBaseName = null;

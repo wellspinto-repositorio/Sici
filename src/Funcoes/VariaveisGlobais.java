@@ -148,6 +148,7 @@ public class VariaveisGlobais {
     
     // Conexao compartilhada
     static public DbMain conexao = null;
+    static public String passwd = "7kf51b"; // "5gf5Ks";
     
     // geracao
     static public boolean gerMulSelect = false;

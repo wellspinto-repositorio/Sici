@@ -29,7 +29,7 @@ public class RetornaExcluido extends javax.swing.JInternalFrame {
     public RetornaExcluido() {
         initComponents();
         
-        conn = new DbMain(VariaveisGlobais.unidade,"root",(VariaveisGlobais.dbsenha ? "7kf51b" : ""),"jgeral_excluidos");
+        conn = new DbMain(VariaveisGlobais.unidade,"root",(VariaveisGlobais.dbsenha ? VariaveisGlobais.passwd : ""),"jgeral_excluidos");
         
         // Seta Cabecarios
         TableControl.header(jtblProp, new String[][] {{"rgprp","nome",},{"20","500"}});

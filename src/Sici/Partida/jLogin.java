@@ -217,7 +217,7 @@ public class jLogin extends javax.swing.JDialog {
                 if (!VariaveisGlobais.unidades[_pos][2].toString().trim().equals("")) VariaveisGlobais.dbsenha = (Boolean)VariaveisGlobais.unidades[_pos][2];
 
                 System.out.println(VariaveisGlobais.unidade + "\n" + VariaveisGlobais.dbnome + "\n" + VariaveisGlobais.dbsenha);
-                conn = new DbMain(VariaveisGlobais.unidade,"root",(VariaveisGlobais.dbsenha ? "5gf5Ks" : ""),VariaveisGlobais.dbnome);
+                conn = new DbMain(VariaveisGlobais.unidade,"root",(VariaveisGlobais.dbsenha ? VariaveisGlobais.passwd : ""),VariaveisGlobais.dbnome);
               
                 VariaveisGlobais.conexao = conn;
                 if (conn.conn != null) {

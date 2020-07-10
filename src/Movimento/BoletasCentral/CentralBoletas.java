@@ -2942,7 +2942,6 @@ public class CentralBoletas extends javax.swing.JInternalFrame {
     }
     
     public String[][] MontaTela(String rgprp, String rgimv, String contrato, String vecto) throws SQLException, ParseException {
-
         String sql = "SELECT * FROM RECIBO WHERE contrato = '" + contrato + "' AND dtvencimento = '" + Dates.DateFormata("yyyy-MM-dd", Dates.StringtoDate(vecto, "dd/MM/yyyy")) + "';";
         ResultSet pResult = conn.AbrirTabela(sql, ResultSet.CONCUR_UPDATABLE);
 
