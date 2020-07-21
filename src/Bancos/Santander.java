@@ -54,7 +54,7 @@ public class Santander {
         return String.valueOf(resto);
     }
      
-    static private String CalcDig11NBarrasSantander(String cadeia) {
+    static public String CalcDig11NBarrasSantander(String cadeia) {
         int total= 0; int mult = 2;
         for (int i=1; i<=cadeia.length();i++) {
             total += Integer.valueOf(cadeia.substring(cadeia.length() - i,(cadeia.length() + 1) - i)) * mult;

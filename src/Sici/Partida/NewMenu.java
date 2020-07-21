@@ -171,6 +171,27 @@ public final class NewMenu extends javax.swing.JFrame {
         });
         menuSair.add(itemFechar);
 
+        if (VariaveisGlobais.usuario.equalsIgnoreCase("SAMIC")) {
+            // Menu de Calculos
+            JMenuItem itemCalc = new javax.swing.JMenuItem();
+            itemCalc.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_X, java.awt.event.InputEvent.CTRL_MASK));
+            itemCalc.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Figuras/ok.png"))); // NOI18N
+            itemCalc.setText("Calcular digito");
+            itemCalc.setToolTipText("Calculos...");
+            itemCalc.addActionListener(new java.awt.event.ActionListener() {
+                public void actionPerformed(java.awt.event.ActionEvent evt) {
+                    JInternalFrame otela = new jCalDig();
+                    jDesktopPane1.add(otela);
+                    CentralizaTela.setCentro(otela, jDesktopPane1, 0, 0);
+
+                    jDesktopPane1.getDesktopManager().activateFrame(otela);
+                    otela.requestFocus();
+                    //otela.setSelected(true);
+                    otela.setVisible(true);                }
+            });
+            menuSair.add(itemCalc);
+        }
+        
         //Adiciona o menu na barra  
         barraMenu.add(menuSair);
 
