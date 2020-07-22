@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Extrato" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="812" leftMargin="25" rightMargin="5" topMargin="15" bottomMargin="5">
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Extrato" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="812" leftMargin="25" rightMargin="5" topMargin="15" bottomMargin="5" uuid="54c44137-0a86-4968-845a-bccba376455a">
 	<property name="ireport.zoom" value="1.5"/>
 	<property name="ireport.x" value="0"/>
 	<property name="ireport.y" value="0"/>
@@ -597,181 +597,181 @@ LerValor.LerValor.StringToFloat($F{hist_deb40})]]></variableExpression>
 	<detail>
 		<band height="555" splitType="Stretch">
 			<rectangle radius="5">
-				<reportElement x="43" y="120" width="352" height="382"/>
+				<reportElement x="43" y="120" width="352" height="382" uuid="2a2d4d41-d16b-48ab-9b9e-384e94e1e95a"/>
 				<graphicElement>
 					<pen lineWidth="0.25"/>
 				</graphicElement>
 			</rectangle>
 			<rectangle radius="5">
-				<reportElement x="43" y="0" width="353" height="92"/>
+				<reportElement x="43" y="0" width="353" height="92" uuid="d25dcd31-e52a-4503-b868-575f741987b5"/>
 				<graphicElement>
 					<pen lineWidth="0.25"/>
 				</graphicElement>
 			</rectangle>
 			<rectangle radius="5">
-				<reportElement x="424" y="120" width="352" height="382"/>
+				<reportElement x="424" y="120" width="352" height="382" uuid="c0a0a0bd-9996-4ad1-948c-0983053d1c97"/>
 				<graphicElement>
 					<pen lineWidth="0.25"/>
 				</graphicElement>
 			</rectangle>
 			<rectangle radius="5">
-				<reportElement x="424" y="92" width="353" height="28"/>
+				<reportElement x="424" y="92" width="353" height="28" uuid="1b37e5dd-a0e5-401a-b2e2-3ec6fc5ab312"/>
 				<graphicElement>
 					<pen lineWidth="0.25"/>
 				</graphicElement>
 			</rectangle>
 			<rectangle radius="5">
-				<reportElement x="424" y="0" width="353" height="92"/>
+				<reportElement x="424" y="0" width="353" height="92" uuid="4eb2a897-e82c-4486-848a-52232ae25a0f"/>
 				<graphicElement>
 					<pen lineWidth="0.25"/>
 				</graphicElement>
 			</rectangle>
 			<rectangle radius="5">
-				<reportElement x="43" y="523" width="353" height="32"/>
+				<reportElement x="43" y="523" width="353" height="32" uuid="d24887fe-f993-4a0b-a490-7503c75351dc"/>
 				<graphicElement>
 					<pen lineWidth="0.25"/>
 				</graphicElement>
 			</rectangle>
 			<rectangle radius="5">
-				<reportElement x="43" y="92" width="353" height="28"/>
+				<reportElement x="43" y="92" width="353" height="28" uuid="8382390f-d639-43ff-89e2-3e9d38204a0b"/>
 				<graphicElement>
 					<pen lineWidth="0.25"/>
 				</graphicElement>
 			</rectangle>
 			<line>
-				<reportElement x="405" y="2" width="2" height="553"/>
+				<reportElement x="405" y="2" width="2" height="553" uuid="fcc08bf6-18c5-480c-a666-e128f2cf254a"/>
 				<graphicElement>
 					<pen lineWidth="0.5" lineStyle="Dashed"/>
 				</graphicElement>
 			</line>
 			<staticText>
-				<reportElement x="414" y="167" width="10" height="267"/>
+				<reportElement x="414" y="167" width="10" height="267" uuid="8b04dd98-9100-42cf-8101-3300100a4e74"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle" rotation="Left">
 					<font fontName="DejaVu Sans" size="6" isItalic="true"/>
 				</textElement>
-				<text><![CDATA[GMLDias Sistemas & Análises Microcomputadores - Tel.:(21)2701-0261 / 8418-1999]]></text>
+				<text><![CDATA[WellSoft Infotrônica - Tel.: (21) 97665 - 9897 - wellspinto@gmail.com]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="238" y="527" width="69" height="12"/>
+				<reportElement x="238" y="527" width="69" height="12" uuid="7ec81d98-a675-47b5-b904-ddee6018bde3"/>
 				<textElement>
 					<font size="6" isBold="true" isItalic="true"/>
 				</textElement>
 				<text><![CDATA[Assinatura]]></text>
 			</staticText>
 			<line>
-				<reportElement x="720" y="120" width="1" height="382"/>
+				<reportElement x="720" y="120" width="1" height="382" uuid="64e5b59d-f2bb-44ac-b09c-1c166b8716f3"/>
 				<graphicElement>
 					<pen lineWidth="0.25"/>
 				</graphicElement>
 			</line>
 			<staticText>
-				<reportElement x="51" y="527" width="69" height="12"/>
+				<reportElement x="51" y="527" width="69" height="12" uuid="76b29dbf-4a8e-41bd-be10-567e731f5b5b"/>
 				<textElement>
 					<font size="6" isBold="true" isItalic="true"/>
 				</textElement>
 				<text><![CDATA[Autenticação]]></text>
 			</staticText>
 			<line>
-				<reportElement x="663" y="120" width="1" height="382"/>
+				<reportElement x="663" y="120" width="1" height="382" uuid="c4ad1f08-e1d1-4f82-9d23-05c19536f831"/>
 				<graphicElement>
 					<pen lineWidth="0.25"/>
 				</graphicElement>
 			</line>
 			<rectangle radius="5">
-				<reportElement x="43" y="502" width="353" height="21"/>
+				<reportElement x="43" y="502" width="353" height="21" uuid="17868fd3-9f61-46d9-816f-f7188c4323cf"/>
 				<graphicElement>
 					<pen lineWidth="0.25"/>
 				</graphicElement>
 			</rectangle>
 			<textField isBlankWhenNull="true">
-				<reportElement x="50" y="539" width="333" height="12"/>
+				<reportElement x="50" y="539" width="333" height="12" uuid="59239cc1-0d5c-489a-8d60-d314b04cd30e"/>
 				<textElement textAlignment="Center" markup="none">
 					<font size="8" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{autentica}]]></textFieldExpression>
 			</textField>
 			<componentElement>
-				<reportElement x="744" y="7" width="30" height="85"/>
+				<reportElement x="744" y="7" width="30" height="85" uuid="7c6d099d-2c7f-4fb6-bc8e-abc7abc3a7e2"/>
 				<jr:Codabar xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" orientation="90" textPosition="none">
 					<jr:codeExpression><![CDATA[$F{barras}]]></jr:codeExpression>
 				</jr:Codabar>
 			</componentElement>
 			<textField isBlankWhenNull="true">
-				<reportElement x="477" y="95" width="294" height="12"/>
+				<reportElement x="477" y="95" width="294" height="12" uuid="3c241bb6-2865-4067-b0db-65e26ede4640"/>
 				<textElement markup="none">
 					<font size="8"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{nomeProp}]]></textFieldExpression>
 			</textField>
 			<image>
-				<reportElement x="429" y="7" width="185" height="57"/>
+				<reportElement x="429" y="7" width="185" height="57" uuid="ba666d6c-4b73-42c8-aa0d-af70bf3f265c"/>
 				<imageExpression><![CDATA[$F{logoLocation}]]></imageExpression>
 			</image>
 			<textField pattern="###0" isBlankWhenNull="true">
-				<reportElement x="695" y="22" width="44" height="13"/>
+				<reportElement x="695" y="22" width="44" height="13" uuid="6dad73a8-7a47-4f7e-8f78-ca454a819b5a"/>
 				<textElement markup="none">
 					<font size="8"/>
 				</textElement>
 				<textFieldExpression><![CDATA[($F{extratoNumero}.isEmpty() ? "Preview" : $F{extratoNumero})]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement positionType="Float" stretchType="RelativeToBandHeight" x="622" y="7" width="29" height="13"/>
+				<reportElement positionType="Float" stretchType="RelativeToBandHeight" x="622" y="7" width="29" height="13" uuid="3cd537c3-54d6-4d64-9bdb-e85ab9e0acbe"/>
 				<textElement textAlignment="Right" verticalAlignment="Middle">
 					<font size="8" isBold="true" isItalic="false"/>
 				</textElement>
 				<text><![CDATA[Data:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="645" y="22" width="50" height="13"/>
+				<reportElement x="645" y="22" width="50" height="13" uuid="aa00c533-1a39-4abd-8344-4b29219c1f55"/>
 				<textElement textAlignment="Right">
 					<font size="8" isBold="true" isItalic="true"/>
 				</textElement>
 				<text><![CDATA[Extrato:]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="619" y="35" width="80" height="13"/>
+				<reportElement x="619" y="35" width="80" height="13" uuid="15dffd8a-917d-49ee-b96e-973e0b874bf2"/>
 				<textElement textAlignment="Right">
 					<font size="8" isItalic="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA["Página "+$V{PAGE_NUMBER}+" de"]]></textFieldExpression>
 			</textField>
 			<textField evaluationTime="Report">
-				<reportElement x="699" y="35" width="40" height="13"/>
+				<reportElement x="699" y="35" width="40" height="13" uuid="8037ad9b-ec68-463f-bec0-2cbcbcaf3781"/>
 				<textElement>
 					<font size="8" isItalic="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="429" y="69" width="308" height="20" forecolor="#FF0000"/>
+				<reportElement x="429" y="69" width="308" height="20" forecolor="#FF0000" uuid="926192b0-d274-4f19-87a3-c2b57a258089"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="DejaVu Sans" size="10" isBold="true" isItalic="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{mensagem}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="430" y="95" width="47" height="12"/>
+				<reportElement x="430" y="95" width="47" height="12" uuid="912b26a6-9093-49a5-9591-7c8783518d4e"/>
 				<textElement>
 					<font size="8" isBold="true" isItalic="true"/>
 				</textElement>
 				<text><![CDATA[Registro:]]></text>
 			</staticText>
 			<textField isStretchWithOverflow="true" pattern="dd/MM/yyyy - HH:mm" isBlankWhenNull="true">
-				<reportElement positionType="Float" stretchType="RelativeToBandHeight" x="653" y="7" width="86" height="13" isPrintInFirstWholeBand="true"/>
+				<reportElement positionType="Float" stretchType="RelativeToBandHeight" x="653" y="7" width="86" height="13" isPrintInFirstWholeBand="true" uuid="1a88afcc-a3d8-4ddb-baa1-d1b711c659f0"/>
 				<textElement textAlignment="Right" verticalAlignment="Middle">
 					<font size="8" isBold="true" isItalic="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="429" y="105" width="170" height="13" forecolor="#3333FF"/>
+				<reportElement x="429" y="105" width="170" height="13" forecolor="#3333FF" uuid="182cffa2-11ee-4c61-814e-2b9f957dcccc"/>
 				<textElement>
 					<font size="8"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{banco}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="425" y="209" width="237" height="10"/>
+				<reportElement mode="Opaque" x="425" y="209" width="237" height="10" uuid="50d2618c-c375-4f13-8d46-5a2cf4f4586f"/>
 				<textElement textAlignment="Justified" markup="html">
 					<font fontName="DejaVu Sans" size="8"/>
 					<paragraph tabStopWidth="50"/>
@@ -779,7 +779,7 @@ LerValor.LerValor.StringToFloat($F{hist_deb40})]]></variableExpression>
 				<textFieldExpression><![CDATA[($F{hist_linha09_cor}.equals("") ? "" : ($F{hist_linha09_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha09_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha09_cor}.split(";")[2] + ">")) + $F{hist_linha09} + ($F{hist_linha09_cor}.equals("") ? "" : ($F{hist_linha09_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha09_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
 			</textField>
 			<textField pattern="" isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="425" y="137" width="237" height="10"/>
+				<reportElement mode="Opaque" x="425" y="137" width="237" height="10" uuid="279d4a54-fa89-43d9-a2ab-871ce3b30d17"/>
 				<textElement textAlignment="Justified" markup="html">
 					<font fontName="DejaVu Sans" size="8" isStrikeThrough="false"/>
 					<paragraph tabStopWidth="50"/>
@@ -787,35 +787,35 @@ LerValor.LerValor.StringToFloat($F{hist_deb40})]]></variableExpression>
 				<textFieldExpression><![CDATA[($F{hist_linha01_cor}.equals("") ? "" : ($F{hist_linha01_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha01_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha01_cor}.split(";")[2] + ">")) + $F{hist_linha01} + ($F{hist_linha01_cor}.equals("") ? "" : ($F{hist_linha01_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha01_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="721" y="182" width="54" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="721" y="182" width="54" height="10" backcolor="#BFBABA" uuid="29d2d652-33a2-4586-b142-5881a2b73efb"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_deb06}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="665" y="164" width="54" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="665" y="164" width="54" height="10" backcolor="#BFBABA" uuid="7df5170c-48da-4408-8572-2d707bba5b98"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_cred04}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="665" y="146" width="54" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="665" y="146" width="54" height="10" backcolor="#BFBABA" uuid="50c46cb0-1413-4f54-b53c-602dd8ee21c0"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_cred02}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="665" y="137" width="54" height="10"/>
+				<reportElement mode="Opaque" x="665" y="137" width="54" height="10" uuid="dfedfc84-2d90-4575-ac88-b0bdc7039f00"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_cred01}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="425" y="200" width="237" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="425" y="200" width="237" height="10" backcolor="#BFBABA" uuid="2f4bbbfe-fad9-4829-84a6-72576b644df1"/>
 				<textElement textAlignment="Justified" markup="html">
 					<font fontName="DejaVu Sans" size="8"/>
 					<paragraph tabStopWidth="50"/>
@@ -823,21 +823,21 @@ LerValor.LerValor.StringToFloat($F{hist_deb40})]]></variableExpression>
 				<textFieldExpression><![CDATA[($F{hist_linha08_cor}.equals("") ? "" : ($F{hist_linha08_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha08_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha08_cor}.split(";")[2] + ">")) + $F{hist_linha08} + ($F{hist_linha08_cor}.equals("") ? "" : ($F{hist_linha08_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha08_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="665" y="182" width="54" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="665" y="182" width="54" height="10" backcolor="#BFBABA" uuid="ee6a8174-7bf6-4e84-9b56-b51e31bb4b3a"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_cred06}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="721" y="155" width="54" height="10"/>
+				<reportElement mode="Opaque" x="721" y="155" width="54" height="10" uuid="dee282ac-611d-4f8c-afa6-431c1af5cc1f"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_deb03}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="425" y="182" width="237" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="425" y="182" width="237" height="10" backcolor="#BFBABA" uuid="22b27800-ebd2-47ac-a81d-fd503de75123"/>
 				<textElement textAlignment="Justified" markup="html">
 					<font fontName="DejaVu Sans" size="8"/>
 					<paragraph tabStopWidth="50"/>
@@ -845,21 +845,21 @@ LerValor.LerValor.StringToFloat($F{hist_deb40})]]></variableExpression>
 				<textFieldExpression><![CDATA[($F{hist_linha06_cor}.equals("") ? "" : ($F{hist_linha06_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha06_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha06_cor}.split(";")[2] + ">")) + $F{hist_linha06} + ($F{hist_linha06_cor}.equals("") ? "" : ($F{hist_linha06_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha06_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="721" y="137" width="54" height="10"/>
+				<reportElement mode="Opaque" x="721" y="137" width="54" height="10" uuid="dc3aa305-ba6a-4feb-ac3c-570e8a83a970"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_deb01}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="721" y="209" width="54" height="10"/>
+				<reportElement mode="Opaque" x="721" y="209" width="54" height="10" uuid="f5c67efb-8402-4d61-aba8-740c8e5ee1cd"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_deb09}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="425" y="164" width="237" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="425" y="164" width="237" height="10" backcolor="#BFBABA" uuid="0572ed31-ccba-46e7-ad1a-e03b7cf88aae"/>
 				<textElement textAlignment="Justified" markup="html">
 					<font fontName="DejaVu Sans" size="8"/>
 					<paragraph tabStopWidth="50"/>
@@ -867,28 +867,28 @@ LerValor.LerValor.StringToFloat($F{hist_deb40})]]></variableExpression>
 				<textFieldExpression><![CDATA[($F{hist_linha04_cor}.equals("") ? "" : ($F{hist_linha04_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha04_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha04_cor}.split(";")[2] + ">")) + $F{hist_linha04} + ($F{hist_linha04_cor}.equals("") ? "" : ($F{hist_linha04_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha04_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="665" y="173" width="54" height="10"/>
+				<reportElement mode="Opaque" x="665" y="173" width="54" height="10" uuid="4731d19e-9cba-4b2f-b1f3-d127dc68410d"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_cred05}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="665" y="155" width="54" height="10"/>
+				<reportElement mode="Opaque" x="665" y="155" width="54" height="10" uuid="7574280f-27fa-4c73-b65a-4ec2ed8dbee3"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_cred03}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="721" y="200" width="54" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="721" y="200" width="54" height="10" backcolor="#BFBABA" uuid="1f70df47-8f4b-4855-bdf7-7540e625b28b"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_deb08}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="425" y="173" width="237" height="10"/>
+				<reportElement mode="Opaque" x="425" y="173" width="237" height="10" uuid="846369ca-7495-40a3-b854-f6c374037fae"/>
 				<textElement textAlignment="Justified" markup="html">
 					<font fontName="DejaVu Sans" size="8"/>
 					<paragraph tabStopWidth="50"/>
@@ -896,28 +896,28 @@ LerValor.LerValor.StringToFloat($F{hist_deb40})]]></variableExpression>
 				<textFieldExpression><![CDATA[($F{hist_linha05_cor}.equals("") ? "" : ($F{hist_linha05_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha05_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha05_cor}.split(";")[2] + ">")) + $F{hist_linha05} + ($F{hist_linha05_cor}.equals("") ? "" : ($F{hist_linha05_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha05_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="665" y="191" width="54" height="10"/>
+				<reportElement mode="Opaque" x="665" y="191" width="54" height="10" uuid="8a74a0b7-ad90-4f25-b6e4-77c90688fb50"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_cred07}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="665" y="200" width="54" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="665" y="200" width="54" height="10" backcolor="#BFBABA" uuid="c9f74e03-3c00-48ca-b554-34d283e25471"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_cred08}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="665" y="209" width="54" height="10"/>
+				<reportElement mode="Opaque" x="665" y="209" width="54" height="10" uuid="eeb6ab1e-0643-4964-bba4-23ecf141d546"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_cred09}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="425" y="191" width="237" height="10"/>
+				<reportElement mode="Opaque" x="425" y="191" width="237" height="10" uuid="c5ed9871-979a-411a-bb24-85592219da03"/>
 				<textElement textAlignment="Justified" markup="html">
 					<font fontName="DejaVu Sans" size="8"/>
 					<paragraph tabStopWidth="50"/>
@@ -925,21 +925,21 @@ LerValor.LerValor.StringToFloat($F{hist_deb40})]]></variableExpression>
 				<textFieldExpression><![CDATA[($F{hist_linha07_cor}.equals("") ? "" : ($F{hist_linha07_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha07_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha07_cor}.split(";")[2] + ">")) + $F{hist_linha07} + ($F{hist_linha07_cor}.equals("") ? "" : ($F{hist_linha07_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha07_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="721" y="146" width="54" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="721" y="146" width="54" height="10" backcolor="#BFBABA" uuid="8b43a61a-9dce-4956-b778-86bb68124219"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_deb02}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="721" y="173" width="54" height="10"/>
+				<reportElement mode="Opaque" x="721" y="173" width="54" height="10" uuid="dfef6d60-de86-483d-92e4-a9b62e0e9623"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_deb05}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="425" y="146" width="237" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="425" y="146" width="237" height="10" backcolor="#BFBABA" uuid="9f2533ca-41e3-4c12-b4a1-5d0ea4338cbc"/>
 				<textElement textAlignment="Justified" markup="html">
 					<font fontName="DejaVu Sans" size="8"/>
 					<paragraph tabStopWidth="50"/>
@@ -947,42 +947,42 @@ LerValor.LerValor.StringToFloat($F{hist_deb40})]]></variableExpression>
 				<textFieldExpression><![CDATA[($F{hist_linha02_cor}.equals("") ? "" : ($F{hist_linha02_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha02_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha02_cor}.split(";")[2] + ">")) + $F{hist_linha02} + ($F{hist_linha02_cor}.equals("") ? "" : ($F{hist_linha02_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha02_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="721" y="191" width="54" height="10"/>
+				<reportElement mode="Opaque" x="721" y="191" width="54" height="10" uuid="54dbb2b4-0c7f-4d40-98a7-efa435b24ef9"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_deb07}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement mode="Opaque" x="721" y="124" width="54" height="13" backcolor="#E6E3E3"/>
+				<reportElement mode="Opaque" x="721" y="124" width="54" height="13" backcolor="#E6E3E3" uuid="6b992de4-b867-4c99-90a1-a425e0af50ae"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font size="7" isBold="true" isItalic="true"/>
 				</textElement>
 				<text><![CDATA[DÉBITO]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="425" y="124" width="237" height="13" backcolor="#E6E3E3"/>
+				<reportElement mode="Opaque" x="425" y="124" width="237" height="13" backcolor="#E6E3E3" uuid="2711d0e8-6162-42a6-8c7b-ad1b68d90f40"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font size="7" isBold="true" isItalic="true"/>
 				</textElement>
 				<text><![CDATA[HISTÓRICO]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="665" y="124" width="54" height="13" backcolor="#E6E3E3"/>
+				<reportElement mode="Opaque" x="665" y="124" width="54" height="13" backcolor="#E6E3E3" uuid="2cdad346-e69c-43f3-8b03-59cd0babaac4"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font size="7" isBold="true" isItalic="true"/>
 				</textElement>
 				<text><![CDATA[CRÉDITO]]></text>
 			</staticText>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="721" y="164" width="54" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="721" y="164" width="54" height="10" backcolor="#BFBABA" uuid="9d2ac642-d5b4-4881-826f-8a05dab6b98f"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_deb04}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="425" y="155" width="237" height="10"/>
+				<reportElement mode="Opaque" x="425" y="155" width="237" height="10" uuid="89752bc8-e5fa-402d-a43f-cd6d9ef70335"/>
 				<textElement textAlignment="Justified" markup="html">
 					<font fontName="DejaVu Sans" size="8"/>
 					<paragraph tabStopWidth="50"/>
@@ -990,49 +990,49 @@ LerValor.LerValor.StringToFloat($F{hist_deb40})]]></variableExpression>
 				<textFieldExpression><![CDATA[($F{hist_linha03_cor}.equals("") ? "" : ($F{hist_linha03_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha03_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha03_cor}.split(";")[2] + ">")) + $F{hist_linha03} + ($F{hist_linha03_cor}.equals("") ? "" : ($F{hist_linha03_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha03_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="721" y="290" width="54" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="721" y="290" width="54" height="10" backcolor="#BFBABA" uuid="756a9b35-2542-431f-86c9-1b4765b284d7"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_deb18}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="721" y="245" width="54" height="10"/>
+				<reportElement mode="Opaque" x="721" y="245" width="54" height="10" uuid="46d7c1ff-9cc3-4fb2-b868-d9589b9c6db2"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_deb13}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="665" y="263" width="54" height="10"/>
+				<reportElement mode="Opaque" x="665" y="263" width="54" height="10" uuid="e336b8d3-da72-4f07-afb2-58443a999ae8"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_cred15}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="665" y="245" width="54" height="10"/>
+				<reportElement mode="Opaque" x="665" y="245" width="54" height="10" uuid="5f9944a8-68a4-4516-b5d1-f796cb2a90cd"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_cred13}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="665" y="236" width="54" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="665" y="236" width="54" height="10" backcolor="#BFBABA" uuid="206bdea9-4e2e-467b-a5c5-2c7d0673fc1b"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_cred12}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="721" y="263" width="54" height="10"/>
+				<reportElement mode="Opaque" x="721" y="263" width="54" height="10" uuid="0e487770-7fee-4472-9008-6ab2ac0f72a3"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_deb15}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="425" y="254" width="237" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="425" y="254" width="237" height="10" backcolor="#BFBABA" uuid="da11c4b0-cbcc-4830-8145-dc282f840dbb"/>
 				<textElement textAlignment="Justified" markup="html">
 					<font fontName="DejaVu Sans" size="8"/>
 					<paragraph tabStopWidth="50"/>
@@ -1040,77 +1040,77 @@ LerValor.LerValor.StringToFloat($F{hist_deb40})]]></variableExpression>
 				<textFieldExpression><![CDATA[($F{hist_linha14_cor}.equals("") ? "" : ($F{hist_linha14_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha14_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha14_cor}.split(";")[2] + ">")) + $F{hist_linha14} + ($F{hist_linha14_cor}.equals("") ? "" : ($F{hist_linha14_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha14_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="721" y="236" width="54" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="721" y="236" width="54" height="10" backcolor="#BFBABA" uuid="fb2ee4d7-942e-4511-a0d5-8464efe5e221"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_deb12}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="721" y="281" width="54" height="10"/>
+				<reportElement mode="Opaque" x="721" y="281" width="54" height="10" uuid="737cfe22-2060-4971-82fb-d6a8e54988e1"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_deb17}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="665" y="281" width="54" height="10"/>
+				<reportElement mode="Opaque" x="665" y="281" width="54" height="10" uuid="f96d58f8-51ac-4d16-93df-d3fd91384adf"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_cred17}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="665" y="272" width="54" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="665" y="272" width="54" height="10" backcolor="#BFBABA" uuid="3bdc709e-929b-4c03-a763-d9e8efcc4332"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_cred16}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="721" y="254" width="54" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="721" y="254" width="54" height="10" backcolor="#BFBABA" uuid="d83ce7b4-6f5e-4e12-a481-38eb2f8df019"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_deb14}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="721" y="227" width="54" height="10"/>
+				<reportElement mode="Opaque" x="721" y="227" width="54" height="10" uuid="2359078e-28ae-429c-b40f-4b44c11a97cf"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_deb11}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="721" y="218" width="54" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="721" y="218" width="54" height="10" backcolor="#BFBABA" uuid="533fda0b-617e-4897-893b-a09d1756e0fb"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_deb10}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="665" y="227" width="54" height="10"/>
+				<reportElement mode="Opaque" x="665" y="227" width="54" height="10" uuid="fd8ddc66-076f-45a2-9a27-2c3a5b526628"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_cred11}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="721" y="272" width="54" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="721" y="272" width="54" height="10" backcolor="#BFBABA" uuid="a3a3d025-5601-4d6f-8c99-393aeaaaee9d"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_deb16}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="665" y="290" width="54" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="665" y="290" width="54" height="10" backcolor="#BFBABA" uuid="04914105-6a26-4b45-a473-f175ab52f3ff"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_cred18}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="425" y="227" width="237" height="10"/>
+				<reportElement mode="Opaque" x="425" y="227" width="237" height="10" uuid="5edae987-5de3-45ec-9479-45665c311d7b"/>
 				<textElement textAlignment="Justified" markup="html">
 					<font fontName="DejaVu Sans" size="8"/>
 					<paragraph tabStopWidth="50"/>
@@ -1118,7 +1118,7 @@ LerValor.LerValor.StringToFloat($F{hist_deb40})]]></variableExpression>
 				<textFieldExpression><![CDATA[($F{hist_linha11_cor}.equals("") ? "" : ($F{hist_linha11_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha11_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha11_cor}.split(";")[2] + ">")) + $F{hist_linha11} + ($F{hist_linha11_cor}.equals("") ? "" : ($F{hist_linha11_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha11_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="425" y="317" width="237" height="10"/>
+				<reportElement mode="Opaque" x="425" y="317" width="237" height="10" uuid="d616c34f-de38-40bc-93f5-6ab4c14bfaa4"/>
 				<textElement textAlignment="Justified" markup="html">
 					<font fontName="DejaVu Sans" size="8"/>
 					<paragraph tabStopWidth="50"/>
@@ -1126,21 +1126,21 @@ LerValor.LerValor.StringToFloat($F{hist_deb40})]]></variableExpression>
 				<textFieldExpression><![CDATA[($F{hist_linha21_cor}.equals("") ? "" : ($F{hist_linha21_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha21_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha21_cor}.split(";")[2] + ">")) + $F{hist_linha21} + ($F{hist_linha21_cor}.equals("") ? "" : ($F{hist_linha21_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha21_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="665" y="218" width="54" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="665" y="218" width="54" height="10" backcolor="#BFBABA" uuid="1fbb85b8-3e10-4a8f-9939-4496cbb0041a"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_cred10}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="721" y="308" width="54" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="721" y="308" width="54" height="10" backcolor="#BFBABA" uuid="7edf6620-a430-4cf3-a8f9-5a3ad979617e"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_deb20}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="425" y="245" width="237" height="10"/>
+				<reportElement mode="Opaque" x="425" y="245" width="237" height="10" uuid="33597e9e-aace-4de3-baa6-3c5fe01a04b1"/>
 				<textElement textAlignment="Justified" markup="html">
 					<font fontName="DejaVu Sans" size="8"/>
 					<paragraph tabStopWidth="50"/>
@@ -1148,21 +1148,21 @@ LerValor.LerValor.StringToFloat($F{hist_deb40})]]></variableExpression>
 				<textFieldExpression><![CDATA[($F{hist_linha13_cor}.equals("") ? "" : ($F{hist_linha13_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha13_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha13_cor}.split(";")[2] + ">")) + $F{hist_linha13} + ($F{hist_linha13_cor}.equals("") ? "" : ($F{hist_linha13_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha13_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="665" y="317" width="54" height="10"/>
+				<reportElement mode="Opaque" x="665" y="317" width="54" height="10" uuid="0a131d1e-3252-48fb-ba1b-6dbf89c42677"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_cred21}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="721" y="317" width="54" height="10"/>
+				<reportElement mode="Opaque" x="721" y="317" width="54" height="10" uuid="e6d21546-fab8-4b02-a59a-1e296ef0883d"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_deb21}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="425" y="281" width="237" height="10"/>
+				<reportElement mode="Opaque" x="425" y="281" width="237" height="10" uuid="575d4e7b-fcde-45dc-bdbd-1b5115f59bcf"/>
 				<textElement textAlignment="Justified" markup="html">
 					<font fontName="DejaVu Sans" size="8"/>
 					<paragraph tabStopWidth="50"/>
@@ -1170,7 +1170,7 @@ LerValor.LerValor.StringToFloat($F{hist_deb40})]]></variableExpression>
 				<textFieldExpression><![CDATA[($F{hist_linha17_cor}.equals("") ? "" : ($F{hist_linha17_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha17_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha17_cor}.split(";")[2] + ">")) + $F{hist_linha17} + ($F{hist_linha17_cor}.equals("") ? "" : ($F{hist_linha17_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha17_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="425" y="290" width="237" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="425" y="290" width="237" height="10" backcolor="#BFBABA" uuid="163f217a-dc97-4711-885e-f7f76b60d969"/>
 				<textElement textAlignment="Justified" markup="html">
 					<font fontName="DejaVu Sans" size="8"/>
 					<paragraph tabStopWidth="50"/>
@@ -1178,7 +1178,7 @@ LerValor.LerValor.StringToFloat($F{hist_deb40})]]></variableExpression>
 				<textFieldExpression><![CDATA[($F{hist_linha18_cor}.equals("") ? "" : ($F{hist_linha18_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha18_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha18_cor}.split(";")[2] + ">")) + $F{hist_linha18} + ($F{hist_linha18_cor}.equals("") ? "" : ($F{hist_linha18_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha18_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="425" y="236" width="237" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="425" y="236" width="237" height="10" backcolor="#BFBABA" uuid="3736c63e-f747-445e-8039-8fc3f689966a"/>
 				<textElement textAlignment="Justified" markup="html">
 					<font fontName="DejaVu Sans" size="8"/>
 					<paragraph tabStopWidth="50"/>
@@ -1186,21 +1186,21 @@ LerValor.LerValor.StringToFloat($F{hist_deb40})]]></variableExpression>
 				<textFieldExpression><![CDATA[($F{hist_linha12_cor}.equals("") ? "" : ($F{hist_linha12_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha12_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha12_cor}.split(";")[2] + ">")) + $F{hist_linha12} + ($F{hist_linha12_cor}.equals("") ? "" : ($F{hist_linha12_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha12_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="721" y="299" width="54" height="10"/>
+				<reportElement mode="Opaque" x="721" y="299" width="54" height="10" uuid="cd23b6df-7061-437a-80b2-1e985b1bb873"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_deb19}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="665" y="254" width="54" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="665" y="254" width="54" height="10" backcolor="#BFBABA" uuid="63a19215-f43e-4015-b38b-f2f23f765324"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_cred14}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="425" y="263" width="237" height="10"/>
+				<reportElement mode="Opaque" x="425" y="263" width="237" height="10" uuid="95c0ec12-c631-4a55-9225-5bcbeeaa909d"/>
 				<textElement textAlignment="Justified" markup="html">
 					<font fontName="DejaVu Sans" size="8"/>
 					<paragraph tabStopWidth="50"/>
@@ -1208,7 +1208,7 @@ LerValor.LerValor.StringToFloat($F{hist_deb40})]]></variableExpression>
 				<textFieldExpression><![CDATA[($F{hist_linha15_cor}.equals("") ? "" : ($F{hist_linha15_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha15_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha15_cor}.split(";")[2] + ">")) + $F{hist_linha15} + ($F{hist_linha15_cor}.equals("") ? "" : ($F{hist_linha15_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha15_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="425" y="299" width="237" height="10"/>
+				<reportElement mode="Opaque" x="425" y="299" width="237" height="10" uuid="c8ee7ec1-932c-4bed-989b-1d9ac6c1887f"/>
 				<textElement textAlignment="Justified" markup="html">
 					<font fontName="DejaVu Sans" size="8"/>
 					<paragraph tabStopWidth="50"/>
@@ -1216,7 +1216,7 @@ LerValor.LerValor.StringToFloat($F{hist_deb40})]]></variableExpression>
 				<textFieldExpression><![CDATA[($F{hist_linha19_cor}.equals("") ? "" : ($F{hist_linha19_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha19_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha19_cor}.split(";")[2] + ">")) + $F{hist_linha19} + ($F{hist_linha19_cor}.equals("") ? "" : ($F{hist_linha19_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha19_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="425" y="218" width="237" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="425" y="218" width="237" height="10" backcolor="#BFBABA" uuid="edcf0647-2621-4c98-bb89-42f726f0f560"/>
 				<textElement textAlignment="Justified" markup="html">
 					<font fontName="DejaVu Sans" size="8"/>
 					<paragraph tabStopWidth="50"/>
@@ -1224,14 +1224,14 @@ LerValor.LerValor.StringToFloat($F{hist_deb40})]]></variableExpression>
 				<textFieldExpression><![CDATA[($F{hist_linha10_cor}.equals("") ? "" : ($F{hist_linha10_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha10_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha10_cor}.split(";")[2] + ">")) + $F{hist_linha10} + ($F{hist_linha10_cor}.equals("") ? "" : ($F{hist_linha10_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha10_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="665" y="308" width="54" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="665" y="308" width="54" height="10" backcolor="#BFBABA" uuid="c3aee50e-5d34-4cb1-b411-8eaac3a457b5"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_cred20}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="425" y="272" width="237" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="425" y="272" width="237" height="10" backcolor="#BFBABA" uuid="4124504b-90e3-4469-8ed7-3bfd9f40994b"/>
 				<textElement textAlignment="Justified" markup="html">
 					<font fontName="DejaVu Sans" size="8"/>
 					<paragraph tabStopWidth="50"/>
@@ -1239,7 +1239,7 @@ LerValor.LerValor.StringToFloat($F{hist_deb40})]]></variableExpression>
 				<textFieldExpression><![CDATA[($F{hist_linha16_cor}.equals("") ? "" : ($F{hist_linha16_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha16_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha16_cor}.split(";")[2] + ">")) + $F{hist_linha16} + ($F{hist_linha16_cor}.equals("") ? "" : ($F{hist_linha16_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha16_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="425" y="308" width="237" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="425" y="308" width="237" height="10" backcolor="#BFBABA" uuid="afe58e5f-bf6f-4bdd-8acf-1f7b0688b55e"/>
 				<textElement textAlignment="Justified" markup="html">
 					<font fontName="DejaVu Sans" size="8"/>
 					<paragraph tabStopWidth="50"/>
@@ -1247,14 +1247,14 @@ LerValor.LerValor.StringToFloat($F{hist_deb40})]]></variableExpression>
 				<textFieldExpression><![CDATA[($F{hist_linha20_cor}.equals("") ? "" : ($F{hist_linha20_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha20_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha20_cor}.split(";")[2] + ">")) + $F{hist_linha20} + ($F{hist_linha20_cor}.equals("") ? "" : ($F{hist_linha20_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha20_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="665" y="299" width="54" height="10"/>
+				<reportElement mode="Opaque" x="665" y="299" width="54" height="10" uuid="af73bc02-36e6-4a82-a8cd-1cd5fdc19a82"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_cred19}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="425" y="398" width="237" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="425" y="398" width="237" height="10" backcolor="#BFBABA" uuid="0eea5386-8395-4a62-a0ce-9f726158c194"/>
 				<textElement textAlignment="Justified" markup="html">
 					<font fontName="DejaVu Sans" size="8"/>
 					<paragraph tabStopWidth="50"/>
@@ -1262,28 +1262,28 @@ LerValor.LerValor.StringToFloat($F{hist_deb40})]]></variableExpression>
 				<textFieldExpression><![CDATA[($F{hist_linha30_cor}.equals("") ? "" : ($F{hist_linha30_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha30_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha30_cor}.split(";")[2] + ">")) + $F{hist_linha30} + ($F{hist_linha30_cor}.equals("") ? "" : ($F{hist_linha30_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha30_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="721" y="479" width="54" height="10"/>
+				<reportElement mode="Opaque" x="721" y="479" width="54" height="10" uuid="4b0615e9-1434-4457-bfb6-f542b8023bf1"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_deb39}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="721" y="335" width="54" height="10"/>
+				<reportElement mode="Opaque" x="721" y="335" width="54" height="10" uuid="0c8a1837-03dc-4873-a4bb-71dd10310463"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_deb23}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="721" y="425" width="54" height="10"/>
+				<reportElement mode="Opaque" x="721" y="425" width="54" height="10" uuid="3bb3b3b7-fe9b-424a-8fca-449b05faf6e5"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_deb33}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="425" y="461" width="237" height="10"/>
+				<reportElement mode="Opaque" x="425" y="461" width="237" height="10" uuid="5c7f4c50-fd32-447f-9e78-e5cdb9cc4426"/>
 				<textElement textAlignment="Justified" markup="html">
 					<font fontName="DejaVu Sans" size="8"/>
 					<paragraph tabStopWidth="50"/>
@@ -1291,35 +1291,35 @@ LerValor.LerValor.StringToFloat($F{hist_deb40})]]></variableExpression>
 				<textFieldExpression><![CDATA[($F{hist_linha37_cor}.equals("") ? "" : ($F{hist_linha37_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha37_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha37_cor}.split(";")[2] + ">")) + $F{hist_linha37} + ($F{hist_linha37_cor}.equals("") ? "" : ($F{hist_linha37_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha37_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="665" y="470" width="54" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="665" y="470" width="54" height="10" backcolor="#BFBABA" uuid="b75ab27e-cc5a-4550-bf0f-2759d8671277"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_cred38}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="721" y="362" width="54" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="721" y="362" width="54" height="10" backcolor="#BFBABA" uuid="c666b982-63f6-4580-879a-d632ff664acc"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_deb26}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="665" y="398" width="54" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="665" y="398" width="54" height="10" backcolor="#BFBABA" uuid="50d70c66-e06f-40e4-8140-192ae142cd09"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_cred30}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="721" y="434" width="54" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="721" y="434" width="54" height="10" backcolor="#BFBABA" uuid="2a8e60ad-073e-41a1-82eb-c0c941119c16"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_deb34}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="425" y="452" width="237" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="425" y="452" width="237" height="10" backcolor="#BFBABA" uuid="290255a1-b384-4710-9ec9-a88726f3dd93"/>
 				<textElement textAlignment="Justified" markup="html">
 					<font fontName="DejaVu Sans" size="8"/>
 					<paragraph tabStopWidth="50"/>
@@ -1327,7 +1327,7 @@ LerValor.LerValor.StringToFloat($F{hist_deb40})]]></variableExpression>
 				<textFieldExpression><![CDATA[($F{hist_linha36_cor}.equals("") ? "" : ($F{hist_linha36_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha36_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha36_cor}.split(";")[2] + ">")) + $F{hist_linha36} + ($F{hist_linha36_cor}.equals("") ? "" : ($F{hist_linha36_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha36_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="425" y="380" width="237" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="425" y="380" width="237" height="10" backcolor="#BFBABA" uuid="a3c07981-8f01-4e02-a690-4e4091db80c2"/>
 				<textElement textAlignment="Justified" markup="html">
 					<font fontName="DejaVu Sans" size="8"/>
 					<paragraph tabStopWidth="50"/>
@@ -1335,7 +1335,7 @@ LerValor.LerValor.StringToFloat($F{hist_deb40})]]></variableExpression>
 				<textFieldExpression><![CDATA[($F{hist_linha28_cor}.equals("") ? "" : ($F{hist_linha28_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha28_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha28_cor}.split(";")[2] + ">")) + $F{hist_linha28} + ($F{hist_linha28_cor}.equals("") ? "" : ($F{hist_linha28_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha28_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="425" y="371" width="237" height="10"/>
+				<reportElement mode="Opaque" x="425" y="371" width="237" height="10" uuid="ad24a48b-5af3-49a4-bd8d-a78313e4db0c"/>
 				<textElement textAlignment="Justified" markup="html">
 					<font fontName="DejaVu Sans" size="8"/>
 					<paragraph tabStopWidth="50"/>
@@ -1343,7 +1343,7 @@ LerValor.LerValor.StringToFloat($F{hist_deb40})]]></variableExpression>
 				<textFieldExpression><![CDATA[($F{hist_linha27_cor}.equals("") ? "" : ($F{hist_linha27_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha27_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha27_cor}.split(";")[2] + ">")) + $F{hist_linha27} + ($F{hist_linha27_cor}.equals("") ? "" : ($F{hist_linha27_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha27_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="425" y="407" width="237" height="10"/>
+				<reportElement mode="Opaque" x="425" y="407" width="237" height="10" uuid="5174410f-251b-4af4-b196-5518082eed95"/>
 				<textElement textAlignment="Justified" markup="html">
 					<font fontName="DejaVu Sans" size="8"/>
 					<paragraph tabStopWidth="50"/>
@@ -1351,28 +1351,28 @@ LerValor.LerValor.StringToFloat($F{hist_deb40})]]></variableExpression>
 				<textFieldExpression><![CDATA[($F{hist_linha31_cor}.equals("") ? "" : ($F{hist_linha31_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha31_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha31_cor}.split(";")[2] + ">")) + $F{hist_linha31} + ($F{hist_linha31_cor}.equals("") ? "" : ($F{hist_linha31_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha31_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="721" y="488" width="54" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="721" y="488" width="54" height="10" backcolor="#BFBABA" uuid="3ccf7684-751d-44fc-9553-6341a1220daa"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_deb40}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="665" y="479" width="54" height="10"/>
+				<reportElement mode="Opaque" x="665" y="479" width="54" height="10" uuid="96b97a9b-0e1a-49da-b49d-311cbfdc6a4f"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_cred39}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="721" y="461" width="54" height="10"/>
+				<reportElement mode="Opaque" x="721" y="461" width="54" height="10" uuid="cc906eef-831b-45c3-8516-0c43bcd55e13"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_deb37}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="425" y="326" width="237" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="425" y="326" width="237" height="10" backcolor="#BFBABA" uuid="97ae95fd-1f26-421b-9fd7-b9e593c93950"/>
 				<textElement textAlignment="Justified" markup="html">
 					<font fontName="DejaVu Sans" size="8"/>
 					<paragraph tabStopWidth="50"/>
@@ -1380,21 +1380,21 @@ LerValor.LerValor.StringToFloat($F{hist_deb40})]]></variableExpression>
 				<textFieldExpression><![CDATA[($F{hist_linha22_cor}.equals("") ? "" : ($F{hist_linha22_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha22_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha22_cor}.split(";")[2] + ">")) + $F{hist_linha22} + ($F{hist_linha22_cor}.equals("") ? "" : ($F{hist_linha22_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha22_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="665" y="371" width="54" height="10"/>
+				<reportElement mode="Opaque" x="665" y="371" width="54" height="10" uuid="6d5f1461-b4a9-45c0-ba90-d050fa56074c"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_cred27}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="665" y="335" width="54" height="10"/>
+				<reportElement mode="Opaque" x="665" y="335" width="54" height="10" uuid="3132540c-9fa0-44af-af7d-0f153a998241"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_cred23}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="425" y="479" width="237" height="10"/>
+				<reportElement mode="Opaque" x="425" y="479" width="237" height="10" uuid="92ed308c-ad63-4d69-9df2-2e2d001c85de"/>
 				<textElement textAlignment="Justified" markup="html">
 					<font fontName="DejaVu Sans" size="8"/>
 					<paragraph tabStopWidth="50"/>
@@ -1402,35 +1402,35 @@ LerValor.LerValor.StringToFloat($F{hist_deb40})]]></variableExpression>
 				<textFieldExpression><![CDATA[($F{hist_linha39_cor}.equals("") ? "" : ($F{hist_linha39_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha39_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha39_cor}.split(";")[2] + ">")) + $F{hist_linha39} + ($F{hist_linha39_cor}.equals("") ? "" : ($F{hist_linha39_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha39_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="665" y="353" width="54" height="10"/>
+				<reportElement mode="Opaque" x="665" y="353" width="54" height="10" uuid="2f11eeea-a672-4934-b979-092eed353e71"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_cred25}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="721" y="326" width="54" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="721" y="326" width="54" height="10" backcolor="#BFBABA" uuid="e4fd9a27-bebc-491e-86db-bcd796df9666"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_deb22}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="721" y="380" width="54" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="721" y="380" width="54" height="10" backcolor="#BFBABA" uuid="3786fb7e-9613-4f29-aa92-c607c84ea939"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_deb28}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="721" y="416" width="54" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="721" y="416" width="54" height="10" backcolor="#BFBABA" uuid="b20cb6eb-8a15-44d6-97a7-f0ad9dceec20"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_deb32}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="425" y="443" width="237" height="10"/>
+				<reportElement mode="Opaque" x="425" y="443" width="237" height="10" uuid="44f91c0d-86a2-4c4b-9868-330813353cbd"/>
 				<textElement textAlignment="Justified" markup="html">
 					<font fontName="DejaVu Sans" size="8"/>
 					<paragraph tabStopWidth="50"/>
@@ -1438,28 +1438,28 @@ LerValor.LerValor.StringToFloat($F{hist_deb40})]]></variableExpression>
 				<textFieldExpression><![CDATA[($F{hist_linha35_cor}.equals("") ? "" : ($F{hist_linha35_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha35_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha35_cor}.split(";")[2] + ">")) + $F{hist_linha35} + ($F{hist_linha35_cor}.equals("") ? "" : ($F{hist_linha35_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha35_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="721" y="371" width="54" height="10"/>
+				<reportElement mode="Opaque" x="721" y="371" width="54" height="10" uuid="9bf2ff2c-09cf-48d6-b831-e8053457296d"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_deb27}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="665" y="416" width="54" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="665" y="416" width="54" height="10" backcolor="#BFBABA" uuid="d97cd42c-b439-42ae-91f6-4f3a53a2af6c"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_cred32}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="665" y="461" width="54" height="10"/>
+				<reportElement mode="Opaque" x="665" y="461" width="54" height="10" uuid="e4d01a1e-322b-444b-8053-4247e66549a8"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_cred37}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="425" y="416" width="237" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="425" y="416" width="237" height="10" backcolor="#BFBABA" uuid="8f15495f-9ffe-473a-804e-b1881a779e88"/>
 				<textElement textAlignment="Justified" markup="html">
 					<font fontName="DejaVu Sans" size="8"/>
 					<paragraph tabStopWidth="50"/>
@@ -1467,35 +1467,35 @@ LerValor.LerValor.StringToFloat($F{hist_deb40})]]></variableExpression>
 				<textFieldExpression><![CDATA[($F{hist_linha32_cor}.equals("") ? "" : ($F{hist_linha32_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha32_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha32_cor}.split(";")[2] + ">")) + $F{hist_linha32} + ($F{hist_linha32_cor}.equals("") ? "" : ($F{hist_linha32_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha32_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="721" y="407" width="54" height="10"/>
+				<reportElement mode="Opaque" x="721" y="407" width="54" height="10" uuid="a9351ed2-a04f-4e8b-b399-ef10833efe71"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_deb31}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="665" y="380" width="54" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="665" y="380" width="54" height="10" backcolor="#BFBABA" uuid="ded86a34-d86a-437d-a5ec-1f106dda0b1a"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_cred28}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="721" y="344" width="54" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="721" y="344" width="54" height="10" backcolor="#BFBABA" uuid="a60eff13-e50a-4e50-bb77-319c048dc619"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_deb24}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="721" y="389" width="54" height="10"/>
+				<reportElement mode="Opaque" x="721" y="389" width="54" height="10" uuid="e6a694bc-a1aa-467f-a8c0-9b34b04f4a17"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_deb29}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="425" y="353" width="237" height="10"/>
+				<reportElement mode="Opaque" x="425" y="353" width="237" height="10" uuid="ee36eee3-351d-4693-95cd-7dfcdeeeb112"/>
 				<textElement textAlignment="Justified" markup="html">
 					<font fontName="DejaVu Sans" size="8"/>
 					<paragraph tabStopWidth="50"/>
@@ -1503,14 +1503,14 @@ LerValor.LerValor.StringToFloat($F{hist_deb40})]]></variableExpression>
 				<textFieldExpression><![CDATA[($F{hist_linha25_cor}.equals("") ? "" : ($F{hist_linha25_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha25_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha25_cor}.split(";")[2] + ">")) + $F{hist_linha25} + ($F{hist_linha25_cor}.equals("") ? "" : ($F{hist_linha25_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha25_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="721" y="470" width="54" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="721" y="470" width="54" height="10" backcolor="#BFBABA" uuid="4356499b-c574-41f7-9edb-6ac111143eab"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_deb38}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="425" y="425" width="237" height="10"/>
+				<reportElement mode="Opaque" x="425" y="425" width="237" height="10" uuid="1934a118-ab10-43c5-b6de-0c5f8b38e704"/>
 				<textElement textAlignment="Justified" markup="html">
 					<font fontName="DejaVu Sans" size="8"/>
 					<paragraph tabStopWidth="50"/>
@@ -1518,14 +1518,14 @@ LerValor.LerValor.StringToFloat($F{hist_deb40})]]></variableExpression>
 				<textFieldExpression><![CDATA[($F{hist_linha33_cor}.equals("") ? "" : ($F{hist_linha33_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha33_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha33_cor}.split(";")[2] + ">")) + $F{hist_linha33} + ($F{hist_linha33_cor}.equals("") ? "" : ($F{hist_linha33_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha33_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="665" y="434" width="54" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="665" y="434" width="54" height="10" backcolor="#BFBABA" uuid="121d657b-ee9d-4107-8b62-8c7fb71383fb"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_cred34}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="425" y="362" width="237" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="425" y="362" width="237" height="10" backcolor="#BFBABA" uuid="1d3fc93d-da84-4863-8c4f-4ed0df8e0d25"/>
 				<textElement textAlignment="Justified" markup="html">
 					<font fontName="DejaVu Sans" size="8"/>
 					<paragraph tabStopWidth="50"/>
@@ -1533,7 +1533,7 @@ LerValor.LerValor.StringToFloat($F{hist_deb40})]]></variableExpression>
 				<textFieldExpression><![CDATA[($F{hist_linha26_cor}.equals("") ? "" : ($F{hist_linha26_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha26_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha26_cor}.split(";")[2] + ">")) + $F{hist_linha26} + ($F{hist_linha26_cor}.equals("") ? "" : ($F{hist_linha26_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha26_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="425" y="470" width="237" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="425" y="470" width="237" height="10" backcolor="#BFBABA" uuid="569b34f4-bcb8-48e8-b3c6-9ce067a389c8"/>
 				<textElement textAlignment="Justified" markup="html">
 					<font fontName="DejaVu Sans" size="8"/>
 					<paragraph tabStopWidth="50"/>
@@ -1541,35 +1541,35 @@ LerValor.LerValor.StringToFloat($F{hist_deb40})]]></variableExpression>
 				<textFieldExpression><![CDATA[($F{hist_linha38_cor}.equals("") ? "" : ($F{hist_linha38_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha38_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha38_cor}.split(";")[2] + ">")) + $F{hist_linha38} + ($F{hist_linha38_cor}.equals("") ? "" : ($F{hist_linha38_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha38_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="665" y="389" width="54" height="10"/>
+				<reportElement mode="Opaque" x="665" y="389" width="54" height="10" uuid="5fca620e-6075-4f8b-a8d8-babdc3405ee2"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_cred29}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="721" y="452" width="54" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="721" y="452" width="54" height="10" backcolor="#BFBABA" uuid="b0e57d9e-ceac-4784-be54-51e56ffc2832"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_deb36}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="665" y="488" width="54" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="665" y="488" width="54" height="10" backcolor="#BFBABA" uuid="5fbc30d9-7819-4e7e-8089-7f081969aef9"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_cred40}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="665" y="407" width="54" height="10"/>
+				<reportElement mode="Opaque" x="665" y="407" width="54" height="10" uuid="ea030eaf-97a1-4b18-b523-97a8734ff15e"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_cred31}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="425" y="344" width="237" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="425" y="344" width="237" height="10" backcolor="#BFBABA" uuid="cc821ecd-7a58-40a9-b27f-1ae652ed7407"/>
 				<textElement textAlignment="Justified" markup="html">
 					<font fontName="DejaVu Sans" size="8"/>
 					<paragraph tabStopWidth="50"/>
@@ -1577,35 +1577,35 @@ LerValor.LerValor.StringToFloat($F{hist_deb40})]]></variableExpression>
 				<textFieldExpression><![CDATA[($F{hist_linha24_cor}.equals("") ? "" : ($F{hist_linha24_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha24_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha24_cor}.split(";")[2] + ">")) + $F{hist_linha24} + ($F{hist_linha24_cor}.equals("") ? "" : ($F{hist_linha24_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha24_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="721" y="398" width="54" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="721" y="398" width="54" height="10" backcolor="#BFBABA" uuid="4a175221-50cb-4a2c-a6d1-ec24a2584850"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_deb30}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="665" y="326" width="54" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="665" y="326" width="54" height="10" backcolor="#BFBABA" uuid="69b23d67-ba5c-40a6-9ad7-209679ca4bea"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_cred22}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="665" y="425" width="54" height="10"/>
+				<reportElement mode="Opaque" x="665" y="425" width="54" height="10" uuid="0542e36b-04d3-4b25-bd13-a58c24836548"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_cred33}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="665" y="344" width="54" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="665" y="344" width="54" height="10" backcolor="#BFBABA" uuid="37cd1b9e-935e-41ba-a05c-7c9fdb80159a"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_cred24}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="425" y="335" width="237" height="10"/>
+				<reportElement mode="Opaque" x="425" y="335" width="237" height="10" uuid="bd673c81-ea18-48f8-9a48-ee3491165e76"/>
 				<textElement textAlignment="Justified" markup="html">
 					<font fontName="DejaVu Sans" size="8"/>
 					<paragraph tabStopWidth="50"/>
@@ -1613,7 +1613,7 @@ LerValor.LerValor.StringToFloat($F{hist_deb40})]]></variableExpression>
 				<textFieldExpression><![CDATA[($F{hist_linha23_cor}.equals("") ? "" : ($F{hist_linha23_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha23_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha23_cor}.split(";")[2] + ">")) + $F{hist_linha23} + ($F{hist_linha23_cor}.equals("") ? "" : ($F{hist_linha23_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha23_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="425" y="488" width="237" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="425" y="488" width="237" height="10" backcolor="#BFBABA" uuid="18b8a4b1-f98f-4c22-8f15-d01782583e59"/>
 				<textElement textAlignment="Justified" markup="html">
 					<font fontName="DejaVu Sans" size="8"/>
 					<paragraph tabStopWidth="50"/>
@@ -1621,7 +1621,7 @@ LerValor.LerValor.StringToFloat($F{hist_deb40})]]></variableExpression>
 				<textFieldExpression><![CDATA[($F{hist_linha40_cor}.equals("") ? "" : ($F{hist_linha40_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha40_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha40_cor}.split(";")[2] + ">")) + $F{hist_linha40} + ($F{hist_linha40_cor}.equals("") ? "" : ($F{hist_linha40_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha40_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="425" y="434" width="237" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="425" y="434" width="237" height="10" backcolor="#BFBABA" uuid="e2ffab67-147e-435d-b6ed-cc3c2fb18a18"/>
 				<textElement textAlignment="Justified" markup="html">
 					<font fontName="DejaVu Sans" size="8"/>
 					<paragraph tabStopWidth="50"/>
@@ -1629,35 +1629,35 @@ LerValor.LerValor.StringToFloat($F{hist_deb40})]]></variableExpression>
 				<textFieldExpression><![CDATA[($F{hist_linha34_cor}.equals("") ? "" : ($F{hist_linha34_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha34_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha34_cor}.split(";")[2] + ">")) + $F{hist_linha34} + ($F{hist_linha34_cor}.equals("") ? "" : ($F{hist_linha34_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha34_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="665" y="452" width="54" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="665" y="452" width="54" height="10" backcolor="#BFBABA" uuid="ad662ace-e195-45fc-85b4-6adef6164f4f"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_cred36}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="665" y="443" width="54" height="10"/>
+				<reportElement mode="Opaque" x="665" y="443" width="54" height="10" uuid="869d5143-1ac0-4c2c-ade9-f2843591c41d"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_cred35}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="721" y="443" width="54" height="10"/>
+				<reportElement mode="Opaque" x="721" y="443" width="54" height="10" uuid="54b212fc-f097-48de-9146-f4bb809ab8db"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_deb35}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="721" y="353" width="54" height="10"/>
+				<reportElement mode="Opaque" x="721" y="353" width="54" height="10" uuid="e85751fe-e8ad-4985-a6f3-ab89d0aa42cf"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_deb25}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="425" y="389" width="237" height="10"/>
+				<reportElement mode="Opaque" x="425" y="389" width="237" height="10" uuid="23371c7d-b3b4-4807-8d89-ba56c27d688b"/>
 				<textElement textAlignment="Justified" markup="html">
 					<font fontName="DejaVu Sans" size="8"/>
 					<paragraph tabStopWidth="50"/>
@@ -1665,148 +1665,148 @@ LerValor.LerValor.StringToFloat($F{hist_deb40})]]></variableExpression>
 				<textFieldExpression><![CDATA[($F{hist_linha29_cor}.equals("") ? "" : ($F{hist_linha29_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha29_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha29_cor}.split(";")[2] + ">")) + $F{hist_linha29} + ($F{hist_linha29_cor}.equals("") ? "" : ($F{hist_linha29_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha29_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="665" y="362" width="54" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="665" y="362" width="54" height="10" backcolor="#BFBABA" uuid="ed906948-2f4e-41f2-bf76-5262b3c5f627"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_cred26}]]></textFieldExpression>
 			</textField>
 			<rectangle radius="5">
-				<reportElement x="425" y="523" width="353" height="32"/>
+				<reportElement x="425" y="523" width="353" height="32" uuid="56d962cb-06e4-438a-8a0e-d23dc29ca908"/>
 				<graphicElement>
 					<pen lineWidth="0.25"/>
 				</graphicElement>
 			</rectangle>
 			<textField isBlankWhenNull="true">
-				<reportElement x="432" y="539" width="339" height="12"/>
+				<reportElement x="432" y="539" width="339" height="12" uuid="59ce7740-e41a-4ba2-83be-cbe3029a5d00"/>
 				<textElement textAlignment="Center" markup="none">
 					<font size="8" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{autentica}]]></textFieldExpression>
 			</textField>
 			<rectangle radius="5">
-				<reportElement x="425" y="502" width="353" height="21"/>
+				<reportElement x="425" y="502" width="353" height="21" uuid="1e5b85a3-5183-4411-8927-1008fef365c6"/>
 				<graphicElement>
 					<pen lineWidth="0.25"/>
 				</graphicElement>
 			</rectangle>
 			<staticText>
-				<reportElement x="433" y="527" width="69" height="12"/>
+				<reportElement x="433" y="527" width="69" height="12" uuid="6e448a1e-b47a-48ec-a55f-6b7cbeba9c2a"/>
 				<textElement>
 					<font size="6" isBold="true" isItalic="true"/>
 				</textElement>
 				<text><![CDATA[Autenticação]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="433" y="505" width="332" height="18"/>
+				<reportElement x="433" y="505" width="332" height="18" uuid="9500279f-5840-4458-aaef-4510235b008d"/>
 				<textElement markup="none">
 					<font size="7" isBold="true" isItalic="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA["RECEBI A PRESENTE PRESTAÇÃO DE CONTAS CONFORME VALOR ABAIXO AUTENTICADO, PELA QUAL DOU QUITAÇÃO."]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="620" y="527" width="69" height="12"/>
+				<reportElement x="620" y="527" width="69" height="12" uuid="9d9ee8ca-a97b-42f5-bbf0-b20525cbb90a"/>
 				<textElement>
 					<font size="6" isBold="true" isItalic="true"/>
 				</textElement>
 				<text><![CDATA[Assinatura]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="264" y="22" width="50" height="13"/>
+				<reportElement x="264" y="22" width="50" height="13" uuid="9f364561-7c90-4f66-ad1d-b42cad3d5e4e"/>
 				<textElement textAlignment="Right">
 					<font size="8" isBold="true" isItalic="true"/>
 				</textElement>
 				<text><![CDATA[Extrato:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement positionType="Float" stretchType="RelativeToBandHeight" x="241" y="7" width="29" height="13"/>
+				<reportElement positionType="Float" stretchType="RelativeToBandHeight" x="241" y="7" width="29" height="13" uuid="ccd711e7-a6a3-4966-b35d-dcb45916bd09"/>
 				<textElement textAlignment="Right" verticalAlignment="Middle">
 					<font size="8" isBold="true" isItalic="false"/>
 				</textElement>
 				<text><![CDATA[Data:]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="238" y="35" width="80" height="13"/>
+				<reportElement x="238" y="35" width="80" height="13" uuid="342c3d68-679c-4963-84ab-f53d36fc33b9"/>
 				<textElement textAlignment="Right">
 					<font size="8" isItalic="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA["Página "+$V{PAGE_NUMBER}+" de"]]></textFieldExpression>
 			</textField>
 			<componentElement>
-				<reportElement x="363" y="7" width="30" height="85"/>
+				<reportElement x="363" y="7" width="30" height="85" uuid="afe84134-3353-4abd-9908-fab551e4d1d6"/>
 				<jr:Codabar xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" orientation="90" textPosition="none">
 					<jr:codeExpression><![CDATA[$F{barras}]]></jr:codeExpression>
 				</jr:Codabar>
 			</componentElement>
 			<textField isBlankWhenNull="true">
-				<reportElement x="48" y="69" width="308" height="20" forecolor="#FF0000"/>
+				<reportElement x="48" y="69" width="308" height="20" forecolor="#FF0000" uuid="8728312c-c4eb-4d44-8de1-771bfae780b1"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="DejaVu Sans" size="10" isBold="true" isItalic="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{mensagem}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" pattern="dd/MM/yyyy - HH:mm" isBlankWhenNull="true">
-				<reportElement positionType="Float" stretchType="RelativeToBandHeight" x="272" y="7" width="86" height="13" isPrintInFirstWholeBand="true"/>
+				<reportElement positionType="Float" stretchType="RelativeToBandHeight" x="272" y="7" width="86" height="13" isPrintInFirstWholeBand="true" uuid="5fec48bf-4f36-40c7-a02f-ec65c1170a4b"/>
 				<textElement textAlignment="Right" verticalAlignment="Middle">
 					<font size="8" isBold="true" isItalic="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
 			</textField>
 			<textField evaluationTime="Report">
-				<reportElement x="318" y="35" width="40" height="13"/>
+				<reportElement x="318" y="35" width="40" height="13" uuid="9da9d265-7fa9-499c-b2d2-2592a789192d"/>
 				<textElement>
 					<font size="8" isItalic="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
 			</textField>
 			<image>
-				<reportElement x="48" y="7" width="185" height="57"/>
+				<reportElement x="48" y="7" width="185" height="57" uuid="628e6e38-26a6-42d7-a5f3-66b5ec22f76e"/>
 				<imageExpression><![CDATA[$F{logoLocation}]]></imageExpression>
 			</image>
 			<textField pattern="###0" isBlankWhenNull="true">
-				<reportElement x="314" y="22" width="44" height="13"/>
+				<reportElement x="314" y="22" width="44" height="13" uuid="b1ac4e75-6c92-4377-b9e3-61ea447e9493"/>
 				<textElement markup="none">
 					<font size="8"/>
 				</textElement>
 				<textFieldExpression><![CDATA[($F{extratoNumero}.isEmpty() ? "Preview" : $F{extratoNumero})]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="96" y="95" width="294" height="12"/>
+				<reportElement x="96" y="95" width="294" height="12" uuid="1c337bd5-ec38-43ab-9cb7-19ddbd194272"/>
 				<textElement markup="none">
 					<font size="8"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{nomeProp}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="48" y="105" width="170" height="13" forecolor="#3333FF"/>
+				<reportElement x="48" y="105" width="170" height="13" forecolor="#3333FF" uuid="00e175ee-ef1e-418a-8225-d4bd2d4fa359"/>
 				<textElement>
 					<font size="8"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{banco}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="49" y="95" width="47" height="12"/>
+				<reportElement x="49" y="95" width="47" height="12" uuid="ffc79f0c-ee9a-40e0-9100-ce3083d72527"/>
 				<textElement>
 					<font size="8" isBold="true" isItalic="true"/>
 				</textElement>
 				<text><![CDATA[Registro:]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="51" y="505" width="332" height="18"/>
+				<reportElement x="51" y="505" width="332" height="18" uuid="b9bc953d-52d9-41f4-94e9-e3e82882ea66"/>
 				<textElement markup="none">
 					<font size="7" isBold="true" isItalic="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA["RECEBI A PRESENTE PRESTAÇÃO DE CONTAS CONFORME VALOR ABAIXO AUTENTICADO, PELA QUAL DOU QUITAÇÃO."]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="284" y="380" width="54" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="284" y="380" width="54" height="10" backcolor="#BFBABA" uuid="6defb45e-8acc-40e4-9d41-3a2b765eb78b"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_cred28}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="44" y="407" width="237" height="10"/>
+				<reportElement mode="Opaque" x="44" y="407" width="237" height="10" uuid="928b6564-9a31-484e-8d43-3a3201370be3"/>
 				<textElement textAlignment="Justified" markup="html">
 					<font fontName="DejaVu Sans" size="8"/>
 					<paragraph tabStopWidth="50"/>
@@ -1814,35 +1814,35 @@ LerValor.LerValor.StringToFloat($F{hist_deb40})]]></variableExpression>
 				<textFieldExpression><![CDATA[($F{hist_linha31_cor}.equals("") ? "" : ($F{hist_linha31_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha31_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha31_cor}.split(";")[2] + ">")) + $F{hist_linha31} + ($F{hist_linha31_cor}.equals("") ? "" : ($F{hist_linha31_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha31_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="340" y="290" width="54" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="340" y="290" width="54" height="10" backcolor="#BFBABA" uuid="16c59243-23c4-451d-9385-400704d79e45"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_deb18}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="284" y="155" width="54" height="10"/>
+				<reportElement mode="Opaque" x="284" y="155" width="54" height="10" uuid="9281a974-29d7-48e4-96c6-3ca9d17f7d04"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_cred03}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="284" y="245" width="54" height="10"/>
+				<reportElement mode="Opaque" x="284" y="245" width="54" height="10" uuid="3798a94f-2947-4eb8-8b85-32df51a4ce8c"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_cred13}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="340" y="317" width="54" height="10"/>
+				<reportElement mode="Opaque" x="340" y="317" width="54" height="10" uuid="dccb21ba-ffd5-479d-800c-812346c942bd"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_deb21}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="44" y="308" width="237" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="44" y="308" width="237" height="10" backcolor="#BFBABA" uuid="8eb5dc6d-e4ea-41e3-a8d4-45255406de96"/>
 				<textElement textAlignment="Justified" markup="html">
 					<font fontName="DejaVu Sans" size="8"/>
 					<paragraph tabStopWidth="50"/>
@@ -1850,7 +1850,7 @@ LerValor.LerValor.StringToFloat($F{hist_deb40})]]></variableExpression>
 				<textFieldExpression><![CDATA[($F{hist_linha20_cor}.equals("") ? "" : ($F{hist_linha20_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha20_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha20_cor}.split(";")[2] + ">")) + $F{hist_linha20} + ($F{hist_linha20_cor}.equals("") ? "" : ($F{hist_linha20_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha20_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="44" y="470" width="237" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="44" y="470" width="237" height="10" backcolor="#BFBABA" uuid="96bd8752-cc36-48e4-9585-7e784faa990d"/>
 				<textElement textAlignment="Justified" markup="html">
 					<font fontName="DejaVu Sans" size="8"/>
 					<paragraph tabStopWidth="50"/>
@@ -1858,14 +1858,14 @@ LerValor.LerValor.StringToFloat($F{hist_deb40})]]></variableExpression>
 				<textFieldExpression><![CDATA[($F{hist_linha38_cor}.equals("") ? "" : ($F{hist_linha38_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha38_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha38_cor}.split(";")[2] + ">")) + $F{hist_linha38} + ($F{hist_linha38_cor}.equals("") ? "" : ($F{hist_linha38_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha38_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement mode="Opaque" x="44" y="124" width="237" height="13" backcolor="#E6E3E3"/>
+				<reportElement mode="Opaque" x="44" y="124" width="237" height="13" backcolor="#E6E3E3" uuid="ac2f61d7-94e2-4d0b-965e-f1302d742039"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font size="7" isBold="true" isItalic="true"/>
 				</textElement>
 				<text><![CDATA[HISTÓRICO]]></text>
 			</staticText>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="44" y="362" width="237" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="44" y="362" width="237" height="10" backcolor="#BFBABA" uuid="76980ac1-c290-42b7-b4d3-d6b081013ed4"/>
 				<textElement textAlignment="Justified" markup="html">
 					<font fontName="DejaVu Sans" size="8"/>
 					<paragraph tabStopWidth="50"/>
@@ -1873,7 +1873,7 @@ LerValor.LerValor.StringToFloat($F{hist_deb40})]]></variableExpression>
 				<textFieldExpression><![CDATA[($F{hist_linha26_cor}.equals("") ? "" : ($F{hist_linha26_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha26_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha26_cor}.split(";")[2] + ">")) + $F{hist_linha26} + ($F{hist_linha26_cor}.equals("") ? "" : ($F{hist_linha26_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha26_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="44" y="443" width="237" height="10"/>
+				<reportElement mode="Opaque" x="44" y="443" width="237" height="10" uuid="1cb0f087-63ff-4676-8ff0-5ce3c5d3bb13"/>
 				<textElement textAlignment="Justified" markup="html">
 					<font fontName="DejaVu Sans" size="8"/>
 					<paragraph tabStopWidth="50"/>
@@ -1881,21 +1881,21 @@ LerValor.LerValor.StringToFloat($F{hist_deb40})]]></variableExpression>
 				<textFieldExpression><![CDATA[($F{hist_linha35_cor}.equals("") ? "" : ($F{hist_linha35_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha35_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha35_cor}.split(";")[2] + ">")) + $F{hist_linha35} + ($F{hist_linha35_cor}.equals("") ? "" : ($F{hist_linha35_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha35_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="340" y="470" width="54" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="340" y="470" width="54" height="10" backcolor="#BFBABA" uuid="8bd60c08-502a-480c-9b3a-90f2c7d74a84"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_deb38}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="340" y="398" width="54" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="340" y="398" width="54" height="10" backcolor="#BFBABA" uuid="81813677-2a22-4a49-8197-f8115d20fa77"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_deb30}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="44" y="191" width="237" height="10"/>
+				<reportElement mode="Opaque" x="44" y="191" width="237" height="10" uuid="b9b42d30-7203-4882-be15-ccabc8a7bb85"/>
 				<textElement textAlignment="Justified" markup="html">
 					<font fontName="DejaVu Sans" size="8"/>
 					<paragraph tabStopWidth="50"/>
@@ -1903,7 +1903,7 @@ LerValor.LerValor.StringToFloat($F{hist_deb40})]]></variableExpression>
 				<textFieldExpression><![CDATA[($F{hist_linha07_cor}.equals("") ? "" : ($F{hist_linha07_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha07_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha07_cor}.split(";")[2] + ">")) + $F{hist_linha07} + ($F{hist_linha07_cor}.equals("") ? "" : ($F{hist_linha07_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha07_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="44" y="317" width="237" height="10"/>
+				<reportElement mode="Opaque" x="44" y="317" width="237" height="10" uuid="be5b3f3c-3774-4995-82d2-e55b93843b26"/>
 				<textElement textAlignment="Justified" markup="html">
 					<font fontName="DejaVu Sans" size="8"/>
 					<paragraph tabStopWidth="50"/>
@@ -1911,14 +1911,14 @@ LerValor.LerValor.StringToFloat($F{hist_deb40})]]></variableExpression>
 				<textFieldExpression><![CDATA[($F{hist_linha21_cor}.equals("") ? "" : ($F{hist_linha21_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha21_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha21_cor}.split(";")[2] + ">")) + $F{hist_linha21} + ($F{hist_linha21_cor}.equals("") ? "" : ($F{hist_linha21_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha21_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="284" y="344" width="54" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="284" y="344" width="54" height="10" backcolor="#BFBABA" uuid="b395ee0e-1618-4447-93de-1a12fbf2f7ed"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_cred24}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="44" y="344" width="237" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="44" y="344" width="237" height="10" backcolor="#BFBABA" uuid="3798c34e-ef7b-4694-9c34-daae78d939a1"/>
 				<textElement textAlignment="Justified" markup="html">
 					<font fontName="DejaVu Sans" size="8"/>
 					<paragraph tabStopWidth="50"/>
@@ -1926,14 +1926,14 @@ LerValor.LerValor.StringToFloat($F{hist_deb40})]]></variableExpression>
 				<textFieldExpression><![CDATA[($F{hist_linha24_cor}.equals("") ? "" : ($F{hist_linha24_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha24_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha24_cor}.split(";")[2] + ">")) + $F{hist_linha24} + ($F{hist_linha24_cor}.equals("") ? "" : ($F{hist_linha24_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha24_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="284" y="335" width="54" height="10"/>
+				<reportElement mode="Opaque" x="284" y="335" width="54" height="10" uuid="fa81fab5-d672-4ebd-9b87-acc58b28e0a3"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_cred23}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="44" y="416" width="237" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="44" y="416" width="237" height="10" backcolor="#BFBABA" uuid="38bb2b0f-6bbb-41b3-bfd0-0bdccdc62da5"/>
 				<textElement textAlignment="Justified" markup="html">
 					<font fontName="DejaVu Sans" size="8"/>
 					<paragraph tabStopWidth="50"/>
@@ -1941,21 +1941,21 @@ LerValor.LerValor.StringToFloat($F{hist_deb40})]]></variableExpression>
 				<textFieldExpression><![CDATA[($F{hist_linha32_cor}.equals("") ? "" : ($F{hist_linha32_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha32_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha32_cor}.split(";")[2] + ">")) + $F{hist_linha32} + ($F{hist_linha32_cor}.equals("") ? "" : ($F{hist_linha32_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha32_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="284" y="308" width="54" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="284" y="308" width="54" height="10" backcolor="#BFBABA" uuid="392af838-ce44-43d1-abb2-7a562d1ac814"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_cred20}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="284" y="209" width="54" height="10"/>
+				<reportElement mode="Opaque" x="284" y="209" width="54" height="10" uuid="9e23ba28-2b73-4baa-b519-f3a0daa40b15"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_cred09}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="44" y="209" width="237" height="10"/>
+				<reportElement mode="Opaque" x="44" y="209" width="237" height="10" uuid="c6cab128-3259-4121-ac3d-9af44a00aead"/>
 				<textElement textAlignment="Justified" markup="html">
 					<font fontName="DejaVu Sans" size="8"/>
 					<paragraph tabStopWidth="50"/>
@@ -1963,7 +1963,7 @@ LerValor.LerValor.StringToFloat($F{hist_deb40})]]></variableExpression>
 				<textFieldExpression><![CDATA[($F{hist_linha09_cor}.equals("") ? "" : ($F{hist_linha09_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha09_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha09_cor}.split(";")[2] + ">")) + $F{hist_linha09} + ($F{hist_linha09_cor}.equals("") ? "" : ($F{hist_linha09_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha09_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
 			</textField>
 			<textField pattern="" isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="44" y="137" width="237" height="10"/>
+				<reportElement mode="Opaque" x="44" y="137" width="237" height="10" uuid="f349dc04-7f47-427d-909e-d5f8dcdd2d7f"/>
 				<textElement textAlignment="Justified" markup="html">
 					<font fontName="DejaVu Sans" size="8" isStrikeThrough="false"/>
 					<paragraph tabStopWidth="50"/>
@@ -1971,28 +1971,28 @@ LerValor.LerValor.StringToFloat($F{hist_deb40})]]></variableExpression>
 				<textFieldExpression><![CDATA[($F{hist_linha01_cor}.equals("") ? "" : ($F{hist_linha01_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha01_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha01_cor}.split(";")[2] + ">")) + $F{hist_linha01} + ($F{hist_linha01_cor}.equals("") ? "" : ($F{hist_linha01_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha01_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="340" y="371" width="54" height="10"/>
+				<reportElement mode="Opaque" x="340" y="371" width="54" height="10" uuid="7dbab5d5-9c64-4ad0-a3b7-f89e8c5c6c5a"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_deb27}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="340" y="182" width="54" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="340" y="182" width="54" height="10" backcolor="#BFBABA" uuid="5e5c98d3-2720-48a5-a291-9cc0889dbb01"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_deb06}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="340" y="236" width="54" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="340" y="236" width="54" height="10" backcolor="#BFBABA" uuid="a4748935-d3e8-4b3f-b8cb-08df5e02efe1"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_deb12}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="44" y="173" width="237" height="10"/>
+				<reportElement mode="Opaque" x="44" y="173" width="237" height="10" uuid="56cc2e73-5b9e-4297-9817-3607558694b2"/>
 				<textElement textAlignment="Justified" markup="html">
 					<font fontName="DejaVu Sans" size="8"/>
 					<paragraph tabStopWidth="50"/>
@@ -2000,42 +2000,42 @@ LerValor.LerValor.StringToFloat($F{hist_deb40})]]></variableExpression>
 				<textFieldExpression><![CDATA[($F{hist_linha05_cor}.equals("") ? "" : ($F{hist_linha05_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha05_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha05_cor}.split(";")[2] + ">")) + $F{hist_linha05} + ($F{hist_linha05_cor}.equals("") ? "" : ($F{hist_linha05_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha05_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="284" y="254" width="54" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="284" y="254" width="54" height="10" backcolor="#BFBABA" uuid="dd0282d3-f22d-45da-9e0f-eb6b4f796ed3"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_cred14}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="284" y="137" width="54" height="10"/>
+				<reportElement mode="Opaque" x="284" y="137" width="54" height="10" uuid="eaf6e9e8-583a-4823-abc1-ffe52cdebafc"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_cred01}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="340" y="254" width="54" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="340" y="254" width="54" height="10" backcolor="#BFBABA" uuid="3b13295f-370d-4633-b7c3-42464a05e941"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_deb14}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="340" y="155" width="54" height="10"/>
+				<reportElement mode="Opaque" x="340" y="155" width="54" height="10" uuid="61f644a7-a051-43d6-8c8f-f725542a3099"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_deb03}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="284" y="173" width="54" height="10"/>
+				<reportElement mode="Opaque" x="284" y="173" width="54" height="10" uuid="f3e5c996-62a0-4c48-83ba-8030726ba7ff"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_cred05}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="44" y="281" width="237" height="10"/>
+				<reportElement mode="Opaque" x="44" y="281" width="237" height="10" uuid="ecad5fe7-288b-4580-9737-5a882bf5b39d"/>
 				<textElement textAlignment="Justified" markup="html">
 					<font fontName="DejaVu Sans" size="8"/>
 					<paragraph tabStopWidth="50"/>
@@ -2043,21 +2043,21 @@ LerValor.LerValor.StringToFloat($F{hist_deb40})]]></variableExpression>
 				<textFieldExpression><![CDATA[($F{hist_linha17_cor}.equals("") ? "" : ($F{hist_linha17_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha17_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha17_cor}.split(";")[2] + ">")) + $F{hist_linha17} + ($F{hist_linha17_cor}.equals("") ? "" : ($F{hist_linha17_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha17_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="284" y="443" width="54" height="10"/>
+				<reportElement mode="Opaque" x="284" y="443" width="54" height="10" uuid="3c782d2f-c75e-44b2-8ced-9193eb5cbb2a"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_cred35}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="284" y="479" width="54" height="10"/>
+				<reportElement mode="Opaque" x="284" y="479" width="54" height="10" uuid="220f6294-1922-4434-87ef-4feb55ab55b5"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_cred39}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="44" y="155" width="237" height="10"/>
+				<reportElement mode="Opaque" x="44" y="155" width="237" height="10" uuid="fd067ec5-8bbd-47ef-81e1-d2ccb29508f2"/>
 				<textElement textAlignment="Justified" markup="html">
 					<font fontName="DejaVu Sans" size="8"/>
 					<paragraph tabStopWidth="50"/>
@@ -2065,48 +2065,48 @@ LerValor.LerValor.StringToFloat($F{hist_deb40})]]></variableExpression>
 				<textFieldExpression><![CDATA[($F{hist_linha03_cor}.equals("") ? "" : ($F{hist_linha03_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha03_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha03_cor}.split(";")[2] + ">")) + $F{hist_linha03} + ($F{hist_linha03_cor}.equals("") ? "" : ($F{hist_linha03_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha03_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="284" y="326" width="54" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="284" y="326" width="54" height="10" backcolor="#BFBABA" uuid="553e4ec3-8fb7-4745-aa56-294863ee98ed"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_cred22}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="284" y="353" width="54" height="10"/>
+				<reportElement mode="Opaque" x="284" y="353" width="54" height="10" uuid="816a472b-72f2-4305-a66d-b48ceac98cec"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_cred25}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="284" y="389" width="54" height="10"/>
+				<reportElement mode="Opaque" x="284" y="389" width="54" height="10" uuid="dcc5abc8-56e3-4cab-90b5-6df5fbcf51f6"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_cred29}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="284" y="317" width="54" height="10"/>
+				<reportElement mode="Opaque" x="284" y="317" width="54" height="10" uuid="c0c41009-f37b-4950-9cb5-74643d092bdf"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_cred21}]]></textFieldExpression>
 			</textField>
 			<line>
-				<reportElement x="339" y="120" width="1" height="382"/>
+				<reportElement x="339" y="120" width="1" height="382" uuid="837f3f15-bb05-4662-a17a-503959b3d58a"/>
 				<graphicElement>
 					<pen lineWidth="0.25"/>
 				</graphicElement>
 			</line>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="340" y="335" width="54" height="10"/>
+				<reportElement mode="Opaque" x="340" y="335" width="54" height="10" uuid="d0dfe528-55ef-434d-b1cc-442c377db070"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_deb23}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="44" y="425" width="237" height="10"/>
+				<reportElement mode="Opaque" x="44" y="425" width="237" height="10" uuid="ae57c829-b45d-442d-b10f-3a2ba5970c63"/>
 				<textElement textAlignment="Justified" markup="html">
 					<font fontName="DejaVu Sans" size="8"/>
 					<paragraph tabStopWidth="50"/>
@@ -2114,42 +2114,42 @@ LerValor.LerValor.StringToFloat($F{hist_deb40})]]></variableExpression>
 				<textFieldExpression><![CDATA[($F{hist_linha33_cor}.equals("") ? "" : ($F{hist_linha33_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha33_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha33_cor}.split(";")[2] + ">")) + $F{hist_linha33} + ($F{hist_linha33_cor}.equals("") ? "" : ($F{hist_linha33_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha33_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="340" y="146" width="54" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="340" y="146" width="54" height="10" backcolor="#BFBABA" uuid="50efe3ec-0b4e-4126-8ccf-3c9dbd6bb82b"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_deb02}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="340" y="380" width="54" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="340" y="380" width="54" height="10" backcolor="#BFBABA" uuid="f6b5c8a0-35cc-44e6-bd6f-fbdc15899248"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_deb28}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="284" y="371" width="54" height="10"/>
+				<reportElement mode="Opaque" x="284" y="371" width="54" height="10" uuid="0fa7822c-c15f-492e-96b5-b44a53992dee"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_cred27}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="284" y="200" width="54" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="284" y="200" width="54" height="10" backcolor="#BFBABA" uuid="77f68d21-ade8-4d36-841a-102c2e03b3f2"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_cred08}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="340" y="443" width="54" height="10"/>
+				<reportElement mode="Opaque" x="340" y="443" width="54" height="10" uuid="157be24a-ddac-41f0-bf75-7954cc323b75"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_deb35}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="44" y="380" width="237" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="44" y="380" width="237" height="10" backcolor="#BFBABA" uuid="7f354601-afd7-43dd-b4b4-14ef956d0c99"/>
 				<textElement textAlignment="Justified" markup="html">
 					<font fontName="DejaVu Sans" size="8"/>
 					<paragraph tabStopWidth="50"/>
@@ -2157,14 +2157,14 @@ LerValor.LerValor.StringToFloat($F{hist_deb40})]]></variableExpression>
 				<textFieldExpression><![CDATA[($F{hist_linha28_cor}.equals("") ? "" : ($F{hist_linha28_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha28_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha28_cor}.split(";")[2] + ">")) + $F{hist_linha28} + ($F{hist_linha28_cor}.equals("") ? "" : ($F{hist_linha28_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha28_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="284" y="434" width="54" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="284" y="434" width="54" height="10" backcolor="#BFBABA" uuid="3e6fc294-4c93-4cb1-9c60-623d30732f36"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_cred34}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="44" y="452" width="237" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="44" y="452" width="237" height="10" backcolor="#BFBABA" uuid="efabb931-4599-4cd4-928e-4d05a081c894"/>
 				<textElement textAlignment="Justified" markup="html">
 					<font fontName="DejaVu Sans" size="8"/>
 					<paragraph tabStopWidth="50"/>
@@ -2172,48 +2172,48 @@ LerValor.LerValor.StringToFloat($F{hist_deb40})]]></variableExpression>
 				<textFieldExpression><![CDATA[($F{hist_linha36_cor}.equals("") ? "" : ($F{hist_linha36_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha36_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha36_cor}.split(";")[2] + ">")) + $F{hist_linha36} + ($F{hist_linha36_cor}.equals("") ? "" : ($F{hist_linha36_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha36_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
 			</textField>
 			<line>
-				<reportElement x="282" y="120" width="1" height="382"/>
+				<reportElement x="282" y="120" width="1" height="382" uuid="8b891228-b012-41ee-8c0e-4221ae95a50f"/>
 				<graphicElement>
 					<pen lineWidth="0.25"/>
 				</graphicElement>
 			</line>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="340" y="479" width="54" height="10"/>
+				<reportElement mode="Opaque" x="340" y="479" width="54" height="10" uuid="0a053126-2d67-4610-b4ba-bbca286168fd"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_deb39}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="284" y="218" width="54" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="284" y="218" width="54" height="10" backcolor="#BFBABA" uuid="d46dcec6-648d-4de0-be58-ca5de7adf765"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_cred10}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="340" y="461" width="54" height="10"/>
+				<reportElement mode="Opaque" x="340" y="461" width="54" height="10" uuid="edabe1e9-dde2-43b0-a58c-e3e2acee550f"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_deb37}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="284" y="263" width="54" height="10"/>
+				<reportElement mode="Opaque" x="284" y="263" width="54" height="10" uuid="c7b09275-5474-4b05-adad-a452869e4ef3"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_cred15}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="340" y="407" width="54" height="10"/>
+				<reportElement mode="Opaque" x="340" y="407" width="54" height="10" uuid="29f1bb67-f405-46bf-a77b-f56703ac923c"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_deb31}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="44" y="245" width="237" height="10"/>
+				<reportElement mode="Opaque" x="44" y="245" width="237" height="10" uuid="85f7ef17-6b89-4ab9-bf60-13134f6681d9"/>
 				<textElement textAlignment="Justified" markup="html">
 					<font fontName="DejaVu Sans" size="8"/>
 					<paragraph tabStopWidth="50"/>
@@ -2221,14 +2221,14 @@ LerValor.LerValor.StringToFloat($F{hist_deb40})]]></variableExpression>
 				<textFieldExpression><![CDATA[($F{hist_linha13_cor}.equals("") ? "" : ($F{hist_linha13_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha13_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha13_cor}.split(";")[2] + ">")) + $F{hist_linha13} + ($F{hist_linha13_cor}.equals("") ? "" : ($F{hist_linha13_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha13_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="284" y="398" width="54" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="284" y="398" width="54" height="10" backcolor="#BFBABA" uuid="b70c4c70-a541-47a3-8a59-ac5fb3915042"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_cred30}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="44" y="479" width="237" height="10"/>
+				<reportElement mode="Opaque" x="44" y="479" width="237" height="10" uuid="8b762601-14d9-47f7-8c3f-2010d1d7345a"/>
 				<textElement textAlignment="Justified" markup="html">
 					<font fontName="DejaVu Sans" size="8"/>
 					<paragraph tabStopWidth="50"/>
@@ -2236,7 +2236,7 @@ LerValor.LerValor.StringToFloat($F{hist_deb40})]]></variableExpression>
 				<textFieldExpression><![CDATA[($F{hist_linha39_cor}.equals("") ? "" : ($F{hist_linha39_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha39_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha39_cor}.split(";")[2] + ">")) + $F{hist_linha39} + ($F{hist_linha39_cor}.equals("") ? "" : ($F{hist_linha39_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha39_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="44" y="299" width="237" height="10"/>
+				<reportElement mode="Opaque" x="44" y="299" width="237" height="10" uuid="489a2557-ad12-437b-80ea-af33ca34e2e4"/>
 				<textElement textAlignment="Justified" markup="html">
 					<font fontName="DejaVu Sans" size="8"/>
 					<paragraph tabStopWidth="50"/>
@@ -2244,7 +2244,7 @@ LerValor.LerValor.StringToFloat($F{hist_deb40})]]></variableExpression>
 				<textFieldExpression><![CDATA[($F{hist_linha19_cor}.equals("") ? "" : ($F{hist_linha19_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha19_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha19_cor}.split(";")[2] + ">")) + $F{hist_linha19} + ($F{hist_linha19_cor}.equals("") ? "" : ($F{hist_linha19_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha19_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="44" y="272" width="237" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="44" y="272" width="237" height="10" backcolor="#BFBABA" uuid="edbf8e3c-108c-4cc8-80f1-01b1d3516dba"/>
 				<textElement textAlignment="Justified" markup="html">
 					<font fontName="DejaVu Sans" size="8"/>
 					<paragraph tabStopWidth="50"/>
@@ -2252,7 +2252,7 @@ LerValor.LerValor.StringToFloat($F{hist_deb40})]]></variableExpression>
 				<textFieldExpression><![CDATA[($F{hist_linha16_cor}.equals("") ? "" : ($F{hist_linha16_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha16_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha16_cor}.split(";")[2] + ">")) + $F{hist_linha16} + ($F{hist_linha16_cor}.equals("") ? "" : ($F{hist_linha16_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha16_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="44" y="227" width="237" height="10"/>
+				<reportElement mode="Opaque" x="44" y="227" width="237" height="10" uuid="7ca41b16-7633-443f-81c9-7e4bbaa52996"/>
 				<textElement textAlignment="Justified" markup="html">
 					<font fontName="DejaVu Sans" size="8"/>
 					<paragraph tabStopWidth="50"/>
@@ -2260,49 +2260,49 @@ LerValor.LerValor.StringToFloat($F{hist_deb40})]]></variableExpression>
 				<textFieldExpression><![CDATA[($F{hist_linha11_cor}.equals("") ? "" : ($F{hist_linha11_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha11_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha11_cor}.split(";")[2] + ">")) + $F{hist_linha11} + ($F{hist_linha11_cor}.equals("") ? "" : ($F{hist_linha11_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha11_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="284" y="182" width="54" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="284" y="182" width="54" height="10" backcolor="#BFBABA" uuid="219969cc-5b02-4e43-83a8-af0608271d44"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_cred06}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="284" y="299" width="54" height="10"/>
+				<reportElement mode="Opaque" x="284" y="299" width="54" height="10" uuid="69b4024d-5201-4ce5-993c-14c03aa4ca64"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_cred19}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="340" y="137" width="54" height="10"/>
+				<reportElement mode="Opaque" x="340" y="137" width="54" height="10" uuid="45c8035b-b4ea-4a0a-98a4-2c803c847360"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_deb01}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="340" y="362" width="54" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="340" y="362" width="54" height="10" backcolor="#BFBABA" uuid="db07f234-1552-4c74-935c-a27bbb78fc89"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_deb26}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="340" y="245" width="54" height="10"/>
+				<reportElement mode="Opaque" x="340" y="245" width="54" height="10" uuid="4357ea79-5541-4934-bcd0-c637f1e8824e"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_deb13}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="340" y="173" width="54" height="10"/>
+				<reportElement mode="Opaque" x="340" y="173" width="54" height="10" uuid="55ac74cb-d029-44dc-b7f0-4d394662eb13"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_deb05}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="44" y="254" width="237" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="44" y="254" width="237" height="10" backcolor="#BFBABA" uuid="c38f7369-1b22-459c-85fc-e12b87dc5f46"/>
 				<textElement textAlignment="Justified" markup="html">
 					<font fontName="DejaVu Sans" size="8"/>
 					<paragraph tabStopWidth="50"/>
@@ -2310,7 +2310,7 @@ LerValor.LerValor.StringToFloat($F{hist_deb40})]]></variableExpression>
 				<textFieldExpression><![CDATA[($F{hist_linha14_cor}.equals("") ? "" : ($F{hist_linha14_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha14_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha14_cor}.split(";")[2] + ">")) + $F{hist_linha14} + ($F{hist_linha14_cor}.equals("") ? "" : ($F{hist_linha14_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha14_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="44" y="146" width="237" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="44" y="146" width="237" height="10" backcolor="#BFBABA" uuid="0f27d1ea-d20e-4b9d-9beb-45f4474d9519"/>
 				<textElement textAlignment="Justified" markup="html">
 					<font fontName="DejaVu Sans" size="8"/>
 					<paragraph tabStopWidth="50"/>
@@ -2318,63 +2318,63 @@ LerValor.LerValor.StringToFloat($F{hist_deb40})]]></variableExpression>
 				<textFieldExpression><![CDATA[($F{hist_linha02_cor}.equals("") ? "" : ($F{hist_linha02_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha02_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha02_cor}.split(";")[2] + ">")) + $F{hist_linha02} + ($F{hist_linha02_cor}.equals("") ? "" : ($F{hist_linha02_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha02_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement mode="Opaque" x="340" y="124" width="54" height="13" backcolor="#E6E3E3"/>
+				<reportElement mode="Opaque" x="340" y="124" width="54" height="13" backcolor="#E6E3E3" uuid="c2249f01-080d-4755-85c5-c6cadd453401"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font size="7" isBold="true" isItalic="true"/>
 				</textElement>
 				<text><![CDATA[DÉBITO]]></text>
 			</staticText>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="284" y="227" width="54" height="10"/>
+				<reportElement mode="Opaque" x="284" y="227" width="54" height="10" uuid="089b923d-5663-4897-99e4-dc36b876b447"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_cred11}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="284" y="488" width="54" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="284" y="488" width="54" height="10" backcolor="#BFBABA" uuid="4baa40dc-3c70-455d-a76b-2c340a55197b"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_cred40}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="340" y="191" width="54" height="10"/>
+				<reportElement mode="Opaque" x="340" y="191" width="54" height="10" uuid="a87a53a8-50f1-414e-aa2d-d03ee6aec7da"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_deb07}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="284" y="290" width="54" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="284" y="290" width="54" height="10" backcolor="#BFBABA" uuid="65f436f9-c8d3-40af-bdca-e8eed14e4d48"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_cred18}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement mode="Opaque" x="284" y="124" width="54" height="13" backcolor="#E6E3E3"/>
+				<reportElement mode="Opaque" x="284" y="124" width="54" height="13" backcolor="#E6E3E3" uuid="fcd14ab0-50c1-42a3-a6e8-0c0efa898ef0"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font size="7" isBold="true" isItalic="true"/>
 				</textElement>
 				<text><![CDATA[CRÉDITO]]></text>
 			</staticText>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="340" y="344" width="54" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="340" y="344" width="54" height="10" backcolor="#BFBABA" uuid="6f8494a0-c115-40fe-92fc-5db88a77a8ef"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_deb24}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="340" y="227" width="54" height="10"/>
+				<reportElement mode="Opaque" x="340" y="227" width="54" height="10" uuid="55d173de-ad5b-420f-b2f7-da60e7bf2893"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_deb11}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="44" y="488" width="237" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="44" y="488" width="237" height="10" backcolor="#BFBABA" uuid="01596b72-bbc6-446c-abb8-a348608e7614"/>
 				<textElement textAlignment="Justified" markup="html">
 					<font fontName="DejaVu Sans" size="8"/>
 					<paragraph tabStopWidth="50"/>
@@ -2382,35 +2382,35 @@ LerValor.LerValor.StringToFloat($F{hist_deb40})]]></variableExpression>
 				<textFieldExpression><![CDATA[($F{hist_linha40_cor}.equals("") ? "" : ($F{hist_linha40_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha40_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha40_cor}.split(";")[2] + ">")) + $F{hist_linha40} + ($F{hist_linha40_cor}.equals("") ? "" : ($F{hist_linha40_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha40_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="340" y="272" width="54" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="340" y="272" width="54" height="10" backcolor="#BFBABA" uuid="4ac70ea3-a416-441e-9b21-388240102841"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_deb16}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="340" y="218" width="54" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="340" y="218" width="54" height="10" backcolor="#BFBABA" uuid="258fc28e-170e-4d52-8fec-5c8731b6efa5"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_deb10}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="284" y="407" width="54" height="10"/>
+				<reportElement mode="Opaque" x="284" y="407" width="54" height="10" uuid="65319df3-061b-4a4b-8231-5d89e57edd97"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_cred31}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="340" y="425" width="54" height="10"/>
+				<reportElement mode="Opaque" x="340" y="425" width="54" height="10" uuid="2e27aef4-133c-404d-a420-c6a501300bf6"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_deb33}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="44" y="461" width="237" height="10"/>
+				<reportElement mode="Opaque" x="44" y="461" width="237" height="10" uuid="d6bf91c4-e703-4429-9580-ab30c05bcebb"/>
 				<textElement textAlignment="Justified" markup="html">
 					<font fontName="DejaVu Sans" size="8"/>
 					<paragraph tabStopWidth="50"/>
@@ -2418,28 +2418,28 @@ LerValor.LerValor.StringToFloat($F{hist_deb40})]]></variableExpression>
 				<textFieldExpression><![CDATA[($F{hist_linha37_cor}.equals("") ? "" : ($F{hist_linha37_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha37_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha37_cor}.split(";")[2] + ">")) + $F{hist_linha37} + ($F{hist_linha37_cor}.equals("") ? "" : ($F{hist_linha37_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha37_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="340" y="200" width="54" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="340" y="200" width="54" height="10" backcolor="#BFBABA" uuid="5ce54129-d46a-4490-9d61-96a9b96b0269"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_deb08}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="284" y="236" width="54" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="284" y="236" width="54" height="10" backcolor="#BFBABA" uuid="58c816d0-1bf0-44cf-ac48-a5a0560d8fba"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_cred12}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="284" y="362" width="54" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="284" y="362" width="54" height="10" backcolor="#BFBABA" uuid="e8648c8c-39bd-438c-aeb0-b1a8adde1960"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_cred26}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="44" y="218" width="237" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="44" y="218" width="237" height="10" backcolor="#BFBABA" uuid="502bfc24-e1e5-4bfb-8fdf-69d99cb01951"/>
 				<textElement textAlignment="Justified" markup="html">
 					<font fontName="DejaVu Sans" size="8"/>
 					<paragraph tabStopWidth="50"/>
@@ -2447,49 +2447,49 @@ LerValor.LerValor.StringToFloat($F{hist_deb40})]]></variableExpression>
 				<textFieldExpression><![CDATA[($F{hist_linha10_cor}.equals("") ? "" : ($F{hist_linha10_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha10_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha10_cor}.split(";")[2] + ">")) + $F{hist_linha10} + ($F{hist_linha10_cor}.equals("") ? "" : ($F{hist_linha10_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha10_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="340" y="488" width="54" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="340" y="488" width="54" height="10" backcolor="#BFBABA" uuid="30292e86-a6a2-42ce-a79e-e663934caf79"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_deb40}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="340" y="209" width="54" height="10"/>
+				<reportElement mode="Opaque" x="340" y="209" width="54" height="10" uuid="69a7e5dd-1779-4826-a7c2-f697976ac4e2"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_deb09}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="340" y="164" width="54" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="340" y="164" width="54" height="10" backcolor="#BFBABA" uuid="d9de371c-6101-4cff-9eca-5849e126f6aa"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_deb04}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="340" y="434" width="54" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="340" y="434" width="54" height="10" backcolor="#BFBABA" uuid="1b48cda1-7939-4296-ac34-f9bec983bee7"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_deb34}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="340" y="416" width="54" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="340" y="416" width="54" height="10" backcolor="#BFBABA" uuid="96f91a09-0600-4db3-b47e-87c7f01a34ea"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_deb32}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="284" y="416" width="54" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="284" y="416" width="54" height="10" backcolor="#BFBABA" uuid="6945fe58-5a72-496b-89f4-3cb8d4970bcf"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_cred32}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="44" y="290" width="237" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="44" y="290" width="237" height="10" backcolor="#BFBABA" uuid="6f6c2d33-a6e3-4939-bd2a-c4a1fc292aaf"/>
 				<textElement textAlignment="Justified" markup="html">
 					<font fontName="DejaVu Sans" size="8"/>
 					<paragraph tabStopWidth="50"/>
@@ -2497,7 +2497,7 @@ LerValor.LerValor.StringToFloat($F{hist_deb40})]]></variableExpression>
 				<textFieldExpression><![CDATA[($F{hist_linha18_cor}.equals("") ? "" : ($F{hist_linha18_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha18_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha18_cor}.split(";")[2] + ">")) + $F{hist_linha18} + ($F{hist_linha18_cor}.equals("") ? "" : ($F{hist_linha18_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha18_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="44" y="164" width="237" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="44" y="164" width="237" height="10" backcolor="#BFBABA" uuid="bc745224-4130-4901-808a-8fe1de7716cb"/>
 				<textElement textAlignment="Justified" markup="html">
 					<font fontName="DejaVu Sans" size="8"/>
 					<paragraph tabStopWidth="50"/>
@@ -2505,56 +2505,56 @@ LerValor.LerValor.StringToFloat($F{hist_deb40})]]></variableExpression>
 				<textFieldExpression><![CDATA[($F{hist_linha04_cor}.equals("") ? "" : ($F{hist_linha04_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha04_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha04_cor}.split(";")[2] + ">")) + $F{hist_linha04} + ($F{hist_linha04_cor}.equals("") ? "" : ($F{hist_linha04_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha04_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="284" y="146" width="54" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="284" y="146" width="54" height="10" backcolor="#BFBABA" uuid="9f3fb830-5b1f-4d6d-9fd7-422e3b88615b"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_cred02}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="284" y="425" width="54" height="10"/>
+				<reportElement mode="Opaque" x="284" y="425" width="54" height="10" uuid="45673482-3ba3-4f06-aa4a-e48a6978fde9"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_cred33}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="284" y="164" width="54" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="284" y="164" width="54" height="10" backcolor="#BFBABA" uuid="60efb893-444a-4ab6-bd09-9a7a5c51bdf3"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_cred04}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="340" y="353" width="54" height="10"/>
+				<reportElement mode="Opaque" x="340" y="353" width="54" height="10" uuid="6bbfe7cd-ae26-4524-912c-5bcac13ec397"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_deb25}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="284" y="281" width="54" height="10"/>
+				<reportElement mode="Opaque" x="284" y="281" width="54" height="10" uuid="9e4d0ae6-f7e5-4b95-9d3f-b0d476ca9fd0"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_cred17}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="340" y="389" width="54" height="10"/>
+				<reportElement mode="Opaque" x="340" y="389" width="54" height="10" uuid="a676aef1-39e3-4eb6-93d5-33c7f533e09f"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_deb29}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="284" y="461" width="54" height="10"/>
+				<reportElement mode="Opaque" x="284" y="461" width="54" height="10" uuid="e2dea05e-55e1-4230-a383-658b1abf4fe1"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_cred37}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="44" y="326" width="237" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="44" y="326" width="237" height="10" backcolor="#BFBABA" uuid="3552e495-4b40-4272-af76-c60cc614d316"/>
 				<textElement textAlignment="Justified" markup="html">
 					<font fontName="DejaVu Sans" size="8"/>
 					<paragraph tabStopWidth="50"/>
@@ -2562,21 +2562,21 @@ LerValor.LerValor.StringToFloat($F{hist_deb40})]]></variableExpression>
 				<textFieldExpression><![CDATA[($F{hist_linha22_cor}.equals("") ? "" : ($F{hist_linha22_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha22_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha22_cor}.split(";")[2] + ">")) + $F{hist_linha22} + ($F{hist_linha22_cor}.equals("") ? "" : ($F{hist_linha22_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha22_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="340" y="326" width="54" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="340" y="326" width="54" height="10" backcolor="#BFBABA" uuid="207600ed-5472-428e-8694-a3f4dc3f8496"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_deb22}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="284" y="470" width="54" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="284" y="470" width="54" height="10" backcolor="#BFBABA" uuid="4e3e4195-331c-436c-962b-f631a59a8170"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_cred38}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="44" y="182" width="237" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="44" y="182" width="237" height="10" backcolor="#BFBABA" uuid="c4635029-8dd2-4707-9f37-d62577fc158e"/>
 				<textElement textAlignment="Justified" markup="html">
 					<font fontName="DejaVu Sans" size="8"/>
 					<paragraph tabStopWidth="50"/>
@@ -2584,14 +2584,14 @@ LerValor.LerValor.StringToFloat($F{hist_deb40})]]></variableExpression>
 				<textFieldExpression><![CDATA[($F{hist_linha06_cor}.equals("") ? "" : ($F{hist_linha06_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha06_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha06_cor}.split(";")[2] + ">")) + $F{hist_linha06} + ($F{hist_linha06_cor}.equals("") ? "" : ($F{hist_linha06_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha06_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="340" y="281" width="54" height="10"/>
+				<reportElement mode="Opaque" x="340" y="281" width="54" height="10" uuid="4eadb448-5f25-4d61-ba7a-b61f235e55bd"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_deb17}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="44" y="353" width="237" height="10"/>
+				<reportElement mode="Opaque" x="44" y="353" width="237" height="10" uuid="21208921-5a0e-4edd-bdaf-6907f87e062c"/>
 				<textElement textAlignment="Justified" markup="html">
 					<font fontName="DejaVu Sans" size="8"/>
 					<paragraph tabStopWidth="50"/>
@@ -2599,21 +2599,21 @@ LerValor.LerValor.StringToFloat($F{hist_deb40})]]></variableExpression>
 				<textFieldExpression><![CDATA[($F{hist_linha25_cor}.equals("") ? "" : ($F{hist_linha25_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha25_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha25_cor}.split(";")[2] + ">")) + $F{hist_linha25} + ($F{hist_linha25_cor}.equals("") ? "" : ($F{hist_linha25_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha25_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="340" y="308" width="54" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="340" y="308" width="54" height="10" backcolor="#BFBABA" uuid="f69c1767-6979-42d0-94f6-7218ba2695b2"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_deb20}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="340" y="452" width="54" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="340" y="452" width="54" height="10" backcolor="#BFBABA" uuid="f4742221-a547-4b47-a568-043e38320cff"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_deb36}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="44" y="389" width="237" height="10"/>
+				<reportElement mode="Opaque" x="44" y="389" width="237" height="10" uuid="3d0f94ee-6860-4401-a6e7-a3488680883b"/>
 				<textElement textAlignment="Justified" markup="html">
 					<font fontName="DejaVu Sans" size="8"/>
 					<paragraph tabStopWidth="50"/>
@@ -2621,7 +2621,7 @@ LerValor.LerValor.StringToFloat($F{hist_deb40})]]></variableExpression>
 				<textFieldExpression><![CDATA[($F{hist_linha29_cor}.equals("") ? "" : ($F{hist_linha29_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha29_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha29_cor}.split(";")[2] + ">")) + $F{hist_linha29} + ($F{hist_linha29_cor}.equals("") ? "" : ($F{hist_linha29_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha29_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="44" y="434" width="237" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="44" y="434" width="237" height="10" backcolor="#BFBABA" uuid="bf31a0bf-6cb3-45d8-87bb-1aa48b961ad5"/>
 				<textElement textAlignment="Justified" markup="html">
 					<font fontName="DejaVu Sans" size="8"/>
 					<paragraph tabStopWidth="50"/>
@@ -2629,7 +2629,7 @@ LerValor.LerValor.StringToFloat($F{hist_deb40})]]></variableExpression>
 				<textFieldExpression><![CDATA[($F{hist_linha34_cor}.equals("") ? "" : ($F{hist_linha34_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha34_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha34_cor}.split(";")[2] + ">")) + $F{hist_linha34} + ($F{hist_linha34_cor}.equals("") ? "" : ($F{hist_linha34_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha34_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="44" y="200" width="237" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="44" y="200" width="237" height="10" backcolor="#BFBABA" uuid="0bbd45e6-8018-4dcb-a557-c07311dd284b"/>
 				<textElement textAlignment="Justified" markup="html">
 					<font fontName="DejaVu Sans" size="8"/>
 					<paragraph tabStopWidth="50"/>
@@ -2637,28 +2637,28 @@ LerValor.LerValor.StringToFloat($F{hist_deb40})]]></variableExpression>
 				<textFieldExpression><![CDATA[($F{hist_linha08_cor}.equals("") ? "" : ($F{hist_linha08_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha08_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha08_cor}.split(";")[2] + ">")) + $F{hist_linha08} + ($F{hist_linha08_cor}.equals("") ? "" : ($F{hist_linha08_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha08_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="284" y="191" width="54" height="10"/>
+				<reportElement mode="Opaque" x="284" y="191" width="54" height="10" uuid="f50bc880-eb74-4654-ae07-e73d00ac3b12"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_cred07}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="340" y="299" width="54" height="10"/>
+				<reportElement mode="Opaque" x="340" y="299" width="54" height="10" uuid="bc058d60-9f05-4dd4-b5d0-c3f9aebafc9f"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_deb19}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="284" y="272" width="54" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="284" y="272" width="54" height="10" backcolor="#BFBABA" uuid="a937940e-39ad-45c1-8bcd-90a610a39490"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_cred16}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="44" y="263" width="237" height="10"/>
+				<reportElement mode="Opaque" x="44" y="263" width="237" height="10" uuid="312d8d6b-14a2-41dd-be57-6240b282f77e"/>
 				<textElement textAlignment="Justified" markup="html">
 					<font fontName="DejaVu Sans" size="8"/>
 					<paragraph tabStopWidth="50"/>
@@ -2666,7 +2666,7 @@ LerValor.LerValor.StringToFloat($F{hist_deb40})]]></variableExpression>
 				<textFieldExpression><![CDATA[($F{hist_linha15_cor}.equals("") ? "" : ($F{hist_linha15_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha15_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha15_cor}.split(";")[2] + ">")) + $F{hist_linha15} + ($F{hist_linha15_cor}.equals("") ? "" : ($F{hist_linha15_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha15_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="44" y="398" width="237" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="44" y="398" width="237" height="10" backcolor="#BFBABA" uuid="c80c2a73-c8a6-472b-85b2-6eda76952d68"/>
 				<textElement textAlignment="Justified" markup="html">
 					<font fontName="DejaVu Sans" size="8"/>
 					<paragraph tabStopWidth="50"/>
@@ -2674,7 +2674,7 @@ LerValor.LerValor.StringToFloat($F{hist_deb40})]]></variableExpression>
 				<textFieldExpression><![CDATA[($F{hist_linha30_cor}.equals("") ? "" : ($F{hist_linha30_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha30_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha30_cor}.split(";")[2] + ">")) + $F{hist_linha30} + ($F{hist_linha30_cor}.equals("") ? "" : ($F{hist_linha30_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha30_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="44" y="371" width="237" height="10"/>
+				<reportElement mode="Opaque" x="44" y="371" width="237" height="10" uuid="b3707130-ef20-4d42-a2f5-beb50e24764d"/>
 				<textElement textAlignment="Justified" markup="html">
 					<font fontName="DejaVu Sans" size="8"/>
 					<paragraph tabStopWidth="50"/>
@@ -2682,7 +2682,7 @@ LerValor.LerValor.StringToFloat($F{hist_deb40})]]></variableExpression>
 				<textFieldExpression><![CDATA[($F{hist_linha27_cor}.equals("") ? "" : ($F{hist_linha27_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha27_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha27_cor}.split(";")[2] + ">")) + $F{hist_linha27} + ($F{hist_linha27_cor}.equals("") ? "" : ($F{hist_linha27_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha27_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="44" y="335" width="237" height="10"/>
+				<reportElement mode="Opaque" x="44" y="335" width="237" height="10" uuid="913c9a22-0cbb-4086-98e3-9b7826f3cb1a"/>
 				<textElement textAlignment="Justified" markup="html">
 					<font fontName="DejaVu Sans" size="8"/>
 					<paragraph tabStopWidth="50"/>
@@ -2690,7 +2690,7 @@ LerValor.LerValor.StringToFloat($F{hist_deb40})]]></variableExpression>
 				<textFieldExpression><![CDATA[($F{hist_linha23_cor}.equals("") ? "" : ($F{hist_linha23_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha23_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha23_cor}.split(";")[2] + ">")) + $F{hist_linha23} + ($F{hist_linha23_cor}.equals("") ? "" : ($F{hist_linha23_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha23_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="44" y="236" width="237" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="44" y="236" width="237" height="10" backcolor="#BFBABA" uuid="842b889a-495b-4622-9528-2e4edb84360c"/>
 				<textElement textAlignment="Justified" markup="html">
 					<font fontName="DejaVu Sans" size="8"/>
 					<paragraph tabStopWidth="50"/>
@@ -2698,42 +2698,42 @@ LerValor.LerValor.StringToFloat($F{hist_deb40})]]></variableExpression>
 				<textFieldExpression><![CDATA[($F{hist_linha12_cor}.equals("") ? "" : ($F{hist_linha12_cor}.split(";")[1].equals("") ? "" : "<b>") + ($F{hist_linha12_cor}.split(";")[2].equals("") ? "" : "<font color = " + $F{hist_linha12_cor}.split(";")[2] + ">")) + $F{hist_linha12} + ($F{hist_linha12_cor}.equals("") ? "" : ($F{hist_linha12_cor}.split(";")[1].equals("") ? "" : "</b>") + ($F{hist_linha12_cor}.split(";")[2].equals("") ? "" : "</font>"))]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="284" y="452" width="54" height="10" backcolor="#BFBABA"/>
+				<reportElement mode="Opaque" x="284" y="452" width="54" height="10" backcolor="#BFBABA" uuid="740535b8-3547-489a-804b-9f28716d19b5"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_cred36}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="340" y="263" width="54" height="10"/>
+				<reportElement mode="Opaque" x="340" y="263" width="54" height="10" uuid="702cdf2a-31e8-437e-8d42-6ff18091a4d7"/>
 				<textElement textAlignment="Right" markup="none">
 					<font fontName="DejaVu Sans" size="8" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hist_deb15}]]></textFieldExpression>
 			</textField>
 			<textField pattern="¤ #,##0.00">
-				<reportElement x="315" y="105" width="75" height="13"/>
+				<reportElement x="315" y="105" width="75" height="13" uuid="4898f220-535a-4993-a6e6-de68b79cdcaf"/>
 				<textElement textAlignment="Right" verticalAlignment="Middle">
 					<font size="8" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$V{saldo}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="218" y="105" width="97" height="13"/>
+				<reportElement x="218" y="105" width="97" height="13" uuid="6b32e26e-b531-4364-b9a6-fd0dad3e7d9d"/>
 				<textElement textAlignment="Right" verticalAlignment="Middle">
 					<font size="8" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Total da página:]]></text>
 			</staticText>
 			<textField pattern="¤ #,##0.00">
-				<reportElement x="695" y="105" width="75" height="13"/>
+				<reportElement x="695" y="105" width="75" height="13" uuid="e409f767-b71d-4572-bd05-3ec6a3e05da7"/>
 				<textElement textAlignment="Right" verticalAlignment="Middle">
 					<font size="8" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$V{saldo}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="598" y="105" width="97" height="13"/>
+				<reportElement x="598" y="105" width="97" height="13" uuid="b1b82f9b-1b12-4fd2-932e-76354bc22437"/>
 				<textElement textAlignment="Right" verticalAlignment="Middle">
 					<font size="8" isBold="true"/>
 				</textElement>

@@ -208,6 +208,9 @@ public class VariaveisGlobais {
     // Busca Globalizada
     public static javax.swing.JTextField jBuscar;
     
+    // Licença
+    public static String Licenca = "";
+    
     public static void LerConf() {
         VariaveisGlobais.myLogo = System.getProperty("myLogo", "resources/login.jpg");
         
@@ -272,5 +275,7 @@ public class VariaveisGlobais {
         VariaveisGlobais.bloqAdianta = Boolean.valueOf(System.getProperty("bloqAdianta", "false"));
         
         VariaveisGlobais.dimob = Boolean.valueOf(System.getProperty("Dimob", "false"));
+        
+        VariaveisGlobais.Licenca = System.getProperty("Licenca", "WellSoft");
     }
 }

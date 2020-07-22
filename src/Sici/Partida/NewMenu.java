@@ -513,7 +513,7 @@ public final class NewMenu extends javax.swing.JFrame {
         // 12-04-2012
         jOS.setText(System.getProperty("os.name") + " - " + System.getProperty("os.version"));
         jLocal.setText(VariaveisGlobais.unidade);
-        jBaseDados.setText("Erica Santos"); //VariaveisGlobais.dbnome);
+        jBaseDados.setText(VariaveisGlobais.Licenca); //VariaveisGlobais.dbnome);
         //jtermica.setText(VariaveisGlobais.DefaultThermalPort);
         jtermica.setText(VariaveisGlobais.statPrinter ? "Ligada" : "Desligada");
         
