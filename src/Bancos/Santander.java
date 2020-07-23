@@ -38,15 +38,15 @@ public class Santander {
     static public String CalcDig11N(String cadeia) {
         int total= 0; int mult = 2;
         for (int i=1; i<=cadeia.length();i++) {
+            if (mult > 9) mult = 2;
             total += Integer.valueOf(cadeia.substring(cadeia.length() - i,(cadeia.length() + 1) - i)) * mult;
             mult++;
-            if (mult > 9) mult = 2;
         }
         int soma = total; // * 10;
         int resto = (soma % 11);
-        if (resto == 0 || resto == 1 || resto == 10) { 
-            resto = 1; 
-        } else if (resto > 10) {
+        if (resto == 0 || resto == 1) { 
+            resto = 0; 
+        } else if (resto >= 10) {
             resto = 1; 
         } else {
             resto = 11 - resto;

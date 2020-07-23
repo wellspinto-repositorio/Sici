@@ -114,7 +114,8 @@ public class jCalDig extends javax.swing.JInternalFrame {
     }//GEN-LAST:event_btnCalcDv10ActionPerformed
 
     private void CalcDv11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CalcDv11ActionPerformed
-        jModulo11dv.setText(Bancos.Santander.CalcDig11NBarrasSantander(jModulo11.getText()));
+        jModulo11dv.setText(Bancos.Santander.CalcDig11N(jModulo11.getText()));
+        //jModulo11dv.setText(Bancos.bancos.CalcDig11(jModulo11.getText(),9,2));
     }//GEN-LAST:event_CalcDv11ActionPerformed
 
 

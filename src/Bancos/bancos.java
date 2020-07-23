@@ -64,32 +64,32 @@ public class bancos {
 //        return String.valueOf(resto);
 //    }
 //     
-//    static public String CalcDig11(String cadeia, int limitesup, int lflag) {
-//
-//        int mult; int total; int nresto; int ndig; int pos;
-//        String retorno = "";
-//        
-//        mult = 1 + (cadeia.length() % (limitesup - 1));
-//        if (mult == 1) { mult = limitesup; }
-//        
-//        total = 0;
-//        for (pos=0;pos<=cadeia.length()-1;pos++) {
-//            total += Integer.valueOf(cadeia.substring(pos, pos + 1)) * mult;
-//            mult -= 1;
-//            if (mult == 1) mult = limitesup;
-//        }
-//        
-//        nresto = (total % 11);
-//        if (lflag == 1) { retorno = String.valueOf(nresto); } else {
-//            if (nresto == 0 || nresto == 1) {
-//                ndig = 0; 
-//            } else if (nresto > 9) { 
-//                ndig = 1; 
-//            } else ndig = 11 - nresto;
-//            retorno = String.valueOf(ndig);
-//        }
-//        return retorno;
-//    }
+    static public String CalcDig11(String cadeia, int limitesup, int lflag) {
+
+        int mult; int total; int nresto; int ndig; int pos;
+        String retorno = "";
+        
+        mult = 1 + (cadeia.length() % (limitesup - 1));
+        if (mult == 1) { mult = limitesup; }
+        
+        total = 0;
+        for (pos=0;pos<=cadeia.length()-1;pos++) {
+            total += Integer.valueOf(cadeia.substring(pos, pos + 1)) * mult;
+            mult -= 1;
+            if (mult == 1) mult = limitesup;
+        }
+        
+        nresto = (total % 11);
+        if (lflag == 1) { retorno = String.valueOf(nresto); } else {
+            if (nresto == 0 || nresto == 1) {
+                ndig = 0; 
+            } else if (nresto > 9) { 
+                ndig = 1; 
+            } else ndig = 11 - nresto;
+            retorno = String.valueOf(ndig);
+        }
+        return retorno;
+    }
 
 //    static public String CalcDig11Bradesco(String cadeia, int limitesup, int lflag) {
 //
